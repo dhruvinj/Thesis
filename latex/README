@@ -1,0 +1,20 @@
+This package provides the UB Thesis class for typesetting theses and dissertations at UB. The class adheres to the UB guidelines for theses given in the file etdguide.pdf (downloadable from http://www.grad.buffalo.edu/etd/etdguide.pdf) where doing so would be sane. The class additionally sets some typesetting standards where applicable that the University does not presently enforce.
+
+There should already be a copy of the class file itself (ubthesis.cls), the example `thesis' LaTeX document (thesis.tex), and typeset versions of both in PDF format (ubthesis.pdf and thesis.pdf). The ubthesis.pdf file is not literally a typeset version of the class file, but rather the typeset documentation of it. This includes usage information as well as a description of the actual implementation of the class file.
+
+Please read the documentation first!
+
+If you do not have the aforementioned files in your directory, you did not receive an original version of this package. The files can still be easily created from the ubthesis.ins and ubthesis.dtx files however. Processing the ubthesis.ins file through LaTeX will produce the ubthesis.cls and thesis.tex files, while processing the ubthesis.dtx file will produce the documentation for the ubthesis class. Running thesis.tex through LaTeX will typeset the example. These steps have been made easier through the creation of a Makefile, which for those of you with make (preferably GNU make) on your systems means you can run the following commands to automatically produce the desired materials:
+
+To produce the class file and example source file, run
+	make code
+
+To produce the documentation in PDF format, run
+	make doc
+
+To produce the example `thesis' in PDF format, run
+	make example
+
+To produce everything, run
+	make all
+

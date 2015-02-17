@@ -1,0 +1,343 @@
+%D \module
+%D  [        file=t-ubthesis,
+%D        version=2010.10.29,
+%D          title=\CONTEXT\ User Module,
+%D       subtitle=UB Thesis formatting,
+%D         author=Justin Boffemmyer,
+%D           date=\currentdate,
+%D      copyright=Public Domain
+%D  ]
+
+%M \loadsetups[cont-en.xml]
+%M \loadsetups[t-ubthesis.xml]
+
+\writestatus{ubthesis}{Context User Module / UB Thesis Formatting}
+
+\startmodule[ubthesis]
+
+\unprotect
+
+%D \subject{Constants and Variables}
+
+\startvariables ubthesis
+	author: author
+	title: title
+	degree: degree
+	dept: dept
+	conferral: conferral
+	keywords: keywords
+\stopvariables
+
+% default font size of 12pt, and set up for "final" output mode
+\setvariables[ubthesis]
+[
+	fontsize=12pt,
+	mode=final,
+	author=AUTHOR,
+	title=TITLE,
+	degree=DEGREE,
+	dept=DEPT,
+	conferral=CONFERRAL,
+	keywords=KEYWORDS
+]
+
+%\setupmodule[mode=final,fontsize=12pt,author=,title=,conferral=,dept=,degree=,keywords=]
+%\processaction[\currentmoduleparameter{mode}]
+%[
+	%online=>\setvariables[ubthesis][mode=online],
+	%screen=>\setvariables[ubthesis][mode=screen],
+	%draft=>\setvariables[ubthesis][mode=draft],
+	%print=>\setvariables[ubthesis][mode=print],
+	%final=>\setvariables[ubthesis][mode=final],
+	%\s!unknown=>\setvariables[ubthesis][mode=final],
+	%\s!default=>\setvariables[ubthesis][mode=final],
+%]
+%\processaction[\currentmoduleparameter{fontsize}]
+%[
+	%10=>\setvariables[ubthesis][fontsize=10pt],
+	%12=>\setvariables[ubthesis][fontsize=12pt],
+	%10pt=>\setvariables[ubthesis][fontsize=10pt],
+	%12pt=>\setvariables[ubthesis][fontsize=12pt],
+	%\s!unknown=>\setvariables[ubthesis][fontsize=12pt]
+	%\s!default=>\setvariables[ubthesis][fontsize=12pt]
+%]
+
+%D \subject{Main Setup}
+
+% There are no theses which will not reference other material, and this is THE
+% standard citation module for \CONTEXT, so it should be safe to load it
+% absolutely.
+\usemodule[bib]
+
+% These are US theses, so they will be on letter paper.
+\setuppapersize[letter][letter]
+
+% set up the body font size (default is 12pt)
+\setupbodyfont[12pt]
+
+% set up "book" pages (chapters start on "right" pages)
+\setuppagenumbering[alternative=doublesided, location={footer,middle}, state=start]
+\setuppagenumber[state=start]
+
+% define a new chapter head specific to UB theses, and then alias \chapter to
+% \ubchapter -- this works better than modifying \chapter directly
+\definehead[ubchapter][chapter]
+\setuphead[ubchapter][
+	style={\tfd},
+	textstyle=slanted,
+	align={flushright,nothyphenated,verytolerant},
+	continue=no,
+	page={yes,blank,right},
+	]
+\let\chapter=\ubchapter
+
+\definehead[ubfrontchapter][chapter]
+\setuphead[ubfrontchapter][
+	align=middle,
+	continue=no,
+	page={yes,blank,right},
+	number=no
+	]
+
+\definehead[ubbackchapter][chapter]
+\setuphead[ubbackchapter][
+	%align=flushright,
+	continue=no,
+	page={yes,blank,right},
+	number=no
+	]
+
+\definehead[ubunnumberedchapter][chapter]
+\setuphead[ubunnumberedchapter][
+	%align=flushright,
+	continue=no,
+	page={yes,blank,right},
+	number=no
+	]
+
+\definehead[ubcontentheading][title]
+\setuphead[ubcontentheading][
+	align=middle,
+	continue=no,
+	page={yes,blank,right},
+	number=no
+	]
+
+\definecombinedlist[ubcontents][
+	ubchapter,
+	ubunnumberedchapter,
+	section,
+	subsection,
+	ubfrontchapter,
+	ubbackchapter,
+	]
+\setupcombinedlist[content][alternative=c]
+
+% D \Subject{User-level Macro Definitions}
+% D This is where the user-level macro definitions are. Currently, macros for
+% D setting up the organizational portions of a thesis (sectioning commands,
+% D frontmatter, mainmatter, backmatter, etc. are provided), as well as a
+% D titlepage and underlining environment. The titlepage uses information
+% D provided in the ubthesis variables (author, title, etc.) to populate the
+% D titlepage information, and uses a precoded lookup table to determine the
+% D relevant material to typeset for the degree information using a choice
+% D given in the ubthesis degree variable.
+
+% D this needs to be run after the variables are defined in the calling
+% D document but if the user skips it then at least some of the document will
+% D compile right
+\def\setupubthesis{
+	\ifx\empty\getvariable{ubthesis}{fontsize}
+		\relax
+	\else
+		% set up the body font size (default is 12pt)
+		\setupbodyfont[\getvariable{ubthesis}{fontsize}]
+
+		% set up double-spacing (required by the graduate school)
+		\setupinterlinespace[big]
+
+		% make sure paragraphs are appropriately indented
+		\setupindenting[yes,big,always]
+	\fi
+
+	\ifx\empty\getvariable{ubthesis}{mode}
+		\relax
+	\else
+		% enable any modes selected for the module (or defaults)
+		\enablemode[\getvariable{ubthesis}{mode}]
+
+		% set up different modes for "fancy" effects -- the modes are provided as
+		% options to the ubthesis "module" itself to make it easier, but can also be
+		% selected on the command-line via e.g. texexec --mode=MODE
+		%
+		% online: enables PDF bookmarks, etc.
+		% screen: synonym for online
+		% draft: currently does the same as print/final, but may eventually be defined
+		%        to have things more helpful for proofing drafts (like putting errors
+		%        such as unkown references or similar as margin notes, if I can work
+		%        out a reasonable way to do this in my spare time)
+		% print: the version for final printing -- this is just a regular pdf output,
+		%        without any special fancy effects
+		% final: currently a synonym for print
+		\startmode[online,screen]
+			% enable "interactive" elements
+			\setupinteraction[
+				state=start,
+				title=\getvariable{ubthesis}{title},
+				author=\getvariable{ubthesis}{author},
+				keyword=\getvariable{ubthesis}{keywords},
+			]
+
+			% embed bookmarks for the given sections into the resulting PDF
+			\placebookmarks
+				[
+					ubchapter,
+					section,
+					subsection,
+					ubunnumberedchapter,
+				]
+				[
+					ubchapter,
+					chapter,
+					section,
+					subsection,
+					ubunnumberedchapter,
+					force=yes
+				]
+
+			% causes the bookmark window to open automatically (supposedly)
+			\setupinteractionscreen[option=bookmark]
+		\stopmode
+		\startmode[draft]
+		\stopmode
+		\startmode[print,final]
+			% disable "interactive" elements
+			\setupinteraction[
+				state=start,
+				title=\getvariable{ubthesis}{title},
+				author=\getvariable{ubthesis}{author},
+				keyword=\getvariable{ubthesis}{keywords},
+			]
+			\setupinteraction[state=stop]
+		\stopmode
+	\fi
+}
+
+\def\ubcontents{
+	\ubcontentheading{Table of Contents}
+	\placeubcontents[criterium=all,level=subsection]
+}
+
+\def\startubfrontmatter{
+	\let\chapter=\ubfrontchapter
+	\page
+	\setuppagenumbering[state=start,conversion=romannumerals]
+	\setuppagenumber[number=2]
+}
+\def\stopubfrontmatter{
+	\page
+	\setuppagenumbering[conversion=numbers]
+	\setuppagenumber[number=0]
+	\setupheadnumber[chapter][0]
+	\let\chapter=\ubchapter
+}
+
+\def\startubmainmatter{
+}
+\def\stopubmainmatter{
+}
+
+\def\startubbackmatter{
+	\let\chapter=\ubbackchapter
+}
+\def\stopubbackmatter{
+	\let\chapter=\ubchapter
+}
+
+\def\ubbibfile{\dosingleempty\UBT@bibfile}
+\def\UBT@bibfile[#1]#2{
+	\iffirstargument
+		\setupbibtex[database=#2,#1]
+	\else
+		\setupbibtex[database=#2]
+	\fi
+}
+
+\def\ubbibliography{
+	\chapter{Bibliography}
+	\placepublications
+}
+%\def\ubbibliography{\dosingleempty\UBT@bibliography}
+%\def\UBT@bibliography[#1]{
+%	\getparameters[UBT@bib][title=Bibliography, #1]
+%	\chapter{\UBT@bibtitle}
+%	\placepublications
+%}
+
+\def\ubtitlepage{
+	\setuppagenumbering[state=stop]
+
+	% get the degree information
+	\processaction[\getvariable{ubthesis}{degree}]
+	[
+		ma=>\def\UBT@degree{Master of Arts}\def\UBT@thesis{thesis},
+		ms=>\def\UBT@degree{Master of Science}\def\UBT@thesis{thesis},
+		mse=>\def\UBT@degree{Master of Engineering}\def\UBT@thesis{thesis},
+		mfa=>\def\UBT@degree{Master of Fine Arts}\def\UBT@thesis{thesis},
+		mmus=>\def\UBT@degree{Master of Music}\def\UBT@thesis{thesis},
+		murbp=>\def\UBT@degree{Master of Urban Planning}\def\UBT@thesis{thesis},
+		march=>\def\UBT@degree{Master of Architecture}\def\UBT@thesis{thesis},
+		phd=>\def\UBT@degree{Doctor of Philosophy}\def\UBT@thesis{dissertation},
+		ed=>\def\UBT@degree{Doctor of Education}\def\UBT@thesis{dissertation},
+		nsd=>\def\UBT@degree{Doctor of Nursing Science}\def\UBT@thesis{dissertation},
+		\s!unknown=>\def\UBT@degree{\commalistelement}\def\UBT@thesis{thesis},
+		\s!default=>\def\UBT@degree{DEGREE}\def\UBT@thesis{THESIS}
+	]
+
+	\startalignment[middle]
+		\vfill
+
+		{\tfd \getvariable{ubthesis}{title}}
+
+		\godown[0.25\textheight]
+
+		by
+		\bigskip
+		{\tfc \getvariable{ubthesis}{author}}
+		\smallskip
+		{\tfb \getvariable{ubthesis}{conferral}}
+
+		\godown[0.25\textheight]
+
+
+		A~\UBT@thesis{} submitted to the\par
+		Faculty of the Graduate School of\par
+		the University at Buffalo, State University of New York\par
+		in partial fulfillment of the requirements for the\par
+		degree of\par
+		\bigskip
+
+		\UBT@degree\par
+		\bigskip
+
+		Department of \getvariable{ubthesis}{dept}
+		\vfill
+	\stopalignment
+}
+
+\def\ubcopyrightpage{
+	\strut
+	\vfill
+	\startalignment[middle]
+		Copyright by\par
+		\getvariable{ubthesis}{author}\par
+		\number\year
+	\stopalignment
+}
+
+\protect
+
+\endinput
+
+%%
+%% End of file `ubthesis.tex'.
