@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.15)  12 MAR 2015 23:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.15)  30 MAR 2015 21:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -133,9 +133,9 @@ LaTeX Font Info:    ... okay on input line 35.
 ]
 (./thesis.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 8.
+(Font)              <7> on input line 6.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 8.
+(Font)              <5> on input line 6.
 )
 \tf@toc=\write3
 \openout3 = `thesis.toc'.
@@ -185,27 +185,27 @@ Chapter 1.
 
 ]
 Chapter 2.
-[3] [4
 
+Underfull \hbox (badness 10000) in paragraph at lines 93--97
 
-]
-Chapter 3.
+ []
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--91
+[3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
 
 [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
+Chapter 3.
+[7
 
- []
 
-[7] [8]
+] [8
+
+
+]
 Chapter 4.
-[9
-
-
-] [10
+[9] [10
 
 
 ]
@@ -224,31 +224,16 @@ Chapter 7.
 
 
 ]
-Chapter 8.
-[17] [18
-
-
-]
-Chapter 9.
-[19] [20
-
-
-]
-Chapter 10.
-[21] [22
-
-
-]
 No file thesis.bbl.
 (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
  943 strings out of 494985
  12191 string characters out of 6180356
- 75338 words of memory out of 5000000
+ 74387 words of memory out of 5000000
  4204 multiletter control sequences out of 15000+600000
  7016 words of font info for 25 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 31i,11n,45p,338b,256s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 31i,11n,45p,321b,256s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
@@ -263,10 +248,10 @@ msfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (34 pages, 186542 bytes).
+Output written on thesis.pdf (28 pages, 183757 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
- 121 compressed objects within 2 object streams
+ 155 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
