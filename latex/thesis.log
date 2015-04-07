@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.15)  30 MAR 2015 21:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.15)  7 APR 2015 17:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -200,12 +200,12 @@ Chapter 3.
 [7
 
 
-] [8
-
-
-]
+] [8]
 Chapter 4.
-[9] [10
+[9
+
+
+] [10
 
 
 ]
@@ -227,13 +227,13 @@ Chapter 7.
 No file thesis.bbl.
 (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 943 strings out of 494985
- 12191 string characters out of 6180356
- 74387 words of memory out of 5000000
- 4204 multiletter control sequences out of 15000+600000
+ 944 strings out of 494985
+ 12202 string characters out of 6180356
+ 74397 words of memory out of 5000000
+ 4205 multiletter control sequences out of 15000+600000
  7016 words of font info for 25 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 31i,11n,45p,321b,256s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 31i,11n,45p,809b,256s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
@@ -248,7 +248,7 @@ msfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (28 pages, 183757 bytes).
+Output written on thesis.pdf (28 pages, 200067 bytes).
 PDF statistics:
  155 PDF objects out of 1000 (max. 8388607)
  108 compressed objects within 2 object streams
