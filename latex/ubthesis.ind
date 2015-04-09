@@ -18,7 +18,8 @@
 {\bfseries\hfil A\hfil}\nopagebreak
 
   \item {\ttfamily abstract} (environment)\pfill \usage{3}, \main{278}
-  \item {\ttfamily acknowledgements} (environment)\pfill \usage{3}, \main{265}
+  \item {\ttfamily acknowledgements} (environment)\pfill \usage{3}, 
+		\main{265}
   \item \verb*+\advance+\pfill 212
   \item \verb*+\author+\pfill \usage{3}, \main{82}
 
@@ -32,7 +33,8 @@
 {\bfseries\hfil C\hfil}\nopagebreak
 
   \item \verb*+\c@enumiv+\pfill 208, 216
-  \item \verb*+\cleardoublepage+\pfill 65, 171, 175, 200, 246, 254, 260, 275, 288
+  \item \verb*+\cleardoublepage+\pfill 65, 171, 175, 200, 246, 254, 260, 
+		275, 288
   \item \verb*+\clubpenalty+\pfill 218, 219
   \item \verb*+\conferral+\pfill \usage{2}, 52, \main{88}
 
@@ -98,8 +100,10 @@
   \indexspace
 {\bfseries\hfil U\hfil}\nopagebreak
 
-  \item {\ttfamily ubbackmatter} (environment)\pfill \usage{3}, \main{250}
-  \item {\ttfamily ubfrontmatter} (environment)\pfill \usage{3}, \main{237}
+  \item {\ttfamily ubbackmatter} (environment)\pfill \usage{3}, 
+		\main{250}
+  \item {\ttfamily ubfrontmatter} (environment)\pfill \usage{3}, 
+		\main{237}
   \item \verb*+\UBT@author+\pfill 18, 29, 83, 141, 167
   \item \verb*+\UBT@bibname+\pfill 50, 196, 197, 199, 206, 207
   \item \verb*+\UBT@cdp+\pfill 36, 65, 178
