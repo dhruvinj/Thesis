@@ -17,6 +17,7 @@
 \contentsline {section}{\numberline {4.2}Need for stability}{10}
 \contentsline {subsection}{\numberline {4.2.1}Streamline Upwind Petrov Galerkin Method}{10}
 \contentsline {subsection}{\numberline {4.2.2}Pressure-Stabilizing/Petrov-Galerkin (PSPG)}{11}
+\contentsline {subsection}{\numberline {4.2.3}Stabilized Navier Stokes Equation}{11}
 \contentsline {section}{\numberline {4.3}Adaptive Finite Element}{11}
 \contentsline {chapter}{\numberline {5}Bayesian Statistics}{13}
 \contentsline {section}{\numberline {5.1}Review of Theory}{13}

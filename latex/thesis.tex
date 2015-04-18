@@ -267,7 +267,7 @@ Integrating by parts and applying boundary conditions
 
 \begin{eqnarray*}
 \int_{0}^{L} \int_{0}^{L}\rho \.{u}^h \psi_i \psi_j + \hspace{1mm}\int_{0}^{L} \int_{0}^{L} \rho u^h \cdot \nabla u^h \psi_i \hspace{1mm} &=& \int_{0}^{L} \int_{0}^{L}  -\frac{1}{M^2}\hspace{1mm}\nabla p^h \phi_i \hspace{1mm} - \hspace{1mm}\int_{0}^{L} \int_{0}^{L}\frac{1}{Re} \tau^h \nabla \psi + \left[\tau \psi \right]_0^L+ \\ \int_{0}^{L} \int_{0}^{L}\frac{1}{Fr^2}\rho g \psi \\
-\int_{0}^{L} \int_{0}^{L} \rho C_p \.{T}^h \varphi_i \varphi_j + \hspace{1mm}\int_{0}^{L} \int_{0}^{L} \rho C_p u^h \cdot \nabla T \varphi_i \hspace{1mm}&=&\hspace{1mm} \int_{0}^{L} \int_{0}^{L} +  \frac{1}{Re Pr}(k \nabla T^h) \nabla \varphi  -  \frac{1}{Re Pr} \left[k \nabla T^h \varphi \right]_0^L \\ + \int_{0}^{L} \int_{0}^{L} \hspace{1mm} \frac{1}{\gamma -1} \frac{d p^h}{d t} \phi\hspace{1mm}\\
+\int_{0}^{L} \int_{0}^{L} \rho C_p \.{T}^h \varphi_i \varphi_j + \hspace{1mm}\int_{0}^{L} \int_{0}^{L} \rho C_p u^h \cdot \nabla T \varphi_i \hspace{1mm}&=&\hspace{1mm} \int_{0}^{L} \int_{0}^{L} +  \frac{1}{Re Pr}(k \nabla T^h) \nabla \varphi  -  \frac{1}{Re Pr} \left[k \nabla T^h \varphi \right]_0^L \\ + \int_{0}^{L} \int_{0}^{L} \hspace{1mm} \frac{1}{\gamma -1} \frac{d p^h}{d t} \phi\hspace{1mm} \\
 \end{eqnarray*}
 
 \section{Need for stability}
@@ -323,24 +323,24 @@ $$P(w)= a.\nabla w$$ \noindent where a is the convection velocity. $w$ is the te
  \noindent The terms associated with parameter $\xi_{pspg}$ (pressure-stabilizing/Petrov-Galerkin)
  allow the use of mixed elements with equal-order interpolations for the velocity and
  pressure. All stabilization
- terms are weighted residuals, therefore ensuring the consistency of the formulation.
+ terms are weighted residuals, therefore ensuring the consistency of the formulation. The following term is added to the galerkin weak form of the differential equation. 
  
+  $$\sum_e \int_{\Omega^e} \nabla \phi \xi_{pspg} R(u)  d\Omega$$ 
+ 
+ \subsection{Stabilized Navier Stokes Equation} 
+\noindent From the stabilization discussions we can now write the stabilized form of Navier stokes equation. The Residual of momentum and energy equation are given as follows
+\bigskip
+\begin{eqnarray*}
+R1(u) &=& \rho \frac{D u^h}{D t} \hspace{1mm} + \frac{1}{M^2}\hspace{1mm}\nabla p^h\hspace{1mm}-\hspace{1mm}\frac{1}{Re}\nabla \cdot (\mu^*(\nabla u^h +(\nabla u^h)^T) - \frac{2}{3}\mu^h \nabla \cdot u^h I) - \frac{1}{Fr^2}\rho g \\
+R2(T) &=& \rho C_p \frac{D T^h}{D t} \hspace{1mm} \hspace{1mm} + \frac{1}{Re Pr}\nabla\cdot (k \nabla T^h) - \hspace{1mm} \frac{1}{\gamma -1} \frac{d p^h}{d t}\hspace{1mm}
+\end{eqnarray*}
 
-%\bigskip
-%\begin{eqnarray*}
-%R1(u) &=& \rho \frac{D u^h}{D t} \hspace{1mm} + \frac{1}{M^2}\hspace{1mm}\nabla p^h\hspace{1mm}-\hspace{1mm}\frac{1}{Re}\nabla \cdot (\mu^*(\nabla u^h +(\nabla u^h)^T) - \frac{2}{3}\mu^h \nabla \cdot u^h I) - \frac{1}{Fr^2}\rho g \\
-%R2(T) &=& \rho C_p \frac{D T^h}{D t} \hspace{1mm} \hspace{1mm} + \frac{1}{Re Pr}\nabla\cdot (k \nabla T^h) - \hspace{1mm} \frac{1}{\gamma -1} \frac{d p^h}{d t}\hspace{1mm}
-%\end{eqnarray*}
-%\bigskip
-
-
-%\begin{eqnarray}
-%a(w^h,u^h)+c(a;w^h,u^h) + \hspace{1mm} \sum_e \int_{\Omega^e} P(w) \tau R(u)  d\Omega&=& (w^h,s)
-%\end{eqnarray}
-%\begin{eqnarray*}
-%\int_{0}^{L} \int_{0}^{L}\rho \.{u}^h \psi_i \psi_j + \hspace{1mm}\int_{0}^{L} \int_{0}^{L} \rho u^h \cdot \nabla u^h \psi_i \hspace{1mm}  + \int_{0}^{L} \int_{0}^{L}  \frac{1}{M^2}\hspace{1mm}\nabla p^h \phi_i \hspace{1mm} + \hspace{1mm}\int_{0}^{L} \int_{0}^{L}\frac{1}{Re} \tau^h \nabla \psi +  \\ - \int_{0}^{L} \int_{0}^{L}\frac{1}{Fr^2}\rho g \psi + \sum_e \int_{\Omega^e} P(w) \xi R1(u)  d\Omega  &=& \left[\tau \psi \right]_0^L \\
-%\int_{0}^{L} \int_{0}^{L} \rho C_p \.{T}^h \varphi_i \varphi_j + \hspace{1mm}\int_{0}^{L} \int_{0}^{L} \rho C_p u^h \cdot \nabla T \varphi_i \hspace{1mm} - \hspace{1mm} \int_{0}^{L} \int_{0}^{L} \frac{1}{Re Pr}(k \nabla T^h) \nabla \varphi - \\ \int_{0}^{L} \int_{0}^{L} \hspace{1mm} \frac{1}{\gamma -1} \frac{d p^h}{d t}+  \sum_e \int_{\Omega^e} S(w) \xi R2(T)  d\Omega  &=& -  \frac{1}{Re Pr} \left[k \nabla T^h \varphi \right]_0^L \phi\hspace{1mm}\\
-%\end{eqnarray*}
+\bigskip
+\noindent Now adding the pressure stabilization and convection stabilization to momentum and energy equations we get the following expressions
+\begin{eqnarray*}
+\int_{0}^{L} \int_{0}^{L}\rho \.{u}^h \psi_i \psi_j + \hspace{1mm}\int_{0}^{L} \int_{0}^{L} \rho u^h \cdot \nabla u^h \psi_i \hspace{1mm}  + \int_{0}^{L} \int_{0}^{L}  \frac{1}{M^2}\hspace{1mm}\nabla p^h \phi_i \hspace{1mm} + \hspace{1mm}\int_{0}^{L} \int_{0}^{L}\frac{1}{Re} \tau^h \nabla \psi +  \\ - \int_{0}^{L} \int_{0}^{L}\frac{1}{Fr^2}\rho g \psi + \sum_e \int_{\Omega^e} P(\psi) \xi R1(u)  d\Omega + \sum_e \int_{\Omega^e} \nabla \phi \xi_{pspg} R1(u)  d\Omega  &=& \left[\tau \psi \right]_0^L \\
+\int_{0}^{L} \int_{0}^{L} \rho C_p \.{T}^h \varphi_i \varphi_j + \hspace{1mm}\int_{0}^{L} \int_{0}^{L} \rho C_p u^h \cdot \nabla T \varphi_i \hspace{1mm} - \hspace{1mm} \int_{0}^{L} \int_{0}^{L} \frac{1}{Re Pr}(k \nabla T^h) \nabla \varphi - \\ \int_{0}^{L} \int_{0}^{L} \hspace{1mm} \frac{1}{\gamma -1} \frac{d p^h}{d t} \phi +  \sum_e \int_{\Omega^e} S(\varphi) \xi R2(T)  d\Omega + \sum_e \int_{\Omega^e} \nabla \varphi \xi_{pspg} R2(T)  d\Omega &=& -  \frac{1}{Re Pr} \left[k \nabla T^h \varphi \right]_0^L \hspace{1mm}\\
+\end{eqnarray*}
 
 
 \section{Adaptive Finite Element}

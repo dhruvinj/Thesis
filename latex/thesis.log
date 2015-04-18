@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.15)  17 APR 2015 20:22
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.15)  17 APR 2015 20:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -71,7 +71,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ! Missing \endcsname inserted.
 <to be read again> 
                    \global 
-l.51 \bibcite{\global }{2}
+l.52 \bibcite{\global }{2}
                           
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -82,7 +82,7 @@ LaTeX Warning: Label `\global ' multiply defined.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \global 
-l.51 \bibcite{\global }{2}
+l.52 \bibcite{\global }{2}
                           
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -90,7 +90,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \egroup 
-l.52 \bibcite{\egroup }{3}
+l.53 \bibcite{\egroup }{3}
                           
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -101,7 +101,7 @@ LaTeX Warning: Label `\egroup ' multiply defined.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \egroup 
-l.52 \bibcite{\egroup }{3}
+l.53 \bibcite{\egroup }{3}
                           
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -334,7 +334,57 @@ Missing character: There is no ù in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no î in font cmr10!
- [10] [11] [12
+ [10]
+
+LaTeX Warning: Command \. invalid in math mode on input line 341.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.341 \int_{0}^{L} \int_{0}^{L}\rho \.{u}
+                                         ^h \psi_i \psi_j + \hspace{1mm}\int...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.341 \int_{0}^{L} \int_{0}^{L}\rho \.{u}
+                                         ^h \psi_i \psi_j + \hspace{1mm}\int...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no Ë in font cmex10!
+
+LaTeX Warning: Command \. invalid in math mode on input line 342.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.342 \int_{0}^{L} \int_{0}^{L} \rho C_p \.{T}
+                                              ^h \varphi_i \varphi_j + \hspa...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.342 \int_{0}^{L} \int_{0}^{L} \rho C_p \.{T}
+                                              ^h \varphi_i \varphi_j + \hspa...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no Á in font cmex10!
+
+Overfull \hbox (62.06395pt too wide) in alignment at lines 340--343
+ [][][] []
+ []
+
+[11] [12
 
 
 ]
@@ -449,7 +499,7 @@ n/10 313 \OMS/cmsy/m/n/10 ^^@
 ! Missing \endcsname inserted.
 <to be read again> 
                    \global 
-l.51 \bibcite{\global }{2}
+l.52 \bibcite{\global }{2}
                           
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -457,7 +507,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \egroup 
-l.52 \bibcite{\egroup }{3}
+l.53 \bibcite{\egroup }{3}
                           
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -492,7 +542,7 @@ s/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (31 pages, 223251 bytes).
+Output written on thesis.pdf (31 pages, 225416 bytes).
 PDF statistics:
  165 PDF objects out of 1000 (max. 8388607)
  115 compressed objects within 2 object streams
