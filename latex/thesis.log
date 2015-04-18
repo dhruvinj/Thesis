@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.15)  15 APR 2015 17:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.15)  17 APR 2015 20:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -71,7 +71,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ! Missing \endcsname inserted.
 <to be read again> 
                    \global 
-l.47 \bibcite{\global }{2}
+l.51 \bibcite{\global }{2}
                           
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -82,7 +82,7 @@ LaTeX Warning: Label `\global ' multiply defined.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \global 
-l.47 \bibcite{\global }{2}
+l.51 \bibcite{\global }{2}
                           
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -90,7 +90,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \egroup 
-l.48 \bibcite{\egroup }{3}
+l.52 \bibcite{\egroup }{3}
                           
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -101,7 +101,7 @@ LaTeX Warning: Label `\egroup ' multiply defined.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \egroup 
-l.48 \bibcite{\egroup }{3}
+l.52 \bibcite{\egroup }{3}
                           
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -262,7 +262,7 @@ Chapter 3.
 ] [8]
 Chapter 4.
 
-Overfull \hbox (7.30116pt too wide) in alignment at lines 261--264
+Overfull \hbox (28.72377pt too wide) in alignment at lines 261--264
  [][][] []
  []
 
@@ -273,7 +273,7 @@ LaTeX Warning: Command \. invalid in math mode on input line 269.
 \add@accent ...@spacefactor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
 l.269 \int_{0}^{L} \int_{0}^{L}\rho \.{u}
-                                         \psi_i \psi_j + \hspace{1mm}\int_{0...
+                                         ^h \psi_i \psi_j + \hspace{1mm}\int...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
 
@@ -281,7 +281,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 \add@accent ...}\accent #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
 l.269 \int_{0}^{L} \int_{0}^{L}\rho \.{u}
-                                         \psi_i \psi_j + \hspace{1mm}\int_{0...
+                                         ^h \psi_i \psi_j + \hspace{1mm}\int...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
@@ -295,7 +295,7 @@ LaTeX Warning: Command \. invalid in math mode on input line 270.
 \add@accent ...@spacefactor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
 l.270 \int_{0}^{L} \int_{0}^{L} \rho C_p \.{T}
-                                              \varphi_i \varphi_j + \hspace{...
+                                              ^h \varphi_i \varphi_j + \hspa...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
 
@@ -303,7 +303,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 \add@accent ...}\accent #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
 l.270 \int_{0}^{L} \int_{0}^{L} \rho C_p \.{T}
-                                              \varphi_i \varphi_j + \hspace{...
+                                              ^h \varphi_i \varphi_j + \hspa...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
@@ -311,29 +311,45 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 
 Missing character: There is no Á in font cmex10!
 
-Overfull \hbox (81.83429pt too wide) in alignment at lines 268--271
+Overfull \hbox (26.80551pt too wide) in alignment at lines 268--271
  [][][] []
  []
 
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
 [9
 
 
-] [10
+]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no î in font cmr10!
+ [10] [11] [12
 
 
 ]
 Chapter 5.
-[11] [12
-
-
-]
-Chapter 6.
 [13] [14
 
 
 ]
-Chapter 7.
+Chapter 6.
 [15] [16
+
+
+]
+Chapter 7.
+[17] [18
 
 
 ] (./thesis.bbl
@@ -426,14 +442,14 @@ Overfull \hbox (100.7584pt too wide) in paragraph at lines 5--11
 n/10 313 \OMS/cmsy/m/n/10 ^^@
  []
 
-) [17
+) [19
 
 
 ] (./thesis.aux
 ! Missing \endcsname inserted.
 <to be read again> 
                    \global 
-l.47 \bibcite{\global }{2}
+l.51 \bibcite{\global }{2}
                           
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -441,7 +457,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \egroup 
-l.48 \bibcite{\egroup }{3}
+l.52 \bibcite{\egroup }{3}
                           
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -457,11 +473,11 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  956 strings out of 494985
  12310 string characters out of 6180356
- 75444 words of memory out of 5000000
+ 76444 words of memory out of 5000000
  4214 multiletter control sequences out of 15000+600000
  7362 words of font info for 26 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 31i,11n,45p,1373b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 31i,13n,45p,1373b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
@@ -476,10 +492,10 @@ s/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (29 pages, 213922 bytes).
+Output written on thesis.pdf (31 pages, 223251 bytes).
 PDF statistics:
- 158 PDF objects out of 1000 (max. 8388607)
- 110 compressed objects within 2 object streams
+ 165 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

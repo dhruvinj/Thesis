@@ -13,11 +13,15 @@
 \contentsline {section}{\numberline {3.1}Premixed ozone oxygen laminar flame model}{7}
 \contentsline {section}{\numberline {3.2}The experimental data on laminar flame speed}{8}
 \contentsline {chapter}{\numberline {4}Finite Element Formulation}{9}
-\contentsline {section}{\numberline {4.1}Adaptive Finite Element}{9}
-\contentsline {chapter}{\numberline {5}Bayesian Statistics}{11}
-\contentsline {section}{\numberline {5.1}Review of Theory}{11}
-\contentsline {section}{\numberline {5.2}Application to Problem}{11}
-\contentsline {section}{\numberline {5.3}Methods of Solution}{11}
-\contentsline {section}{\numberline {5.4}Software}{11}
-\contentsline {chapter}{\numberline {6}Results}{13}
-\contentsline {chapter}{\numberline {7}Conclusion}{15}
+\contentsline {section}{\numberline {4.1}Weak formulation}{9}
+\contentsline {section}{\numberline {4.2}Need for stability}{10}
+\contentsline {subsection}{\numberline {4.2.1}Streamline Upwind Petrov Galerkin Method}{10}
+\contentsline {subsection}{\numberline {4.2.2}Pressure-Stabilizing/Petrov-Galerkin (PSPG)}{11}
+\contentsline {section}{\numberline {4.3}Adaptive Finite Element}{11}
+\contentsline {chapter}{\numberline {5}Bayesian Statistics}{13}
+\contentsline {section}{\numberline {5.1}Review of Theory}{13}
+\contentsline {section}{\numberline {5.2}Application to Problem}{13}
+\contentsline {section}{\numberline {5.3}Methods of Solution}{13}
+\contentsline {section}{\numberline {5.4}Software}{13}
+\contentsline {chapter}{\numberline {6}Results}{15}
+\contentsline {chapter}{\numberline {7}Conclusion}{17}
