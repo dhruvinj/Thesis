@@ -129,9 +129,214 @@ The measured laminar flame speed is given below. Laminar flame measurements are 
 \item $\frac{\partial p}{\partial r} =0 $
 \end{itemize}
 
+\section{Transport Model}
+\subsection{Viscocity}
+\noindent We have used viscosity model as derived from kinetics theory under the ideal gas assumption
+The kinetic theory uses the assumption of the ideal gas law.
+ 
+$$pv = nRT$$ Where $p$ is the pressure, $v$ is the volume, $n$ is the number of moles of the gas, $R$ is the universal gas constant and $T$ is the tempaerature. The viscocoty of the species is given by the following formula
+
+$$\eta_s = \frac{5}{16}\sqrt{\frac{m_s k_B T}{\pi}}\frac{f_n}{{\sigma_s}^2   \Omega^{(2,2^*)}}$$
+
+\noindent Where  $m$ the molecular mass of the species (kg), $\sigma$ is the Lennard-Jones potential diameter associated
+to the species $(m)$, $k_B$ is the Boltzmann constant,$\Omega^{(2,2^*)}$ is the value of the dimensionless integrated integral from Monchick
+and Mason (1961). With hard sphere approximation $f_n = 1$. We have three species in our system i.e $O$, $O_2$ and $O_3$. We have varied temperature from 300 K to 2700 K and plotted the viscocity V/s Temperature for all the three species. The $\sigma$ values and constants for dimensionless collision number are taken from NASA CAE transport file. 
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.5]{viscocity model.png}
+   \caption{Viscocity}
+\end{figure}
+
+\subsection{Bimolecular Diffusion}
+\noindent The molecular binary diffusion model is
+computed from kinetics theory, assuming the ideal gas hypothesis. The molecular binary diffusion coefficient ($m^2 s^{-1}$ ) is given by:
+
+$$D_{ij} = \frac{3}{16}\sqrt{\frac{2 k_B^3 T^3}{\pi m_{ij}}}\frac{f_n}{{ P \sigma_{ij}}^2   \Omega^{(1,1^*)}}$$
+
+with  the reduced mass
+\begin{equation}
+m_{ij} = \left\{\begin{array}{l@{\qquad}l}
+                \frac{m_i m_j}{m_i + m_j} &  i \neq j \\
+                m_i                                  & i=j
+                    \end{array}
+              \right.
+\end{equation}
+
+$\sigma_{ij}$ is the Lennard-Jones collision diameter between species $i$ and $j$:
+\begin{equation}
+\sigma_{ij} = \frac{1}{2}\left(\sigma_i + \sigma_j\right) \xi^{-\frac{1}{6}}
+\end{equation}
+
+\noindent and $\Omega^{(1,1^*)}$ the integrated collision interval, fitted from the tables given in Monchick and Mason(1961). We have varied temperature from 300 K to 2700 K and plotted the Diffusion coefficient V/s Temperature for all the combination of three species. The $\sigma$ values and constants for dimensionless collision number are taken from NASA CAE transport file. 
+
+\begin{figure}[H]
+
+\subfloat[Diffusion coefficient for $O$ - $O$\label{subfig-1:dummy}]{%
+     \includegraphics[scale=0.5]{diffusionmodel00.png} 
+    }
+\subfloat[Diffusion coefficient for $O$ - $O_2$\label{subfig-1:dummy}]{%
+     \includegraphics[scale=0.5]{diffusionmodel002.png} 
+    }
+    \quad
+   \subfloat[Diffusion coefficient for $O$ - $O_3$\label{subfig-1:dummy}]{%
+        \includegraphics[scale=0.5]{diffusionmodel003.png} 
+       }
+  \subfloat[Diffusion coefficient for $O_2$ - $O_2$\label{subfig-1:dummy}]{%
+         \includegraphics[scale=0.5]{diffusionmodel0202.png} 
+        }
+        
+        \quad
+        \subfloat[Diffusion coefficient for $O_2$ - $O_3$\label{subfig-1:dummy}]{%
+                 \includegraphics[scale=0.5]{diffusionmodel0203.png} 
+                }
+         \subfloat[Diffusion coefficient for $O_3$ - $O_3$\label{subfig-1:dummy}]{%
+            \includegraphics[scale=0.48]{diffusionmodel0303.png} 
+                                }
+    \caption{Diffusion coefficient}
+\end{figure}
+
+
+
+\subsection{Species Thermal Conductivity}
+
+The thermal conduction of a species $i$ is given by
+\begin{eqnarray*}
+\lambda_i &=& \lambda_i^{(\textnormal{rot})} + \lambda_i^{(\textnormal{trans})} + \lambda_i^{(\textnormal{vib})} \\
+\lambda_i &=& \frac{\eta_i}{M_i} \left(
+                        C_{v,i}^{(\textnormal{trans})} \lambda_i^{(\textnormal{trans})} + C_{v,i}^{(\textnormal{rot})} \lambda_i^{(\textnormal{rot})}+ C_{v,i}^{(\textnormal{vib})}  \lambda_i^{(\textnormal{vib})} 
+                                          \right)
+\end{eqnarray*}
+with
+%%
+\begin{eqnarray*}
+\lambda_{v,i}^{(\textnormal{vib})}   & =& \rho_i \frac{D_{i,i}}{\eta_i} \\
+\lambda_{v,i}^{(\textnormal{rot})}   & =& \rho_i \frac{D_{i,i}}{\eta_i}\left(1 + \frac{2}{\pi}\frac{A}{B}\right) \\
+\lambda_{v,i}^{(\textnormal{trans})}   & =&  \frac{5}{2} \left(1 - \frac{2}{\pi}\frac{C_{v,i}^{(\textnormal{rot})}}{C_{v,i}^{(\textnormal{trans})}}\frac{A}{B}\right)
+\end{eqnarray*}
+%
+and
+%
+\begin{eqnarray*}
+  A & = & \frac{5}{2} -  \rho_i \frac{D_{i,i}}{\eta_i}  \\
+  B & = & Z_{rot} + \frac{2}{\pi} \left(\frac{5}{3}\frac{C_{v,i}^{(\textnormal{rot})}}{R} + \rho_i \frac{D_{i,i}}{\eta_i}\right)
+\end{eqnarray*}
+%
+\noindent the rotational relaxation number is given by
+\begin{equation}
+Z_{rot,i}(T) = Z_{rot,i}(298)\frac{F(298)}{F(T)}
+\label{thermal_cond:Zrot}
+\end{equation}
+\noindent with the function $F$ defined as
+\begin{equation}
+F(T) = 1 + \frac{\pi^{\frac{3}{2}}}{2}\sqrt{\left(\frac{\epsilon_i}{k_B T}\right)}
+         + \left(\frac{\pi^2}{4} + 2\right)\left(\frac{\epsilon_i}{k_B T}\right)
+         + \pi^{\frac{3}{2}}\left(\frac{\epsilon_i}{k_B T}\right)^{\frac{3}{2}}
+\end{equation}
+
+\noindent The specific heat are given by the thermodynamic module.  We have varied temperature from 300 K to 2700 K and plotted the thermal conductivity V/s Temperature for all the  three species. The $\sigma$ values and constants for dimensionless collision number are taken from NASA CAE transport file.
+
+\begin{figure}[H]
+
+\subfloat[Thermal Conductivity for $O$\label{subfig-1:dummy}]{%
+     \includegraphics[scale=0.5]{tcO.png} 
+    }
+\subfloat[Thermal Conductivity for $O_2$\label{subfig-1:dummy}]{%
+     \includegraphics[scale=0.5]{tcO2.png} 
+    }
+    \quad
+   \subfloat[Thermal Conductivity for $O_3$\label{subfig-1:dummy}]{%
+        \includegraphics[scale=0.5]{tcO3.png} 
+       }
+    \caption{Thermal Conductivity}
+\end{figure}
+
+
+\subsection{Mixture Model}
+\noindent The Wilke formula for viscosity, independant of
+the viscosity model, is
+\begin{equation}
+\eta_{\textnormal{mixture}} = \sum_{s=1}^{n} \frac {x_i \eta_i}{\sum_{j=1}^{n} x_j \Phi_{ij}}
+\end{equation}
+with
+\begin{equation}
+\Phi_{ij} = \frac{
+                \left[
+                     1 + \sqrt{\frac{\eta_i}{\eta_j}\sqrt{\frac{M_j}{M_i}}}
+                \right]^2
+                }{\sqrt{8\left(1 + \frac{M_i}{M_j}\right)}}
+\end{equation}
+\noindent  We have varied temperature from 300 K to 2700 K and plotted the mixture viscocity V/s Temperature for all the  three species. The $\sigma$ values and constants for dimensionless collision number are taken from NASA CAE transport file. We have considered three cases-  behind the flame where condentration of $O_3$,$O_2$ and $O$ are taken to be .53, .47 and 0 respectively. Second case of the inside of the flame where concentrations are 0.5, 0.4 and 0.1 respectively. The third case is of the behind the flame where ozone and oxygen radical are absent and there will be only $O_2$
 
 
 
 
+\begin{figure}[H]
+
+\subfloat[Mixture Viscocity behind the flame\label{subfig-1:dummy}]{%
+     \includegraphics[scale=0.5]{mixtureviscocty_behindflame.png} 
+    }
+\subfloat[Mixture Viscocity inside the flame\label{subfig-1:dummy}]{%
+     \includegraphics[scale=0.5]{mixtureviscocty_insideflame.png} 
+    }
+    \quad
+   \subfloat[Mixture Viscocity after the flame \label{subfig-1:dummy}]{%
+        \includegraphics[scale=0.5]{mixtureviscocty_afterflame.png} 
+       }
+    \caption{Mixture Viscocity}
+\end{figure}
 
 
+\noindent For the bimolecular diffusion model, we use:
+\begin{equation}
+D_i = \frac{1-y_i}{\sum_{j\ne i}^{n}\frac{x_i}{D_{ji}}}
+         = \frac{\sum_{j\neq i}^{n} x_j M_j}{M_{\textnormal{mixture}} \sum_{j\ne i}^{n}\frac{x_j}{D_{ji}}}
+\end{equation}
+
+\begin{figure}[H]
+
+\subfloat[Mixture Diffusion coefficient for $O_3$ behind the flame\label{subfig-1:dummy}]{%
+     \includegraphics[scale=0.5]{mixturediffusionO3_behindflame.png} 
+    }
+\subfloat[Mixture Diffusion coefficient for $O_2$ behind the flame\label{subfig-1:dummy}]{%
+     \includegraphics[scale=0.5]{mixturediffusionO2_behindflame.png} 
+    }
+    \quad
+   \subfloat[Mixture Diffusion coefficient for $O_3$ inside the flame\label{subfig-1:dummy}]{%
+        \includegraphics[scale=0.5]{mixturediffusionO3_inflame.png} 
+       }
+  \subfloat[Mixture Diffusion coefficient for $O$ inside the flame\label{subfig-1:dummy}]{%
+         \includegraphics[scale=0.5]{mixturediffusionO_inflame.png} 
+        }
+        
+        \quad
+        \subfloat[Mixture Diffusion coefficient for $O_2$ inside the flame - $O_3$\label{subfig-1:dummy}]{%
+                 \includegraphics[scale=0.5]{mixturediffusionO2_inflame.png} 
+                }
+         \subfloat[Mixture Diffusion coefficient for $O_2$ after the flame - $O_3$\label{subfig-1:dummy}]{%
+            \includegraphics[scale=0.48]{mixturediffusionO2_afterflame.png} 
+                                }
+    \caption{Mixture Diffusion coefficient}
+\end{figure}
+
+
+\noindent The thermal conductivity of the mixture is given by 
+\begin{equation}
+\lambda_{\textnormal{mixture}} = \sum_{s=1}^{n} \frac {x_i \lambda_i}{\sum_{j=1}^{n} x_j \Phi_{ij}}
+\end{equation}
+\noindent  We have varied temperature from 300 K to 2700 K and plotted the mixture thermal conductivity V/s Temperature for all the  three species. The $\sigma$ values and constants for dimensionless collision number are taken from NASA CAE transport file. We have considered three cases-  behind the flame where condentration of $O_3$,$O_2$ and $O$ are taken to be .53, .47 and 0 respectively. Second case of the inside of the flame where concentrations are 0.5, 0.4 and 0.1 respectively. The third case is of the behind the flame where ozone and oxygen radical are absent and there will be only $O_2$
+
+
+\begin{figure}[H]
+
+\subfloat[Mixture thermal conductivity behind the flame\label{subfig-1:dummy}]{%
+     \includegraphics[scale=0.5]{mixturethermal_behindflame.png} 
+    }
+\subfloat[Mixture thermal conductivity inside the flame\label{subfig-1:dummy}]{%
+     \includegraphics[scale=0.5]{mixturethermal_insideflame.png} 
+    }
+    \quad
+   \subfloat[Mixture thermal conductivity after the flame \label{subfig-1:dummy}]{%
+        \includegraphics[scale=0.5]{mixturethermal_afterflame.png} 
+       }
+    \caption{Mixture thermal conductivity}
+\end{figure}

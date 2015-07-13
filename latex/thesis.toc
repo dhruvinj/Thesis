@@ -13,17 +13,22 @@
 \contentsline {section}{\numberline {3.1}Premixed ozone oxygen laminar flame model}{7}
 \contentsline {section}{\numberline {3.2}The experimental data on laminar flame speed}{8}
 \contentsline {section}{\numberline {3.3}Geometry with boundary conditions}{8}
-\contentsline {chapter}{\numberline {4}Finite Element Formulation}{11}
-\contentsline {section}{\numberline {4.1}Weak formulation}{11}
-\contentsline {section}{\numberline {4.2}Need for stability}{12}
-\contentsline {subsection}{\numberline {4.2.1}Streamline Upwind Petrov Galerkin Method}{12}
-\contentsline {subsection}{\numberline {4.2.2}Pressure-Stabilizing/Petrov-Galerkin (PSPG)}{13}
-\contentsline {subsection}{\numberline {4.2.3}Stabilized Navier Stokes Equation}{13}
-\contentsline {section}{\numberline {4.3}Adaptive Finite Element}{13}
-\contentsline {chapter}{\numberline {5}Bayesian Statistics}{15}
-\contentsline {section}{\numberline {5.1}Review of Theory}{15}
-\contentsline {section}{\numberline {5.2}Application to Problem}{15}
-\contentsline {section}{\numberline {5.3}Methods of Solution}{15}
-\contentsline {section}{\numberline {5.4}Software}{15}
-\contentsline {chapter}{\numberline {6}Results}{17}
-\contentsline {chapter}{\numberline {7}Conclusion}{19}
+\contentsline {section}{\numberline {3.4}Transport Model}{10}
+\contentsline {subsection}{\numberline {3.4.1}Viscocity}{10}
+\contentsline {subsection}{\numberline {3.4.2}Bimolecular Diffusion}{11}
+\contentsline {subsection}{\numberline {3.4.3}Species Thermal Conductivity}{11}
+\contentsline {subsection}{\numberline {3.4.4}Mixture Model}{12}
+\contentsline {chapter}{\numberline {4}Finite Element Formulation}{19}
+\contentsline {section}{\numberline {4.1}Weak formulation}{19}
+\contentsline {section}{\numberline {4.2}Need for stability}{20}
+\contentsline {subsection}{\numberline {4.2.1}Streamline Upwind Petrov Galerkin Method}{20}
+\contentsline {subsection}{\numberline {4.2.2}Pressure-Stabilizing/Petrov-Galerkin (PSPG)}{21}
+\contentsline {subsection}{\numberline {4.2.3}Stabilized Navier Stokes Equation}{21}
+\contentsline {section}{\numberline {4.3}Adaptive Finite Element}{21}
+\contentsline {chapter}{\numberline {5}Bayesian Statistics}{23}
+\contentsline {section}{\numberline {5.1}Review of Theory}{23}
+\contentsline {section}{\numberline {5.2}Application to Problem}{23}
+\contentsline {section}{\numberline {5.3}Methods of Solution}{23}
+\contentsline {section}{\numberline {5.4}Software}{23}
+\contentsline {chapter}{\numberline {6}Results}{25}
+\contentsline {chapter}{\numberline {7}Conclusion}{27}
