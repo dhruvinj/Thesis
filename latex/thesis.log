@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.15)  13 JUL 2015 14:36
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.15)  22 SEP 2015 10:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -129,6 +129,42 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \sf@top=\skip55
 \sf@bottom=\skip56
 ) (./thesis.aux
+
+LaTeX Warning: Label `subfig-1:dummy' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig-1:dummy' multiply defined.
+
+
+LaTeX Warning: Label `subfig-1:dummy' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig-1:dummy' multiply defined.
+
+
+LaTeX Warning: Label `subfig-1:dummy' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig-1:dummy' multiply defined.
+
+
+LaTeX Warning: Label `subfig-1:dummy' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig-1:dummy' multiply defined.
+
+
+LaTeX Warning: Label `subfig-1:dummy' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig-1:dummy' multiply defined.
+
+
+LaTeX Warning: Label `subfig-1:dummy' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig-1:dummy' multiply defined.
+
 
 LaTeX Warning: Label `subfig-1:dummy' multiply defined.
 
@@ -693,6 +729,9 @@ Overfull \hbox (62.06395pt too wide) in alignment at lines 90--93
 
 ]
 Chapter 5.
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¦ in font cmr10!
 [23] [24
 
 
@@ -733,7 +772,7 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (39 pages, 616387 bytes).
+Output written on thesis.pdf (39 pages, 618600 bytes).
 PDF statistics:
  228 PDF objects out of 1000 (max. 8388607)
  143 compressed objects within 2 object streams
