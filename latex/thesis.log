@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.15)  10 DEC 2015 21:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.15)  10 DEC 2015 23:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -745,14 +745,17 @@ File: output_10/simple_ip_chain_pos_filt.png Graphic file (type png)
 
 <use output_10/simple_ip_chain_pos_filt.png>
 Package pdftex.def Info: output_10/simple_ip_chain_pos_filt.png used on input l
-ine 10.
+ine 16.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <output_10/simple_ip_hist_raw.png, id=159, 578.16pt x 433.62pt>
 File: output_10/simple_ip_hist_raw.png Graphic file (type png)
 
 <use output_10/simple_ip_hist_raw.png>
-Package pdftex.def Info: output_10/simple_ip_hist_raw.png used on input line 18
+Package pdftex.def Info: output_10/simple_ip_hist_raw.png used on input line 24
 .
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
@@ -763,7 +766,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: output_10/simple_ip_kde_raw.png Graphic file (type png)
 
 <use output_10/simple_ip_kde_raw.png>
-Package pdftex.def Info: output_10/simple_ip_kde_raw.png used on input line 27.
+Package pdftex.def Info: output_10/simple_ip_kde_raw.png used on input line 33.
 
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
@@ -774,7 +777,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: output_10/simple_ip_cdf_raw.png Graphic file (type png)
 
 <use output_10/simple_ip_cdf_raw.png>
-Package pdftex.def Info: output_10/simple_ip_cdf_raw.png used on input line 34.
+Package pdftex.def Info: output_10/simple_ip_cdf_raw.png used on input line 40.
 
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
@@ -785,7 +788,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: output_10/ip_logLike_unified.png Graphic file (type png)
 
 <use output_10/ip_logLike_unified.png>
-Package pdftex.def Info: output_10/ip_logLike_unified.png used on input line 43
+Package pdftex.def Info: output_10/ip_logLike_unified.png used on input line 49
 .
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
@@ -797,594 +800,593 @@ File: output_20/simple_ip_chain_pos_filt.png Graphic file (type png)
 
 <use output_20/simple_ip_chain_pos_filt.png>
 Package pdftex.def Info: output_20/simple_ip_chain_pos_filt.png used on input l
-ine 54.
+ine 62.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
- [25 <./output_10/simple_ip_chain_pos_filt.png (PNG copy)>]
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_20/simple_ip_hist_raw.png, id=168, 578.16pt x 433.62pt>
+<output_20/simple_ip_hist_raw.png, id=164, 578.16pt x 433.62pt>
 File: output_20/simple_ip_hist_raw.png Graphic file (type png)
 
 <use output_20/simple_ip_hist_raw.png>
-Package pdftex.def Info: output_20/simple_ip_hist_raw.png used on input line 62
+Package pdftex.def Info: output_20/simple_ip_hist_raw.png used on input line 70
 .
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_20/simple_ip_kde_raw.png, id=169, 578.16pt x 433.62pt>
+<output_20/simple_ip_kde_raw.png, id=165, 578.16pt x 433.62pt>
 File: output_20/simple_ip_kde_raw.png Graphic file (type png)
 
 <use output_20/simple_ip_kde_raw.png>
-Package pdftex.def Info: output_20/simple_ip_kde_raw.png used on input line 71.
+Package pdftex.def Info: output_20/simple_ip_kde_raw.png used on input line 79.
 
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_20/simple_ip_cdf_raw.png, id=170, 578.16pt x 433.62pt>
+<output_20/simple_ip_cdf_raw.png, id=166, 578.16pt x 433.62pt>
 File: output_20/simple_ip_cdf_raw.png Graphic file (type png)
 
 <use output_20/simple_ip_cdf_raw.png>
-Package pdftex.def Info: output_20/simple_ip_cdf_raw.png used on input line 78.
+Package pdftex.def Info: output_20/simple_ip_cdf_raw.png used on input line 86.
 
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_20/ip_logLike_unified.png, id=171, 578.16pt x 433.62pt>
+<output_20/ip_logLike_unified.png, id=167, 578.16pt x 433.62pt>
 File: output_20/ip_logLike_unified.png Graphic file (type png)
 
 <use output_20/ip_logLike_unified.png>
-Package pdftex.def Info: output_20/ip_logLike_unified.png used on input line 87
+Package pdftex.def Info: output_20/ip_logLike_unified.png used on input line 95
 .
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_50/simple_ip_chain_pos_filt.png, id=172, 578.16pt x 433.62pt>
+<output_50/simple_ip_chain_pos_filt.png, id=168, 578.16pt x 433.62pt>
 File: output_50/simple_ip_chain_pos_filt.png Graphic file (type png)
 
 <use output_50/simple_ip_chain_pos_filt.png>
 Package pdftex.def Info: output_50/simple_ip_chain_pos_filt.png used on input l
-ine 97.
+ine 107.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_50/simple_ip_hist_raw.png, id=173, 578.16pt x 433.62pt>
+<output_50/simple_ip_hist_raw.png, id=169, 578.16pt x 433.62pt>
 File: output_50/simple_ip_hist_raw.png Graphic file (type png)
 
 <use output_50/simple_ip_hist_raw.png>
-Package pdftex.def Info: output_50/simple_ip_hist_raw.png used on input line 10
+Package pdftex.def Info: output_50/simple_ip_hist_raw.png used on input line 11
 5.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_50/simple_ip_kde_raw.png, id=174, 578.16pt x 433.62pt>
+<output_50/simple_ip_kde_raw.png, id=170, 578.16pt x 433.62pt>
 File: output_50/simple_ip_kde_raw.png Graphic file (type png)
 
 <use output_50/simple_ip_kde_raw.png>
-Package pdftex.def Info: output_50/simple_ip_kde_raw.png used on input line 114
+Package pdftex.def Info: output_50/simple_ip_kde_raw.png used on input line 124
 .
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_50/simple_ip_cdf_raw.png, id=175, 578.16pt x 433.62pt>
+<output_50/simple_ip_cdf_raw.png, id=171, 578.16pt x 433.62pt>
 File: output_50/simple_ip_cdf_raw.png Graphic file (type png)
 
 <use output_50/simple_ip_cdf_raw.png>
-Package pdftex.def Info: output_50/simple_ip_cdf_raw.png used on input line 121
+Package pdftex.def Info: output_50/simple_ip_cdf_raw.png used on input line 131
 .
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_50/ip_logLike_unified.png, id=176, 578.16pt x 433.62pt>
+<output_50/ip_logLike_unified.png, id=172, 578.16pt x 433.62pt>
 File: output_50/ip_logLike_unified.png Graphic file (type png)
 
 <use output_50/ip_logLike_unified.png>
-Package pdftex.def Info: output_50/ip_logLike_unified.png used on input line 13
+Package pdftex.def Info: output_50/ip_logLike_unified.png used on input line 14
 0.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_100/simple_ip_chain_pos_filt.png, id=177, 578.16pt x 433.62pt>
+<output_100/simple_ip_chain_pos_filt.png, id=173, 578.16pt x 433.62pt>
 File: output_100/simple_ip_chain_pos_filt.png Graphic file (type png)
 
 <use output_100/simple_ip_chain_pos_filt.png>
 Package pdftex.def Info: output_100/simple_ip_chain_pos_filt.png used on input 
-line 141.
+line 153.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<output_100/simple_ip_hist_raw.png, id=178, 578.16pt x 433.62pt>
+<output_100/simple_ip_hist_raw.png, id=174, 578.16pt x 433.62pt>
 File: output_100/simple_ip_hist_raw.png Graphic file (type png)
 
 <use output_100/simple_ip_hist_raw.png>
 Package pdftex.def Info: output_100/simple_ip_hist_raw.png used on input line 1
-49.
+61.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<output_100/simple_ip_kde_raw.png, id=179, 578.16pt x 433.62pt>
+<output_100/simple_ip_kde_raw.png, id=175, 578.16pt x 433.62pt>
 File: output_100/simple_ip_kde_raw.png Graphic file (type png)
 
 <use output_100/simple_ip_kde_raw.png>
-Package pdftex.def Info: output_100/simple_ip_kde_raw.png used on input line 15
-8.
+Package pdftex.def Info: output_100/simple_ip_kde_raw.png used on input line 17
+0.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_100/simple_ip_cdf_raw.png, id=180, 578.16pt x 433.62pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[25] [26 <./output_10/simple_ip_chain_pos_filt.png (PNG copy)>] [27 <./output_1
+0/simple_ip_hist_raw.png (PNG copy)>] [28 <./output_10/simple_ip_kde_raw.png (P
+NG copy)>] [29 <./output_10/simple_ip_cdf_raw.png (PNG copy)>] [30 <./output_10
+/ip_logLike_unified.png (PNG copy)>] [31 <./output_20/simple_ip_chain_pos_filt.
+png (PNG copy)>] [32 <./output_20/simple_ip_hist_raw.png (PNG copy)>] [33 <./ou
+tput_20/simple_ip_kde_raw.png (PNG copy)>] [34 <./output_20/simple_ip_cdf_raw.p
+ng (PNG copy)>] [35 <./output_20/ip_logLike_unified.png (PNG copy)>] [36 <./out
+put_50/simple_ip_chain_pos_filt.png (PNG copy)>] [37 <./output_50/simple_ip_his
+t_raw.png (PNG copy)>] [38 <./output_50/simple_ip_kde_raw.png (PNG copy)>]
+[39 <./output_50/simple_ip_cdf_raw.png (PNG copy)>] [40 <./output_50/ip_logLike
+_unified.png (PNG copy)>] [41 <./output_100/simple_ip_chain_pos_filt.png (PNG c
+opy)>] [42 <./output_100/simple_ip_hist_raw.png (PNG copy)>] [43 <./output_100/
+simple_ip_kde_raw.png (PNG copy)>]
+<output_100/simple_ip_cdf_raw.png, id=238, 578.16pt x 433.62pt>
 File: output_100/simple_ip_cdf_raw.png Graphic file (type png)
 
 <use output_100/simple_ip_cdf_raw.png>
-Package pdftex.def Info: output_100/simple_ip_cdf_raw.png used on input line 16
-5.
+Package pdftex.def Info: output_100/simple_ip_cdf_raw.png used on input line 17
+9.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
+ [44
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[26 <./output_10/simple_ip_hist_raw.png (PNG copy)>] [27 <./output_10/simple_ip
-_kde_raw.png (PNG copy)>] [28 <./output_10/simple_ip_cdf_raw.png (PNG copy)>]
-[29 <./output_10/ip_logLike_unified.png (PNG copy)>] [30 <./output_20/simple_ip
-_chain_pos_filt.png (PNG copy)>] [31 <./output_20/simple_ip_hist_raw.png (PNG c
-opy)>] [32 <./output_20/simple_ip_kde_raw.png (PNG copy)>] [33 <./output_20/sim
-ple_ip_cdf_raw.png (PNG copy)>] [34 <./output_20/ip_logLike_unified.png (PNG co
-py)>] [35 <./output_50/simple_ip_chain_pos_filt.png (PNG copy)>] [36 <./output_
-50/simple_ip_hist_raw.png (PNG copy)>] [37 <./output_50/simple_ip_kde_raw.png (
-PNG copy)>] [38 <./output_50/simple_ip_cdf_raw.png (PNG copy)>] [39 <./output_5
-0/ip_logLike_unified.png (PNG copy)>] [40 <./output_100/simple_ip_chain_pos_fil
-t.png (PNG copy)>] [41 <./output_100/simple_ip_hist_raw.png (PNG copy)>]
-[42 <./output_100/simple_ip_kde_raw.png (PNG copy)>] [43 <./output_100/simple_i
-p_cdf_raw.png (PNG copy)>]
-<output_100/ip_logLike_unified.png, id=239, 578.16pt x 433.62pt>
+ <./output_100/simple_ip_cdf_raw.png (PNG copy)>] <output_100/ip_logLike_unifie
+d.png, id=242, 578.16pt x 433.62pt>
 File: output_100/ip_logLike_unified.png Graphic file (type png)
 
 <use output_100/ip_logLike_unified.png>
 Package pdftex.def Info: output_100/ip_logLike_unified.png used on input line 1
-74.
+88.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
-<output_500/simple_ip_chain_pos_filt.png, id=240, 578.16pt x 433.62pt>
+<output_500/simple_ip_chain_pos_filt.png, id=243, 578.16pt x 433.62pt>
 File: output_500/simple_ip_chain_pos_filt.png Graphic file (type png)
 
 <use output_500/simple_ip_chain_pos_filt.png>
 Package pdftex.def Info: output_500/simple_ip_chain_pos_filt.png used on input 
-line 184.
+line 200.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_500/simple_ip_hist_raw.png, id=241, 578.16pt x 433.62pt>
+<output_500/simple_ip_hist_raw.png, id=244, 578.16pt x 433.62pt>
 File: output_500/simple_ip_hist_raw.png Graphic file (type png)
 
 <use output_500/simple_ip_hist_raw.png>
-Package pdftex.def Info: output_500/simple_ip_hist_raw.png used on input line 1
-92.
+Package pdftex.def Info: output_500/simple_ip_hist_raw.png used on input line 2
+08.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_500/simple_ip_kde_raw.png, id=242, 578.16pt x 433.62pt>
+<output_500/simple_ip_kde_raw.png, id=245, 578.16pt x 433.62pt>
 File: output_500/simple_ip_kde_raw.png Graphic file (type png)
 
 <use output_500/simple_ip_kde_raw.png>
-Package pdftex.def Info: output_500/simple_ip_kde_raw.png used on input line 20
-1.
+Package pdftex.def Info: output_500/simple_ip_kde_raw.png used on input line 21
+7.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_500/simple_ip_cdf_raw.png, id=243, 578.16pt x 433.62pt>
+<output_500/simple_ip_cdf_raw.png, id=246, 578.16pt x 433.62pt>
 File: output_500/simple_ip_cdf_raw.png Graphic file (type png)
 
 <use output_500/simple_ip_cdf_raw.png>
-Package pdftex.def Info: output_500/simple_ip_cdf_raw.png used on input line 20
-8.
+Package pdftex.def Info: output_500/simple_ip_cdf_raw.png used on input line 22
+4.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_500/ip_logLike_unified.png, id=244, 578.16pt x 433.62pt>
+<output_500/ip_logLike_unified.png, id=247, 578.16pt x 433.62pt>
 File: output_500/ip_logLike_unified.png Graphic file (type png)
 
 <use output_500/ip_logLike_unified.png>
 Package pdftex.def Info: output_500/ip_logLike_unified.png used on input line 2
-17.
+33.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_1000/simple_ip_chain_pos_filt.png, id=245, 578.16pt x 433.62pt>
+<output_1000/simple_ip_chain_pos_filt.png, id=248, 578.16pt x 433.62pt>
 File: output_1000/simple_ip_chain_pos_filt.png Graphic file (type png)
 
 <use output_1000/simple_ip_chain_pos_filt.png>
 Package pdftex.def Info: output_1000/simple_ip_chain_pos_filt.png used on input
- line 227.
+ line 245.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_1000/simple_ip_hist_raw.png, id=246, 578.16pt x 433.62pt>
+<output_1000/simple_ip_hist_raw.png, id=249, 578.16pt x 433.62pt>
 File: output_1000/simple_ip_hist_raw.png Graphic file (type png)
 
 <use output_1000/simple_ip_hist_raw.png>
 Package pdftex.def Info: output_1000/simple_ip_hist_raw.png used on input line 
-235.
+253.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_1000/simple_ip_kde_raw.png, id=247, 578.16pt x 433.62pt>
+<output_1000/simple_ip_kde_raw.png, id=250, 578.16pt x 433.62pt>
 File: output_1000/simple_ip_kde_raw.png Graphic file (type png)
 
 <use output_1000/simple_ip_kde_raw.png>
 Package pdftex.def Info: output_1000/simple_ip_kde_raw.png used on input line 2
-44.
+62.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_1000/simple_ip_cdf_raw.png, id=248, 578.16pt x 433.62pt>
+<output_1000/simple_ip_cdf_raw.png, id=251, 578.16pt x 433.62pt>
 File: output_1000/simple_ip_cdf_raw.png Graphic file (type png)
 
 <use output_1000/simple_ip_cdf_raw.png>
 Package pdftex.def Info: output_1000/simple_ip_cdf_raw.png used on input line 2
-51.
+69.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_1000/ip_logLike_unified.png, id=249, 578.16pt x 433.62pt>
+<output_1000/ip_logLike_unified.png, id=252, 578.16pt x 433.62pt>
 File: output_1000/ip_logLike_unified.png Graphic file (type png)
 
 <use output_1000/ip_logLike_unified.png>
 Package pdftex.def Info: output_1000/ip_logLike_unified.png used on input line 
-260.
+278.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_100000/simple_ip_chain_pos_filt.png, id=250, 578.16pt x 433.62pt>
+<output_100000/simple_ip_chain_pos_filt.png, id=253, 578.16pt x 433.62pt>
 File: output_100000/simple_ip_chain_pos_filt.png Graphic file (type png)
 
 <use output_100000/simple_ip_chain_pos_filt.png>
 Package pdftex.def Info: output_100000/simple_ip_chain_pos_filt.png used on inp
-ut line 271.
+ut line 294.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_100000/simple_ip_hist_raw.png, id=251, 578.16pt x 433.62pt>
+<output_100000/simple_ip_hist_raw.png, id=254, 578.16pt x 433.62pt>
 File: output_100000/simple_ip_hist_raw.png Graphic file (type png)
 
 <use output_100000/simple_ip_hist_raw.png>
 Package pdftex.def Info: output_100000/simple_ip_hist_raw.png used on input lin
-e 279.
+e 302.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_100000/simple_ip_kde_raw.png, id=252, 578.16pt x 433.62pt>
+<output_100000/simple_ip_kde_raw.png, id=255, 578.16pt x 433.62pt>
 File: output_100000/simple_ip_kde_raw.png Graphic file (type png)
 
 <use output_100000/simple_ip_kde_raw.png>
 Package pdftex.def Info: output_100000/simple_ip_kde_raw.png used on input line
- 288.
+ 311.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_100000/simple_ip_cdf_raw.png, id=253, 578.16pt x 433.62pt>
+<output_100000/simple_ip_cdf_raw.png, id=256, 578.16pt x 433.62pt>
 File: output_100000/simple_ip_cdf_raw.png Graphic file (type png)
 
 <use output_100000/simple_ip_cdf_raw.png>
 Package pdftex.def Info: output_100000/simple_ip_cdf_raw.png used on input line
- 295.
+ 318.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_100000/ip_logLike_unified.png, id=254, 578.16pt x 433.62pt>
+<output_100000/ip_logLike_unified.png, id=257, 578.16pt x 433.62pt>
 File: output_100000/ip_logLike_unified.png Graphic file (type png)
 
 <use output_100000/ip_logLike_unified.png>
 Package pdftex.def Info: output_100000/ip_logLike_unified.png used on input lin
-e 304.
+e 327.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_300000/simple_ip_chain_pos_filt.png, id=255, 578.16pt x 433.62pt>
+<output_300000/simple_ip_chain_pos_filt.png, id=258, 578.16pt x 433.62pt>
 File: output_300000/simple_ip_chain_pos_filt.png Graphic file (type png)
 
 <use output_300000/simple_ip_chain_pos_filt.png>
 Package pdftex.def Info: output_300000/simple_ip_chain_pos_filt.png used on inp
-ut line 314.
+ut line 340.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_300000/simple_ip_hist_raw.png, id=256, 578.16pt x 433.62pt>
+<output_300000/simple_ip_hist_raw.png, id=259, 578.16pt x 433.62pt>
 File: output_300000/simple_ip_hist_raw.png Graphic file (type png)
 
 <use output_300000/simple_ip_hist_raw.png>
 Package pdftex.def Info: output_300000/simple_ip_hist_raw.png used on input lin
-e 322.
+e 348.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[44
+[45
 
- <./output_100/ip_logLike_unified.png (PNG copy)>] [45 <./output_500/simple_ip_
-chain_pos_filt.png (PNG copy)>] [46 <./output_500/simple_ip_hist_raw.png (PNG c
-opy)>] [47 <./output_500/simple_ip_kde_raw.png (PNG copy)>] [48 <./output_500/s
-imple_ip_cdf_raw.png (PNG copy)>] [49 <./output_500/ip_logLike_unified.png (PNG
- copy)>] [50 <./output_1000/simple_ip_chain_pos_filt.png (PNG copy)>]
-[51 <./output_1000/simple_ip_hist_raw.png (PNG copy)>] [52 <./output_1000/simpl
-e_ip_kde_raw.png (PNG copy)>] [53 <./output_1000/simple_ip_cdf_raw.png (PNG cop
-y)>] [54 <./output_1000/ip_logLike_unified.png (PNG copy)>] [55 <./output_10000
-0/simple_ip_chain_pos_filt.png (PNG copy)>] [56 <./output_100000/simple_ip_hist
-_raw.png (PNG copy)>] [57 <./output_100000/simple_ip_kde_raw.png (PNG copy)>]
-[58 <./output_100000/simple_ip_cdf_raw.png (PNG copy)>] [59 <./output_100000/ip
-_logLike_unified.png (PNG copy)>] [60 <./output_300000/simple_ip_chain_pos_filt
-.png (PNG copy)>] [61 <./output_300000/simple_ip_hist_raw.png (PNG copy)>]
-<output_300000/simple_ip_kde_raw.png, id=314, 578.16pt x 433.62pt>
+ <./output_100/ip_logLike_unified.png (PNG copy)>] [46 <./output_500/simple_ip_
+chain_pos_filt.png (PNG copy)>] [47 <./output_500/simple_ip_hist_raw.png (PNG c
+opy)>] [48 <./output_500/simple_ip_kde_raw.png (PNG copy)>] [49 <./output_500/s
+imple_ip_cdf_raw.png (PNG copy)>] [50 <./output_500/ip_logLike_unified.png (PNG
+ copy)>] [51 <./output_1000/simple_ip_chain_pos_filt.png (PNG copy)>]
+[52 <./output_1000/simple_ip_hist_raw.png (PNG copy)>] [53 <./output_1000/simpl
+e_ip_kde_raw.png (PNG copy)>] [54 <./output_1000/simple_ip_cdf_raw.png (PNG cop
+y)>] [55 <./output_1000/ip_logLike_unified.png (PNG copy)>] [56 <./output_10000
+0/simple_ip_chain_pos_filt.png (PNG copy)>] [57 <./output_100000/simple_ip_hist
+_raw.png (PNG copy)>] [58 <./output_100000/simple_ip_kde_raw.png (PNG copy)>]
+[59 <./output_100000/simple_ip_cdf_raw.png (PNG copy)>] [60 <./output_100000/ip
+_logLike_unified.png (PNG copy)>] [61 <./output_300000/simple_ip_chain_pos_filt
+.png (PNG copy)>] [62 <./output_300000/simple_ip_hist_raw.png (PNG copy)>]
+<output_300000/simple_ip_kde_raw.png, id=317, 578.16pt x 433.62pt>
 File: output_300000/simple_ip_kde_raw.png Graphic file (type png)
 
 <use output_300000/simple_ip_kde_raw.png>
 Package pdftex.def Info: output_300000/simple_ip_kde_raw.png used on input line
- 331.
+ 357.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
-<output_300000/simple_ip_cdf_raw.png, id=315, 578.16pt x 433.62pt>
+<output_300000/simple_ip_cdf_raw.png, id=318, 578.16pt x 433.62pt>
 File: output_300000/simple_ip_cdf_raw.png Graphic file (type png)
 
 <use output_300000/simple_ip_cdf_raw.png>
 Package pdftex.def Info: output_300000/simple_ip_cdf_raw.png used on input line
- 338.
+ 364.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_300000/ip_logLike_unified.png, id=316, 578.16pt x 433.62pt>
+<output_300000/ip_logLike_unified.png, id=319, 578.16pt x 433.62pt>
 File: output_300000/ip_logLike_unified.png Graphic file (type png)
 
 <use output_300000/ip_logLike_unified.png>
 Package pdftex.def Info: output_300000/ip_logLike_unified.png used on input lin
-e 347.
+e 373.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_700000/simple_ip_chain_pos_filt.png, id=317, 578.16pt x 433.62pt>
+<output_700000/simple_ip_chain_pos_filt.png, id=320, 578.16pt x 433.62pt>
 File: output_700000/simple_ip_chain_pos_filt.png Graphic file (type png)
 
 <use output_700000/simple_ip_chain_pos_filt.png>
 Package pdftex.def Info: output_700000/simple_ip_chain_pos_filt.png used on inp
-ut line 358.
+ut line 387.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_700000/simple_ip_hist_raw.png, id=318, 578.16pt x 433.62pt>
+<output_700000/simple_ip_hist_raw.png, id=321, 578.16pt x 433.62pt>
 File: output_700000/simple_ip_hist_raw.png Graphic file (type png)
 
 <use output_700000/simple_ip_hist_raw.png>
 Package pdftex.def Info: output_700000/simple_ip_hist_raw.png used on input lin
-e 366.
+e 395.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_700000/simple_ip_kde_raw.png, id=319, 578.16pt x 433.62pt>
+<output_700000/simple_ip_kde_raw.png, id=322, 578.16pt x 433.62pt>
 File: output_700000/simple_ip_kde_raw.png Graphic file (type png)
 
 <use output_700000/simple_ip_kde_raw.png>
 Package pdftex.def Info: output_700000/simple_ip_kde_raw.png used on input line
- 375.
+ 404.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_700000/simple_ip_cdf_raw.png, id=320, 578.16pt x 433.62pt>
+<output_700000/simple_ip_cdf_raw.png, id=323, 578.16pt x 433.62pt>
 File: output_700000/simple_ip_cdf_raw.png Graphic file (type png)
 
 <use output_700000/simple_ip_cdf_raw.png>
 Package pdftex.def Info: output_700000/simple_ip_cdf_raw.png used on input line
- 382.
+ 411.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_700000/ip_logLike_unified.png, id=321, 578.16pt x 433.62pt>
+<output_700000/ip_logLike_unified.png, id=324, 578.16pt x 433.62pt>
 File: output_700000/ip_logLike_unified.png Graphic file (type png)
 
 <use output_700000/ip_logLike_unified.png>
 Package pdftex.def Info: output_700000/ip_logLike_unified.png used on input lin
-e 391.
+e 420.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_900000/simple_ip_chain_pos_filt.png, id=322, 578.16pt x 433.62pt>
+<output_900000/simple_ip_chain_pos_filt.png, id=325, 578.16pt x 433.62pt>
 File: output_900000/simple_ip_chain_pos_filt.png Graphic file (type png)
 
 <use output_900000/simple_ip_chain_pos_filt.png>
 Package pdftex.def Info: output_900000/simple_ip_chain_pos_filt.png used on inp
-ut line 402.
+ut line 433.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_900000/simple_ip_hist_raw.png, id=323, 578.16pt x 433.62pt>
+<output_900000/simple_ip_hist_raw.png, id=326, 578.16pt x 433.62pt>
 File: output_900000/simple_ip_hist_raw.png Graphic file (type png)
 
 <use output_900000/simple_ip_hist_raw.png>
 Package pdftex.def Info: output_900000/simple_ip_hist_raw.png used on input lin
-e 410.
+e 441.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_900000/simple_ip_kde_raw.png, id=324, 578.16pt x 433.62pt>
+<output_900000/simple_ip_kde_raw.png, id=327, 578.16pt x 433.62pt>
 File: output_900000/simple_ip_kde_raw.png Graphic file (type png)
 
 <use output_900000/simple_ip_kde_raw.png>
 Package pdftex.def Info: output_900000/simple_ip_kde_raw.png used on input line
- 419.
+ 450.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_900000/simple_ip_cdf_raw.png, id=325, 578.16pt x 433.62pt>
+<output_900000/simple_ip_cdf_raw.png, id=328, 578.16pt x 433.62pt>
 File: output_900000/simple_ip_cdf_raw.png Graphic file (type png)
 
 <use output_900000/simple_ip_cdf_raw.png>
 Package pdftex.def Info: output_900000/simple_ip_cdf_raw.png used on input line
- 426.
+ 457.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_900000/ip_logLike_unified.png, id=326, 578.16pt x 433.62pt>
+<output_900000/ip_logLike_unified.png, id=329, 578.16pt x 433.62pt>
 File: output_900000/ip_logLike_unified.png Graphic file (type png)
 
 <use output_900000/ip_logLike_unified.png>
 Package pdftex.def Info: output_900000/ip_logLike_unified.png used on input lin
-e 435.
+e 466.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_1000000/simple_ip_chain_pos_filt.png, id=327, 578.16pt x 433.62pt>
+<output_1000000/simple_ip_chain_pos_filt.png, id=330, 578.16pt x 433.62pt>
 File: output_1000000/simple_ip_chain_pos_filt.png Graphic file (type png)
 
 <use output_1000000/simple_ip_chain_pos_filt.png>
 Package pdftex.def Info: output_1000000/simple_ip_chain_pos_filt.png used on in
-put line 445.
+put line 477.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_1000000/simple_ip_hist_raw.png, id=328, 578.16pt x 433.62pt>
+<output_1000000/simple_ip_hist_raw.png, id=331, 578.16pt x 433.62pt>
 File: output_1000000/simple_ip_hist_raw.png Graphic file (type png)
 
 <use output_1000000/simple_ip_hist_raw.png>
 Package pdftex.def Info: output_1000000/simple_ip_hist_raw.png used on input li
-ne 453.
+ne 485.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_1000000/simple_ip_kde_raw.png, id=329, 578.16pt x 433.62pt>
+<output_1000000/simple_ip_kde_raw.png, id=332, 578.16pt x 433.62pt>
 File: output_1000000/simple_ip_kde_raw.png Graphic file (type png)
 
 <use output_1000000/simple_ip_kde_raw.png>
 Package pdftex.def Info: output_1000000/simple_ip_kde_raw.png used on input lin
-e 462.
+e 494.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_1000000/simple_ip_cdf_raw.png, id=330, 578.16pt x 433.62pt>
+<output_1000000/simple_ip_cdf_raw.png, id=333, 578.16pt x 433.62pt>
 File: output_1000000/simple_ip_cdf_raw.png Graphic file (type png)
 
 <use output_1000000/simple_ip_cdf_raw.png>
 Package pdftex.def Info: output_1000000/simple_ip_cdf_raw.png used on input lin
-e 469.
+e 501.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<output_1000000/ip_logLike_unified.png, id=331, 578.16pt x 433.62pt>
+<output_1000000/ip_logLike_unified.png, id=334, 578.16pt x 433.62pt>
 File: output_1000000/ip_logLike_unified.png Graphic file (type png)
 
 <use output_1000000/ip_logLike_unified.png>
 Package pdftex.def Info: output_1000000/ip_logLike_unified.png used on input li
-ne 478.
+ne 510.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [62
+) [63
 
- <./output_300000/simple_ip_kde_raw.png (PNG copy)>] [63 <./output_300000/simpl
-e_ip_cdf_raw.png (PNG copy)>] [64 <./output_300000/ip_logLike_unified.png (PNG 
-copy)>] [65 <./output_700000/simple_ip_chain_pos_filt.png (PNG copy)>]
-[66 <./output_700000/simple_ip_hist_raw.png (PNG copy)>] [67 <./output_700000/s
-imple_ip_kde_raw.png (PNG copy)>] [68 <./output_700000/simple_ip_cdf_raw.png (P
-NG copy)>] [69 <./output_700000/ip_logLike_unified.png (PNG copy)>] [70 <./outp
-ut_900000/simple_ip_chain_pos_filt.png (PNG copy)>] [71 <./output_900000/simple
-_ip_hist_raw.png (PNG copy)>] [72 <./output_900000/simple_ip_kde_raw.png (PNG c
-opy)>] [73 <./output_900000/simple_ip_cdf_raw.png (PNG copy)>] [74 <./output_90
-0000/ip_logLike_unified.png (PNG copy)>] [75 <./output_1000000/simple_ip_chain_
-pos_filt.png (PNG copy)>] [76 <./output_1000000/simple_ip_hist_raw.png (PNG cop
-y)>] [77 <./output_1000000/simple_ip_kde_raw.png (PNG copy)>] [78 <./output_100
-0000/simple_ip_cdf_raw.png (PNG copy)>] [79 <./output_1000000/ip_logLike_unifie
-d.png (PNG copy)>] [80
-
-
-]
+ <./output_300000/simple_ip_kde_raw.png (PNG copy)>] [64 <./output_300000/simpl
+e_ip_cdf_raw.png (PNG copy)>] [65 <./output_300000/ip_logLike_unified.png (PNG 
+copy)>] [66 <./output_700000/simple_ip_chain_pos_filt.png (PNG copy)>]
+[67 <./output_700000/simple_ip_hist_raw.png (PNG copy)>] [68 <./output_700000/s
+imple_ip_kde_raw.png (PNG copy)>] [69 <./output_700000/simple_ip_cdf_raw.png (P
+NG copy)>] [70 <./output_700000/ip_logLike_unified.png (PNG copy)>] [71 <./outp
+ut_900000/simple_ip_chain_pos_filt.png (PNG copy)>] [72 <./output_900000/simple
+_ip_hist_raw.png (PNG copy)>] [73 <./output_900000/simple_ip_kde_raw.png (PNG c
+opy)>] [74 <./output_900000/simple_ip_cdf_raw.png (PNG copy)>] [75 <./output_90
+0000/ip_logLike_unified.png (PNG copy)>] [76 <./output_1000000/simple_ip_chain_
+pos_filt.png (PNG copy)>] [77 <./output_1000000/simple_ip_hist_raw.png (PNG cop
+y)>] [78 <./output_1000000/simple_ip_kde_raw.png (PNG copy)>] [79 <./output_100
+0000/simple_ip_cdf_raw.png (PNG copy)>] [80 <./output_1000000/ip_logLike_unifie
+d.png (PNG copy)>]
 Chapter 7.
-[81] (./thesis.aux)
+[81
+
+
+] (./thesis.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1414,7 +1416,7 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (93 pages, 3478930 bytes).
+Output written on thesis.pdf (93 pages, 3481355 bytes).
 PDF statistics:
  456 PDF objects out of 1000 (max. 8388607)
  261 compressed objects within 3 object streams
