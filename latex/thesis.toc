@@ -1,5 +1,5 @@
 \contentsline {chapter}{Acknowledgements}{iii}
-\contentsline {chapter}{List of Figures}{vii}
+\contentsline {chapter}{List of Figures}{viii}
 \contentsline {chapter}{List of Tables}{ix}
 \contentsline {chapter}{Abstract}{xi}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
@@ -31,4 +31,18 @@
 \contentsline {section}{\numberline {5.3}Methods of Solution}{23}
 \contentsline {section}{\numberline {5.4}Software}{23}
 \contentsline {chapter}{\numberline {6}Results}{25}
-\contentsline {chapter}{\numberline {7}Conclusion}{27}
+\contentsline {section}{\numberline {6.1}Estimating parameter E for reaction 3}{25}
+\contentsline {subsubsection}{Different surrogate sizes }{25}
+\contentsline {subsubsection}{Sample size (Surrogate size) 10 }{25}
+\contentsline {subsubsection}{Sample size (Surrogate size) 20 }{26}
+\contentsline {subsubsection}{Sample size (Surrogate size) 50 }{26}
+\contentsline {subsubsection}{Sample size (Surrogate size) 100 }{26}
+\contentsline {subsubsection}{Sample size (Surrogate size) 500 }{44}
+\contentsline {subsubsection}{Sample size (Surrogate size) 1000 }{44}
+\contentsline {subsubsection}{Different chain sizes }{44}
+\contentsline {subsubsection}{Chain size 100000 }{44}
+\contentsline {subsubsection}{Chain size 300000 }{44}
+\contentsline {subsubsection}{Chain size 700000 }{62}
+\contentsline {subsubsection}{Chain size 900000 }{62}
+\contentsline {subsubsection}{Chain size 1000000 }{62}
+\contentsline {chapter}{\numberline {7}Conclusion}{81}
