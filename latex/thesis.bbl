@@ -1,0 +1,120 @@
+\begin{thebibliography}{1}
+
+\bibitem{Muller}
+Bernhard M\.
+\bibitem{Oden}
+J.T.~Oden S.~Prudhomme.
+\newblock On goal oriented error estimation for elliptic problems: Application
+  to the control of pointwise errors.
+\newblock {\em Computational Methods In Applied Mechanics and Engineering},
+  pages 313 -- 331, 1999.
+  
+  @article{DCMLDFPC,
+      author  = "Alexander Ern, Craig C. Douglas and Mitchell D. Smooke",
+      title   = "Detailed Chemistry Modelling Of Laminar Diffusion Flames On Parallel Computers",
+      year    = "",
+      journal = "",
+      volume  = "",
+      number  = "",
+      pages   = ""
+  }
+  
+  @article{Streng,
+      author  = "A.G. Streng and A.V Grosse",
+      title   = "The Ozone To Oxygen Flame",
+      year    = "1957",
+      journal = "Symposium, International, on Combustion",
+      volume  = "6",
+      issue  = "1",
+      pages   = "264 -- 272"
+  }
+  
+  @article{Heimerl,
+      author  = "J.M. Heimerl and T.P. Coffee",
+      title   = "The Detailed Modelling Of Premixed, Laminar Steady State Flames. I. Ozone",
+      year    = "1980",
+      journal = "Combustion and Flame",
+      volume  = "39",
+      issue  = "3",
+      pages   = "301 -- 315"
+  }
+  
+  @article{Amable,
+      author  = "Amable Linan, Marcos Vera and Antonio L. Sanchez",
+      title   = "Ignition, Liftoff and Extinction Of Gaseous Diffusion Flames",
+      year    = "2015",
+      journal = "Annual Review Of Fluid Mechanics",
+      volume  = "",
+      issue  = "",
+      pages   = "293 -- 311"
+  }
+  
+  @article{Oden,
+      author  = "S. Prudhomme, J.T. Oden",
+      title   = "On Goal Oriented Error Estimation For Elliptic Problems: Application To The Control Of Pointwise Errors",
+      year    = "1999",
+      journal = "Computational Methods In Applied Mechanics and Engineering",
+      volume  = "",
+      issue  = "",
+      pages   = "313 -- 331"
+  }
+  
+  @article{Eric,
+      author  = "Erik Burman, Alexander Ern and Vincent Giovangigli",
+      title   = "Bunsen Flame Simulation By Finite Elements On Adaptively Refined, Unstructured Triangulations",
+      year    = "2004",
+      journal = "Combustion Theory and Modelling",
+      volume  = "8",
+      issue  = "",
+      pages   = "65 -- 84"
+  }
+  
+  @article{Becker,
+      author  = "R Becker, M Braack and B Vexler",
+      title   = "Numerical Parameter Estimation For Chemical Models In Multidimensional Reactive Flows",
+      year    = "2004",
+      journal = "Combustion Theory and Modelling",
+      volume  = "8",
+      issue  = "",
+      pages   = "661 -- 682"
+  }
+  
+  @article{Juan,
+      author  = "Juan Li, Zhenwei Zhao, Andrei Kazakov, Frederick L. Dryer",
+      title   = "An Updated Comprehensive Kinetic Model Of Hydrogen Combustion ",
+      year    = "2004",
+      journal = "Int J Chem Kinet",
+      volume  = "36",
+      issue  = "",
+      pages   = "566 -- 575"
+  }
+  @article{Juan,
+      author  = "Juan Li, Zhenwei Zhao, Andrei Kazakov, Frederick L. Dryer",
+      title   = "An Updated Comprehensive Kinetic Model Of Hydrogen Combustion ",
+      year    = "2004",
+      journal = "Int J Chem Kinet",
+      volume  = "36",
+      issue  = "",
+      pages   = "566 -- 575"
+  }
+  @article{Muller,
+      author  = "Bernhard M\"{u}ller",
+      title   = "Low Mach Number Asysmptotics Of The Navier Stokes Equations",
+      year    = "1998",
+      journal = "Journal Of Engineering Mathematics",
+      volume  = "34",
+      issue  = "",
+      pages   = "97 -- 109"
+  }
+  
+  @article{Codina,
+      author  = "Ramona Codina",
+      title   = "Mathematical Models For Thermally Coupled Low Speed Flows",
+      year    = "2009",
+      journal = "Advanced Theoretical Applied Mechanics",
+      volume  = "2",
+      issue  = "",
+      pages   = "93 -- 112"
+  }
+
+\end{thebibliography}

@@ -1,0 +1,48 @@
+\contentsline {chapter}{Acknowledgements}{iii}
+\contentsline {chapter}{List of Figures}{viii}
+\contentsline {chapter}{List of Tables}{ix}
+\contentsline {chapter}{Abstract}{xi}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Literature Review}{1}
+\contentsline {chapter}{\numberline {2}Mathematical Model}{3}
+\contentsline {section}{\numberline {2.1}Governing Equations}{3}
+\contentsline {subsection}{\numberline {2.1.1}Problem definition}{3}
+\contentsline {subsection}{\numberline {2.1.2}Low mach number asymtotic analysis}{4}
+\contentsline {subsection}{\numberline {2.1.3}Asymptotic analysis}{5}
+\contentsline {chapter}{\numberline {3}Combustion Model}{7}
+\contentsline {section}{\numberline {3.1}Premixed ozone oxygen laminar flame model}{7}
+\contentsline {section}{\numberline {3.2}The experimental data on laminar flame speed}{8}
+\contentsline {section}{\numberline {3.3}Geometry with boundary conditions}{8}
+\contentsline {section}{\numberline {3.4}Transport Model}{10}
+\contentsline {subsection}{\numberline {3.4.1}Viscocity}{10}
+\contentsline {subsection}{\numberline {3.4.2}Bimolecular Diffusion}{11}
+\contentsline {subsection}{\numberline {3.4.3}Species Thermal Conductivity}{13}
+\contentsline {subsection}{\numberline {3.4.4}Mixture Model}{14}
+\contentsline {chapter}{\numberline {4}Finite Element Formulation}{19}
+\contentsline {section}{\numberline {4.1}Weak formulation}{19}
+\contentsline {section}{\numberline {4.2}Need for stability}{20}
+\contentsline {subsection}{\numberline {4.2.1}Streamline Upwind Petrov Galerkin Method}{20}
+\contentsline {subsection}{\numberline {4.2.2}Pressure-Stabilizing/Petrov-Galerkin (PSPG)}{21}
+\contentsline {subsection}{\numberline {4.2.3}Stabilized Navier Stokes Equation}{21}
+\contentsline {section}{\numberline {4.3}Adaptive Finite Element}{21}
+\contentsline {chapter}{\numberline {5}Bayesian Statistics}{23}
+\contentsline {section}{\numberline {5.1}Review of Theory}{23}
+\contentsline {section}{\numberline {5.2}Application to Problem}{23}
+\contentsline {section}{\numberline {5.3}Methods of Solution}{23}
+\contentsline {section}{\numberline {5.4}Software}{23}
+\contentsline {chapter}{\numberline {6}Results}{25}
+\contentsline {section}{\numberline {6.1}Estimating parameter E for reaction 3}{25}
+\contentsline {subsubsection}{Different surrogate sizes }{25}
+\contentsline {subsubsection}{Sample size (Surrogate size) 10 }{25}
+\contentsline {subsubsection}{Sample size (Surrogate size) 20 }{30}
+\contentsline {subsubsection}{Sample size (Surrogate size) 50 }{35}
+\contentsline {subsubsection}{Sample size (Surrogate size) 100 }{40}
+\contentsline {subsubsection}{Sample size (Surrogate size) 500 }{45}
+\contentsline {subsubsection}{Sample size (Surrogate size) 1000 }{50}
+\contentsline {subsubsection}{Different chain sizes }{55}
+\contentsline {subsubsection}{Chain size 100000 }{55}
+\contentsline {subsubsection}{Chain size 300000 }{60}
+\contentsline {subsubsection}{Chain size 700000 }{65}
+\contentsline {subsubsection}{Chain size 900000 }{70}
+\contentsline {subsubsection}{Chain size 1000000 }{75}
+\contentsline {chapter}{\numberline {7}Conclusion}{81}

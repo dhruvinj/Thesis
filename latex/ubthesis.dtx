@@ -1,0 +1,956 @@
+% \iffalse meta-comment
+%
+% Copyright (C) 2007 by Justin Boffemmyer <jsb23@buffalo.edu>
+% -------------------------------------------------------
+% 
+% This file may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.2
+% of this license or (at your option) any later version.
+% The latest version of this license is in:
+%
+%    http://www.latex-project.org/lppl.txt
+%
+% and version 1.2 or later is part of all distributions of LaTeX 
+% version 1999/12/01 or later.
+%
+% \fi
+%
+% \iffalse
+%<*driver>
+\ProvidesFile{ubthesis.dtx}
+%</driver>
+%^^A%<ubthesis>\NeedsTeXFormat{LaTeX2e}[1999/12/01]
+%^^A%<ubthesis>\ProvidesClass{ubthesis}
+%^^A%<*ubthesis>
+%^^A    [2007/04/21 v1.0 UB Thesis class]
+%^^A%</ubthesis>
+% 
+%<*driver>
+\documentclass{ltxdoc}
+\EnableCrossrefs
+\CodelineIndex
+\RecordChanges
+\begin{document}
+  \DocInput{ubthesis.dtx}
+\end{document}
+%</driver>
+% \fi
+%
+% \CheckSum{0}
+%
+% \CharacterTable
+%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
+%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
+%   Digits        \0\1\2\3\4\5\6\7\8\9
+%   Exclamation   \!     Double quote  \"     Hash (number) \#
+%   Dollar        \$     Percent       \%     Ampersand     \&
+%   Acute accent  \'     Left paren    \(     Right paren   \)
+%   Asterisk      \*     Plus          \+     Comma         \,
+%   Minus         \-     Point         \.     Solidus       \/
+%   Colon         \:     Semicolon     \;     Less than     \<
+%   Equals        \=     Greater than  \>     Question mark \?
+%   Commercial at \@     Left bracket  \[     Backslash     \\
+%   Right bracket \]     Circumflex    \^     Underscore    \_
+%   Grave accent  \`     Left brace    \{     Vertical bar  \|
+%   Right brace   \}     Tilde         \~}
+%
+%
+% \changes{v1.0}{2007/04/27}{Initial version}
+%
+% \GetFileInfo{ubthesis.dtx}
+%
+% \DoNotIndex{
+%	\addcontentsline,
+%	\addtolength,
+%	\baselineskip,
+%	\begin,
+%	\bigskip,
+%	\cfoot,
+%	\chapter,
+%	\chaptermark,
+%	\chead,
+%	\clearpage,
+%	\csname,
+%	\emph,
+%	\end,
+%	\endcsname,
+%	\fancyhf,
+%	\fi,
+%	\fill,
+%	\headheight,
+%	\ifcase,
+%	\LARGE,
+%	\Large,
+%	\large,
+%	\let,
+%	\lfoot,
+%	\lhead,
+%	\LoadClassWithOptions,
+%	\MakeUppercase,
+%	\markboth,
+%	\markright,
+%	\NeedsTeXFormat,
+%	\newcommand,
+%	\newenvironment,
+%	\number,
+%	\or,
+%	\pagenumbering,
+%	\pagestyle,
+%	\par,
+%	\ProcessOptions,
+%	\ProvidesClass,
+%	\renewcommand,
+%	\renewenvironment,
+%	\RequirePackage,
+%	\rfoot,
+%	\rhead,
+%	\rightmark,
+%	\rule,
+%	\sectionmark,
+%	\setcounter,
+%	\smallskip,
+%	\strecth,
+%	\textwidth,
+%	\thepage,
+%	\thispagestyle,
+%	\vspace,
+%	\year,
+% }
+% 
+%
+% \title{The \textsf{ubthesis} class\thanks{This document
+%   corresponds to \textsf{ubthesis}~\fileversion, dated \filedate.}}
+% \author{Justin Boffemmyer \\ \texttt{jsb23@buffalo.edu}}
+% \date{May 1, 2007}
+%
+% \maketitle
+%
+% \section{Introduction}
+%
+% This class provides a default format as well as formatting macros
+% for easing the production of a thesis according to the UB
+% guidelines for electronic theses and dissertations
+% (http://www.grad.buffalo.edu/etd/etdguide.pdf).
+%
+%^^A --------------------
+%^^A BEGIN USAGE
+%^^A --------------------
+% \section{Usage}
+%
+% To use this class, it must be loaded. This is done by declaring it 
+% as the class of the document.
+% 
+% \vspace{\baselineskip}
+% |\documentclass{ubthesis}|
+% \vspace{\baselineskip}
+% 
+% This class is based on the standard book class, so it can accept
+% all the options associated with the book class. After specifying
+% |ubthesis| as the document class, it will set the following things:
+% 
+% \begin{itemize}
+% \item the margins will be set to the correct spacing
+% \item the headers and footers will be set so that the title of the
+% 	current chapter/section will be placed in the upper right,
+% 	the name of the author will be placed in the lower left, and
+% 	the page number will appear in the lower center, with
+% 	horizontal rules separating the header from the main content
+% 	(this applies to the main chapters) - this can be redefined by
+% 	setting the fancyhdr settings appropriately
+% \item the headers and footers for the frontmatter content will be
+%	set so that there are no headers and the only thing in the
+%	footer is the page number, at bottom center - this can be
+%	redefined by changing fancyhdr settings
+% \item |\cleardoublepage| will be redefined so that empty pages will
+% 	really appear as empty, instead of outputting headers and
+% 	footers when there is no content
+% \item |\listoffigures| and |\listoftables| will be redefined so that
+% 	they output information to the table of contents
+% \item the |titlepage| environment will be redefined so that it
+% 	clears only one page, allowing the copyright page to appear
+% 	on the reverse side
+% \item |\maketitle| will be redefined to correctly output and format
+% 	the content of the titlepage
+% \item	various macros and environments will be defined for use in
+% 	the thesis, the descriptions of which are provided in the
+% 	following subsections.
+% \end{itemize}
+% 
+%^^A --------------------
+%^^A BEGIN MACRO DESCRIPTIONS
+%^^A --------------------
+% \subsection{Macro descriptions}
+%^^A \DescribeMacro{\conferral\marg{date}}
+% \DescribeMacro{\conferral}
+% The |\conferral|\marg{date} macro has one required argument
+% \meta{date}. It is used by |\maketitle| to print the conferral or
+% defense date in the correct position on the Title page.
+%
+%^^A \DescribeMacro{\dept\marg{department}}
+% \DescribeMacro{\dept}
+% The |\dept|\marg{department} macro has one required argument
+% \meta{department}. It is used by |\maketitle| to print ``Department
+% of \textit{department}'' in the correct position on the Title page.
+% The value of \meta{department} should be capitalized (the first
+% letter should be uppercase).
+%
+%^^A \DescribeMacro{\degree\marg{degree}}
+% \DescribeMacro{\degree}
+% The |\degree|\marg{degree} macro takes one required argument
+% \meta{degree}. It is used by |\maketitle| to print the name of the
+% degree in the correct position on the Title page. The value of
+% \meta{degree} can be one of the following:
+% 
+% \begin{description}
+% \item[ma] Master of Arts
+% \item[ms] Master of Science
+% \item[me] Master of Engineering
+% \item[mfa] Master of Fine Arts
+% \item[mmus] Master of Music
+% \item[murbp] Master of Urban Planning
+% \item[march] Master of Architecture
+% \item[phd] Doctor of Philosophy
+% \item[ed] Doctor of Education
+% \item[nsd] Doctor of Nursing Science
+% \end{description}
+%
+% \DescribeMacro{\makecopyright}
+% The |\makecopyright| macro takes no arguments, and produces the
+% copyright page. It typesets the copyright information at the bottom
+% of the page, using the author name from |\author|\marg{name} and
+% the current year.
+%
+%^^A \DescribeMacro{\references\oarg{title}\marg{reffile}}
+% \DescribeMacro{\references}
+% The |\references|\marg{title}\marg{reffile} macro requires the
+% argument \meta{reffile} which is the name of the .bib file you want
+% to use for references. The filename given in \meta{reffile} should
+% not include the trailing .bib. The argument \meta{title} is used to
+% specify the title of the reference section. The macro calls
+% |\bibliography{reffile}| to produce the actual bibliographic output.
+% If the \BibTeX{} package you are using makes use of a different
+% command to input .bib files, you can work around this by including
+% the following definition in the preamble of your document.
+% 
+% \vspace{\baselineskip}
+% |\def\bibliography{\YOUR_BIB_COMMAND}|
+% \vspace{\baselineskip}
+% 
+% \noindent You only need to replace |YOUR_BIB_COMMAND| with the name
+% of the command your \BibTeX{} package uses to input .bib files.
+%
+%^^A \DescribeMacro{\author{}\marg{name}}
+% \DescribeMacro{\author}
+% The |\author|\marg{name} macro sets the author name for the
+% document, using \meta{name}. This is used both for the Title page
+% as well as the Copyright page (if present).
+% 
+%^^A \DescribeMacro{\title\marg{title}}
+% \DescribeMacro{\title}
+% The |\title|\marg{title} macro sets the title for the document,
+% using \meta{title}, which appears on the Title page.
+% 
+% \DescribeMacro{\maketitle}
+% The |\maketitle| macro is a redefinition of the standard
+% |\maketitle|. It will output the document title, author's name,
+% dept., and intended degree in the correct positions on the
+% titlepage, in addition to the required static text (such as the
+% ``...in partial fulfillment of...'' text).
+%^^A --------------------
+%^^A END MACRO DESCRIPTIONS
+%^^A --------------------
+%
+%^^A --------------------
+%^^A BEGIN ENVIRONMENT DESCRIPTIONS
+%^^A --------------------
+% \subsection{Environment descriptions}
+% \DescribeEnv{ubfrontmatter}
+% The |ubfrontmatter| environment sets the formatting for the
+% frontmatter pages. This includes ensuring that the page numbering
+% will be correct --- i.e.\ that the Copyright page (if present)
+% begins with page number ii, that Acknowledgements begins with iii,
+% etc. Note that you still have to include the different items in the
+% correct order. If you include the Copyright page after the
+% Acknowledgements page, things will not appear correct.
+% 
+% \DescribeEnv{ubbackmatter}
+% The |ubbackmatter| environment sets the formatting for the
+% backmatter pages. This mainly just means that it will start a new
+% full page after the main matter has finished, because the
+% formatting for the main matter should be the same, but this
+% environment will ensure the formatting for the backmatter even if
+% the formatting for the main matter changes (which should never
+% happen).
+%
+% \DescribeEnv{acknowledgements}
+% The |acknowledgements| environment will produce a title for the
+% Acknowledgements page which will appear the same as the titles for
+% the table of contents, list of figures, etc. It will also provide a
+% link to the table of contents, so that your Acknowledgements will
+% be included in the listing of contents.
+%
+% \DescribeEnv{abstract}
+% The |abstract| environment will produce a title for the Abstract
+% page which will appear the same as the titles for the table of
+% contents, list of figures, etc. It will also provide a link to the
+% table of contents, so that your Abstract will be included in the
+% listing of contents.
+%^^A --------------------
+%^^A END ENVIRONMENT DESCRIPTIONS
+%^^A --------------------
+%^^A --------------------
+%^^A END USAGE
+%^^A --------------------
+%
+% \StopEventually{\PrintChanges\PrintIndex}
+%
+%^^A --------------------
+%^^A BEGIN IMPLEMENTATION
+%^^A --------------------
+% \section{Implementation}
+% This section describes the actual implementation of the UB Thesis
+% class itself. If you are not interested in hacking the
+% ubthesis.cls\ file, you should skip this section.
+%
+% \subsection{Preamble}
+% \iffalse
+%<*ubthesis>
+% \fi
+%    \begin{macrocode}
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{ubthesis}[2007/04/27 v1.0 UB Thesis Class]
+
+\ProcessOptions
+%    \end{macrocode}
+% 
+% The standard book class is used as a default for deriving the bulk
+% of the formatting definitions for the UB Thesis class.
+% 
+%    \begin{macrocode}
+\LoadClassWithOptions{book}
+
+%    \end{macrocode}
+% 
+% The geometry package is required for setting the margin spacings of
+% the document as conformant to the specifications of the university.
+% 
+%    \begin{macrocode}
+\RequirePackage[letterpaper,margin=1.25in]{geometry}
+%    \end{macrocode}
+% 
+% 
+% The setspace package is required for setting double line spacing of
+% the document as conformant to the specifications of the university.
+% 
+%    \begin{macrocode}
+\RequirePackage[letterpaper,margin=1.25in]{geometry}
+%    \end{macrocode}
+% 
+% The fancyhdr package is used to define the headers and footers that
+% appear on pages other than the titlepage and opening pages of
+% chapters (which have no headers or footers).
+% 
+%    \begin{macrocode}
+\RequirePackage{fancyhdr}
+
+%    \end{macrocode}
+% 
+% This is the actual definition of the headers and footers. The
+% commands |\sectionmark| and |\chaptermark| are redifined to ensure
+% that the title of the current chapter or section will appear in the
+% header. The command |\rhead| uses these titles to print the current
+% section/chapter title in the righthand side of the header. |\lfoot|
+% uses an internal variable (|\UBT@author|) to print the name of the
+% document author in the lefthand side of the footer. |\rfoot|
+% defines the righthand side of the footer to print the page number
+% of the current page. Finally, |\cfoot| places a rule at the bottom
+% of the page to separate the page content from the page footer (the
+% header automatically includes a rule, so it is not necessary to
+% specify one).
+% 
+%    \begin{macrocode}
+
+\addtolength{\headheight}{\baselineskip}
+\pagestyle{fancy}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\renewcommand{\chaptermark}[1]{\markright{#1}}
+\fancyhf{}
+
+\lhead{\large\emph{\UBT@author}}
+\chead{}
+\rhead{\large\rightmark}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+
+%    \end{macrocode}
+% 
+% |\pagestyle{fancy}| sets the document to use the header and footer
+% definitions we gave to the fancyhdr package.
+% 
+%    \begin{macrocode}
+
+\pagestyle{fancy}
+
+%    \end{macrocode}
+% 
+% \subsection{Prototype definitions}
+% The following is a block of command prototypes. This simply
+% reserves the names for the commands that will be defined later in
+% the class file using |\renewcommand|. Any command beginning with
+% |UBT@| is an internal command, not meant to be seen by end-users,
+% nor manipulated directly. The internal commands should either be
+% constants, or defined via external commands.
+% 
+%    \begin{macrocode}
+
+\newcommand*{\UBT@author}{}
+\newcommand*{\UBT@title}{}
+\newcommand*{\UBT@conferral}{}
+\newcommand*{\UBT@degree}{}
+\newcommand*{\UBT@degreetitle}{}
+\newcommand*{\UBT@degrees}{}
+\newcommand*{\UBT@dept}{}
+\newcommand*{\UBT@cdp}{}
+\newcommand*{\UBT@lot}{}
+\newcommand*{\UBT@lof}{}
+\newcommand*{\UBT@ma}{}
+\newcommand*{\UBT@ms}{}
+\newcommand*{\UBT@mse}{}
+\newcommand*{\UBT@mfa}{}
+\newcommand*{\UBT@mmus}{}
+\newcommand*{\UBT@murbp}{}
+\newcommand*{\UBT@march}{}
+\newcommand*{\UBT@phd}{}
+\newcommand*{\UBT@ed}{}
+\newcommand*{\UBT@nsd}{}
+\newcommand*{\UBT@thesis}{}
+\newcommand*{\UBT@bibname}{}
+
+\newcommand*{\conferral}{}
+\newcommand*{\dept}{}
+\newcommand*{\degree}{}
+\newcommand*{\makecopyright}{}
+\newcommand*{\references}{}
+
+%    \end{macrocode}
+% 
+% Likewise, these are environment prototypes, to be given definitions
+% later via |\renewenvironment|.
+% 
+%    \begin{macrocode}
+
+\newenvironment{ubfrontmatter}{}{}
+\newenvironment{acknowledgements}{}{}
+\newenvironment{abstract}{}{}
+\newenvironment{ubbackmatter}{}{}
+
+%    \end{macrocode}
+% 
+% \subsection{Saving preset commands}
+% This is some trickery to save the preset values/defintions of the
+% |\cleardoublepage|, |\listoftables|, and |\listoffigures| commands
+% to internal variables. The usefulness of this trickery will become
+% evident later, when the redefinitions of the preset commands is are
+% discussed.
+% 
+%    \begin{macrocode}
+
+\let\UBT@cdp\cleardoublepage
+\let\UBT@lot\listoftables
+\let\UBT@lof\listoffigures
+
+%    \end{macrocode}
+% 
+% \subsection{Constant variable definitions}
+% This block defines a series of constant variables. This acts like
+% an |enum| in C or C++, assigning an |int| to each name. These names
+% correspond to the possible choices for the type of degree the
+% thesis is being written for. These are all internal variables and
+% are not meant to be visible to or directly manipulated by the
+% end-user.
+% 
+%    \begin{macrocode}
+
+\renewcommand{\UBT@ma}{1}
+\renewcommand{\UBT@ms}{2}
+\renewcommand{\UBT@mse}{3}
+\renewcommand{\UBT@mfa}{4}
+\renewcommand{\UBT@mmus}{5}
+\renewcommand{\UBT@murbp}{6}
+\renewcommand{\UBT@march}{7}
+\renewcommand{\UBT@phd}{8}
+\renewcommand{\UBT@ed}{9}
+\renewcommand{\UBT@nsd}{10}
+
+
+%    \end{macrocode}
+% 
+% \subsection{Macro definitions}
+% \begin{macro}{\author}
+% Not unlike the standard |\author| command, this is used to hold the
+% name of the document author. The value is stored in the internal
+% variable |\UBT@author|.
+% 
+%    \begin{macrocode}
+
+\renewcommand{\author}[1]{\renewcommand{\UBT@author}{#1}}
+
+%    \end{macrocode}
+% \end{macro}
+% 
+% \begin{macro}{\title}
+% Similar to the use of |\author|, this defines the title of the
+% document, and the value is held in the internal variable
+% |\UBT@title|.
+% 
+%    \begin{macrocode}
+
+\renewcommand{\title}[1]{\renewcommand{\UBT@title}{#1}}
+
+%    \end{macrocode}
+% \end{macro}
+% 
+% \begin{macro}{\conferral}
+% This macro is used to define the date of the conferral of the
+% degree or defense of the thesis, and the value is held in the
+% internal variable |\UBT@conferral|.
+% 
+%    \begin{macrocode}
+
+\renewcommand{\conferral}[1]{\renewcommand{\UBT@conferral}{#1}}
+
+%    \end{macrocode}
+% \end{macro}
+% 
+% \begin{macro}{\dept}
+% This macro is used to define the department for which the thesis is
+% being written. The value is stored in the internal variable
+% |\UBT@dept|.
+% 
+%    \begin{macrocode}
+
+\renewcommand{\dept}[1]
+{
+	\renewcommand{\UBT@dept}{Department of \MakeUppercase#1}
+}
+
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\degree}
+% This macro takes a nice and short acronym for a degree name, and
+% replaces it with the full, proper name for the degree, storing the
+% result in the internal variable |\UBT@degree|. This gets used in
+% the titlepage to print the degree which the thesis partially
+% satisfies.
+% 
+%    \begin{macrocode}
+
+\renewcommand{\degree}[1]{
+	\renewcommand{\UBT@degree}{
+		\ifcase\csname UBT@#1\endcsname\or
+			Master of Arts\or
+			Master of Science\or
+			Master of Engineering\or
+			Master of Fine Arts\or
+			Master of Music\or
+			Master of Urban Planning\or
+			Master of Architecture\or
+			Doctor of Philosophy\or
+			Doctor of Education\or
+			Doctor of Nursing Science
+		\fi
+	}
+	\renewcommand{\UBT@thesis}{%
+		\ifcase\csname UBT@#1\endcsname\or
+			thesis\or
+			thesis\or
+			thesis\or
+			thesis\or
+			thesis\or
+			thesis\or
+			thesis\or
+			dissertation\or
+			dissertation\or
+			dissertation
+		\fi
+	}
+}
+
+%    \end{macrocode}
+% \end{macro}
+% 
+% \begin{macro}{\maketitle}
+% This macro pulls in a lot of other macros and formats their
+% contents to produce the titlepage. The title is set at the top of
+% the page via |\UBT@title|, the author is set in the middle of the
+% page via |\UBT@author|, and the ``...in partial fulfillment of...''
+% text is set at the bottom via the |\UBT@degree| and |\UBT@dept|
+% commands.
+% 
+%    \begin{macrocode}
+
+\renewcommand{\maketitle}
+{
+	\begin{center}
+		\par \LARGE \UBT@title
+	\end{center}
+	
+	\vspace{\stretch{1}}
+
+	\begin{center}
+		\par by
+		\bigskip
+		\par \Large \UBT@author
+		\smallskip
+		\par \large \UBT@conferral
+	\end{center}
+	
+	\vspace{\stretch{1}}
+
+	\begin{center}
+		\par A~\UBT@thesis{} submitted to the
+		\par Faculty of the Graduate School of the
+		\par State University of New York at Buffalo
+		\par in partial fulfillment of the requirements for the degree of
+		\bigskip
+		\par \UBT@degree
+		\bigskip
+		\par \UBT@dept
+	\end{center}
+	\thispagestyle{empty}
+}
+
+%    \end{macrocode}
+% \end{macro}
+% 
+% \begin{macro}{\makecopyright}
+% The |\makecopyright| macro automatically produces the copyright
+% page. It uses the internal variable |\UBT@author| to print the
+% author name, and the numerical value of the |\year| command to
+% determine the current year. All of the output text is placed at the
+% bottom of the page via the |\vspace*{\fill}| command. Note that the
+% |*| is necessary, as it is the first thing that appears on the
+% page, and \LaTeX{} by default will cancel the added space because
+% it would normally be deemed unnecessary. The |*| forces \LaTeX{} to
+% insert the vertical space. 
+% 
+%    \begin{macrocode}
+
+\renewcommand{\makecopyright}{
+	%\clearpage
+	\vspace*{\fill}
+	\begin{center}
+		\par Copyright by
+		\par \UBT@author
+		\par \number\year
+	\end{center}
+	%\clearpage
+	\cleardoublepage
+}
+
+%    \end{macrocode}
+% \end{macro}
+% 
+% This redefines the traditional |\cleardoublepage| so that truly
+% empty pages (for example those appearing between chapters) do not
+% receive any output at all. This is accomplished by first clearing a
+% single page and setting that page's pagestyle to empty, so that it
+% has neither a header nor a footer. It then does the original
+% |\cleardoublepage|, which was stored in |\UBT@cdp| earlier, to make
+% sure that the following output appears on the right page
+% (right-hand page for a new chapter for example). This will not
+% clear more pages than necessary though, so it is safe to use
+% anywhere it might be needed (i.e. if already on a lefthand page,
+% calling this macro will simply move to the righthand page and do
+% nothing else).
+% 
+%    \begin{macrocode}
+
+\renewcommand{\cleardoublepage}{
+	\clearpage
+	\thispagestyle{empty}
+	\UBT@cdp
+}
+
+%    \end{macrocode}
+% 
+% This redefines the standard |\listoftables| to additionally link to
+% the table of contents.
+% 
+%    \begin{macrocode}
+
+\renewcommand{\listoftables}{
+	\UBT@lot
+	\addcontentsline{toc}{chapter}{List of Tables}
+}
+
+%    \end{macrocode}
+% 
+% This redefines the standard |\listoffigures| to additionally link
+% to the table of contents
+% 
+%    \begin{macrocode}
+
+\renewcommand{\listoffigures}{
+	\UBT@lof
+	\addcontentsline{toc}{chapter}{List of Figures}
+}
+
+%    \end{macrocode}
+% 
+% \begin{macro}{\references}
+% The |\references| macro sets up the references/bibliography page.
+% This is intended to be used with \BibTeX, and the end-user should
+% include some package for handling the bibliography style (e.g.\
+% natbib, lsalike, etc.). It takes an optional argument for the title
+% of the references page, which defaults to |References|. The second
+% argument, which is mandatory, is the name of the bib file. This
+% macro also adds the contents of its title to the table of contents
+% (along with the page on which it occurs).
+% 
+%    \begin{macrocode} 
+
+\renewcommand{\references}[2][References]
+{
+	\renewcommand{\UBT@bibname}{#1}
+	\addcontentsline{toc}{chapter}{\UBT@bibname}
+	\bibliography{#2}
+	\renewcommand{\bibname}{\UBT@bibname}
+	%\cleardoublepage
+}
+
+%    \end{macrocode}
+% \end{macro}
+% 
+% This redefines the |thebibliography| environment so that it uses our
+% internal UBT@bibname variable as defined via the user's call to
+% |\references| and sets up a chapter to contain the references, as
+% well as the actual bibliography listing environment. 
+% 
+%    \begin{macrocode} 
+
+\renewenvironment{thebibliography}[1]
+{
+	\chapter*{\UBT@bibname}%
+	%\@mkboth{\MakeUppercase\UBT@bibname}{\MakeUppercase\UBT@bibname}%
+	\list{\@biblabel{\@arabic\c@enumiv}}%
+	{
+		\settowidth\labelwidth{\@biblabel{#1}}%
+		\leftmargin\labelwidth
+		\advance\leftmargin\labelsep
+		\@openbib@code
+		\usecounter{enumiv}%
+		\let\p@enumiv\@empty
+		\renewcommand\theenumiv{\@arabic\c@enumiv}}%
+		\sloppy
+		\clubpenalty4000
+		\@clubpenalty \clubpenalty
+		\widowpenalty4000%
+		\sfcode`\.\@m
+	}
+{
+	\def\@noitemerr{\@latex@warning{Empty `thebibliography' environment}}%
+	\endlist
+}
+
+%    \end{macrocode}
+% 
+% \subsection{Environment definitions}
+% \begin{environment}{titlepage}
+% This redefines the |\titlepage| macro to ensure that it will only
+% clear one page, so that (if it is used) the |\makecopyright| will
+% output the copyright material to the real second page, which should
+% be a lefthand page.
+% 
+%    \begin{macrocode} 
+
+\renewenvironment{titlepage}
+{
+}
+{
+	\thispagestyle{empty}
+	\clearpage
+}
+
+%    \end{macrocode}
+% \end{environment}
+% 
+% \begin{environment}{ubfrontmatter}
+% The |ubfrontmatter| environment sets the page numbering and style
+% for all the material which is to appear as frontmatter. This
+% includes the copyright, acknowledgements, table of contents, list
+% of figures, list of tables, abstract, and any other pages that
+% might be included before the beginning of the main matter (i.e.\
+% before the first chapter, which is typically the introduction).
+% 
+%    \begin{macrocode} 
+
+\renewenvironment{ubfrontmatter}
+{
+	\pagenumbering{roman}
+	\pagestyle{plain}
+	\setcounter{page}{2}
+}
+{
+	\pagestyle{fancy}
+	\cleardoublepage
+	\pagenumbering{arabic}
+}
+
+%    \end{macrocode}
+% \end{environment}
+% 
+% \begin{environment}{ubbackmatter}
+% The |ubbackmatter| environment sets up the backmatter pages. This
+% includes the references/bibliography, appendix, glossary, index,
+% and any other pages that might appear after the main matter has
+% finished. This doesn't really do much, as the backmatter pages
+% essentially have the same format as the mainmatter pages, with the
+% major difference being in the numbering schemes of the chapters
+% themselves (for the appendices and etc.).
+% 
+%    \begin{macrocode} 
+
+\renewenvironment{ubbackmatter}
+{
+	%\clearpage
+	\cleardoublepage
+	\thispagestyle{plain}
+	\pagestyle{plain}
+	%\pagenumbering{arabic}
+}
+{
+	%\cleardoublepage
+	\thispagestyle{plain}
+	\pagestyle{plain}
+}
+
+%    \end{macrocode}
+% \end{environment}
+% 
+% \begin{environment}{acknowledgements}
+% The |acknowledgements| environment sets the formatting for the
+% environment page. This involves setting a chapter title of
+% |Acknowledgements| and outputting this title and the page number to
+% the table of contents (as well as making sure the title information
+% is included in the header information for the acknowledgement
+% pages).
+% 
+%    \begin{macrocode} 
+
+\renewenvironment{acknowledgements}
+{
+	\chapter*{Acknowledgements}
+	\markboth
+	{\MakeUppercase{Acknowledgements}}
+	{\MakeUppercase{Acknowledgements}}
+	\addcontentsline{toc}{chapter}{Acknowledgements}
+}
+{
+	\cleardoublepage
+}
+
+%    \end{macrocode}
+% \end{environment}
+% 
+% \begin{environment}{abstract}
+% The |abstract| environment sets the formatting for the environment
+% page. This involves setting a chapter title of. This involves
+% setting a chapter title of |abstract| and outputting this title and
+% the page number to the table of contents (as well as making sure
+% the title information is included in the header information for the
+% acknowledgement pages).
+% 
+%    \begin{macrocode} 
+
+\renewenvironment{abstract}
+{
+	\chapter*{Abstract}
+	\markboth
+	{\MakeUppercase{Abstract}}
+	{\MakeUppercase{Abstract}}
+	\addcontentsline{toc}{chapter}{Abstract}
+}
+{
+	\cleardoublepage
+}
+
+%    \end{macrocode}
+% \end{environment}
+% \iffalse
+%</ubthesis>
+% \fi
+%^^A --------------------
+%^^A END IMPLEMENTATION
+%^^A --------------------
+% \iffalse
+%<*example>
+\documentclass[10pt]{ubthesis}
+
+% The title of your thesis
+\title{My Title}
+
+% Your full name
+\author{My Name}
+
+% The date of conferral of your degree or the date of defense of the thesis
+\conferral{\today}
+
+% The name of your department - do not include the word `department'
+% i.e. for Deptartment of Linguistics just do \dept{linguistics}
+% It will automatically ensure the first letter is a capital, so
+% it doesn't matter what case you use.
+\dept{redundancy}
+
+% The degree the thesis is for. It must be one of the following:
+% ma - Master of Arts
+% ms - Master of Science
+% mse - Master of Engineering
+% mfa - Master of Fine Arts
+% mmus - Master of Music
+% murbp - Master of Urban Planning
+% march - Master of Architecture
+% phd - Doctor of Philosophy
+% ed - Doctor of Education
+% nsd - Doctor of Nursing Science
+\degree{phd}
+
+\begin{document}
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+
+\begin{ubfrontmatter}
+\makecopyright
+\cleardoublepage
+\begin{acknowledgements}
+These are my acknowledgements
+\end{acknowledgements}
+\tableofcontents
+\cleardoublepage
+\listoffigures
+\cleardoublepage
+\listoftables
+\cleardoublepage
+\begin{abstract}
+This is my abstract
+\end{abstract}
+\end{ubfrontmatter}
+
+\chapter{Introduction}
+
+\begin{ubbackmatter}
+% Must take the name of the bibliography file as an argument
+% The name of the chapter is optional, and if not defined will be
+% `References'
+\references[Bibliography]{}
+\end{ubbackmatter}
+
+\end{document}
+%</example>
+% \fi
+% 
+% \Finale
+\endinput

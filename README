@@ -1,0 +1,7 @@
+This project provides TeX formatting files for UB theses and dissertations (PhD
+theses).
+
+For the LaTeX class file, please see the README file in the latex directory.
+
+For the ConTeXt formatting module, please see the README in the context
+directory.
