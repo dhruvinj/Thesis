@@ -13,7 +13,7 @@ In this section we calculated flamespeed values for 10 different points in the d
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_10/simple_ip_chain_pos_filt}
+   \includegraphics[scale=0.75]{53_results/output_10/simple_ip_chain_pos_filt}
    \caption{MCMC chain position }
 \end{figure}
 
@@ -21,7 +21,7 @@ In this section we calculated flamespeed values for 10 different points in the d
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_10/simple_ip_hist_raw}
+   \includegraphics[scale=0.75]{53_results/output_10/simple_ip_hist_raw}
    \caption{Histogram}
 \end{figure}
 
@@ -30,14 +30,14 @@ In this section we calculated flamespeed values for 10 different points in the d
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_10/simple_ip_kde_raw}
+   \includegraphics[scale=0.75]{53_results/output_10/simple_ip_kde_raw}
    \caption{ KDE }
 \end{figure}
 
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_10/simple_ip_cdf_raw}
+   \includegraphics[scale=0.75]{53_results/output_10/simple_ip_cdf_raw}
    \caption{CDF function for Parameter }
 \end{figure}
 
@@ -46,7 +46,7 @@ In this section we calculated flamespeed values for 10 different points in the d
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_10/ip_logLike_unified}
+   \includegraphics[scale=0.75]{53_results/output_10/ip_logLike_unified}
    \caption{PDF function for Parameter }
 \end{figure}
 
@@ -59,7 +59,7 @@ In this section we calculated flamespeed values for 20 different points in the d
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_20/simple_ip_chain_pos_filt}
+   \includegraphics[scale=0.75]{53_results/output_20/simple_ip_chain_pos_filt}
    \caption{MCMC chain position }
 \end{figure}
 
@@ -67,7 +67,7 @@ In this section we calculated flamespeed values for 20 different points in the d
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_20/simple_ip_hist_raw}
+   \includegraphics[scale=0.75]{53_results/output_20/simple_ip_hist_raw}
    \caption{Histogram}
 \end{figure}
 
@@ -76,14 +76,14 @@ In this section we calculated flamespeed values for 20 different points in the d
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_20/simple_ip_kde_raw}
+   \includegraphics[scale=0.75]{53_results/output_20/simple_ip_kde_raw}
    \caption{ KDE }
 \end{figure}
 
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_20/simple_ip_cdf_raw}
+   \includegraphics[scale=0.75]{53_results/output_20/simple_ip_cdf_raw}
    \caption{CDF function for Parameter }
 \end{figure}
 
@@ -92,7 +92,7 @@ In this section we calculated flamespeed values for 20 different points in the d
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_20/ip_logLike_unified}
+   \includegraphics[scale=0.75]{53_results/output_20/ip_logLike_unified}
    \caption{PDF function for Parameter }
 \end{figure}
 
@@ -104,7 +104,7 @@ In this section we calculated flamespeed values for 50 points in the domain
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_50/simple_ip_chain_pos_filt}
+   \includegraphics[scale=0.75]{53_results/output_50/simple_ip_chain_pos_filt}
    \caption{MCMC chain position }
 \end{figure}
 
@@ -112,7 +112,7 @@ In this section we calculated flamespeed values for 50 points in the domain
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_50/simple_ip_hist_raw}
+   \includegraphics[scale=0.75]{53_results/output_50/simple_ip_hist_raw}
    \caption{Histogram}
 \end{figure}
 
@@ -121,14 +121,14 @@ In this section we calculated flamespeed values for 50 points in the domain
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_50/simple_ip_kde_raw}
+   \includegraphics[scale=0.75]{53_results/output_50/simple_ip_kde_raw}
    \caption{ KDE }
 \end{figure}
 
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_50/simple_ip_cdf_raw}
+   \includegraphics[scale=0.75]{53_results/output_50/simple_ip_cdf_raw}
    \caption{CDF function for Parameter }
 \end{figure}
 
@@ -137,7 +137,7 @@ In this section we calculated flamespeed values for 50 points in the domain
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_50/ip_logLike_unified}
+   \includegraphics[scale=0.75]{53_results/output_50/ip_logLike_unified}
    \caption{PDF function for Parameter }
 \end{figure}
 
@@ -150,7 +150,7 @@ In this section we calculated flamespeed values for 100 points in the domain
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_100/simple_ip_chain_pos_filt}
+   \includegraphics[scale=0.75]{53_results/output_100/simple_ip_chain_pos_filt}
    \caption{MCMC chain position }
 \end{figure}
 %
@@ -158,7 +158,7 @@ In this section we calculated flamespeed values for 100 points in the domain
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_100/simple_ip_hist_raw}
+   \includegraphics[scale=0.75]{53_results/output_100/simple_ip_hist_raw}
    \caption{Histogram}
 \end{figure}
 %
@@ -167,7 +167,7 @@ In this section we calculated flamespeed values for 100 points in the domain
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_100/simple_ip_kde_raw}
+   \includegraphics[scale=0.75]{53_results/output_100/simple_ip_kde_raw}
    \caption{ KDE }
 \end{figure}
 %
@@ -176,7 +176,7 @@ In this section we calculated flamespeed values for 100 points in the domain
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_100/simple_ip_cdf_raw}
+   \includegraphics[scale=0.75]{53_results/output_100/simple_ip_cdf_raw}
    \caption{CDF function for Parameter }
 \end{figure}
 
@@ -185,7 +185,7 @@ In this section we calculated flamespeed values for 100 points in the domain
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_100/ip_logLike_unified}
+   \includegraphics[scale=0.75]{53_results/output_100/ip_logLike_unified}
    \caption{CDF function for Parameter }
 \end{figure}
 
@@ -197,7 +197,7 @@ In this section we calculated flamespeed values for 500 points in the domain
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_500/simple_ip_chain_pos_filt}
+   \includegraphics[scale=0.75]{53_results/output_500/simple_ip_chain_pos_filt}
    \caption{MCMC chain position }
 \end{figure}
 
@@ -205,7 +205,7 @@ In this section we calculated flamespeed values for 500 points in the domain
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_500/simple_ip_hist_raw}
+   \includegraphics[scale=0.75]{53_results/output_500/simple_ip_hist_raw}
    \caption{Histogram}
 \end{figure}
 
@@ -214,14 +214,14 @@ In this section we calculated flamespeed values for 500 points in the domain
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_500/simple_ip_kde_raw}
+   \includegraphics[scale=0.75]{53_results/output_500/simple_ip_kde_raw}
    \caption{ KDE }
 \end{figure}
 
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_500/simple_ip_cdf_raw}
+   \includegraphics[scale=0.75]{53_results/output_500/simple_ip_cdf_raw}
    \caption{CDF function for Parameter }
 \end{figure}
 
@@ -230,7 +230,7 @@ In this section we calculated flamespeed values for 500 points in the domain
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_500/ip_logLike_unified}
+   \includegraphics[scale=0.75]{53_results/output_500/ip_logLike_unified}
    \caption{PDF function for Parameter }
 \end{figure}
 
@@ -242,7 +242,7 @@ In this section we calculated flamespeed values for 1000 points in the domain
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_1000/simple_ip_chain_pos_filt}
+   \includegraphics[scale=0.75]{53_results/output_1000/simple_ip_chain_pos_filt}
    \caption{MCMC chain position }
 \end{figure}
 
@@ -250,7 +250,7 @@ In this section we calculated flamespeed values for 1000 points in the domain
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_1000/simple_ip_hist_raw}
+   \includegraphics[scale=0.75]{53_results/output_1000/simple_ip_hist_raw}
    \caption{Histogram}
 \end{figure}
 
@@ -259,14 +259,14 @@ In this section we calculated flamespeed values for 1000 points in the domain
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_1000/simple_ip_kde_raw}
+   \includegraphics[scale=0.75]{53_results/output_1000/simple_ip_kde_raw}
    \caption{ KDE }
 \end{figure}
 
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_1000/simple_ip_cdf_raw}
+   \includegraphics[scale=0.75]{53_results/output_1000/simple_ip_cdf_raw}
    \caption{CDF function for Parameter }
 \end{figure}
 
@@ -275,7 +275,7 @@ In this section we calculated flamespeed values for 1000 points in the domain
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_1000/ip_logLike_unified}
+   \includegraphics[scale=0.75]{53_results/output_1000/ip_logLike_unified}
    \caption{PDF function for Parameter }
 \end{figure}
 
@@ -291,7 +291,7 @@ In this section we have chain size of 100000 points.
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_100000/simple_ip_chain_pos_filt}
+   \includegraphics[scale=0.75]{53_results/output_100000/simple_ip_chain_pos_filt}
    \caption{MCMC chain position }
 \end{figure}
 
@@ -299,7 +299,7 @@ In this section we have chain size of 100000 points.
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_100000/simple_ip_hist_raw}
+   \includegraphics[scale=0.75]{53_results/output_100000/simple_ip_hist_raw}
    \caption{Histogram}
 \end{figure}
 
@@ -308,14 +308,14 @@ In this section we have chain size of 100000 points.
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_100000/simple_ip_kde_raw}
+   \includegraphics[scale=0.75]{53_results/output_100000/simple_ip_kde_raw}
    \caption{ KDE }
 \end{figure}
 
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_100000/simple_ip_cdf_raw}
+   \includegraphics[scale=0.75]{53_results/output_100000/simple_ip_cdf_raw}
    \caption{CDF function for Parameter }
 \end{figure}
 
@@ -324,7 +324,7 @@ In this section we have chain size of 100000 points.
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_100000/ip_logLike_unified}
+   \includegraphics[scale=0.75]{53_results/output_100000/ip_logLike_unified}
    \caption{PDF function for Parameter }
 \end{figure}
 
@@ -337,7 +337,7 @@ In this section we have chain size of 300000 points.
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_300000/simple_ip_chain_pos_filt}
+   \includegraphics[scale=0.75]{53_results/output_300000/simple_ip_chain_pos_filt}
    \caption{MCMC chain position }
 \end{figure}
 
@@ -345,7 +345,7 @@ In this section we have chain size of 300000 points.
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_300000/simple_ip_hist_raw}
+   \includegraphics[scale=0.75]{53_results/output_300000/simple_ip_hist_raw}
    \caption{Histogram}
 \end{figure}
 
@@ -354,14 +354,14 @@ In this section we have chain size of 300000 points.
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_300000/simple_ip_kde_raw}
+   \includegraphics[scale=0.75]{53_results/output_300000/simple_ip_kde_raw}
    \caption{ KDE }
 \end{figure}
 
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_300000/simple_ip_cdf_raw}
+   \includegraphics[scale=0.75]{53_results/output_300000/simple_ip_cdf_raw}
    \caption{CDF function for Parameter }
 \end{figure}
 
@@ -370,7 +370,7 @@ In this section we have chain size of 300000 points.
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_300000/ip_logLike_unified}
+   \includegraphics[scale=0.75]{53_results/output_300000/ip_logLike_unified}
    \caption{PDF function for Parameter }
 \end{figure}
 
@@ -384,7 +384,7 @@ In this section we have chain size of 700000 points.
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_700000/simple_ip_chain_pos_filt}
+   \includegraphics[scale=0.75]{53_results/output_700000/simple_ip_chain_pos_filt}
    \caption{MCMC chain position }
 \end{figure}
 
@@ -392,7 +392,7 @@ In this section we have chain size of 700000 points.
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_700000/simple_ip_hist_raw}
+   \includegraphics[scale=0.75]{53_results/output_700000/simple_ip_hist_raw}
    \caption{Histogram}
 \end{figure}
 
@@ -401,14 +401,14 @@ In this section we have chain size of 700000 points.
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_700000/simple_ip_kde_raw}
+   \includegraphics[scale=0.75]{53_results/output_700000/simple_ip_kde_raw}
    \caption{ KDE }
 \end{figure}
 
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_700000/simple_ip_cdf_raw}
+   \includegraphics[scale=0.75]{53_results/output_700000/simple_ip_cdf_raw}
    \caption{CDF function for Parameter }
 \end{figure}
 
@@ -417,7 +417,7 @@ In this section we have chain size of 700000 points.
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_700000/ip_logLike_unified}
+   \includegraphics[scale=0.75]{53_results/output_700000/ip_logLike_unified}
    \caption{PDF function for Parameter }
 \end{figure}
 
@@ -430,7 +430,7 @@ In this section we have chain size of 900000 points.
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_900000/simple_ip_chain_pos_filt}
+   \includegraphics[scale=0.75]{53_results/output_900000/simple_ip_chain_pos_filt}
    \caption{MCMC chain position }
 \end{figure}
 
@@ -438,7 +438,7 @@ In this section we have chain size of 900000 points.
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_900000/simple_ip_hist_raw}
+   \includegraphics[scale=0.75]{53_results/output_900000/simple_ip_hist_raw}
    \caption{Histogram}
 \end{figure}
 
@@ -447,14 +447,14 @@ In this section we have chain size of 900000 points.
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_900000/simple_ip_kde_raw}
+   \includegraphics[scale=0.75]{53_results/output_900000/simple_ip_kde_raw}
    \caption{ KDE }
 \end{figure}
 
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_900000/simple_ip_cdf_raw}
+   \includegraphics[scale=0.75]{53_results/output_900000/simple_ip_cdf_raw}
    \caption{CDF function for Parameter }
 \end{figure}
 
@@ -463,7 +463,7 @@ In this section we have chain size of 900000 points.
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_900000/ip_logLike_unified}
+   \includegraphics[scale=0.75]{53_results/output_900000/ip_logLike_unified}
    \caption{PDF function for Parameter }
 \end{figure}
 
@@ -474,7 +474,7 @@ In this section we have chain size of 1000000 points.
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_1000000/simple_ip_chain_pos_filt}
+   \includegraphics[scale=0.75]{53_results/output_1000000/simple_ip_chain_pos_filt}
    \caption{MCMC chain position }
 \end{figure}
 
@@ -482,7 +482,7 @@ In this section we have chain size of 1000000 points.
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_1000000/simple_ip_hist_raw}
+   \includegraphics[scale=0.75]{53_results/output_1000000/simple_ip_hist_raw}
    \caption{Histogram}
 \end{figure}
 
@@ -491,14 +491,14 @@ In this section we have chain size of 1000000 points.
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_1000000/simple_ip_kde_raw}
+   \includegraphics[scale=0.75]{53_results/output_1000000/simple_ip_kde_raw}
    \caption{ KDE }
 \end{figure}
 
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_1000000/simple_ip_cdf_raw}
+   \includegraphics[scale=0.75]{53_results/output_1000000/simple_ip_cdf_raw}
    \caption{CDF function for Parameter }
 \end{figure}
 
@@ -507,7 +507,7 @@ In this section we have chain size of 1000000 points.
 \begin{figure}[H]
   
   \centering
-   \includegraphics[scale=0.75]{output_1000000/ip_logLike_unified}
+   \includegraphics[scale=0.75]{53_results/output_1000000/ip_logLike_unified}
    \caption{PDF function for Parameter }
 \end{figure}
 

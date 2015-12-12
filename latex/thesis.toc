@@ -1,7 +1,7 @@
 \contentsline {chapter}{Acknowledgements}{iii}
-\contentsline {chapter}{List of Figures}{viii}
-\contentsline {chapter}{List of Tables}{ix}
-\contentsline {chapter}{Abstract}{xi}
+\contentsline {chapter}{List of Figures}{ix}
+\contentsline {chapter}{List of Tables}{xi}
+\contentsline {chapter}{Abstract}{xiii}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {1.1}Literature Review}{1}
 \contentsline {chapter}{\numberline {2}Mathematical Model}{3}
@@ -31,7 +31,7 @@
 \contentsline {section}{\numberline {5.3}Methods of Solution}{23}
 \contentsline {section}{\numberline {5.4}Software}{23}
 \contentsline {chapter}{\numberline {6}Results}{25}
-\contentsline {section}{\numberline {6.1}Estimating parameter E for reaction 3}{25}
+\contentsline {section}{\numberline {6.1}Estimating parameter E for reaction 3 for 53$\%$ ozone }{25}
 \contentsline {subsubsection}{Different surrogate sizes }{25}
 \contentsline {subsubsection}{Sample size (Surrogate size) 10 }{25}
 \contentsline {subsubsection}{Sample size (Surrogate size) 20 }{30}
@@ -45,4 +45,18 @@
 \contentsline {subsubsection}{Chain size 700000 }{65}
 \contentsline {subsubsection}{Chain size 900000 }{70}
 \contentsline {subsubsection}{Chain size 1000000 }{75}
-\contentsline {chapter}{\numberline {7}Conclusion}{81}
+\contentsline {section}{\numberline {6.2}Estimating parameter E for reaction 3 for 53$\%$ ozone }{80}
+\contentsline {subsubsection}{Different surrogate sizes }{80}
+\contentsline {subsubsection}{Sample size (Surrogate size) 10 }{81}
+\contentsline {subsubsection}{Sample size (Surrogate size) 20 }{85}
+\contentsline {subsubsection}{Sample size (Surrogate size) 50 }{90}
+\contentsline {subsubsection}{Sample size (Surrogate size) 100 }{95}
+\contentsline {subsubsection}{Sample size (Surrogate size) 500 }{100}
+\contentsline {subsubsection}{Sample size (Surrogate size) 1000 }{105}
+\contentsline {subsubsection}{Different chain sizes }{110}
+\contentsline {subsubsection}{Chain size 100000 }{110}
+\contentsline {subsubsection}{Chain size 300000 }{115}
+\contentsline {subsubsection}{Chain size 700000 }{120}
+\contentsline {subsubsection}{Chain size 900000 }{125}
+\contentsline {subsubsection}{Chain size 1000000 }{130}
+\contentsline {chapter}{\numberline {7}Conclusion}{137}
