@@ -1,0 +1,111 @@
+--------------------------------------------------------------------------------------------------------------
+QUESO Library: Version = 0.53.1 (5301)
+
+External Release
+
+Build Date   = 2015-08-19 11:26
+Build Host   = zoidberg.eng.buffalo.edu
+Build User   = dhruvinj
+Build Arch   = x86_64-unknown-linux-gnu
+Build Rev    = N/A
+
+C++ Config   = mpic++ -g -O2 -Wall
+
+Trilinos DIR = 
+GSL Libs     = -L/zoidberg1/data/shared/software/libs/gsl/1.16/gcc/4.8.4/lib -lgsl -lgslcblas -lm
+GRVY DIR     = 
+GLPK DIR     = /zoidberg1/data/shared/software/libs/glpk/4.55/gcc/4.8.4
+HDF5 DIR     = no
+--------------------------------------------------------------------------------------------------------------
+Beginning run at Sat Dec 12 11:05:57 2015
+
+Entering StatisticalInverseProblem<P_V,P_M>::constructor(): prefix = , alternativeOptionsValues = 0, m_env.optionsInputFileName() = queso.inp
+Leaving StatisticalInverseProblem<P_V,P_M>::constructor(): prefix = ip_
+In StatisticalInverseProblem<P_V,P_M>::solveWithBayesMetropolisHastings(): computing solution, as requested by user
+Entering MetropolisHastingsSG<P_V,P_M>::constructor(1): prefix = ip_, alternativeOptionsValues = 0, m_env.optionsInputFileName() = queso.inp, m_initialProposalCovMatrix = 1 
+Entering MetropolisHastingsSG<P_V,P_M>::commonConstructor()
+In MetropolisHastingsSG<P_V,P_M>::commonConstructor(): just instantiated a 'ScaledCovMatrix' TK class
+Leaving MetropolisHastingsSG<P_V,P_M>::commonConstructor()
+Leaving MetropolisHastingsSG<P_V,P_M>::constructor(1)
+Starting the generation of Markov chain ip_mh_rawChain, with 500000 positions...
+
+In MetropolisHastingsSG<P_V,P_M>::generateFullChain(): contents of initial position are:17.38 
+In MetropolisHastingsSG<P_V,P_M>::generateFullChain(): targetPdf.domaintSet() info is:In BoxSubset<V,M>::print(): m_minValues = 0 , m_maxValues = 70 , m_volume = 70
+
+Finished generating 50000 positions, current rejection percentage = 3.896 %
+Finished generating 100000 positions, current rejection percentage = 3.926 %
+Finished generating 150000 positions, current rejection percentage = 3.89533 %
+Finished generating 200000 positions, current rejection percentage = 3.8455 %
+Finished generating 250000 positions, current rejection percentage = 3.8428 %
+Finished generating 300000 positions, current rejection percentage = 3.845 %
+Finished generating 350000 positions, current rejection percentage = 3.83657 %
+Finished generating 400000 positions, current rejection percentage = 3.83775 %
+Finished generating 450000 positions, current rejection percentage = 3.82667 %
+Finished generating 500000 positions, current rejection percentage = 3.849 %
+Finished the generation of Markov chain ip_mh_rawChain, with sub 500000 positions
+Some information about this chain:
+  Chain run time       = 10.5226 seconds
+
+ Breaking of the chain run time:
+
+  Candidate run time   = 1.80702 seconds (17.1728%)
+  Num target calls  = 659032
+  Target d. run time   = 1.21623 seconds (11.5583%)
+  Avg target run time   = 1.84547e-06 seconds
+  Mh alpha run time    = 2.51427 seconds (23.8941%)
+  Dr alpha run time    = 2.92739 seconds (27.8201%)
+----------------------   --------------
+  Sum                  = 8.46491 seconds (80.4453%)
+
+ Other run times:
+  DR run time          = 4.18868 seconds (39.8067%)
+  AM run time          = 0 seconds (0%)
+  Number of DRs = 159032(num_DRs/chain_size = 0.318064)
+  Out of target support in DR = 0
+  Rejection percentage = 3.849 %
+  Out of target support percentage = 0 %
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = ip_mh_, chain name = ip_mh_rawChain: about to try to open generic output file 'outputData/sipOutput.m', subId = 0, subenv is allowed to write (1/true or 0/false) = 1...
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = ip_mh_, raw chain name = ip_mh_rawChain: returned from opening generic output file 'outputData/sipOutput.m', subId = 0
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = ip_mh_, raw chain name = ip_mh_rawChain: about to try to write raw sub chain output file 'outputData/ip_raw_chain.m', subId = 0, subenv is allowed to write  1/true or 0/false) = 1...
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(): just wrote (per period request) remaining 500000 chain positions , 0 <= pos <= 499999
+Entering BaseVectorSequence<V,M>::subPositionsOfMaximum(): subCorrespondingScalarValues,subSequenceSize() = 500000, this->subSequenceSize = 500000
+Leaving BaseVectorSequence<V,M>::subPositionsOfMaximum()
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(): just computed MLE, rawSubMLEvalue = -9.28477e-12, rawSubMLEpositions.subSequenceSize() = 1, rawSubMLEpositions[0] = 23.9062 
+Entering BaseVectorSequence<V,M>::subPositionsOfMaximum(): subCorrespondingScalarValues,subSequenceSize() = 500000, this->subSequenceSize = 500000
+Leaving BaseVectorSequence<V,M>::subPositionsOfMaximum()
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(): just computed MAP, rawSubMAPvalue = -4.2485, rawSubMAPpositions.subSequenceSize() = 1, rawSubMAPpositions[0] = 23.9062 
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = ip_mh_, raw chain name = ip_mh_rawChain: returned from writing raw sub chain output file 'outputData/ip_raw_chain.m', subId = 0
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = ip_mh_, raw chain name = ip_mh_rawChain: about to try to write raw unified chain output file 'outputData/ip_raw_chain.m', subId = 0...
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = ip_mh_, raw chain name = ip_mh_rawChain: returned from writing raw unified chain output file 'outputData/ip_raw_chain.m', subId = 0
+Entering BaseVectorSequence<V,M>::unifiedPositionsOfMaximum(): subCorrespondingScalarValues,subSequenceSize() = 500000, this->subSequenceSize = 500000
+Leaving BaseVectorSequence<V,M>::unifiedPositionsOfMaximum()
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(): just computed MLE, rawUnifiedMLEvalue = -9.28477e-12, rawUnifiedMLEpositions.subSequenceSize() = 1, rawUnifiedMLEpositions[0] = 23.9062 
+Entering BaseVectorSequence<V,M>::unifiedPositionsOfMaximum(): subCorrespondingScalarValues,subSequenceSize() = 500000, this->subSequenceSize = 500000
+Leaving BaseVectorSequence<V,M>::unifiedPositionsOfMaximum()
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(): just computed MAP, rawUnifiedMAPvalue = -4.2485, rawUnifiedMAPpositions.subSequenceSize() = 1, rawUnifiedMAPpositions[0] = 23.9062 
+
+
+-----------------------------------------------------
+ Writing more information about the Markov chain ip_mh_rawChain to output file ...
+-----------------------------------------------------
+
+
+-----------------------------------------------------
+ Finished writing more information about the Markov chain ip_mh_rawChain
+-----------------------------------------------------
+
+Entering SequenceOfVectors<V,M>::filter(): initialPos = 0, spacing = 16, subSequenceSize = 500000
+Leaving SequenceOfVectors<V,M>::filter(): initialPos = 0, spacing = 16, subSequenceSize = 31250
+Entering ScalarSequence<V,M>::filter(): initialPos = 0, spacing = 16, subSequenceSize = 500000
+Leaving ScalarSequence<V,M>::filter(): initialPos = 0, spacing = 16, subSequenceSize = 31250
+Entering ScalarSequence<V,M>::filter(): initialPos = 0, spacing = 16, subSequenceSize = 500000
+Leaving ScalarSequence<V,M>::filter(): initialPos = 0, spacing = 16, subSequenceSize = 31250
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = ip_mh_: checking necessity of opening output files for filtered chain ip_mh_filtChain...
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = ip_mh_: closed sub output file 'outputData/ip_filt_chain' for filtered chain ip_mh_filtChain
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = ip_mh_: closed unified output file 'outputData/ip_filt_chain' for filtered chain ip_mh_filtChain
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = ip_mh_: closed generic output file 'outputData/sipOutput' (chain name is ip_mh_filtChain)
+
+In SequentialVectorRealizer<V,M>::constructor(): m_chain.subSequenceSize() = 31250
+
+Ending run at Sat Dec 12 11:06:13 2015
+Total run time = 16 seconds
