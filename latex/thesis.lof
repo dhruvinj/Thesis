@@ -3,13 +3,13 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Geometry\relax }}{9}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Viscocity\relax }}{10}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Diffusion coefficient\relax }}{13}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Diffusion coefficient for $O$ - $O$}}}{13}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Diffusion coefficient for $O$ - $O_2$}}}{13}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Diffusion coefficient for $O$ - $O_3$}}}{13}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Diffusion coefficient for $O_2$ - $O_2$}}}{13}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Diffusion coefficient for $O_2$ - $O_3$}}}{13}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Diffusion coefficient for $O_3$ - $O_3$}}}{13}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Diffusion coefficient\relax }}{12}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Diffusion coefficient for $O$ - $O$}}}{12}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Diffusion coefficient for $O$ - $O_2$}}}{12}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Diffusion coefficient for $O$ - $O_3$}}}{12}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Diffusion coefficient for $O_2$ - $O_2$}}}{12}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Diffusion coefficient for $O_2$ - $O_3$}}}{12}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Diffusion coefficient for $O_3$ - $O_3$}}}{12}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Thermal Conductivity\relax }}{14}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Thermal Conductivity for $O$}}}{14}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Thermal Conductivity for $O_2$}}}{14}

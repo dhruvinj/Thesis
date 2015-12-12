@@ -16,8 +16,8 @@
 \contentsline {section}{\numberline {3.4}Transport Model}{10}
 \contentsline {subsection}{\numberline {3.4.1}Viscocity}{10}
 \contentsline {subsection}{\numberline {3.4.2}Bimolecular Diffusion}{11}
-\contentsline {subsection}{\numberline {3.4.3}Species Thermal Conductivity}{11}
-\contentsline {subsection}{\numberline {3.4.4}Mixture Model}{12}
+\contentsline {subsection}{\numberline {3.4.3}Species Thermal Conductivity}{13}
+\contentsline {subsection}{\numberline {3.4.4}Mixture Model}{14}
 \contentsline {chapter}{\numberline {4}Finite Element Formulation}{19}
 \contentsline {section}{\numberline {4.1}Weak formulation}{19}
 \contentsline {section}{\numberline {4.2}Need for stability}{20}
@@ -34,15 +34,15 @@
 \contentsline {section}{\numberline {6.1}Estimating parameter E for reaction 3}{25}
 \contentsline {subsubsection}{Different surrogate sizes }{25}
 \contentsline {subsubsection}{Sample size (Surrogate size) 10 }{25}
-\contentsline {subsubsection}{Sample size (Surrogate size) 20 }{25}
-\contentsline {subsubsection}{Sample size (Surrogate size) 50 }{25}
-\contentsline {subsubsection}{Sample size (Surrogate size) 100 }{25}
+\contentsline {subsubsection}{Sample size (Surrogate size) 20 }{30}
+\contentsline {subsubsection}{Sample size (Surrogate size) 50 }{35}
+\contentsline {subsubsection}{Sample size (Surrogate size) 100 }{40}
 \contentsline {subsubsection}{Sample size (Surrogate size) 500 }{45}
-\contentsline {subsubsection}{Sample size (Surrogate size) 1000 }{45}
-\contentsline {subsubsection}{Different chain sizes }{45}
-\contentsline {subsubsection}{Chain size 100000 }{45}
-\contentsline {subsubsection}{Chain size 300000 }{45}
-\contentsline {subsubsection}{Chain size 700000 }{63}
-\contentsline {subsubsection}{Chain size 900000 }{63}
-\contentsline {subsubsection}{Chain size 1000000 }{63}
+\contentsline {subsubsection}{Sample size (Surrogate size) 1000 }{50}
+\contentsline {subsubsection}{Different chain sizes }{55}
+\contentsline {subsubsection}{Chain size 100000 }{55}
+\contentsline {subsubsection}{Chain size 300000 }{60}
+\contentsline {subsubsection}{Chain size 700000 }{65}
+\contentsline {subsubsection}{Chain size 900000 }{70}
+\contentsline {subsubsection}{Chain size 1000000 }{75}
 \contentsline {chapter}{\numberline {7}Conclusion}{81}
