@@ -6,7 +6,7 @@ transport and fluid mechanics. The combination of three factor make simulations 
 \bigskip
 \noindent For low speed combustion flows, Low Mach number asysmptotics of the flow equations exploit the inherent separation of scales in such systems by analytically eliminating acoustic wave propagation entirely from the dynamics, while preserving the important compressibility effects arising from reactions and transport.
 \section{Literature Review}
-It is shown by Muller~\cite{Muller} that a multiple-time scale, single-space scale asymptotic analysis of the compressible Navier-Stokes equations reveals that the zeroth-order global thermodynamic pressure, the divergence of velocity and the material change of density are affected by heat-release rate and heat conduction at low-Mach-numbers.
+It is shown by Muller that a multiple-time scale, single-space scale asymptotic analysis of the compressible Navier-Stokes equations reveals that the zeroth-order global thermodynamic pressure, the divergence of velocity and the material change of density are affected by heat-release rate and heat conduction at low-Mach-numbers.
 
 \bigskip 
 \noindent His result show that the acoustic time change of the heat-release rate as the dominant source of sound in low-Mach-number flow. The asymptotic expansion of all flow variables show that the viscous and buoyancy forces enter the computation of the second-order incompressible pressure in low-Mach-number flow in a similar way as they enter the pressure computation in incompressible flow, except that the

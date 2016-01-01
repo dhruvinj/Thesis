@@ -66,11 +66,11 @@ $$P(u|y) = \frac{P(u) P(y|u)}{P(y)}$$ .
 
 
 \chapter{Conclusion}
-%\begin{ubbackmatter}
+\begin{ubbackmatter}
 \bibliographystyle{plain}
 \references[Bibliography]{references}
 %\bibliography{references}
-%\end{ubbackmatter}
+\end{ubbackmatter}
 \end{document}
 \endinput
 %%

@@ -1,54 +1,46 @@
-This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: plain.bst
 Database file #1: references.bib
-I was expecting a `,' or a `}'---line 90 of file references.bib
- :     author  = "Bernhard M\"
- :                            {u}ller",
-I'm skipping whatever remains of this entry
-Warning--empty title in Muller
-Warning--empty journal in Muller
-Warning--empty year in Muller
-You've used 2 entries,
+You've used 1 entry,
             2118 wiz_defined-function locations,
-            507 strings with 4224 characters,
-and the built_in function-call counts, 640 in all, are:
-= -- 64
-> -- 14
-< -- 1
-+ -- 6
-- -- 4
-* -- 37
-:= -- 101
-add.period$ -- 4
-call.type$ -- 2
-change.case$ -- 7
+            505 strings with 4134 characters,
+and the built_in function-call counts, 321 in all, are:
+= -- 33
+> -- 7
+< -- 0
++ -- 3
+- -- 2
+* -- 22
+:= -- 59
+add.period$ -- 3
+call.type$ -- 1
+change.case$ -- 4
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 32
-empty$ -- 53
-format.name$ -- 4
-if$ -- 137
+cite$ -- 1
+duplicate$ -- 11
+empty$ -- 28
+format.name$ -- 2
+if$ -- 63
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 2
-newline$ -- 11
-num.names$ -- 4
-pop$ -- 14
+int.to.str$ -- 1
+missing$ -- 1
+newline$ -- 8
+num.names$ -- 2
+pop$ -- 2
 preamble$ -- 1
-purify$ -- 6
+purify$ -- 3
 quote$ -- 0
-skip$ -- 27
+skip$ -- 7
 stack$ -- 0
-substring$ -- 50
-swap$ -- 12
-text.length$ -- 1
+substring$ -- 33
+swap$ -- 1
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 8
-warning$ -- 3
-while$ -- 7
-width$ -- 3
-write$ -- 18
-(There was 1 error message)
+type$ -- 4
+warning$ -- 0
+while$ -- 4
+width$ -- 2
+write$ -- 13
