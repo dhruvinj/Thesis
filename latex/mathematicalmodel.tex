@@ -1,7 +1,5 @@
-\chapter{Mathematical Model}
-\section{Governing Equations}
-Need transition description (will write later)
-\subsection{Problem definition}
+\section{Mathematical Model}
+\subsection{Governing Equations}
 The flow of a compressible fluid is described in terms of the velocity $(u^*)$, pressure $(p^*)$, density $(\rho^*)$, and temperature$(T^*)$ fields. These fields are solutions of the compressible Navier Stokes equations that describe the dynamics of the system
 and that are statements of conservation of mass, momentum and energy and a state equation relating the thermodynamic variables.  
 
@@ -32,7 +30,7 @@ $\mu^*$ is the dynamic viscocity. $k^*$ is the thermal conductivity.
 
 \subsection{Low mach number asymtotic analysis}
 
-We nondimensionalize the Equations by using reference quantities denoted by the subscript $\infty$,
+The work below uses low mach number symptotic analysis developed by Muller\cite{Muller}. We nondimensionalize the Equations by using reference quantities denoted by the subscript $\infty$,
 e.g. farfield or stagnation conditions, and a typical length scale $L^*$ of the considered
 flow. The thermodynamic reference quantities are assumed to be related by the equation of
 state for a perfect gas. We have used perfect gas law because we are dealing with gases in combustion environment. We define the nondimensional quantities by:\\
@@ -44,7 +42,7 @@ $\rho = \frac{\rho^*}{\rho_\infty} $, $p = \frac{p^*}{p_\infty} $, $u = \frac{u^
 
 $C_p^* = \frac{C_p}{{C_p}^*_{\infty}}$.
 
-Using the relations above. we may write the nondimensional
+Using the relations above; we may write the nondimensional
 Navier-Stokes equations and other equations of interest as follows:
 \begin{eqnarray}
 \frac{D \rho}{D t}\hspace{1mm} &=& -\hspace{1mm}\rho \hspace{1mm}\nabla \cdot u \\
@@ -59,9 +57,9 @@ $$Re= \frac{u_\infty \rho_\infty L}{\mu_\infty}$$.
 $$Pr= \frac{{C_p}_\infty \mu_\infty L}{k_\infty}$$
 $$Fr= \sqrt{\frac{u_\infty^2} {g_\infty L}}$$. 
 
-\noindent $a_{\infty}$ is the reference speed of sound. $M$ is the mach number,$Re$ is the reynolds number,$Pr$ is the prandtl number,$Fr$ is the froude number and $\lambda$ is defined as $\frac{{C_p}_\infty T_\infty }{a^2_\infty}$. 
+\noindent $a_{\infty}$ is the reference speed of sound, $M$ is the mach number, $Re$ is the reynolds number, $Pr$ is the prandtl number, $Fr$ is the froude number and $\lambda$ is defined as $\frac{{C_p}_\infty T_\infty }{a^2_\infty}$. 
 
-\noindent By definition 
+\noindent From ideal gas law, 
 
 $$\beta^*= -\frac{1}{\rho^*}\frac{\partial \rho^*}{\partial T^*}$$ We non dimensional this term as follows 
 
@@ -70,7 +68,7 @@ $$\beta^*= -\frac{1}{\rho_\infty \rho}\frac{\rho_\infty}{T_\infty}\frac{\partial
 $$\beta^*= \frac{1}{T_\infty } \beta$$ Where $\beta_\infty = \frac{1}{T_\infty}$. 
 \bigskip
 
-\noindent By definition 
+\noindent From ideal gas law, 
 
 $${a^*}^2= \frac{\partial p^*}{\partial \rho^*}$$ We non dimensional this term as follows 
 

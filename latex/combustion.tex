@@ -1,12 +1,19 @@
-\chapter{Combustion Model}
-\section{Premixed ozone oxygen laminar flame model}
-We shall use Heimerl and coffee's contemporary method for modelling combustion flame problem. A one dimensional, premixed, laminar, steady state ozone oxygen flame was considered in their theortical model. The reason for choosing this model was due to its simplicity. The chemical reactions involved only three species 
+\chapter{Mathematical Model}
+
+\bigskip
+\noindent A.G Streng and A.V. Grosse \cite{Streng}  studied the ozone oxygen flame experimentally. The stability of ozone and the rates of decomposition or explosion were investigated by Armour research foundation. Ozone was burned to oxygen from a simple burner tip in the range from 17 percent to 100 percent initial concentration of ozone in the mixture. The flame temperatures were calculated from enthalpy data and dissociation constants of oxygen using kelley's tables. The concentration of ozone was kept constant with error of   0.2 percent. Two methods were used to determine burning velocity i.e open tube method and the burning tip method. We will be using experimental burning velocity of the burning tip method. The burner tip experiments were carried out in standard apparatus, using pyrex glass aluminium tips with an inner diameter of 3 to 0.65mm. The flames were readily observed by the standard schlieren method at all concentrations above 30 mole percent. The measurements were all carried out in the laminar flow region and the reynolds number of the flow was below 2000. The initial conditions are 300K temperature and 1.0 atmosphere pressure. The results of burning velocities of ozone flames were compared with theoretical burning velocities of Dr. Von Karman and his associates. They were found to be in close agreements. 
+
+\section{Governing Equations}
 
 
-			$$O_3 + M \rightleftharpoons O + O_2 + M $$
-			$$ O + O_3 \rightleftharpoons A_2  2O_2$$ 
-			$$A + AB \rightleftharpoons A_2 + B$$
-\noindent Where M represents the third body which could be either $O$, $O_2$ or $O_3$. 
+The final equation obtained by from asymptotic analysis is given below. These quantities are non dimensionalised. 
+\begin{eqnarray}
+-\nabla \cdot u &=& \frac{1}{p^0} \frac{d p^0}{d t} - \frac{1}{T}\frac{D T}{D t} \hspace{1mm}\\
+\rho \frac{D u}{D t} \hspace{1mm} &=& -\frac{1}{M^2}\hspace{1mm}\nabla p\hspace{1mm}+\hspace{1mm}\frac{1}{Re}\nabla \cdot \tau + \frac{1}{Fr^2}\rho g \\
+\rho C_p \frac{D T}{D t} \hspace{1mm}&=&\hspace{1mm} -  \frac{1}{Re Pr}\nabla\cdot (k \nabla T) + \hspace{1mm} \frac{1}{\gamma -1} \frac{d p^0}{d t}\hspace{1mm}\\
+\end{eqnarray}
+
+
 
 \noindent The species conservation equation is given as 
 \begin{eqnarray}
@@ -16,7 +23,7 @@ We shall use Heimerl and coffee's contemporary method for modelling combustion f
 	
 Where $$w_i = Mw_i \sum_{k=1}^{6}(v_{k,i}^{''} - v_{k,i}^{'}) B_k T^{\alpha_k} e^{\frac{-E_a}{R_u T}} \prod_{j=1}^3 \left(\frac{X_j p}{R T} \right)^{v'_{j,k}}$$
 
-\noindent The above equation considers all 6 reactions for all the three species. 
+\noindent The above equation considers all reactions for all the species. 
 
 \noindent From atomic species conservation 
 	$$\sum_{i=1}^{N} v_i{'}M_i \rightleftharpoons \sum_{i=1}^{N} v_i{''}M_i $$
@@ -34,6 +41,16 @@ Where $$w_i = Mw_i \sum_{k=1}^{6}(v_{k,i}^{''} - v_{k,i}^{'}) B_k T^{\alpha_k} e
 \noindent Where $D_{jk}$ is the fick's diffusion coefficient. $V$ is the diffusion velocities. 
 
 \noindent The boundaries are defined by specifying the concentration of $O_3$, $O_2$ at the inlet. 
+
+\section{Premixed ozone oxygen laminar flame model}
+We shall use Heimerl and coffee's contemporary method for modelling combustion flame problem. A one dimensional, premixed, laminar, steady state ozone oxygen flame was considered in their theortical model. The reason for choosing this model was due to its simplicity. The chemical reactions involved only three species 
+
+
+			$$O_3 + M \rightleftharpoons O + O_2 + M $$
+			$$ O + O_3 \rightleftharpoons A_2  2O_2$$ 
+			$$A + AB \rightleftharpoons A_2 + B$$
+\noindent Where M represents the third body which could be either $O$, $O_2$ or $O_3$. 
+
 
 \section{The experimental data on laminar flame speed}
 

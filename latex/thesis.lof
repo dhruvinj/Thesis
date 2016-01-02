@@ -1,145 +1,145 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Geometry\relax }}{9}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Viscocity\relax }}{10}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Diffusion coefficient\relax }}{12}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Diffusion coefficient for $O$ - $O$}}}{12}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Diffusion coefficient for $O$ - $O_2$}}}{12}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Diffusion coefficient for $O$ - $O_3$}}}{12}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Diffusion coefficient for $O_2$ - $O_2$}}}{12}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Diffusion coefficient for $O_2$ - $O_3$}}}{12}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Diffusion coefficient for $O_3$ - $O_3$}}}{12}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Thermal Conductivity\relax }}{14}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Thermal Conductivity for $O$}}}{14}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Thermal Conductivity for $O_2$}}}{14}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Thermal Conductivity for $O_3$}}}{14}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Mixture Viscocity\relax }}{15}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mixture Viscocity behind the flame}}}{15}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mixture Viscocity inside the flame}}}{15}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Mixture Viscocity after the flame }}}{15}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Mixture Diffusion coefficient\relax }}{16}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mixture Diffusion coefficient for $O_3$ behind the flame}}}{16}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mixture Diffusion coefficient for $O_2$ behind the flame}}}{16}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Mixture Diffusion coefficient for $O_3$ inside the flame}}}{16}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Mixture Diffusion coefficient for $O$ inside the flame}}}{16}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Mixture Diffusion coefficient for $O_2$ inside the flame - $O_3$}}}{16}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Mixture Diffusion coefficient for $O_2$ after the flame - $O_3$}}}{16}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Mixture thermal conductivity\relax }}{17}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mixture thermal conductivity behind the flame}}}{17}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mixture thermal conductivity inside the flame}}}{17}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Mixture thermal conductivity after the flame }}}{17}
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Geometry\relax }}{5}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Viscocity\relax }}{7}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Diffusion coefficient\relax }}{9}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Diffusion coefficient for $O$ - $O$}}}{9}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Diffusion coefficient for $O$ - $O_2$}}}{9}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Diffusion coefficient for $O$ - $O_3$}}}{9}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Diffusion coefficient for $O_2$ - $O_2$}}}{9}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Diffusion coefficient for $O_2$ - $O_3$}}}{9}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Diffusion coefficient for $O_3$ - $O_3$}}}{9}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Thermal Conductivity\relax }}{11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Thermal Conductivity for $O$}}}{11}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Thermal Conductivity for $O_2$}}}{11}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Thermal Conductivity for $O_3$}}}{11}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Mixture Viscocity\relax }}{12}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mixture Viscocity behind the flame}}}{12}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mixture Viscocity inside the flame}}}{12}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Mixture Viscocity after the flame }}}{12}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Mixture Diffusion coefficient\relax }}{13}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mixture Diffusion coefficient for $O_3$ behind the flame}}}{13}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mixture Diffusion coefficient for $O_2$ behind the flame}}}{13}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Mixture Diffusion coefficient for $O_3$ inside the flame}}}{13}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Mixture Diffusion coefficient for $O$ inside the flame}}}{13}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Mixture Diffusion coefficient for $O_2$ inside the flame - $O_3$}}}{13}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Mixture Diffusion coefficient for $O_2$ after the flame - $O_3$}}}{13}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Mixture thermal conductivity\relax }}{14}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mixture thermal conductivity behind the flame}}}{14}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mixture thermal conductivity inside the flame}}}{14}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Mixture thermal conductivity after the flame }}}{14}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces MCMC chain position \relax }}{26}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Histogram\relax }}{27}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces KDE \relax }}{28}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces CDF function for Parameter \relax }}{29}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces PDF function for Parameter \relax }}{30}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces MCMC chain position \relax }}{31}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Histogram\relax }}{32}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces KDE \relax }}{33}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces CDF function for Parameter \relax }}{34}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces PDF function for Parameter \relax }}{35}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces MCMC chain position \relax }}{36}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Histogram\relax }}{37}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces KDE \relax }}{38}
-\contentsline {figure}{\numberline {6.14}{\ignorespaces CDF function for Parameter \relax }}{39}
-\contentsline {figure}{\numberline {6.15}{\ignorespaces PDF function for Parameter \relax }}{40}
-\contentsline {figure}{\numberline {6.16}{\ignorespaces MCMC chain position \relax }}{41}
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Histogram\relax }}{42}
-\contentsline {figure}{\numberline {6.18}{\ignorespaces KDE \relax }}{43}
-\contentsline {figure}{\numberline {6.19}{\ignorespaces CDF function for Parameter \relax }}{44}
-\contentsline {figure}{\numberline {6.20}{\ignorespaces CDF function for Parameter \relax }}{45}
-\contentsline {figure}{\numberline {6.21}{\ignorespaces MCMC chain position \relax }}{46}
-\contentsline {figure}{\numberline {6.22}{\ignorespaces Histogram\relax }}{47}
-\contentsline {figure}{\numberline {6.23}{\ignorespaces KDE \relax }}{48}
-\contentsline {figure}{\numberline {6.24}{\ignorespaces CDF function for Parameter \relax }}{49}
-\contentsline {figure}{\numberline {6.25}{\ignorespaces PDF function for Parameter \relax }}{50}
-\contentsline {figure}{\numberline {6.26}{\ignorespaces MCMC chain position \relax }}{51}
-\contentsline {figure}{\numberline {6.27}{\ignorespaces Histogram\relax }}{52}
-\contentsline {figure}{\numberline {6.28}{\ignorespaces KDE \relax }}{53}
-\contentsline {figure}{\numberline {6.29}{\ignorespaces CDF function for Parameter \relax }}{54}
-\contentsline {figure}{\numberline {6.30}{\ignorespaces PDF function for Parameter \relax }}{55}
-\contentsline {figure}{\numberline {6.31}{\ignorespaces MCMC chain position \relax }}{56}
-\contentsline {figure}{\numberline {6.32}{\ignorespaces Histogram\relax }}{57}
-\contentsline {figure}{\numberline {6.33}{\ignorespaces KDE \relax }}{58}
-\contentsline {figure}{\numberline {6.34}{\ignorespaces CDF function for Parameter \relax }}{59}
-\contentsline {figure}{\numberline {6.35}{\ignorespaces PDF function for Parameter \relax }}{60}
-\contentsline {figure}{\numberline {6.36}{\ignorespaces MCMC chain position \relax }}{61}
-\contentsline {figure}{\numberline {6.37}{\ignorespaces Histogram\relax }}{62}
-\contentsline {figure}{\numberline {6.38}{\ignorespaces KDE \relax }}{63}
-\contentsline {figure}{\numberline {6.39}{\ignorespaces CDF function for Parameter \relax }}{64}
-\contentsline {figure}{\numberline {6.40}{\ignorespaces PDF function for Parameter \relax }}{65}
-\contentsline {figure}{\numberline {6.41}{\ignorespaces MCMC chain position \relax }}{66}
-\contentsline {figure}{\numberline {6.42}{\ignorespaces Histogram\relax }}{67}
-\contentsline {figure}{\numberline {6.43}{\ignorespaces KDE \relax }}{68}
-\contentsline {figure}{\numberline {6.44}{\ignorespaces CDF function for Parameter \relax }}{69}
-\contentsline {figure}{\numberline {6.45}{\ignorespaces PDF function for Parameter \relax }}{70}
-\contentsline {figure}{\numberline {6.46}{\ignorespaces MCMC chain position \relax }}{71}
-\contentsline {figure}{\numberline {6.47}{\ignorespaces Histogram\relax }}{72}
-\contentsline {figure}{\numberline {6.48}{\ignorespaces KDE \relax }}{73}
-\contentsline {figure}{\numberline {6.49}{\ignorespaces CDF function for Parameter \relax }}{74}
-\contentsline {figure}{\numberline {6.50}{\ignorespaces PDF function for Parameter \relax }}{75}
-\contentsline {figure}{\numberline {6.51}{\ignorespaces MCMC chain position \relax }}{76}
-\contentsline {figure}{\numberline {6.52}{\ignorespaces Histogram\relax }}{77}
-\contentsline {figure}{\numberline {6.53}{\ignorespaces KDE \relax }}{78}
-\contentsline {figure}{\numberline {6.54}{\ignorespaces CDF function for Parameter \relax }}{79}
-\contentsline {figure}{\numberline {6.55}{\ignorespaces PDF function for Parameter \relax }}{80}
-\contentsline {figure}{\numberline {6.56}{\ignorespaces MCMC chain position \relax }}{81}
-\contentsline {figure}{\numberline {6.57}{\ignorespaces Histogram\relax }}{82}
-\contentsline {figure}{\numberline {6.58}{\ignorespaces KDE \relax }}{83}
-\contentsline {figure}{\numberline {6.59}{\ignorespaces CDF function for Parameter \relax }}{84}
-\contentsline {figure}{\numberline {6.60}{\ignorespaces PDF function for Parameter \relax }}{85}
-\contentsline {figure}{\numberline {6.61}{\ignorespaces MCMC chain position \relax }}{86}
-\contentsline {figure}{\numberline {6.62}{\ignorespaces Histogram\relax }}{87}
-\contentsline {figure}{\numberline {6.63}{\ignorespaces KDE \relax }}{88}
-\contentsline {figure}{\numberline {6.64}{\ignorespaces CDF function for Parameter \relax }}{89}
-\contentsline {figure}{\numberline {6.65}{\ignorespaces PDF function for Parameter \relax }}{90}
-\contentsline {figure}{\numberline {6.66}{\ignorespaces MCMC chain position \relax }}{91}
-\contentsline {figure}{\numberline {6.67}{\ignorespaces Histogram\relax }}{92}
-\contentsline {figure}{\numberline {6.68}{\ignorespaces KDE \relax }}{93}
-\contentsline {figure}{\numberline {6.69}{\ignorespaces CDF function for Parameter \relax }}{94}
-\contentsline {figure}{\numberline {6.70}{\ignorespaces PDF function for Parameter \relax }}{95}
-\contentsline {figure}{\numberline {6.71}{\ignorespaces MCMC chain position \relax }}{96}
-\contentsline {figure}{\numberline {6.72}{\ignorespaces Histogram\relax }}{97}
-\contentsline {figure}{\numberline {6.73}{\ignorespaces KDE \relax }}{98}
-\contentsline {figure}{\numberline {6.74}{\ignorespaces CDF function for Parameter \relax }}{99}
-\contentsline {figure}{\numberline {6.75}{\ignorespaces CDF function for Parameter \relax }}{100}
-\contentsline {figure}{\numberline {6.76}{\ignorespaces MCMC chain position \relax }}{101}
-\contentsline {figure}{\numberline {6.77}{\ignorespaces Histogram\relax }}{102}
-\contentsline {figure}{\numberline {6.78}{\ignorespaces KDE \relax }}{103}
-\contentsline {figure}{\numberline {6.79}{\ignorespaces CDF function for Parameter \relax }}{104}
-\contentsline {figure}{\numberline {6.80}{\ignorespaces PDF function for Parameter \relax }}{105}
-\contentsline {figure}{\numberline {6.81}{\ignorespaces MCMC chain position \relax }}{106}
-\contentsline {figure}{\numberline {6.82}{\ignorespaces Histogram\relax }}{107}
-\contentsline {figure}{\numberline {6.83}{\ignorespaces KDE \relax }}{108}
-\contentsline {figure}{\numberline {6.84}{\ignorespaces CDF function for Parameter \relax }}{109}
-\contentsline {figure}{\numberline {6.85}{\ignorespaces PDF function for Parameter \relax }}{110}
-\contentsline {figure}{\numberline {6.86}{\ignorespaces MCMC chain position \relax }}{111}
-\contentsline {figure}{\numberline {6.87}{\ignorespaces Histogram\relax }}{112}
-\contentsline {figure}{\numberline {6.88}{\ignorespaces KDE \relax }}{113}
-\contentsline {figure}{\numberline {6.89}{\ignorespaces CDF function for Parameter \relax }}{114}
-\contentsline {figure}{\numberline {6.90}{\ignorespaces PDF function for Parameter \relax }}{115}
-\contentsline {figure}{\numberline {6.91}{\ignorespaces MCMC chain position \relax }}{116}
-\contentsline {figure}{\numberline {6.92}{\ignorespaces Histogram\relax }}{117}
-\contentsline {figure}{\numberline {6.93}{\ignorespaces KDE \relax }}{118}
-\contentsline {figure}{\numberline {6.94}{\ignorespaces CDF function for Parameter \relax }}{119}
-\contentsline {figure}{\numberline {6.95}{\ignorespaces PDF function for Parameter \relax }}{120}
-\contentsline {figure}{\numberline {6.96}{\ignorespaces MCMC chain position \relax }}{121}
-\contentsline {figure}{\numberline {6.97}{\ignorespaces Histogram\relax }}{122}
-\contentsline {figure}{\numberline {6.98}{\ignorespaces KDE \relax }}{123}
-\contentsline {figure}{\numberline {6.99}{\ignorespaces CDF function for Parameter \relax }}{124}
-\contentsline {figure}{\numberline {6.100}{\ignorespaces PDF function for Parameter \relax }}{125}
-\contentsline {figure}{\numberline {6.101}{\ignorespaces MCMC chain position \relax }}{126}
-\contentsline {figure}{\numberline {6.102}{\ignorespaces Histogram\relax }}{127}
-\contentsline {figure}{\numberline {6.103}{\ignorespaces KDE \relax }}{128}
-\contentsline {figure}{\numberline {6.104}{\ignorespaces CDF function for Parameter \relax }}{129}
-\contentsline {figure}{\numberline {6.105}{\ignorespaces PDF function for Parameter \relax }}{130}
-\contentsline {figure}{\numberline {6.106}{\ignorespaces MCMC chain position \relax }}{131}
-\contentsline {figure}{\numberline {6.107}{\ignorespaces Histogram\relax }}{132}
-\contentsline {figure}{\numberline {6.108}{\ignorespaces KDE \relax }}{133}
-\contentsline {figure}{\numberline {6.109}{\ignorespaces CDF function for Parameter \relax }}{134}
-\contentsline {figure}{\numberline {6.110}{\ignorespaces PDF function for Parameter \relax }}{135}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces MCMC chain position \relax }}{22}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Histogram\relax }}{23}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces KDE \relax }}{24}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces CDF function for Parameter \relax }}{25}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces PDF function for Parameter \relax }}{26}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces MCMC chain position \relax }}{27}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Histogram\relax }}{28}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces KDE \relax }}{29}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces CDF function for Parameter \relax }}{30}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces PDF function for Parameter \relax }}{31}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces MCMC chain position \relax }}{32}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Histogram\relax }}{33}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces KDE \relax }}{34}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces CDF function for Parameter \relax }}{35}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces PDF function for Parameter \relax }}{36}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces MCMC chain position \relax }}{37}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Histogram\relax }}{38}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces KDE \relax }}{39}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces CDF function for Parameter \relax }}{40}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces CDF function for Parameter \relax }}{41}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces MCMC chain position \relax }}{42}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Histogram\relax }}{43}
+\contentsline {figure}{\numberline {5.23}{\ignorespaces KDE \relax }}{44}
+\contentsline {figure}{\numberline {5.24}{\ignorespaces CDF function for Parameter \relax }}{45}
+\contentsline {figure}{\numberline {5.25}{\ignorespaces PDF function for Parameter \relax }}{46}
+\contentsline {figure}{\numberline {5.26}{\ignorespaces MCMC chain position \relax }}{47}
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Histogram\relax }}{48}
+\contentsline {figure}{\numberline {5.28}{\ignorespaces KDE \relax }}{49}
+\contentsline {figure}{\numberline {5.29}{\ignorespaces CDF function for Parameter \relax }}{50}
+\contentsline {figure}{\numberline {5.30}{\ignorespaces PDF function for Parameter \relax }}{51}
+\contentsline {figure}{\numberline {5.31}{\ignorespaces MCMC chain position \relax }}{52}
+\contentsline {figure}{\numberline {5.32}{\ignorespaces Histogram\relax }}{53}
+\contentsline {figure}{\numberline {5.33}{\ignorespaces KDE \relax }}{54}
+\contentsline {figure}{\numberline {5.34}{\ignorespaces CDF function for Parameter \relax }}{55}
+\contentsline {figure}{\numberline {5.35}{\ignorespaces PDF function for Parameter \relax }}{56}
+\contentsline {figure}{\numberline {5.36}{\ignorespaces MCMC chain position \relax }}{57}
+\contentsline {figure}{\numberline {5.37}{\ignorespaces Histogram\relax }}{58}
+\contentsline {figure}{\numberline {5.38}{\ignorespaces KDE \relax }}{59}
+\contentsline {figure}{\numberline {5.39}{\ignorespaces CDF function for Parameter \relax }}{60}
+\contentsline {figure}{\numberline {5.40}{\ignorespaces PDF function for Parameter \relax }}{61}
+\contentsline {figure}{\numberline {5.41}{\ignorespaces MCMC chain position \relax }}{62}
+\contentsline {figure}{\numberline {5.42}{\ignorespaces Histogram\relax }}{63}
+\contentsline {figure}{\numberline {5.43}{\ignorespaces KDE \relax }}{64}
+\contentsline {figure}{\numberline {5.44}{\ignorespaces CDF function for Parameter \relax }}{65}
+\contentsline {figure}{\numberline {5.45}{\ignorespaces PDF function for Parameter \relax }}{66}
+\contentsline {figure}{\numberline {5.46}{\ignorespaces MCMC chain position \relax }}{67}
+\contentsline {figure}{\numberline {5.47}{\ignorespaces Histogram\relax }}{68}
+\contentsline {figure}{\numberline {5.48}{\ignorespaces KDE \relax }}{69}
+\contentsline {figure}{\numberline {5.49}{\ignorespaces CDF function for Parameter \relax }}{70}
+\contentsline {figure}{\numberline {5.50}{\ignorespaces PDF function for Parameter \relax }}{71}
+\contentsline {figure}{\numberline {5.51}{\ignorespaces MCMC chain position \relax }}{72}
+\contentsline {figure}{\numberline {5.52}{\ignorespaces Histogram\relax }}{73}
+\contentsline {figure}{\numberline {5.53}{\ignorespaces KDE \relax }}{74}
+\contentsline {figure}{\numberline {5.54}{\ignorespaces CDF function for Parameter \relax }}{75}
+\contentsline {figure}{\numberline {5.55}{\ignorespaces PDF function for Parameter \relax }}{76}
+\contentsline {figure}{\numberline {5.56}{\ignorespaces MCMC chain position \relax }}{77}
+\contentsline {figure}{\numberline {5.57}{\ignorespaces Histogram\relax }}{78}
+\contentsline {figure}{\numberline {5.58}{\ignorespaces KDE \relax }}{79}
+\contentsline {figure}{\numberline {5.59}{\ignorespaces CDF function for Parameter \relax }}{80}
+\contentsline {figure}{\numberline {5.60}{\ignorespaces PDF function for Parameter \relax }}{81}
+\contentsline {figure}{\numberline {5.61}{\ignorespaces MCMC chain position \relax }}{82}
+\contentsline {figure}{\numberline {5.62}{\ignorespaces Histogram\relax }}{83}
+\contentsline {figure}{\numberline {5.63}{\ignorespaces KDE \relax }}{84}
+\contentsline {figure}{\numberline {5.64}{\ignorespaces CDF function for Parameter \relax }}{85}
+\contentsline {figure}{\numberline {5.65}{\ignorespaces PDF function for Parameter \relax }}{86}
+\contentsline {figure}{\numberline {5.66}{\ignorespaces MCMC chain position \relax }}{87}
+\contentsline {figure}{\numberline {5.67}{\ignorespaces Histogram\relax }}{88}
+\contentsline {figure}{\numberline {5.68}{\ignorespaces KDE \relax }}{89}
+\contentsline {figure}{\numberline {5.69}{\ignorespaces CDF function for Parameter \relax }}{90}
+\contentsline {figure}{\numberline {5.70}{\ignorespaces PDF function for Parameter \relax }}{91}
+\contentsline {figure}{\numberline {5.71}{\ignorespaces MCMC chain position \relax }}{92}
+\contentsline {figure}{\numberline {5.72}{\ignorespaces Histogram\relax }}{93}
+\contentsline {figure}{\numberline {5.73}{\ignorespaces KDE \relax }}{94}
+\contentsline {figure}{\numberline {5.74}{\ignorespaces CDF function for Parameter \relax }}{95}
+\contentsline {figure}{\numberline {5.75}{\ignorespaces CDF function for Parameter \relax }}{96}
+\contentsline {figure}{\numberline {5.76}{\ignorespaces MCMC chain position \relax }}{97}
+\contentsline {figure}{\numberline {5.77}{\ignorespaces Histogram\relax }}{98}
+\contentsline {figure}{\numberline {5.78}{\ignorespaces KDE \relax }}{99}
+\contentsline {figure}{\numberline {5.79}{\ignorespaces CDF function for Parameter \relax }}{100}
+\contentsline {figure}{\numberline {5.80}{\ignorespaces PDF function for Parameter \relax }}{101}
+\contentsline {figure}{\numberline {5.81}{\ignorespaces MCMC chain position \relax }}{102}
+\contentsline {figure}{\numberline {5.82}{\ignorespaces Histogram\relax }}{103}
+\contentsline {figure}{\numberline {5.83}{\ignorespaces KDE \relax }}{104}
+\contentsline {figure}{\numberline {5.84}{\ignorespaces CDF function for Parameter \relax }}{105}
+\contentsline {figure}{\numberline {5.85}{\ignorespaces PDF function for Parameter \relax }}{106}
+\contentsline {figure}{\numberline {5.86}{\ignorespaces MCMC chain position \relax }}{107}
+\contentsline {figure}{\numberline {5.87}{\ignorespaces Histogram\relax }}{108}
+\contentsline {figure}{\numberline {5.88}{\ignorespaces KDE \relax }}{109}
+\contentsline {figure}{\numberline {5.89}{\ignorespaces CDF function for Parameter \relax }}{110}
+\contentsline {figure}{\numberline {5.90}{\ignorespaces PDF function for Parameter \relax }}{111}
+\contentsline {figure}{\numberline {5.91}{\ignorespaces MCMC chain position \relax }}{112}
+\contentsline {figure}{\numberline {5.92}{\ignorespaces Histogram\relax }}{113}
+\contentsline {figure}{\numberline {5.93}{\ignorespaces KDE \relax }}{114}
+\contentsline {figure}{\numberline {5.94}{\ignorespaces CDF function for Parameter \relax }}{115}
+\contentsline {figure}{\numberline {5.95}{\ignorespaces PDF function for Parameter \relax }}{116}
+\contentsline {figure}{\numberline {5.96}{\ignorespaces MCMC chain position \relax }}{117}
+\contentsline {figure}{\numberline {5.97}{\ignorespaces Histogram\relax }}{118}
+\contentsline {figure}{\numberline {5.98}{\ignorespaces KDE \relax }}{119}
+\contentsline {figure}{\numberline {5.99}{\ignorespaces CDF function for Parameter \relax }}{120}
+\contentsline {figure}{\numberline {5.100}{\ignorespaces PDF function for Parameter \relax }}{121}
+\contentsline {figure}{\numberline {5.101}{\ignorespaces MCMC chain position \relax }}{122}
+\contentsline {figure}{\numberline {5.102}{\ignorespaces Histogram\relax }}{123}
+\contentsline {figure}{\numberline {5.103}{\ignorespaces KDE \relax }}{124}
+\contentsline {figure}{\numberline {5.104}{\ignorespaces CDF function for Parameter \relax }}{125}
+\contentsline {figure}{\numberline {5.105}{\ignorespaces PDF function for Parameter \relax }}{126}
+\contentsline {figure}{\numberline {5.106}{\ignorespaces MCMC chain position \relax }}{127}
+\contentsline {figure}{\numberline {5.107}{\ignorespaces Histogram\relax }}{128}
+\contentsline {figure}{\numberline {5.108}{\ignorespaces KDE \relax }}{129}
+\contentsline {figure}{\numberline {5.109}{\ignorespaces CDF function for Parameter \relax }}{130}
+\contentsline {figure}{\numberline {5.110}{\ignorespaces PDF function for Parameter \relax }}{131}
+\addvspace {10\p@ }
 \addvspace {10\p@ }
