@@ -1,8 +1,19 @@
 \begin{thebibliography}{1}
 
+\bibitem{Heimerl}
+J.M. Heimerl and T.P. Coffee.
+\newblock The detailed modelling of premixed, laminar steady state flames. i.
+  ozone.
+\newblock {\em Combustion and Flame}, 39:301 -- 315, 1980.
+
 \bibitem{Muller}
 Bernhard M\"{u}ller.
 \newblock Low mach number asysmptotics of the navier stokes equations.
 \newblock {\em Journal Of Engineering Mathematics}, 34:97 -- 109, 1998.
+
+\bibitem{Streng}
+A.G. Streng and A.V Grosse.
+\newblock The ozone to oxygen flame.
+\newblock {\em Symposium, International, on Combustion}, 6:264 -- 272, 1957.
 
 \end{thebibliography}

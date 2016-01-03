@@ -76,12 +76,80 @@ The measured laminar flame speed is given below. Laminar flame measurements are 
 \end{center}
 \end{table}
 
-\section{Geometry with boundary conditions}
+\section{1D oxygen ozone combustion model}
+
+\noindent The governing equations are givenin one dimensional and time dependent forms as follows 
+
+The Overall continuity equation is given as
+\begin{eqnarray}
+\frac{\partial \rho}{\partial t} +  \frac{\partial \rho u }{\partial x} &= 0
+\end{eqnarray}
+
+The species continuity equation
+
+\begin{eqnarray}
+\rho \frac{Y_k}{\partial t} + \rho u \frac{Y_k}{\partial x} &= -\frac{\partial (\rho Y_k V_k)}{\partial x}  + w_k
+\end{eqnarray}
+
+\noindent Where $k = 1,2 or 3$ for $O$, $O_2$ or $O_3$ respectively. 
+
+Energy Equation 
+
+\begin{eqnarray}
+\rho C_p \frac{\partial T}{\partial t} + \rho u C_p \frac{T}{\partial x} &= \frac{}{\partial x} \left(\lambda \frac{\partial T}{\partial x}\right)  - \sum_{k=1}^{N} w_k \Delta h^0_{fk} - \rho  \sum_{k=1}^{N} C_{p,k} Y_k V_k \frac{\partial T}{\partial x}
+\end{eqnarray}
+
+\noindent This energy equations was arrived at under assumption that the pressure is constant in the reaction zone, the viscous dissipation is negligible, and there is no body force. 
+
+\noindent The Diffusion equation is given as 
+\begin{eqnarray}
+\frac{\partial X_k}{\partial x} &= \sum_{j=1}^{3} \frac{X_k X_j}{D_{jk}} (V_j - V_k)
+\end{eqnarray}
+
+\noindent We have considered a free flame in a tube. The boundary conditions for the totally burned end are 
+
+$$x \leftarrow \infty:  \frac{\partial T}{\partial x} = \frac{\partial Y_k}{\partial x} = 0$$
+
+\noindent In order to avoid solving the continuity equation along with the other equations, Heirmerl and coffee\cite{Heimerl} used a langrangian coordinate $\psi$
+and a new time coordinate $\tau$ defined by 
+
+$$\psi \equiv \int_{0}^{x} \rho(x',t)dx'$$
+
+\noindent So by definiton of $\psi$ and by chain, we have these expressions
+ $$\frac{\partial \psi}{\partial x} = \rho$$
+ $$\frac{\partial \tau}{\partial x} = 0$$
+ $$\frac{\partial \tau}{\partial t} = 1$$
+ $$\frac{\partial \psi}{\partial t} = (\rho u)_{x=0} - (\rho u)_{x} $$
+
+\noindent By integrating the overall continuity equation from 0 to x, we obtain 
+
+$$\frac{\partial d}{\partial t} \int_{0}^{x} \rho dx + [(\rho u)_{x} - (\rho u)_{0} ] = 0$$ 
+
+\noindent The product $\rho u$ at $x =0$ is the eigenvalue of the problem. It is defined as 
+
+$$m_0 = (\rho u)_0$$
+
+\noindent The energy equation in the new coordinate system becomes 
+
+\begin{eqnarray}
+ \frac{\partial T}{\partial t} + m_0 \frac{T}{\partial \psi} &= \frac{1}{C_p}\frac{d}{\partial \psi} \left(\rho \lambda \frac{\partial T}{\partial \psi}\right)  - \frac{1}{\rho C_p} \sum_{k=1}^{N} w_k \Delta h^0_{fk} - \frac{1}{C_p}  \sum_{k=1}^{N} C_{p,k} Y_k V_k \frac{\partial T}{\partial \psi}
+\end{eqnarray}
+
+\noindent The eigenvalue of $m_0$ or $S_L$ was determined from the steady state solution of the problem, that is 
+
+$$\frac{\partial Y_k}{\partial t} = \frac{\partial T}{\partial t} = 0$$
+
+\noindent Under the steady state conditons,
+
+$$\rho u = constant = \rho_\infty u_\infty = -\rho_1 S_L$$
+ 
+ 
+ \section{Geometry with boundary conditions}
 
 \begin{figure}[h!]
   
   \centering
-   \includegraphics[scale=0.5]{geometricbcs}
+   \includegraphics[scale=0.5]{figs/geometricbcs}
    \caption{Geometry}
 \end{figure}
 \begin{itemize}
@@ -160,7 +228,7 @@ to the species $(m)$, $k_B$ is the Boltzmann constant,$\Omega^{(2,2^*)}$ is the 
 and Mason (1961). With hard sphere approximation $f_n = 1$. We have three species in our system i.e $O$, $O_2$ and $O_3$. We have varied temperature from 300 K to 2700 K and plotted the viscocity V/s Temperature for all the three species. The $\sigma$ values and constants for dimensionless collision number are taken from NASA CAE transport file. 
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.5]{viscocity model.png}
+  \includegraphics[scale=0.5]{figs/viscocity model.png}
    \caption{Viscocity}
 \end{figure}
 
@@ -189,25 +257,25 @@ $\sigma_{ij}$ is the Lennard-Jones collision diameter between species $i$ and $j
 \begin{figure}[H]
 
 \subfloat[Diffusion coefficient for $O$ - $O$\label{subfig-1:dummy}]{%
-     \includegraphics[scale=0.5]{diffusionmodel00.png} 
+     \includegraphics[scale=0.5]{figs/diffusionmodel00.png} 
     }
 \subfloat[Diffusion coefficient for $O$ - $O_2$\label{subfig-1:dummy}]{%
-     \includegraphics[scale=0.5]{diffusionmodel002.png} 
+     \includegraphics[scale=0.5]{figs/diffusionmodel002.png} 
     }
     \quad
    \subfloat[Diffusion coefficient for $O$ - $O_3$\label{subfig-1:dummy}]{%
-        \includegraphics[scale=0.5]{diffusionmodel003.png} 
+        \includegraphics[scale=0.5]{figs/diffusionmodel003.png} 
        }
   \subfloat[Diffusion coefficient for $O_2$ - $O_2$\label{subfig-1:dummy}]{%
-         \includegraphics[scale=0.5]{diffusionmodel0202.png} 
+         \includegraphics[scale=0.5]{figs/diffusionmodel0202.png} 
         }
         
         \quad
         \subfloat[Diffusion coefficient for $O_2$ - $O_3$\label{subfig-1:dummy}]{%
-                 \includegraphics[scale=0.5]{diffusionmodel0203.png} 
+                 \includegraphics[scale=0.5]{figs/diffusionmodel0203.png} 
                 }
          \subfloat[Diffusion coefficient for $O_3$ - $O_3$\label{subfig-1:dummy}]{%
-            \includegraphics[scale=0.48]{diffusionmodel0303.png} 
+            \includegraphics[scale=0.48]{figs/diffusionmodel0303.png} 
                                 }
     \caption{Diffusion coefficient}
 \end{figure}
@@ -255,14 +323,14 @@ F(T) = 1 + \frac{\pi^{\frac{3}{2}}}{2}\sqrt{\left(\frac{\epsilon_i}{k_B T}\right
 \begin{figure}[H]
 
 \subfloat[Thermal Conductivity for $O$\label{subfig-1:dummy}]{%
-     \includegraphics[scale=0.5]{tcO.png} 
+     \includegraphics[scale=0.5]{figs/tcO.png} 
     }
 \subfloat[Thermal Conductivity for $O_2$\label{subfig-1:dummy}]{%
-     \includegraphics[scale=0.5]{tcO2.png} 
+     \includegraphics[scale=0.5]{figs/tcO2.png} 
     }
     \quad
    \subfloat[Thermal Conductivity for $O_3$\label{subfig-1:dummy}]{%
-        \includegraphics[scale=0.5]{tcO3.png} 
+        \includegraphics[scale=0.5]{figs/tcO3.png} 
        }
     \caption{Thermal Conductivity}
 \end{figure}
@@ -290,14 +358,14 @@ with
 \begin{figure}[H]
 
 \subfloat[Mixture Viscocity behind the flame\label{subfig-1:dummy}]{%
-     \includegraphics[scale=0.5]{mixtureviscocty_behindflame.png} 
+     \includegraphics[scale=0.5]{figs/mixtureviscocty_behindflame.png} 
     }
 \subfloat[Mixture Viscocity inside the flame\label{subfig-1:dummy}]{%
-     \includegraphics[scale=0.5]{mixtureviscocty_insideflame.png} 
+     \includegraphics[scale=0.5]{figs/mixtureviscocty_insideflame.png} 
     }
     \quad
    \subfloat[Mixture Viscocity after the flame \label{subfig-1:dummy}]{%
-        \includegraphics[scale=0.5]{mixtureviscocty_afterflame.png} 
+        \includegraphics[scale=0.5]{figs/mixtureviscocty_afterflame.png} 
        }
     \caption{Mixture Viscocity}
 \end{figure}
@@ -312,25 +380,25 @@ D_i = \frac{1-y_i}{\sum_{j\ne i}^{n}\frac{x_i}{D_{ji}}}
 \begin{figure}[H]
 
 \subfloat[Mixture Diffusion coefficient for $O_3$ behind the flame\label{subfig-1:dummy}]{%
-     \includegraphics[scale=0.5]{mixturediffusionO3_behindflame.png} 
+     \includegraphics[scale=0.5]{figs/mixturediffusionO3_behindflame.png} 
     }
 \subfloat[Mixture Diffusion coefficient for $O_2$ behind the flame\label{subfig-1:dummy}]{%
-     \includegraphics[scale=0.5]{mixturediffusionO2_behindflame.png} 
+     \includegraphics[scale=0.5]{figs/mixturediffusionO2_behindflame.png} 
     }
     \quad
    \subfloat[Mixture Diffusion coefficient for $O_3$ inside the flame\label{subfig-1:dummy}]{%
-        \includegraphics[scale=0.5]{mixturediffusionO3_inflame.png} 
+        \includegraphics[scale=0.5]{figs/mixturediffusionO3_inflame.png} 
        }
   \subfloat[Mixture Diffusion coefficient for $O$ inside the flame\label{subfig-1:dummy}]{%
-         \includegraphics[scale=0.5]{mixturediffusionO_inflame.png} 
+         \includegraphics[scale=0.5]{figs/mixturediffusionO_inflame.png} 
         }
         
         \quad
         \subfloat[Mixture Diffusion coefficient for $O_2$ inside the flame - $O_3$\label{subfig-1:dummy}]{%
-                 \includegraphics[scale=0.5]{mixturediffusionO2_inflame.png} 
+                 \includegraphics[scale=0.5]{figs/mixturediffusionO2_inflame.png} 
                 }
          \subfloat[Mixture Diffusion coefficient for $O_2$ after the flame - $O_3$\label{subfig-1:dummy}]{%
-            \includegraphics[scale=0.48]{mixturediffusionO2_afterflame.png} 
+            \includegraphics[scale=0.48]{figs/mixturediffusionO2_afterflame.png} 
                                 }
     \caption{Mixture Diffusion coefficient}
 \end{figure}
@@ -346,14 +414,14 @@ D_i = \frac{1-y_i}{\sum_{j\ne i}^{n}\frac{x_i}{D_{ji}}}
 \begin{figure}[H]
 
 \subfloat[Mixture thermal conductivity behind the flame\label{subfig-1:dummy}]{%
-     \includegraphics[scale=0.5]{mixturethermal_behindflame.png} 
+     \includegraphics[scale=0.5]{figs/mixturethermal_behindflame.png} 
     }
 \subfloat[Mixture thermal conductivity inside the flame\label{subfig-1:dummy}]{%
-     \includegraphics[scale=0.5]{mixturethermal_insideflame.png} 
+     \includegraphics[scale=0.5]{figs/mixturethermal_insideflame.png} 
     }
     \quad
    \subfloat[Mixture thermal conductivity after the flame \label{subfig-1:dummy}]{%
-        \includegraphics[scale=0.5]{mixturethermal_afterflame.png} 
+        \includegraphics[scale=0.5]{figs/mixturethermal_afterflame.png} 
        }
     \caption{Mixture thermal conductivity}
 \end{figure}

@@ -7,58 +7,59 @@
 \contentsline {section}{\numberline {2.1}Governing Equations}{3}
 \contentsline {section}{\numberline {2.2}Premixed ozone oxygen laminar flame model}{4}
 \contentsline {section}{\numberline {2.3}The experimental data on laminar flame speed}{4}
-\contentsline {section}{\numberline {2.4}Geometry with boundary conditions}{5}
-\contentsline {section}{\numberline {2.5}Transport Model}{7}
-\contentsline {subsection}{\numberline {2.5.1}Viscocity}{7}
-\contentsline {subsection}{\numberline {2.5.2}Bimolecular Diffusion}{7}
-\contentsline {subsection}{\numberline {2.5.3}Species Thermal Conductivity}{10}
-\contentsline {subsection}{\numberline {2.5.4}Mixture Model}{11}
-\contentsline {chapter}{\numberline {3}Finite Element Formulation}{15}
-\contentsline {section}{\numberline {3.1}Weak formulation}{15}
-\contentsline {section}{\numberline {3.2}Need for stability}{16}
-\contentsline {subsection}{\numberline {3.2.1}Streamline Upwind Petrov Galerkin Method}{16}
-\contentsline {subsection}{\numberline {3.2.2}Pressure-Stabilizing/Petrov-Galerkin (PSPG)}{17}
-\contentsline {subsection}{\numberline {3.2.3}Stabilized Navier Stokes Equation}{17}
-\contentsline {section}{\numberline {3.3}Adaptive Finite Element}{17}
-\contentsline {chapter}{\numberline {4}Bayesian Methods}{19}
-\contentsline {section}{\numberline {4.1}Review of Theory}{19}
-\contentsline {section}{\numberline {4.2}Application to Problem}{19}
-\contentsline {section}{\numberline {4.3}Methods of Solution}{20}
-\contentsline {section}{\numberline {4.4}Software}{20}
-\contentsline {chapter}{\numberline {5}Results}{21}
-\contentsline {section}{\numberline {5.1}Estimating parameter E for reaction 3 for 53$\%$ ozone }{21}
-\contentsline {subsubsection}{Different surrogate sizes }{21}
-\contentsline {subsubsection}{Sample size (Surrogate size) 10 }{21}
-\contentsline {subsubsection}{Sample size (Surrogate size) 20 }{26}
-\contentsline {subsubsection}{Sample size (Surrogate size) 50 }{31}
-\contentsline {subsubsection}{Sample size (Surrogate size) 100 }{36}
-\contentsline {subsubsection}{Sample size (Surrogate size) 500 }{41}
-\contentsline {subsubsection}{Sample size (Surrogate size) 1000 }{46}
-\contentsline {subsubsection}{Different chain sizes }{51}
-\contentsline {subsubsection}{Chain size 100000 }{51}
-\contentsline {subsubsection}{Chain size 300000 }{56}
-\contentsline {subsubsection}{Chain size 700000 }{61}
-\contentsline {subsubsection}{Chain size 900000 }{66}
-\contentsline {subsubsection}{Chain size 1000000 }{71}
-\contentsline {section}{\numberline {5.2}Estimating parameter E for reaction 3 for 53$\%$ ozone }{76}
-\contentsline {subsubsection}{Different surrogate sizes }{76}
-\contentsline {subsubsection}{Sample size (Surrogate size) 10 }{77}
-\contentsline {subsubsection}{Sample size (Surrogate size) 20 }{81}
-\contentsline {subsubsection}{Sample size (Surrogate size) 50 }{86}
-\contentsline {subsubsection}{Sample size (Surrogate size) 100 }{91}
-\contentsline {subsubsection}{Sample size (Surrogate size) 500 }{96}
-\contentsline {subsubsection}{Sample size (Surrogate size) 1000 }{101}
-\contentsline {subsubsection}{Different chain sizes }{106}
-\contentsline {subsubsection}{Chain size 100000 }{106}
-\contentsline {subsubsection}{Chain size 300000 }{111}
-\contentsline {subsubsection}{Chain size 700000 }{116}
-\contentsline {subsubsection}{Chain size 900000 }{121}
-\contentsline {subsubsection}{Chain size 1000000 }{126}
-\contentsline {chapter}{\numberline {6}Conclusion}{133}
-\contentsline {chapter}{\numberline {7}Appendix}{135}
-\contentsline {section}{\numberline {7.1}Literature Review}{135}
-\contentsline {section}{\numberline {7.2}Mathematical Model}{135}
-\contentsline {subsection}{\numberline {7.2.1}Governing Equations}{135}
-\contentsline {subsection}{\numberline {7.2.2}Low mach number asymtotic analysis}{136}
-\contentsline {subsection}{\numberline {7.2.3}Asymptotic analysis}{137}
-\contentsline {chapter}{Bibliography}{138}
+\contentsline {section}{\numberline {2.4}1D oxygen ozone combustion model}{5}
+\contentsline {section}{\numberline {2.5}Geometry with boundary conditions}{6}
+\contentsline {section}{\numberline {2.6}Transport Model}{8}
+\contentsline {subsection}{\numberline {2.6.1}Viscocity}{8}
+\contentsline {subsection}{\numberline {2.6.2}Bimolecular Diffusion}{8}
+\contentsline {subsection}{\numberline {2.6.3}Species Thermal Conductivity}{11}
+\contentsline {subsection}{\numberline {2.6.4}Mixture Model}{12}
+\contentsline {chapter}{\numberline {3}Finite Element Formulation}{17}
+\contentsline {section}{\numberline {3.1}Weak formulation}{17}
+\contentsline {section}{\numberline {3.2}Need for stability}{18}
+\contentsline {subsection}{\numberline {3.2.1}Streamline Upwind Petrov Galerkin Method}{18}
+\contentsline {subsection}{\numberline {3.2.2}Pressure-Stabilizing/Petrov-Galerkin (PSPG)}{19}
+\contentsline {subsection}{\numberline {3.2.3}Stabilized Navier Stokes Equation}{19}
+\contentsline {section}{\numberline {3.3}Adaptive Finite Element}{19}
+\contentsline {chapter}{\numberline {4}Bayesian Methods}{21}
+\contentsline {section}{\numberline {4.1}Review of Theory}{21}
+\contentsline {section}{\numberline {4.2}Application to Problem}{21}
+\contentsline {section}{\numberline {4.3}Methods of Solution}{22}
+\contentsline {section}{\numberline {4.4}Software}{22}
+\contentsline {chapter}{\numberline {5}Results}{23}
+\contentsline {section}{\numberline {5.1}Estimating parameter E for reaction 3 for 53$\%$ ozone }{23}
+\contentsline {subsubsection}{Different surrogate sizes }{23}
+\contentsline {subsubsection}{Sample size (Surrogate size) 10 }{23}
+\contentsline {subsubsection}{Sample size (Surrogate size) 20 }{28}
+\contentsline {subsubsection}{Sample size (Surrogate size) 50 }{33}
+\contentsline {subsubsection}{Sample size (Surrogate size) 100 }{38}
+\contentsline {subsubsection}{Sample size (Surrogate size) 500 }{43}
+\contentsline {subsubsection}{Sample size (Surrogate size) 1000 }{48}
+\contentsline {subsubsection}{Different chain sizes }{53}
+\contentsline {subsubsection}{Chain size 100000 }{53}
+\contentsline {subsubsection}{Chain size 300000 }{58}
+\contentsline {subsubsection}{Chain size 700000 }{63}
+\contentsline {subsubsection}{Chain size 900000 }{68}
+\contentsline {subsubsection}{Chain size 1000000 }{73}
+\contentsline {section}{\numberline {5.2}Estimating parameter E for reaction 3 for 53$\%$ ozone }{78}
+\contentsline {subsubsection}{Different surrogate sizes }{78}
+\contentsline {subsubsection}{Sample size (Surrogate size) 10 }{79}
+\contentsline {subsubsection}{Sample size (Surrogate size) 20 }{83}
+\contentsline {subsubsection}{Sample size (Surrogate size) 50 }{88}
+\contentsline {subsubsection}{Sample size (Surrogate size) 100 }{93}
+\contentsline {subsubsection}{Sample size (Surrogate size) 500 }{98}
+\contentsline {subsubsection}{Sample size (Surrogate size) 1000 }{103}
+\contentsline {subsubsection}{Different chain sizes }{108}
+\contentsline {subsubsection}{Chain size 100000 }{108}
+\contentsline {subsubsection}{Chain size 300000 }{113}
+\contentsline {subsubsection}{Chain size 700000 }{118}
+\contentsline {subsubsection}{Chain size 900000 }{123}
+\contentsline {subsubsection}{Chain size 1000000 }{128}
+\contentsline {chapter}{\numberline {6}Conclusion}{135}
+\contentsline {chapter}{\numberline {7}Appendix}{137}
+\contentsline {section}{\numberline {7.1}Literature Review}{137}
+\contentsline {section}{\numberline {7.2}Mathematical Model}{137}
+\contentsline {subsection}{\numberline {7.2.1}Governing Equations}{137}
+\contentsline {subsection}{\numberline {7.2.2}Low mach number asymtotic analysis}{138}
+\contentsline {subsection}{\numberline {7.2.3}Asymptotic analysis}{139}
+\contentsline {chapter}{Bibliography}{141}

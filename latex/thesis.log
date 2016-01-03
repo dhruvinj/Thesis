@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.15)  1 JAN 2016 17:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.15)  3 JAN 2016 11:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -257,6 +257,15 @@ LaTeX Warning: Label `subfig-1:dummy' multiply defined.
 
 LaTeX Warning: Label `sub@subfig-1:dummy' multiply defined.
 
+
+LaTeX Warning: Label `Heimerl' multiply defined.
+
+
+LaTeX Warning: Label `Muller' multiply defined.
+
+
+LaTeX Warning: Label `Streng' multiply defined.
+
 )
 \openout1 = `thesis.aux'.
 
@@ -427,12 +436,6 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ] (./introduction.tex
 Chapter 1.
-
-LaTeX Warning: Citation `Streng' on page 1 undefined on input line 10.
-
-
-LaTeX Warning: Citation `Streng' on page 1 undefined on input line 14.
-
 ) (./combustion.tex [1
 
 
@@ -440,9 +443,6 @@ LaTeX Warning: Citation `Streng' on page 1 undefined on input line 14.
 
 ] [2]
 Chapter 2.
-
-LaTeX Warning: Citation `Streng' on page 3 undefined on input line 4.
-
 [3
 
 
@@ -450,257 +450,265 @@ LaTeX Warning: Citation `Streng' on page 3 undefined on input line 4.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<geometricbcs.png, id=69, 295.85532pt x 264.23718pt>
-File: geometricbcs.png Graphic file (type png)
- <use geometricbcs.png>
-Package pdftex.def Info: geometricbcs.png used on input line 84.
+[4] [5] <figs/geometricbcs.png, id=77, 295.85532pt x 264.23718pt>
+File: figs/geometricbcs.png Graphic file (type png)
+
+<use figs/geometricbcs.png>
+Package pdftex.def Info: figs/geometricbcs.png used on input line 152.
 (pdftex.def)             Requested size: 147.92729pt x 132.11826pt.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 156.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 88.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 88.
- [4] [5 <./geometricbcs.png>]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 156.
+ [6 <./figs/geometricbcs.png>] [7]
 
-LaTeX Warning: File `viscocity model.png' not found on input line 163.
+LaTeX Warning: File `figs/viscocity model.png' not found on input line 231.
 
-<viscocity model.png, id=79, 467.39838pt x 348.78131pt>
-File: viscocity model.png Graphic file (type png)
+<figs/viscocity model.png, id=86, 467.39838pt x 348.78131pt>
+File: figs/viscocity model.png Graphic file (type png)
 
-<use viscocity model.png>
-Package pdftex.def Info: viscocity model.png used on input line 163.
+<use figs/viscocity model.png>
+Package pdftex.def Info: figs/viscocity model.png used on input line 231.
 (pdftex.def)             Requested size: 233.69861pt x 174.39023pt.
- [6] [7 <./viscocity model.png (PNG copy)>]
-<diffusionmodel00.png, id=87, 538.09729pt x 430.47783pt>
-File: diffusionmodel00.png Graphic file (type png)
+ [8 <./figs/viscocity model.png (PNG copy)>]
+<figs/diffusionmodel00.png, id=90, 538.09729pt x 430.47783pt>
+File: figs/diffusionmodel00.png Graphic file (type png)
 
-<use diffusionmodel00.png>
-Package pdftex.def Info: diffusionmodel00.png used on input line 193.
+<use figs/diffusionmodel00.png>
+Package pdftex.def Info: figs/diffusionmodel00.png used on input line 261.
 (pdftex.def)             Requested size: 269.04799pt x 215.23837pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 193.
+(Font)              <8> on input line 261.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 193.
+(Font)              <6> on input line 261.
 
-<diffusionmodel002.png, id=88, 538.09729pt x 430.47783pt>
-File: diffusionmodel002.png Graphic file (type png)
+<figs/diffusionmodel002.png, id=91, 538.09729pt x 430.47783pt>
+File: figs/diffusionmodel002.png Graphic file (type png)
 
-<use diffusionmodel002.png>
-Package pdftex.def Info: diffusionmodel002.png used on input line 196.
+<use figs/diffusionmodel002.png>
+Package pdftex.def Info: figs/diffusionmodel002.png used on input line 264.
 (pdftex.def)             Requested size: 269.04799pt x 215.23837pt.
 
-<diffusionmodel003.png, id=89, 538.09729pt x 430.47783pt>
-File: diffusionmodel003.png Graphic file (type png)
+<figs/diffusionmodel003.png, id=92, 538.09729pt x 430.47783pt>
+File: figs/diffusionmodel003.png Graphic file (type png)
 
-<use diffusionmodel003.png>
-Package pdftex.def Info: diffusionmodel003.png used on input line 200.
+<use figs/diffusionmodel003.png>
+Package pdftex.def Info: figs/diffusionmodel003.png used on input line 268.
 (pdftex.def)             Requested size: 269.04799pt x 215.23837pt.
 
-<diffusionmodel0202.png, id=90, 538.09729pt x 430.47783pt>
-File: diffusionmodel0202.png Graphic file (type png)
+<figs/diffusionmodel0202.png, id=93, 538.09729pt x 430.47783pt>
+File: figs/diffusionmodel0202.png Graphic file (type png)
 
-<use diffusionmodel0202.png>
-Package pdftex.def Info: diffusionmodel0202.png used on input line 203.
+<use figs/diffusionmodel0202.png>
+Package pdftex.def Info: figs/diffusionmodel0202.png used on input line 271.
 (pdftex.def)             Requested size: 269.04799pt x 215.23837pt.
 
-Overfull \hbox (111.14262pt too wide) in paragraph at lines 193--204
+Overfull \hbox (111.14262pt too wide) in paragraph at lines 261--272
 [][][]
  []
 
 
-Overfull \hbox (111.14262pt too wide) in paragraph at lines 193--204
+Overfull \hbox (111.14262pt too wide) in paragraph at lines 261--272
 [][] 
  []
 
-<diffusionmodel0203.png, id=91, 538.09729pt x 430.47783pt>
-File: diffusionmodel0203.png Graphic file (type png)
+<figs/diffusionmodel0203.png, id=94, 538.09729pt x 430.47783pt>
+File: figs/diffusionmodel0203.png Graphic file (type png)
 
-<use diffusionmodel0203.png>
-Package pdftex.def Info: diffusionmodel0203.png used on input line 208.
+<use figs/diffusionmodel0203.png>
+Package pdftex.def Info: figs/diffusionmodel0203.png used on input line 276.
 (pdftex.def)             Requested size: 269.04799pt x 215.23837pt.
 
-<diffusionmodel0303.png, id=92, 538.09729pt x 430.47783pt>
-File: diffusionmodel0303.png Graphic file (type png)
+<figs/diffusionmodel0303.png, id=95, 538.09729pt x 430.47783pt>
+File: figs/diffusionmodel0303.png Graphic file (type png)
 
-<use diffusionmodel0303.png>
-Package pdftex.def Info: diffusionmodel0303.png used on input line 211.
+<use figs/diffusionmodel0303.png>
+Package pdftex.def Info: figs/diffusionmodel0303.png used on input line 279.
 (pdftex.def)             Requested size: 258.28377pt x 206.627pt.
 
-Overfull \hbox (110.37842pt too wide) in paragraph at lines 205--212
+Overfull \hbox (110.37842pt too wide) in paragraph at lines 273--280
 [] [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8]
+ [9]
 Overfull \vbox (117.3087pt too high) has occurred while \output is active []
 
 
-[9 <./diffusionmodel00.png (PNG copy)> <./diffusionmodel002.png (PNG copy)> <./
-diffusionmodel003.png (PNG copy)> <./diffusionmodel0202.png (PNG copy)> <./diff
-usionmodel0203.png (PNG copy)> <./diffusionmodel0303.png (PNG copy)>]
-<tcO.png, id=102, 439.90434pt x 329.92827pt>
-File: tcO.png Graphic file (type png)
- <use tcO.png>
-Package pdftex.def Info: tcO.png used on input line 259.
+[10 <./figs/diffusionmodel00.png (PNG copy)> <./figs/diffusionmodel002.png (PNG
+ copy)> <./figs/diffusionmodel003.png (PNG copy)> <./figs/diffusionmodel0202.pn
+g (PNG copy)> <./figs/diffusionmodel0203.png (PNG copy)> <./figs/diffusionmodel
+0303.png (PNG copy)>] <figs/tcO.png, id=105, 439.90434pt x 329.92827pt>
+File: figs/tcO.png Graphic file (type png)
+
+<use figs/tcO.png>
+Package pdftex.def Info: figs/tcO.png used on input line 327.
+(pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
+ <figs/tcO2.png, id=106, 439.90434pt x 329.92827pt>
+File: figs/tcO2.png Graphic file (type png)
+
+<use figs/tcO2.png>
+Package pdftex.def Info: figs/tcO2.png used on input line 330.
+(pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
+ <figs/tcO3.png, id=107, 439.90434pt x 329.92827pt>
+File: figs/tcO3.png Graphic file (type png)
+
+<use figs/tcO3.png>
+Package pdftex.def Info: figs/tcO3.png used on input line 334.
 (pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
 
-<tcO2.png, id=103, 439.90434pt x 329.92827pt>
-File: tcO2.png Graphic file (type png)
- <use tcO2.png>
-Package pdftex.def Info: tcO2.png used on input line 262.
-(pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
-
-<tcO3.png, id=104, 439.90434pt x 329.92827pt>
-File: tcO3.png Graphic file (type png)
- <use tcO3.png>
-Package pdftex.def Info: tcO3.png used on input line 266.
-(pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
-
-Overfull \hbox (12.9499pt too wide) in paragraph at lines 259--267
+Overfull \hbox (12.9499pt too wide) in paragraph at lines 327--335
 [][][]
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10]
-<mixtureviscocty_behindflame.png, id=108, 439.90434pt x 329.92827pt>
-File: mixtureviscocty_behindflame.png Graphic file (type png)
+ [11]
+<figs/mixtureviscocty_behindflame.png, id=112, 439.90434pt x 329.92827pt>
+File: figs/mixtureviscocty_behindflame.png Graphic file (type png)
 
-<use mixtureviscocty_behindflame.png>
-Package pdftex.def Info: mixtureviscocty_behindflame.png used on input line 294
-.
+<use figs/mixtureviscocty_behindflame.png>
+Package pdftex.def Info: figs/mixtureviscocty_behindflame.png used on input lin
+e 362.
 (pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
 
-<mixtureviscocty_insideflame.png, id=109, 439.90434pt x 329.92827pt>
-File: mixtureviscocty_insideflame.png Graphic file (type png)
+<figs/mixtureviscocty_insideflame.png, id=113, 439.90434pt x 329.92827pt>
+File: figs/mixtureviscocty_insideflame.png Graphic file (type png)
 
-<use mixtureviscocty_insideflame.png>
-Package pdftex.def Info: mixtureviscocty_insideflame.png used on input line 297
-.
+<use figs/mixtureviscocty_insideflame.png>
+Package pdftex.def Info: figs/mixtureviscocty_insideflame.png used on input lin
+e 365.
 (pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
 
-<mixtureviscocty_afterflame.png, id=110, 439.90434pt x 329.92827pt>
-File: mixtureviscocty_afterflame.png Graphic file (type png)
+<figs/mixtureviscocty_afterflame.png, id=114, 439.90434pt x 329.92827pt>
+File: figs/mixtureviscocty_afterflame.png Graphic file (type png)
 
-<use mixtureviscocty_afterflame.png>
-Package pdftex.def Info: mixtureviscocty_afterflame.png used on input line 301.
-
+<use figs/mixtureviscocty_afterflame.png>
+Package pdftex.def Info: figs/mixtureviscocty_afterflame.png used on input line
+ 369.
 (pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
 
-Overfull \hbox (12.9499pt too wide) in paragraph at lines 294--302
+Overfull \hbox (12.9499pt too wide) in paragraph at lines 362--370
 [][][]
  []
 
-[11 <./tcO.png (PNG copy)> <./tcO2.png (PNG copy)> <./tcO3.png (PNG copy)>]
-<mixturediffusionO3_behindflame.png, id=115, 439.90434pt x 329.92827pt>
-File: mixturediffusionO3_behindflame.png Graphic file (type png)
+[12 <./figs/tcO.png (PNG copy)> <./figs/tcO2.png (PNG copy)> <./figs/tcO3.png (
+PNG copy)>]
+<figs/mixturediffusionO3_behindflame.png, id=118, 439.90434pt x 329.92827pt>
+File: figs/mixturediffusionO3_behindflame.png Graphic file (type png)
 
-<use mixturediffusionO3_behindflame.png>
-Package pdftex.def Info: mixturediffusionO3_behindflame.png used on input line 
-316.
+<use figs/mixturediffusionO3_behindflame.png>
+Package pdftex.def Info: figs/mixturediffusionO3_behindflame.png used on input 
+line 384.
 (pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
 
-<mixturediffusionO2_behindflame.png, id=116, 439.90434pt x 329.92827pt>
-File: mixturediffusionO2_behindflame.png Graphic file (type png)
+<figs/mixturediffusionO2_behindflame.png, id=119, 439.90434pt x 329.92827pt>
+File: figs/mixturediffusionO2_behindflame.png Graphic file (type png)
 
-<use mixturediffusionO2_behindflame.png>
-Package pdftex.def Info: mixturediffusionO2_behindflame.png used on input line 
-319.
+<use figs/mixturediffusionO2_behindflame.png>
+Package pdftex.def Info: figs/mixturediffusionO2_behindflame.png used on input 
+line 387.
 (pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
 
-<mixturediffusionO3_inflame.png, id=117, 439.90434pt x 329.92827pt>
-File: mixturediffusionO3_inflame.png Graphic file (type png)
+<figs/mixturediffusionO3_inflame.png, id=120, 439.90434pt x 329.92827pt>
+File: figs/mixturediffusionO3_inflame.png Graphic file (type png)
 
-<use mixturediffusionO3_inflame.png>
-Package pdftex.def Info: mixturediffusionO3_inflame.png used on input line 323.
-
+<use figs/mixturediffusionO3_inflame.png>
+Package pdftex.def Info: figs/mixturediffusionO3_inflame.png used on input line
+ 391.
 (pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
 
-<mixturediffusionO_inflame.png, id=118, 439.90434pt x 329.92827pt>
-File: mixturediffusionO_inflame.png Graphic file (type png)
+<figs/mixturediffusionO_inflame.png, id=121, 439.90434pt x 329.92827pt>
+File: figs/mixturediffusionO_inflame.png Graphic file (type png)
 
-<use mixturediffusionO_inflame.png>
-Package pdftex.def Info: mixturediffusionO_inflame.png used on input line 326.
+<use figs/mixturediffusionO_inflame.png>
+Package pdftex.def Info: figs/mixturediffusionO_inflame.png used on input line 
+394.
 (pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
 
-Overfull \hbox (12.9499pt too wide) in paragraph at lines 316--327
+Overfull \hbox (12.9499pt too wide) in paragraph at lines 384--395
 [][][]
  []
 
 
-Overfull \hbox (12.9499pt too wide) in paragraph at lines 316--327
+Overfull \hbox (12.9499pt too wide) in paragraph at lines 384--395
 [][] 
  []
 
-<mixturediffusionO2_inflame.png, id=119, 439.90434pt x 329.92827pt>
-File: mixturediffusionO2_inflame.png Graphic file (type png)
+<figs/mixturediffusionO2_inflame.png, id=122, 439.90434pt x 329.92827pt>
+File: figs/mixturediffusionO2_inflame.png Graphic file (type png)
 
-<use mixturediffusionO2_inflame.png>
-Package pdftex.def Info: mixturediffusionO2_inflame.png used on input line 331.
-
+<use figs/mixturediffusionO2_inflame.png>
+Package pdftex.def Info: figs/mixturediffusionO2_inflame.png used on input line
+ 399.
 (pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
 
-<mixturediffusionO2_afterflame.png, id=120, 439.90434pt x 329.92827pt>
-File: mixturediffusionO2_afterflame.png Graphic file (type png)
+<figs/mixturediffusionO2_afterflame.png, id=123, 439.90434pt x 329.92827pt>
+File: figs/mixturediffusionO2_afterflame.png Graphic file (type png)
 
-<use mixturediffusionO2_afterflame.png>
-Package pdftex.def Info: mixturediffusionO2_afterflame.png used on input line 3
-34.
+<use figs/mixturediffusionO2_afterflame.png>
+Package pdftex.def Info: figs/mixturediffusionO2_afterflame.png used on input l
+ine 402.
 (pdftex.def)             Requested size: 211.15167pt x 158.36377pt.
 
-Overfull \hbox (14.14996pt too wide) in paragraph at lines 328--335
+Overfull \hbox (14.14996pt too wide) in paragraph at lines 396--403
 [] [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12 <./mixtureviscocty_behindflame.png (PNG copy)> <./mixtureviscocty_insidefl
-ame.png (PNG copy)> <./mixtureviscocty_afterflame.png (PNG copy)>]
+ [13 <./figs/mixtureviscocty_behindflame.png (PNG copy)> <./figs/mixtureviscoct
+y_insideflame.png (PNG copy)> <./figs/mixtureviscocty_afterflame.png (PNG copy)
+>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13 <./mixturediffusionO3_behindflame.png (PNG copy)> <./mixturediffusionO2_be
-hindflame.png (PNG copy)> <./mixturediffusionO3_inflame.png (PNG copy)> <./mixt
-urediffusionO_inflame.png (PNG copy)> <./mixturediffusionO2_inflame.png (PNG co
-py)> <./mixturediffusionO2_afterflame.png (PNG copy)>]
-<mixturethermal_behindflame.png, id=127, 439.90434pt x 329.92827pt>
-File: mixturethermal_behindflame.png Graphic file (type png)
+ [14 <./figs/mixturediffusionO3_behindflame.png (PNG copy)> <./figs/mixturediff
+usionO2_behindflame.png (PNG copy)> <./figs/mixturediffusionO3_inflame.png (PNG
+ copy)> <./figs/mixturediffusionO_inflame.png (PNG copy)> <./figs/mixturediffus
+ionO2_inflame.png (PNG copy)> <./figs/mixturediffusionO2_afterflame.png (PNG co
+py)>]
+<figs/mixturethermal_behindflame.png, id=130, 439.90434pt x 329.92827pt>
+File: figs/mixturethermal_behindflame.png Graphic file (type png)
 
-<use mixturethermal_behindflame.png>
-Package pdftex.def Info: mixturethermal_behindflame.png used on input line 350.
-
+<use figs/mixturethermal_behindflame.png>
+Package pdftex.def Info: figs/mixturethermal_behindflame.png used on input line
+ 418.
 (pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
 
-<mixturethermal_insideflame.png, id=128, 439.90434pt x 329.92827pt>
-File: mixturethermal_insideflame.png Graphic file (type png)
+<figs/mixturethermal_insideflame.png, id=131, 439.90434pt x 329.92827pt>
+File: figs/mixturethermal_insideflame.png Graphic file (type png)
 
-<use mixturethermal_insideflame.png>
-Package pdftex.def Info: mixturethermal_insideflame.png used on input line 353.
-
+<use figs/mixturethermal_insideflame.png>
+Package pdftex.def Info: figs/mixturethermal_insideflame.png used on input line
+ 421.
 (pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
 
-<mixturethermal_afterflame.png, id=129, 444.61761pt x 329.92827pt>
-File: mixturethermal_afterflame.png Graphic file (type png)
+<figs/mixturethermal_afterflame.png, id=132, 444.61761pt x 329.92827pt>
+File: figs/mixturethermal_afterflame.png Graphic file (type png)
 
-<use mixturethermal_afterflame.png>
-Package pdftex.def Info: mixturethermal_afterflame.png used on input line 357.
+<use figs/mixturethermal_afterflame.png>
+Package pdftex.def Info: figs/mixturethermal_afterflame.png used on input line 
+425.
 (pdftex.def)             Requested size: 222.30826pt x 164.96373pt.
 
-Overfull \hbox (12.9499pt too wide) in paragraph at lines 350--358
+Overfull \hbox (12.9499pt too wide) in paragraph at lines 418--426
 [][][]
  []
 
-) (./femformulation.tex [14 <./mixturethermal_behindflame.png (PNG copy)> <./mi
-xturethermal_insideflame.png (PNG copy)> <./mixturethermal_afterflame.png (PNG 
-copy)>]
+) (./femformulation.tex [15 <./figs/mixturethermal_behindflame.png (PNG copy)> 
+<./figs/mixturethermal_insideflame.png (PNG copy)> <./figs/mixturethermal_after
+flame.png (PNG copy)>] [16
+
+
+]
 Chapter 3.
 
 Overfull \hbox (28.72377pt too wide) in alignment at lines 11--14
@@ -724,33 +732,37 @@ Missing character: There is no ù in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-[15
-
-
-]
+[17]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no î in font cmr10!
- [16]
+ [18]
 Overfull \hbox (62.06395pt too wide) in alignment at lines 90--93
  [][][] []
  []
 
-) (./bayesian.tex [17] [18
+) (./bayesian.tex [19] [20
 
 
 ]
 Chapter 4.
-
-LaTeX Warning: Citation `Streng' on page 19 undefined on input line 19.
-
-[19]) (./results.tex [20]
+[21]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+) (./results.tex [22]
 Chapter 5.
 (./53_results.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 1.
 
-<53_results/output_10/simple_ip_chain_pos_filt.png, id=152, 578.16pt x 433.62pt
+<53_results/output_10/simple_ip_chain_pos_filt.png, id=158, 578.16pt x 433.62pt
 >
 File: 53_results/output_10/simple_ip_chain_pos_filt.png Graphic file (type png)
 
@@ -761,11 +773,11 @@ Package pdftex.def Info: 53_results/output_10/simple_ip_chain_pos_filt.png used
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21
+ [23
 
 
 ]
-<53_results/output_10/simple_ip_hist_raw.png, id=156, 578.16pt x 433.62pt>
+<53_results/output_10/simple_ip_hist_raw.png, id=163, 578.16pt x 433.62pt>
 File: 53_results/output_10/simple_ip_hist_raw.png Graphic file (type png)
 
 <use 53_results/output_10/simple_ip_hist_raw.png>
@@ -777,8 +789,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 25.
- [22 <./53_results/output_10/simple_ip_chain_pos_filt.png (PNG copy)>]
-<53_results/output_10/simple_ip_kde_raw.png, id=160, 578.16pt x 433.62pt>
+ [24 <./53_results/output_10/simple_ip_chain_pos_filt.png (PNG copy)>]
+<53_results/output_10/simple_ip_kde_raw.png, id=167, 578.16pt x 433.62pt>
 File: 53_results/output_10/simple_ip_kde_raw.png Graphic file (type png)
 
 <use 53_results/output_10/simple_ip_kde_raw.png>
@@ -788,8 +800,8 @@ ut line 31.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23 <./53_results/output_10/simple_ip_hist_raw.png (PNG copy)>]
-<53_results/output_10/simple_ip_cdf_raw.png, id=165, 578.16pt x 433.62pt>
+ [25 <./53_results/output_10/simple_ip_hist_raw.png (PNG copy)>]
+<53_results/output_10/simple_ip_cdf_raw.png, id=171, 578.16pt x 433.62pt>
 File: 53_results/output_10/simple_ip_cdf_raw.png Graphic file (type png)
 
 <use 53_results/output_10/simple_ip_cdf_raw.png>
@@ -799,8 +811,8 @@ ut line 38.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [24 <./53_results/output_10/simple_ip_kde_raw.png (PNG copy)>]
-<53_results/output_10/ip_logLike_unified.png, id=169, 578.16pt x 433.62pt>
+ [26 <./53_results/output_10/simple_ip_kde_raw.png (PNG copy)>]
+<53_results/output_10/ip_logLike_unified.png, id=175, 578.16pt x 433.62pt>
 File: 53_results/output_10/ip_logLike_unified.png Graphic file (type png)
 
 <use 53_results/output_10/ip_logLike_unified.png>
@@ -810,8 +822,8 @@ put line 47.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25 <./53_results/output_10/simple_ip_cdf_raw.png (PNG copy)>]
-<53_results/output_20/simple_ip_chain_pos_filt.png, id=173, 578.16pt x 433.62pt
+ [27 <./53_results/output_10/simple_ip_cdf_raw.png (PNG copy)>]
+<53_results/output_20/simple_ip_chain_pos_filt.png, id=179, 578.16pt x 433.62pt
 >
 File: 53_results/output_20/simple_ip_chain_pos_filt.png Graphic file (type png)
 
@@ -822,8 +834,8 @@ Package pdftex.def Info: 53_results/output_20/simple_ip_chain_pos_filt.png used
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26 <./53_results/output_10/ip_logLike_unified.png (PNG copy)>]
-<53_results/output_20/simple_ip_hist_raw.png, id=177, 578.16pt x 433.62pt>
+ [28 <./53_results/output_10/ip_logLike_unified.png (PNG copy)>]
+<53_results/output_20/simple_ip_hist_raw.png, id=183, 578.16pt x 433.62pt>
 File: 53_results/output_20/simple_ip_hist_raw.png Graphic file (type png)
 
 <use 53_results/output_20/simple_ip_hist_raw.png>
@@ -833,8 +845,8 @@ put line 68.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27 <./53_results/output_20/simple_ip_chain_pos_filt.png (PNG copy)>]
-<53_results/output_20/simple_ip_kde_raw.png, id=181, 578.16pt x 433.62pt>
+ [29 <./53_results/output_20/simple_ip_chain_pos_filt.png (PNG copy)>]
+<53_results/output_20/simple_ip_kde_raw.png, id=188, 578.16pt x 433.62pt>
 File: 53_results/output_20/simple_ip_kde_raw.png Graphic file (type png)
 
 <use 53_results/output_20/simple_ip_kde_raw.png>
@@ -844,8 +856,8 @@ ut line 77.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28 <./53_results/output_20/simple_ip_hist_raw.png (PNG copy)>]
-<53_results/output_20/simple_ip_cdf_raw.png, id=185, 578.16pt x 433.62pt>
+ [30 <./53_results/output_20/simple_ip_hist_raw.png (PNG copy)>]
+<53_results/output_20/simple_ip_cdf_raw.png, id=192, 578.16pt x 433.62pt>
 File: 53_results/output_20/simple_ip_cdf_raw.png Graphic file (type png)
 
 <use 53_results/output_20/simple_ip_cdf_raw.png>
@@ -855,8 +867,8 @@ ut line 84.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29 <./53_results/output_20/simple_ip_kde_raw.png (PNG copy)>]
-<53_results/output_20/ip_logLike_unified.png, id=190, 578.16pt x 433.62pt>
+ [31 <./53_results/output_20/simple_ip_kde_raw.png (PNG copy)>]
+<53_results/output_20/ip_logLike_unified.png, id=196, 578.16pt x 433.62pt>
 File: 53_results/output_20/ip_logLike_unified.png Graphic file (type png)
 
 <use 53_results/output_20/ip_logLike_unified.png>
@@ -866,8 +878,8 @@ put line 93.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30 <./53_results/output_20/simple_ip_cdf_raw.png (PNG copy)>]
-<53_results/output_50/simple_ip_chain_pos_filt.png, id=194, 578.16pt x 433.62pt
+ [32 <./53_results/output_20/simple_ip_cdf_raw.png (PNG copy)>]
+<53_results/output_50/simple_ip_chain_pos_filt.png, id=200, 578.16pt x 433.62pt
 >
 File: 53_results/output_50/simple_ip_chain_pos_filt.png Graphic file (type png)
 
@@ -878,8 +890,8 @@ Package pdftex.def Info: 53_results/output_50/simple_ip_chain_pos_filt.png used
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [31 <./53_results/output_20/ip_logLike_unified.png (PNG copy)>]
-<53_results/output_50/simple_ip_hist_raw.png, id=198, 578.16pt x 433.62pt>
+ [33 <./53_results/output_20/ip_logLike_unified.png (PNG copy)>]
+<53_results/output_50/simple_ip_hist_raw.png, id=204, 578.16pt x 433.62pt>
 File: 53_results/output_50/simple_ip_hist_raw.png Graphic file (type png)
 
 <use 53_results/output_50/simple_ip_hist_raw.png>
@@ -889,8 +901,8 @@ put line 113.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [32 <./53_results/output_50/simple_ip_chain_pos_filt.png (PNG copy)>]
-<53_results/output_50/simple_ip_kde_raw.png, id=202, 578.16pt x 433.62pt>
+ [34 <./53_results/output_50/simple_ip_chain_pos_filt.png (PNG copy)>]
+<53_results/output_50/simple_ip_kde_raw.png, id=208, 578.16pt x 433.62pt>
 File: 53_results/output_50/simple_ip_kde_raw.png Graphic file (type png)
 
 <use 53_results/output_50/simple_ip_kde_raw.png>
@@ -900,8 +912,8 @@ ut line 122.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33 <./53_results/output_50/simple_ip_hist_raw.png (PNG copy)>]
-<53_results/output_50/simple_ip_cdf_raw.png, id=206, 578.16pt x 433.62pt>
+ [35 <./53_results/output_50/simple_ip_hist_raw.png (PNG copy)>]
+<53_results/output_50/simple_ip_cdf_raw.png, id=213, 578.16pt x 433.62pt>
 File: 53_results/output_50/simple_ip_cdf_raw.png Graphic file (type png)
 
 <use 53_results/output_50/simple_ip_cdf_raw.png>
@@ -911,8 +923,8 @@ ut line 129.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34 <./53_results/output_50/simple_ip_kde_raw.png (PNG copy)>]
-<53_results/output_50/ip_logLike_unified.png, id=210, 578.16pt x 433.62pt>
+ [36 <./53_results/output_50/simple_ip_kde_raw.png (PNG copy)>]
+<53_results/output_50/ip_logLike_unified.png, id=217, 578.16pt x 433.62pt>
 File: 53_results/output_50/ip_logLike_unified.png Graphic file (type png)
 
 <use 53_results/output_50/ip_logLike_unified.png>
@@ -922,8 +934,8 @@ put line 138.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35 <./53_results/output_50/simple_ip_cdf_raw.png (PNG copy)>]
-<53_results/output_100/simple_ip_chain_pos_filt.png, id=215, 578.16pt x 433.62p
+ [37 <./53_results/output_50/simple_ip_cdf_raw.png (PNG copy)>]
+<53_results/output_100/simple_ip_chain_pos_filt.png, id=222, 578.16pt x 433.62p
 t>
 File: 53_results/output_100/simple_ip_chain_pos_filt.png Graphic file (type png
 )
@@ -932,7 +944,7 @@ Package pdftex.def Info: 53_results/output_100/simple_ip_chain_pos_filt.png use
 d on input line 151.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
-<53_results/output_100/simple_ip_hist_raw.png, id=216, 578.16pt x 433.62pt>
+<53_results/output_100/simple_ip_hist_raw.png, id=223, 578.16pt x 433.62pt>
 File: 53_results/output_100/simple_ip_hist_raw.png Graphic file (type png)
 
 <use 53_results/output_100/simple_ip_hist_raw.png>
@@ -942,8 +954,8 @@ nput line 159.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36 <./53_results/output_50/ip_logLike_unified.png (PNG copy)>]
-<53_results/output_100/simple_ip_kde_raw.png, id=220, 578.16pt x 433.62pt>
+ [38 <./53_results/output_50/ip_logLike_unified.png (PNG copy)>]
+<53_results/output_100/simple_ip_kde_raw.png, id=227, 578.16pt x 433.62pt>
 File: 53_results/output_100/simple_ip_kde_raw.png Graphic file (type png)
 
 <use 53_results/output_100/simple_ip_kde_raw.png>
@@ -953,22 +965,22 @@ put line 168.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37 <./53_results/output_100/simple_ip_chain_pos_filt.png (PNG copy)>]
+ [39 <./53_results/output_100/simple_ip_chain_pos_filt.png (PNG copy)>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38 <./53_results/output_100/simple_ip_hist_raw.png (PNG copy)>] [39 <./53_res
+ [40 <./53_results/output_100/simple_ip_hist_raw.png (PNG copy)>] [41 <./53_res
 ults/output_100/simple_ip_kde_raw.png (PNG copy)>]
-<53_results/output_100/simple_ip_cdf_raw.png, id=231, 578.16pt x 433.62pt>
+<53_results/output_100/simple_ip_cdf_raw.png, id=238, 578.16pt x 433.62pt>
 File: 53_results/output_100/simple_ip_cdf_raw.png Graphic file (type png)
 
 <use 53_results/output_100/simple_ip_cdf_raw.png>
 Package pdftex.def Info: 53_results/output_100/simple_ip_cdf_raw.png used on in
 put line 177.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
- [40
+ [42
 
  <./53_results/output_100/simple_ip_cdf_raw.png (PNG copy)>]
-<53_results/output_100/ip_logLike_unified.png, id=235, 578.16pt x 433.62pt>
+<53_results/output_100/ip_logLike_unified.png, id=242, 578.16pt x 433.62pt>
 File: 53_results/output_100/ip_logLike_unified.png Graphic file (type png)
 
 <use 53_results/output_100/ip_logLike_unified.png>
@@ -976,7 +988,7 @@ Package pdftex.def Info: 53_results/output_100/ip_logLike_unified.png used on i
 nput line 186.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
-<53_results/output_500/simple_ip_chain_pos_filt.png, id=236, 578.16pt x 433.62p
+<53_results/output_500/simple_ip_chain_pos_filt.png, id=243, 578.16pt x 433.62p
 t>
 File: 53_results/output_500/simple_ip_chain_pos_filt.png Graphic file (type png
 )
@@ -987,10 +999,10 @@ d on input line 198.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41
+ [43
 
  <./53_results/output_100/ip_logLike_unified.png (PNG copy)>]
-<53_results/output_500/simple_ip_hist_raw.png, id=241, 578.16pt x 433.62pt>
+<53_results/output_500/simple_ip_hist_raw.png, id=247, 578.16pt x 433.62pt>
 File: 53_results/output_500/simple_ip_hist_raw.png Graphic file (type png)
 
 <use 53_results/output_500/simple_ip_hist_raw.png>
@@ -1000,8 +1012,8 @@ nput line 206.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [42 <./53_results/output_500/simple_ip_chain_pos_filt.png (PNG copy)>]
-<53_results/output_500/simple_ip_kde_raw.png, id=245, 578.16pt x 433.62pt>
+ [44 <./53_results/output_500/simple_ip_chain_pos_filt.png (PNG copy)>]
+<53_results/output_500/simple_ip_kde_raw.png, id=251, 578.16pt x 433.62pt>
 File: 53_results/output_500/simple_ip_kde_raw.png Graphic file (type png)
 
 <use 53_results/output_500/simple_ip_kde_raw.png>
@@ -1011,8 +1023,8 @@ put line 215.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [43 <./53_results/output_500/simple_ip_hist_raw.png (PNG copy)>]
-<53_results/output_500/simple_ip_cdf_raw.png, id=249, 578.16pt x 433.62pt>
+ [45 <./53_results/output_500/simple_ip_hist_raw.png (PNG copy)>]
+<53_results/output_500/simple_ip_cdf_raw.png, id=255, 578.16pt x 433.62pt>
 File: 53_results/output_500/simple_ip_cdf_raw.png Graphic file (type png)
 
 <use 53_results/output_500/simple_ip_cdf_raw.png>
@@ -1022,8 +1034,8 @@ put line 222.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44 <./53_results/output_500/simple_ip_kde_raw.png (PNG copy)>]
-<53_results/output_500/ip_logLike_unified.png, id=253, 578.16pt x 433.62pt>
+ [46 <./53_results/output_500/simple_ip_kde_raw.png (PNG copy)>]
+<53_results/output_500/ip_logLike_unified.png, id=259, 578.16pt x 433.62pt>
 File: 53_results/output_500/ip_logLike_unified.png Graphic file (type png)
 
 <use 53_results/output_500/ip_logLike_unified.png>
@@ -1033,8 +1045,8 @@ nput line 231.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [45 <./53_results/output_500/simple_ip_cdf_raw.png (PNG copy)>]
-<53_results/output_1000/simple_ip_chain_pos_filt.png, id=257, 578.16pt x 433.62
+ [47 <./53_results/output_500/simple_ip_cdf_raw.png (PNG copy)>]
+<53_results/output_1000/simple_ip_chain_pos_filt.png, id=264, 578.16pt x 433.62
 pt>
 File: 53_results/output_1000/simple_ip_chain_pos_filt.png Graphic file (type pn
 g)
@@ -1045,8 +1057,8 @@ ed on input line 243.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [46 <./53_results/output_500/ip_logLike_unified.png (PNG copy)>]
-<53_results/output_1000/simple_ip_hist_raw.png, id=261, 578.16pt x 433.62pt>
+ [48 <./53_results/output_500/ip_logLike_unified.png (PNG copy)>]
+<53_results/output_1000/simple_ip_hist_raw.png, id=268, 578.16pt x 433.62pt>
 File: 53_results/output_1000/simple_ip_hist_raw.png Graphic file (type png)
 
 <use 53_results/output_1000/simple_ip_hist_raw.png>
@@ -1056,8 +1068,8 @@ input line 251.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [47 <./53_results/output_1000/simple_ip_chain_pos_filt.png (PNG copy)>]
-<53_results/output_1000/simple_ip_kde_raw.png, id=266, 578.16pt x 433.62pt>
+ [49 <./53_results/output_1000/simple_ip_chain_pos_filt.png (PNG copy)>]
+<53_results/output_1000/simple_ip_kde_raw.png, id=272, 578.16pt x 433.62pt>
 File: 53_results/output_1000/simple_ip_kde_raw.png Graphic file (type png)
 
 <use 53_results/output_1000/simple_ip_kde_raw.png>
@@ -1067,8 +1079,8 @@ nput line 260.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [48 <./53_results/output_1000/simple_ip_hist_raw.png (PNG copy)>]
-<53_results/output_1000/simple_ip_cdf_raw.png, id=270, 578.16pt x 433.62pt>
+ [50 <./53_results/output_1000/simple_ip_hist_raw.png (PNG copy)>]
+<53_results/output_1000/simple_ip_cdf_raw.png, id=276, 578.16pt x 433.62pt>
 File: 53_results/output_1000/simple_ip_cdf_raw.png Graphic file (type png)
 
 <use 53_results/output_1000/simple_ip_cdf_raw.png>
@@ -1078,8 +1090,8 @@ nput line 267.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49 <./53_results/output_1000/simple_ip_kde_raw.png (PNG copy)>]
-<53_results/output_1000/ip_logLike_unified.png, id=274, 578.16pt x 433.62pt>
+ [51 <./53_results/output_1000/simple_ip_kde_raw.png (PNG copy)>]
+<53_results/output_1000/ip_logLike_unified.png, id=280, 578.16pt x 433.62pt>
 File: 53_results/output_1000/ip_logLike_unified.png Graphic file (type png)
 
 <use 53_results/output_1000/ip_logLike_unified.png>
@@ -1089,8 +1101,8 @@ input line 276.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [50 <./53_results/output_1000/simple_ip_cdf_raw.png (PNG copy)>]
-<53_results/output_100000/simple_ip_chain_pos_filt.png, id=278, 578.16pt x 433.
+ [52 <./53_results/output_1000/simple_ip_cdf_raw.png (PNG copy)>]
+<53_results/output_100000/simple_ip_chain_pos_filt.png, id=284, 578.16pt x 433.
 62pt>
 File: 53_results/output_100000/simple_ip_chain_pos_filt.png Graphic file (type 
 png)
@@ -1101,8 +1113,8 @@ used on input line 292.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [51 <./53_results/output_1000/ip_logLike_unified.png (PNG copy)>]
-<53_results/output_100000/simple_ip_hist_raw.png, id=282, 578.16pt x 433.62pt>
+ [53 <./53_results/output_1000/ip_logLike_unified.png (PNG copy)>]
+<53_results/output_100000/simple_ip_hist_raw.png, id=289, 578.16pt x 433.62pt>
 File: 53_results/output_100000/simple_ip_hist_raw.png Graphic file (type png)
 
 <use 53_results/output_100000/simple_ip_hist_raw.png>
@@ -1112,8 +1124,8 @@ n input line 300.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [52 <./53_results/output_100000/simple_ip_chain_pos_filt.png (PNG copy)>]
-<53_results/output_100000/simple_ip_kde_raw.png, id=286, 578.16pt x 433.62pt>
+ [54 <./53_results/output_100000/simple_ip_chain_pos_filt.png (PNG copy)>]
+<53_results/output_100000/simple_ip_kde_raw.png, id=293, 578.16pt x 433.62pt>
 File: 53_results/output_100000/simple_ip_kde_raw.png Graphic file (type png)
 
 <use 53_results/output_100000/simple_ip_kde_raw.png>
@@ -1123,8 +1135,8 @@ Package pdftex.def Info: 53_results/output_100000/simple_ip_kde_raw.png used on
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [53 <./53_results/output_100000/simple_ip_hist_raw.png (PNG copy)>]
-<53_results/output_100000/simple_ip_cdf_raw.png, id=291, 578.16pt x 433.62pt>
+ [55 <./53_results/output_100000/simple_ip_hist_raw.png (PNG copy)>]
+<53_results/output_100000/simple_ip_cdf_raw.png, id=297, 578.16pt x 433.62pt>
 File: 53_results/output_100000/simple_ip_cdf_raw.png Graphic file (type png)
 
 <use 53_results/output_100000/simple_ip_cdf_raw.png>
@@ -1134,8 +1146,8 @@ Package pdftex.def Info: 53_results/output_100000/simple_ip_cdf_raw.png used on
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54 <./53_results/output_100000/simple_ip_kde_raw.png (PNG copy)>]
-<53_results/output_100000/ip_logLike_unified.png, id=295, 578.16pt x 433.62pt>
+ [56 <./53_results/output_100000/simple_ip_kde_raw.png (PNG copy)>]
+<53_results/output_100000/ip_logLike_unified.png, id=301, 578.16pt x 433.62pt>
 File: 53_results/output_100000/ip_logLike_unified.png Graphic file (type png)
 
 <use 53_results/output_100000/ip_logLike_unified.png>
@@ -1145,8 +1157,8 @@ n input line 325.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55 <./53_results/output_100000/simple_ip_cdf_raw.png (PNG copy)>]
-<53_results/output_300000/simple_ip_chain_pos_filt.png, id=299, 578.16pt x 433.
+ [57 <./53_results/output_100000/simple_ip_cdf_raw.png (PNG copy)>]
+<53_results/output_300000/simple_ip_chain_pos_filt.png, id=305, 578.16pt x 433.
 62pt>
 File: 53_results/output_300000/simple_ip_chain_pos_filt.png Graphic file (type 
 png)
@@ -1157,8 +1169,8 @@ used on input line 338.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [56 <./53_results/output_100000/ip_logLike_unified.png (PNG copy)>]
-<53_results/output_300000/simple_ip_hist_raw.png, id=303, 578.16pt x 433.62pt>
+ [58 <./53_results/output_100000/ip_logLike_unified.png (PNG copy)>]
+<53_results/output_300000/simple_ip_hist_raw.png, id=309, 578.16pt x 433.62pt>
 File: 53_results/output_300000/simple_ip_hist_raw.png Graphic file (type png)
 
 <use 53_results/output_300000/simple_ip_hist_raw.png>
@@ -1168,9 +1180,9 @@ n input line 346.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [57 <./53_results/output_300000/simple_ip_chain_pos_filt.png (PNG copy)>] [58 
+ [59 <./53_results/output_300000/simple_ip_chain_pos_filt.png (PNG copy)>] [60 
 <./53_results/output_300000/simple_ip_hist_raw.png (PNG copy)>]
-<53_results/output_300000/simple_ip_kde_raw.png, id=310, 578.16pt x 433.62pt>
+<53_results/output_300000/simple_ip_kde_raw.png, id=317, 578.16pt x 433.62pt>
 File: 53_results/output_300000/simple_ip_kde_raw.png Graphic file (type png)
 
 <use 53_results/output_300000/simple_ip_kde_raw.png>
@@ -1178,7 +1190,7 @@ Package pdftex.def Info: 53_results/output_300000/simple_ip_kde_raw.png used on
  input line 355.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
-<53_results/output_300000/simple_ip_cdf_raw.png, id=311, 578.16pt x 433.62pt>
+<53_results/output_300000/simple_ip_cdf_raw.png, id=318, 578.16pt x 433.62pt>
 File: 53_results/output_300000/simple_ip_cdf_raw.png Graphic file (type png)
 
 <use 53_results/output_300000/simple_ip_cdf_raw.png>
@@ -1188,10 +1200,10 @@ Package pdftex.def Info: 53_results/output_300000/simple_ip_cdf_raw.png used on
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [59
+ [61
 
  <./53_results/output_300000/simple_ip_kde_raw.png (PNG copy)>]
-<53_results/output_300000/ip_logLike_unified.png, id=316, 578.16pt x 433.62pt>
+<53_results/output_300000/ip_logLike_unified.png, id=322, 578.16pt x 433.62pt>
 File: 53_results/output_300000/ip_logLike_unified.png Graphic file (type png)
 
 <use 53_results/output_300000/ip_logLike_unified.png>
@@ -1201,8 +1213,8 @@ n input line 371.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [60 <./53_results/output_300000/simple_ip_cdf_raw.png (PNG copy)>]
-<53_results/output_700000/simple_ip_chain_pos_filt.png, id=320, 578.16pt x 433.
+ [62 <./53_results/output_300000/simple_ip_cdf_raw.png (PNG copy)>]
+<53_results/output_700000/simple_ip_chain_pos_filt.png, id=326, 578.16pt x 433.
 62pt>
 File: 53_results/output_700000/simple_ip_chain_pos_filt.png Graphic file (type 
 png)
@@ -1213,8 +1225,8 @@ used on input line 385.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [61 <./53_results/output_300000/ip_logLike_unified.png (PNG copy)>]
-<53_results/output_700000/simple_ip_hist_raw.png, id=324, 578.16pt x 433.62pt>
+ [63 <./53_results/output_300000/ip_logLike_unified.png (PNG copy)>]
+<53_results/output_700000/simple_ip_hist_raw.png, id=330, 578.16pt x 433.62pt>
 File: 53_results/output_700000/simple_ip_hist_raw.png Graphic file (type png)
 
 <use 53_results/output_700000/simple_ip_hist_raw.png>
@@ -1224,8 +1236,8 @@ n input line 393.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [62 <./53_results/output_700000/simple_ip_chain_pos_filt.png (PNG copy)>]
-<53_results/output_700000/simple_ip_kde_raw.png, id=328, 578.16pt x 433.62pt>
+ [64 <./53_results/output_700000/simple_ip_chain_pos_filt.png (PNG copy)>]
+<53_results/output_700000/simple_ip_kde_raw.png, id=334, 578.16pt x 433.62pt>
 File: 53_results/output_700000/simple_ip_kde_raw.png Graphic file (type png)
 
 <use 53_results/output_700000/simple_ip_kde_raw.png>
@@ -1235,8 +1247,8 @@ Package pdftex.def Info: 53_results/output_700000/simple_ip_kde_raw.png used on
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63 <./53_results/output_700000/simple_ip_hist_raw.png (PNG copy)>]
-<53_results/output_700000/simple_ip_cdf_raw.png, id=332, 578.16pt x 433.62pt>
+ [65 <./53_results/output_700000/simple_ip_hist_raw.png (PNG copy)>]
+<53_results/output_700000/simple_ip_cdf_raw.png, id=339, 578.16pt x 433.62pt>
 File: 53_results/output_700000/simple_ip_cdf_raw.png Graphic file (type png)
 
 <use 53_results/output_700000/simple_ip_cdf_raw.png>
@@ -1246,8 +1258,8 @@ Package pdftex.def Info: 53_results/output_700000/simple_ip_cdf_raw.png used on
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [64 <./53_results/output_700000/simple_ip_kde_raw.png (PNG copy)>]
-<53_results/output_700000/ip_logLike_unified.png, id=336, 578.16pt x 433.62pt>
+ [66 <./53_results/output_700000/simple_ip_kde_raw.png (PNG copy)>]
+<53_results/output_700000/ip_logLike_unified.png, id=343, 578.16pt x 433.62pt>
 File: 53_results/output_700000/ip_logLike_unified.png Graphic file (type png)
 
 <use 53_results/output_700000/ip_logLike_unified.png>
@@ -1257,8 +1269,8 @@ n input line 418.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [65 <./53_results/output_700000/simple_ip_cdf_raw.png (PNG copy)>]
-<53_results/output_900000/simple_ip_chain_pos_filt.png, id=341, 578.16pt x 433.
+ [67 <./53_results/output_700000/simple_ip_cdf_raw.png (PNG copy)>]
+<53_results/output_900000/simple_ip_chain_pos_filt.png, id=347, 578.16pt x 433.
 62pt>
 File: 53_results/output_900000/simple_ip_chain_pos_filt.png Graphic file (type 
 png)
@@ -1269,8 +1281,8 @@ used on input line 431.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [66 <./53_results/output_700000/ip_logLike_unified.png (PNG copy)>]
-<53_results/output_900000/simple_ip_hist_raw.png, id=345, 578.16pt x 433.62pt>
+ [68 <./53_results/output_700000/ip_logLike_unified.png (PNG copy)>]
+<53_results/output_900000/simple_ip_hist_raw.png, id=351, 578.16pt x 433.62pt>
 File: 53_results/output_900000/simple_ip_hist_raw.png Graphic file (type png)
 
 <use 53_results/output_900000/simple_ip_hist_raw.png>
@@ -1280,8 +1292,8 @@ n input line 439.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [67 <./53_results/output_900000/simple_ip_chain_pos_filt.png (PNG copy)>]
-<53_results/output_900000/simple_ip_kde_raw.png, id=349, 578.16pt x 433.62pt>
+ [69 <./53_results/output_900000/simple_ip_chain_pos_filt.png (PNG copy)>]
+<53_results/output_900000/simple_ip_kde_raw.png, id=355, 578.16pt x 433.62pt>
 File: 53_results/output_900000/simple_ip_kde_raw.png Graphic file (type png)
 
 <use 53_results/output_900000/simple_ip_kde_raw.png>
@@ -1291,8 +1303,8 @@ Package pdftex.def Info: 53_results/output_900000/simple_ip_kde_raw.png used on
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [68 <./53_results/output_900000/simple_ip_hist_raw.png (PNG copy)>]
-<53_results/output_900000/simple_ip_cdf_raw.png, id=353, 578.16pt x 433.62pt>
+ [70 <./53_results/output_900000/simple_ip_hist_raw.png (PNG copy)>]
+<53_results/output_900000/simple_ip_cdf_raw.png, id=359, 578.16pt x 433.62pt>
 File: 53_results/output_900000/simple_ip_cdf_raw.png Graphic file (type png)
 
 <use 53_results/output_900000/simple_ip_cdf_raw.png>
@@ -1302,8 +1314,8 @@ Package pdftex.def Info: 53_results/output_900000/simple_ip_cdf_raw.png used on
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [69 <./53_results/output_900000/simple_ip_kde_raw.png (PNG copy)>]
-<53_results/output_900000/ip_logLike_unified.png, id=357, 578.16pt x 433.62pt>
+ [71 <./53_results/output_900000/simple_ip_kde_raw.png (PNG copy)>]
+<53_results/output_900000/ip_logLike_unified.png, id=364, 578.16pt x 433.62pt>
 File: 53_results/output_900000/ip_logLike_unified.png Graphic file (type png)
 
 <use 53_results/output_900000/ip_logLike_unified.png>
@@ -1313,8 +1325,8 @@ n input line 464.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [70 <./53_results/output_900000/simple_ip_cdf_raw.png (PNG copy)>]
-<53_results/output_1000000/simple_ip_chain_pos_filt.png, id=361, 578.16pt x 433
+ [72 <./53_results/output_900000/simple_ip_cdf_raw.png (PNG copy)>]
+<53_results/output_1000000/simple_ip_chain_pos_filt.png, id=368, 578.16pt x 433
 .62pt>
 File: 53_results/output_1000000/simple_ip_chain_pos_filt.png Graphic file (type
  png)
@@ -1325,8 +1337,8 @@ Package pdftex.def Info: 53_results/output_1000000/simple_ip_chain_pos_filt.png
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [71 <./53_results/output_900000/ip_logLike_unified.png (PNG copy)>]
-<53_results/output_1000000/simple_ip_hist_raw.png, id=366, 578.16pt x 433.62pt>
+ [73 <./53_results/output_900000/ip_logLike_unified.png (PNG copy)>]
+<53_results/output_1000000/simple_ip_hist_raw.png, id=372, 578.16pt x 433.62pt>
 File: 53_results/output_1000000/simple_ip_hist_raw.png Graphic file (type png)
 <use 53_results/output_1000000/simple_ip_hist_raw.png>
 Package pdftex.def Info: 53_results/output_1000000/simple_ip_hist_raw.png used 
@@ -1335,8 +1347,8 @@ on input line 483.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [72 <./53_results/output_1000000/simple_ip_chain_pos_filt.png (PNG copy)>]
-<53_results/output_1000000/simple_ip_kde_raw.png, id=370, 578.16pt x 433.62pt>
+ [74 <./53_results/output_1000000/simple_ip_chain_pos_filt.png (PNG copy)>]
+<53_results/output_1000000/simple_ip_kde_raw.png, id=376, 578.16pt x 433.62pt>
 File: 53_results/output_1000000/simple_ip_kde_raw.png Graphic file (type png)
 
 <use 53_results/output_1000000/simple_ip_kde_raw.png>
@@ -1346,8 +1358,8 @@ n input line 492.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [73 <./53_results/output_1000000/simple_ip_hist_raw.png (PNG copy)>]
-<53_results/output_1000000/simple_ip_cdf_raw.png, id=374, 578.16pt x 433.62pt>
+ [75 <./53_results/output_1000000/simple_ip_hist_raw.png (PNG copy)>]
+<53_results/output_1000000/simple_ip_cdf_raw.png, id=380, 578.16pt x 433.62pt>
 File: 53_results/output_1000000/simple_ip_cdf_raw.png Graphic file (type png)
 
 <use 53_results/output_1000000/simple_ip_cdf_raw.png>
@@ -1357,8 +1369,8 @@ n input line 499.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [74 <./53_results/output_1000000/simple_ip_kde_raw.png (PNG copy)>]
-<53_results/output_1000000/ip_logLike_unified.png, id=378, 578.16pt x 433.62pt>
+ [76 <./53_results/output_1000000/simple_ip_kde_raw.png (PNG copy)>]
+<53_results/output_1000000/ip_logLike_unified.png, id=384, 578.16pt x 433.62pt>
 File: 53_results/output_1000000/ip_logLike_unified.png Graphic file (type png)
 <use 53_results/output_1000000/ip_logLike_unified.png>
 Package pdftex.def Info: 53_results/output_1000000/ip_logLike_unified.png used 
@@ -1367,9 +1379,9 @@ on input line 508.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [75 <./53_results/output_1000000/simple_ip_cdf_raw.png (PNG copy)>]) (./100_re
+ [77 <./53_results/output_1000000/simple_ip_cdf_raw.png (PNG copy)>]) (./100_re
 sults.tex
-<100_results/outputData_10/simple_ip_chain_pos_filt.png, id=382, 578.16pt x 433
+<100_results/outputData_10/simple_ip_chain_pos_filt.png, id=389, 578.16pt x 433
 .62pt>
 File: 100_results/outputData_10/simple_ip_chain_pos_filt.png Graphic file (type
  png)
@@ -1380,8 +1392,8 @@ Package pdftex.def Info: 100_results/outputData_10/simple_ip_chain_pos_filt.png
 
 Underfull \vbox (badness 1755) has occurred while \output is active []
 
- [76 <./53_results/output_1000000/ip_logLike_unified.png (PNG copy)>]
-<100_results/outputData_10/simple_ip_hist_raw.png, id=386, 578.16pt x 433.62pt>
+ [78 <./53_results/output_1000000/ip_logLike_unified.png (PNG copy)>]
+<100_results/outputData_10/simple_ip_hist_raw.png, id=393, 578.16pt x 433.62pt>
 File: 100_results/outputData_10/simple_ip_hist_raw.png Graphic file (type png)
 <use 100_results/outputData_10/simple_ip_hist_raw.png>
 Package pdftex.def Info: 100_results/outputData_10/simple_ip_hist_raw.png used 
@@ -1390,8 +1402,8 @@ on input line 22.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [77 <./100_results/outputData_10/simple_ip_chain_pos_filt.png (PNG copy)>]
-<100_results/outputData_10/simple_ip_kde_raw.png, id=391, 578.16pt x 433.62pt>
+ [79 <./100_results/outputData_10/simple_ip_chain_pos_filt.png (PNG copy)>]
+<100_results/outputData_10/simple_ip_kde_raw.png, id=397, 578.16pt x 433.62pt>
 File: 100_results/outputData_10/simple_ip_kde_raw.png Graphic file (type png)
 
 <use 100_results/outputData_10/simple_ip_kde_raw.png>
@@ -1401,8 +1413,8 @@ n input line 31.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [78 <./100_results/outputData_10/simple_ip_hist_raw.png (PNG copy)>]
-<100_results/outputData_10/simple_ip_cdf_raw.png, id=395, 578.16pt x 433.62pt>
+ [80 <./100_results/outputData_10/simple_ip_hist_raw.png (PNG copy)>]
+<100_results/outputData_10/simple_ip_cdf_raw.png, id=401, 578.16pt x 433.62pt>
 File: 100_results/outputData_10/simple_ip_cdf_raw.png Graphic file (type png)
 
 <use 100_results/outputData_10/simple_ip_cdf_raw.png>
@@ -1412,8 +1424,8 @@ n input line 38.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [79 <./100_results/outputData_10/simple_ip_kde_raw.png (PNG copy)>]
-<100_results/outputData_10/ip_logLike_unified.png, id=399, 578.16pt x 433.62pt>
+ [81 <./100_results/outputData_10/simple_ip_kde_raw.png (PNG copy)>]
+<100_results/outputData_10/ip_logLike_unified.png, id=405, 578.16pt x 433.62pt>
 File: 100_results/outputData_10/ip_logLike_unified.png Graphic file (type png)
 <use 100_results/outputData_10/ip_logLike_unified.png>
 Package pdftex.def Info: 100_results/outputData_10/ip_logLike_unified.png used 
@@ -1422,8 +1434,8 @@ on input line 47.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [80 <./100_results/outputData_10/simple_ip_cdf_raw.png (PNG copy)>]
-<100_results/outputData_20/simple_ip_chain_pos_filt.png, id=403, 578.16pt x 433
+ [82 <./100_results/outputData_10/simple_ip_cdf_raw.png (PNG copy)>]
+<100_results/outputData_20/simple_ip_chain_pos_filt.png, id=409, 578.16pt x 433
 .62pt>
 File: 100_results/outputData_20/simple_ip_chain_pos_filt.png Graphic file (type
  png)
@@ -1434,8 +1446,8 @@ Package pdftex.def Info: 100_results/outputData_20/simple_ip_chain_pos_filt.png
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [81 <./100_results/outputData_10/ip_logLike_unified.png (PNG copy)>]
-<100_results/outputData_20/simple_ip_hist_raw.png, id=407, 578.16pt x 433.62pt>
+ [83 <./100_results/outputData_10/ip_logLike_unified.png (PNG copy)>]
+<100_results/outputData_20/simple_ip_hist_raw.png, id=414, 578.16pt x 433.62pt>
 File: 100_results/outputData_20/simple_ip_hist_raw.png Graphic file (type png)
 <use 100_results/outputData_20/simple_ip_hist_raw.png>
 Package pdftex.def Info: 100_results/outputData_20/simple_ip_hist_raw.png used 
@@ -1444,8 +1456,8 @@ on input line 68.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [82 <./100_results/outputData_20/simple_ip_chain_pos_filt.png (PNG copy)>]
-<100_results/outputData_20/simple_ip_kde_raw.png, id=411, 578.16pt x 433.62pt>
+ [84 <./100_results/outputData_20/simple_ip_chain_pos_filt.png (PNG copy)>]
+<100_results/outputData_20/simple_ip_kde_raw.png, id=418, 578.16pt x 433.62pt>
 File: 100_results/outputData_20/simple_ip_kde_raw.png Graphic file (type png)
 
 <use 100_results/outputData_20/simple_ip_kde_raw.png>
@@ -1455,8 +1467,8 @@ n input line 77.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [83 <./100_results/outputData_20/simple_ip_hist_raw.png (PNG copy)>]
-<100_results/outputData_20/simple_ip_cdf_raw.png, id=416, 578.16pt x 433.62pt>
+ [85 <./100_results/outputData_20/simple_ip_hist_raw.png (PNG copy)>]
+<100_results/outputData_20/simple_ip_cdf_raw.png, id=422, 578.16pt x 433.62pt>
 File: 100_results/outputData_20/simple_ip_cdf_raw.png Graphic file (type png)
 
 <use 100_results/outputData_20/simple_ip_cdf_raw.png>
@@ -1466,8 +1478,8 @@ n input line 84.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [84 <./100_results/outputData_20/simple_ip_kde_raw.png (PNG copy)>]
-<100_results/outputData_20/ip_logLike_unified.png, id=420, 578.16pt x 433.62pt>
+ [86 <./100_results/outputData_20/simple_ip_kde_raw.png (PNG copy)>]
+<100_results/outputData_20/ip_logLike_unified.png, id=426, 578.16pt x 433.62pt>
 File: 100_results/outputData_20/ip_logLike_unified.png Graphic file (type png)
 <use 100_results/outputData_20/ip_logLike_unified.png>
 Package pdftex.def Info: 100_results/outputData_20/ip_logLike_unified.png used 
@@ -1476,8 +1488,8 @@ on input line 93.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [85 <./100_results/outputData_20/simple_ip_cdf_raw.png (PNG copy)>]
-<100_results/outputData_50/simple_ip_chain_pos_filt.png, id=424, 578.16pt x 433
+ [87 <./100_results/outputData_20/simple_ip_cdf_raw.png (PNG copy)>]
+<100_results/outputData_50/simple_ip_chain_pos_filt.png, id=431, 578.16pt x 433
 .62pt>
 File: 100_results/outputData_50/simple_ip_chain_pos_filt.png Graphic file (type
  png)
@@ -1488,8 +1500,8 @@ Package pdftex.def Info: 100_results/outputData_50/simple_ip_chain_pos_filt.png
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [86 <./100_results/outputData_20/ip_logLike_unified.png (PNG copy)>]
-<100_results/outputData_50/simple_ip_hist_raw.png, id=428, 578.16pt x 433.62pt>
+ [88 <./100_results/outputData_20/ip_logLike_unified.png (PNG copy)>]
+<100_results/outputData_50/simple_ip_hist_raw.png, id=435, 578.16pt x 433.62pt>
 File: 100_results/outputData_50/simple_ip_hist_raw.png Graphic file (type png)
 <use 100_results/outputData_50/simple_ip_hist_raw.png>
 Package pdftex.def Info: 100_results/outputData_50/simple_ip_hist_raw.png used 
@@ -1498,8 +1510,8 @@ on input line 113.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [87 <./100_results/outputData_50/simple_ip_chain_pos_filt.png (PNG copy)>]
-<100_results/outputData_50/simple_ip_kde_raw.png, id=433, 578.16pt x 433.62pt>
+ [89 <./100_results/outputData_50/simple_ip_chain_pos_filt.png (PNG copy)>]
+<100_results/outputData_50/simple_ip_kde_raw.png, id=440, 578.16pt x 433.62pt>
 File: 100_results/outputData_50/simple_ip_kde_raw.png Graphic file (type png)
 
 <use 100_results/outputData_50/simple_ip_kde_raw.png>
@@ -1509,8 +1521,8 @@ n input line 122.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [88 <./100_results/outputData_50/simple_ip_hist_raw.png (PNG copy)>]
-<100_results/outputData_50/simple_ip_cdf_raw.png, id=437, 578.16pt x 433.62pt>
+ [90 <./100_results/outputData_50/simple_ip_hist_raw.png (PNG copy)>]
+<100_results/outputData_50/simple_ip_cdf_raw.png, id=444, 578.16pt x 433.62pt>
 File: 100_results/outputData_50/simple_ip_cdf_raw.png Graphic file (type png)
 
 <use 100_results/outputData_50/simple_ip_cdf_raw.png>
@@ -1520,8 +1532,8 @@ n input line 129.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [89 <./100_results/outputData_50/simple_ip_kde_raw.png (PNG copy)>]
-<100_results/outputData_50/ip_logLike_unified.png, id=442, 578.16pt x 433.62pt>
+ [91 <./100_results/outputData_50/simple_ip_kde_raw.png (PNG copy)>]
+<100_results/outputData_50/ip_logLike_unified.png, id=448, 578.16pt x 433.62pt>
 File: 100_results/outputData_50/ip_logLike_unified.png Graphic file (type png)
 <use 100_results/outputData_50/ip_logLike_unified.png>
 Package pdftex.def Info: 100_results/outputData_50/ip_logLike_unified.png used 
@@ -1530,8 +1542,8 @@ on input line 138.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [90 <./100_results/outputData_50/simple_ip_cdf_raw.png (PNG copy)>]
-<100_results/outputData_100/simple_ip_chain_pos_filt.png, id=446, 578.16pt x 43
+ [92 <./100_results/outputData_50/simple_ip_cdf_raw.png (PNG copy)>]
+<100_results/outputData_100/simple_ip_chain_pos_filt.png, id=452, 578.16pt x 43
 3.62pt>
 File: 100_results/outputData_100/simple_ip_chain_pos_filt.png Graphic file (typ
 e png)
@@ -1540,7 +1552,7 @@ Package pdftex.def Info: 100_results/outputData_100/simple_ip_chain_pos_filt.pn
 g used on input line 151.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
-<100_results/outputData_100/simple_ip_hist_raw.png, id=447, 578.16pt x 433.62pt
+<100_results/outputData_100/simple_ip_hist_raw.png, id=453, 578.16pt x 433.62pt
 >
 File: 100_results/outputData_100/simple_ip_hist_raw.png Graphic file (type png)
 
@@ -1551,8 +1563,8 @@ Package pdftex.def Info: 100_results/outputData_100/simple_ip_hist_raw.png used
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [91 <./100_results/outputData_50/ip_logLike_unified.png (PNG copy)>]
-<100_results/outputData_100/simple_ip_kde_raw.png, id=451, 578.16pt x 433.62pt>
+ [93 <./100_results/outputData_50/ip_logLike_unified.png (PNG copy)>]
+<100_results/outputData_100/simple_ip_kde_raw.png, id=457, 578.16pt x 433.62pt>
 File: 100_results/outputData_100/simple_ip_kde_raw.png Graphic file (type png)
 <use 100_results/outputData_100/simple_ip_kde_raw.png>
 Package pdftex.def Info: 100_results/outputData_100/simple_ip_kde_raw.png used 
@@ -1561,21 +1573,21 @@ on input line 168.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [92 <./100_results/outputData_100/simple_ip_chain_pos_filt.png (PNG copy)>]
+ [94 <./100_results/outputData_100/simple_ip_chain_pos_filt.png (PNG copy)>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [93 <./100_results/outputData_100/simple_ip_hist_raw.png (PNG copy)>] [94 <./1
+ [95 <./100_results/outputData_100/simple_ip_hist_raw.png (PNG copy)>] [96 <./1
 00_results/outputData_100/simple_ip_kde_raw.png (PNG copy)>]
-<100_results/outputData_100/simple_ip_cdf_raw.png, id=461, 578.16pt x 433.62pt>
+<100_results/outputData_100/simple_ip_cdf_raw.png, id=468, 578.16pt x 433.62pt>
 File: 100_results/outputData_100/simple_ip_cdf_raw.png Graphic file (type png)
 <use 100_results/outputData_100/simple_ip_cdf_raw.png>
 Package pdftex.def Info: 100_results/outputData_100/simple_ip_cdf_raw.png used 
 on input line 177.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
- [95
+ [97
 
  <./100_results/outputData_100/simple_ip_cdf_raw.png (PNG copy)>]
-<100_results/outputData_100/ip_logLike_unified.png, id=466, 578.16pt x 433.62pt
+<100_results/outputData_100/ip_logLike_unified.png, id=472, 578.16pt x 433.62pt
 >
 File: 100_results/outputData_100/ip_logLike_unified.png Graphic file (type png)
 
@@ -1584,7 +1596,7 @@ Package pdftex.def Info: 100_results/outputData_100/ip_logLike_unified.png used
  on input line 186.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
-<100_results/outputData_500/simple_ip_chain_pos_filt.png, id=467, 578.16pt x 43
+<100_results/outputData_500/simple_ip_chain_pos_filt.png, id=473, 578.16pt x 43
 3.62pt>
 File: 100_results/outputData_500/simple_ip_chain_pos_filt.png Graphic file (typ
 e png)
@@ -1595,10 +1607,10 @@ g used on input line 198.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [96
+ [98
 
  <./100_results/outputData_100/ip_logLike_unified.png (PNG copy)>]
-<100_results/outputData_500/simple_ip_hist_raw.png, id=471, 578.16pt x 433.62pt
+<100_results/outputData_500/simple_ip_hist_raw.png, id=477, 578.16pt x 433.62pt
 >
 File: 100_results/outputData_500/simple_ip_hist_raw.png Graphic file (type png)
 
@@ -1609,8 +1621,8 @@ Package pdftex.def Info: 100_results/outputData_500/simple_ip_hist_raw.png used
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [97 <./100_results/outputData_500/simple_ip_chain_pos_filt.png (PNG copy)>]
-<100_results/outputData_500/simple_ip_kde_raw.png, id=475, 578.16pt x 433.62pt>
+ [99 <./100_results/outputData_500/simple_ip_chain_pos_filt.png (PNG copy)>]
+<100_results/outputData_500/simple_ip_kde_raw.png, id=481, 578.16pt x 433.62pt>
 File: 100_results/outputData_500/simple_ip_kde_raw.png Graphic file (type png)
 <use 100_results/outputData_500/simple_ip_kde_raw.png>
 Package pdftex.def Info: 100_results/outputData_500/simple_ip_kde_raw.png used 
@@ -1619,8 +1631,8 @@ on input line 215.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [98 <./100_results/outputData_500/simple_ip_hist_raw.png (PNG copy)>]
-<100_results/outputData_500/simple_ip_cdf_raw.png, id=479, 578.16pt x 433.62pt>
+ [100 <./100_results/outputData_500/simple_ip_hist_raw.png (PNG copy)>]
+<100_results/outputData_500/simple_ip_cdf_raw.png, id=485, 578.16pt x 433.62pt>
 File: 100_results/outputData_500/simple_ip_cdf_raw.png Graphic file (type png)
 <use 100_results/outputData_500/simple_ip_cdf_raw.png>
 Package pdftex.def Info: 100_results/outputData_500/simple_ip_cdf_raw.png used 
@@ -1629,8 +1641,8 @@ on input line 222.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [99 <./100_results/outputData_500/simple_ip_kde_raw.png (PNG copy)>]
-<100_results/outputData_500/ip_logLike_unified.png, id=483, 578.16pt x 433.62pt
+ [101 <./100_results/outputData_500/simple_ip_kde_raw.png (PNG copy)>]
+<100_results/outputData_500/ip_logLike_unified.png, id=490, 578.16pt x 433.62pt
 >
 File: 100_results/outputData_500/ip_logLike_unified.png Graphic file (type png)
 
@@ -1641,8 +1653,8 @@ Package pdftex.def Info: 100_results/outputData_500/ip_logLike_unified.png used
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [100 <./100_results/outputData_500/simple_ip_cdf_raw.png (PNG copy)>]
-<100_results/outputData_1000/simple_ip_chain_pos_filt.png, id=487, 578.16pt x 4
+ [102 <./100_results/outputData_500/simple_ip_cdf_raw.png (PNG copy)>]
+<100_results/outputData_1000/simple_ip_chain_pos_filt.png, id=494, 578.16pt x 4
 33.62pt>
 File: 100_results/outputData_1000/simple_ip_chain_pos_filt.png Graphic file (ty
 pe png)
@@ -1653,8 +1665,8 @@ ng used on input line 243.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [101 <./100_results/outputData_500/ip_logLike_unified.png (PNG copy)>]
-<100_results/outputData_1000/simple_ip_hist_raw.png, id=492, 578.16pt x 433.62p
+ [103 <./100_results/outputData_500/ip_logLike_unified.png (PNG copy)>]
+<100_results/outputData_1000/simple_ip_hist_raw.png, id=498, 578.16pt x 433.62p
 t>
 File: 100_results/outputData_1000/simple_ip_hist_raw.png Graphic file (type png
 )
@@ -1665,8 +1677,8 @@ d on input line 251.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [102 <./100_results/outputData_1000/simple_ip_chain_pos_filt.png (PNG copy)>]
-<100_results/outputData_1000/simple_ip_kde_raw.png, id=496, 578.16pt x 433.62pt
+ [104 <./100_results/outputData_1000/simple_ip_chain_pos_filt.png (PNG copy)>]
+<100_results/outputData_1000/simple_ip_kde_raw.png, id=502, 578.16pt x 433.62pt
 >
 File: 100_results/outputData_1000/simple_ip_kde_raw.png Graphic file (type png)
 
@@ -1677,8 +1689,8 @@ Package pdftex.def Info: 100_results/outputData_1000/simple_ip_kde_raw.png used
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [103 <./100_results/outputData_1000/simple_ip_hist_raw.png (PNG copy)>]
-<100_results/outputData_1000/simple_ip_cdf_raw.png, id=500, 578.16pt x 433.62pt
+ [105 <./100_results/outputData_1000/simple_ip_hist_raw.png (PNG copy)>]
+<100_results/outputData_1000/simple_ip_cdf_raw.png, id=506, 578.16pt x 433.62pt
 >
 File: 100_results/outputData_1000/simple_ip_cdf_raw.png Graphic file (type png)
 
@@ -1689,8 +1701,8 @@ Package pdftex.def Info: 100_results/outputData_1000/simple_ip_cdf_raw.png used
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [104 <./100_results/outputData_1000/simple_ip_kde_raw.png (PNG copy)>]
-<100_results/outputData_1000/ip_logLike_unified.png, id=504, 578.16pt x 433.62p
+ [106 <./100_results/outputData_1000/simple_ip_kde_raw.png (PNG copy)>]
+<100_results/outputData_1000/ip_logLike_unified.png, id=510, 578.16pt x 433.62p
 t>
 File: 100_results/outputData_1000/ip_logLike_unified.png Graphic file (type png
 )
@@ -1701,8 +1713,8 @@ d on input line 276.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [105 <./100_results/outputData_1000/simple_ip_cdf_raw.png (PNG copy)>]
-<100_results/outputData_100000/simple_ip_chain_pos_filt.png, id=508, 578.16pt x
+ [107 <./100_results/outputData_1000/simple_ip_cdf_raw.png (PNG copy)>]
+<100_results/outputData_100000/simple_ip_chain_pos_filt.png, id=515, 578.16pt x
  433.62pt>
 File: 100_results/outputData_100000/simple_ip_chain_pos_filt.png Graphic file (
 type png)
@@ -1713,8 +1725,8 @@ Package pdftex.def Info: 100_results/outputData_100000/simple_ip_chain_pos_filt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [106 <./100_results/outputData_1000/ip_logLike_unified.png (PNG copy)>]
-<100_results/outputData_100000/simple_ip_hist_raw.png, id=512, 578.16pt x 433.6
+ [108 <./100_results/outputData_1000/ip_logLike_unified.png (PNG copy)>]
+<100_results/outputData_100000/simple_ip_hist_raw.png, id=519, 578.16pt x 433.6
 2pt>
 File: 100_results/outputData_100000/simple_ip_hist_raw.png Graphic file (type p
 ng)
@@ -1725,9 +1737,9 @@ sed on input line 300.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [107 <./100_results/outputData_100000/simple_ip_chain_pos_filt.png (PNG copy)>
+ [109 <./100_results/outputData_100000/simple_ip_chain_pos_filt.png (PNG copy)>
 ]
-<100_results/outputData_100000/simple_ip_kde_raw.png, id=517, 578.16pt x 433.62
+<100_results/outputData_100000/simple_ip_kde_raw.png, id=523, 578.16pt x 433.62
 pt>
 File: 100_results/outputData_100000/simple_ip_kde_raw.png Graphic file (type pn
 g)
@@ -1738,8 +1750,8 @@ ed on input line 309.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [108 <./100_results/outputData_100000/simple_ip_hist_raw.png (PNG copy)>]
-<100_results/outputData_100000/simple_ip_cdf_raw.png, id=521, 578.16pt x 433.62
+ [110 <./100_results/outputData_100000/simple_ip_hist_raw.png (PNG copy)>]
+<100_results/outputData_100000/simple_ip_cdf_raw.png, id=527, 578.16pt x 433.62
 pt>
 File: 100_results/outputData_100000/simple_ip_cdf_raw.png Graphic file (type pn
 g)
@@ -1750,8 +1762,8 @@ ed on input line 316.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [109 <./100_results/outputData_100000/simple_ip_kde_raw.png (PNG copy)>]
-<100_results/outputData_100000/ip_logLike_unified.png, id=525, 578.16pt x 433.6
+ [111 <./100_results/outputData_100000/simple_ip_kde_raw.png (PNG copy)>]
+<100_results/outputData_100000/ip_logLike_unified.png, id=531, 578.16pt x 433.6
 2pt>
 File: 100_results/outputData_100000/ip_logLike_unified.png Graphic file (type p
 ng)
@@ -1762,8 +1774,8 @@ sed on input line 325.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [110 <./100_results/outputData_100000/simple_ip_cdf_raw.png (PNG copy)>]
-<100_results/outputData_300000/simple_ip_chain_pos_filt.png, id=529, 578.16pt x
+ [112 <./100_results/outputData_100000/simple_ip_cdf_raw.png (PNG copy)>]
+<100_results/outputData_300000/simple_ip_chain_pos_filt.png, id=535, 578.16pt x
  433.62pt>
 File: 100_results/outputData_300000/simple_ip_chain_pos_filt.png Graphic file (
 type png)
@@ -1774,8 +1786,8 @@ Package pdftex.def Info: 100_results/outputData_300000/simple_ip_chain_pos_filt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [111 <./100_results/outputData_100000/ip_logLike_unified.png (PNG copy)>]
-<100_results/outputData_300000/simple_ip_hist_raw.png, id=533, 578.16pt x 433.6
+ [113 <./100_results/outputData_100000/ip_logLike_unified.png (PNG copy)>]
+<100_results/outputData_300000/simple_ip_hist_raw.png, id=540, 578.16pt x 433.6
 2pt>
 File: 100_results/outputData_300000/simple_ip_hist_raw.png Graphic file (type p
 ng)
@@ -1786,9 +1798,9 @@ sed on input line 346.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [112 <./100_results/outputData_300000/simple_ip_chain_pos_filt.png (PNG copy)>
-] [113 <./100_results/outputData_300000/simple_ip_hist_raw.png (PNG copy)>]
-<100_results/outputData_300000/simple_ip_kde_raw.png, id=541, 578.16pt x 433.62
+ [114 <./100_results/outputData_300000/simple_ip_chain_pos_filt.png (PNG copy)>
+] [115 <./100_results/outputData_300000/simple_ip_hist_raw.png (PNG copy)>]
+<100_results/outputData_300000/simple_ip_kde_raw.png, id=547, 578.16pt x 433.62
 pt>
 File: 100_results/outputData_300000/simple_ip_kde_raw.png Graphic file (type pn
 g)
@@ -1797,7 +1809,7 @@ Package pdftex.def Info: 100_results/outputData_300000/simple_ip_kde_raw.png us
 ed on input line 355.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
 
-<100_results/outputData_300000/simple_ip_cdf_raw.png, id=542, 578.16pt x 433.62
+<100_results/outputData_300000/simple_ip_cdf_raw.png, id=548, 578.16pt x 433.62
 pt>
 File: 100_results/outputData_300000/simple_ip_cdf_raw.png Graphic file (type pn
 g)
@@ -1808,10 +1820,10 @@ ed on input line 362.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [114
+ [116
 
  <./100_results/outputData_300000/simple_ip_kde_raw.png (PNG copy)>]
-<100_results/outputData_300000/ip_logLike_unified.png, id=546, 578.16pt x 433.6
+<100_results/outputData_300000/ip_logLike_unified.png, id=552, 578.16pt x 433.6
 2pt>
 File: 100_results/outputData_300000/ip_logLike_unified.png Graphic file (type p
 ng)
@@ -1822,8 +1834,8 @@ sed on input line 371.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [115 <./100_results/outputData_300000/simple_ip_cdf_raw.png (PNG copy)>]
-<100_results/outputData_700000/simple_ip_chain_pos_filt.png, id=550, 578.16pt x
+ [117 <./100_results/outputData_300000/simple_ip_cdf_raw.png (PNG copy)>]
+<100_results/outputData_700000/simple_ip_chain_pos_filt.png, id=556, 578.16pt x
  433.62pt>
 File: 100_results/outputData_700000/simple_ip_chain_pos_filt.png Graphic file (
 type png)
@@ -1834,8 +1846,8 @@ Package pdftex.def Info: 100_results/outputData_700000/simple_ip_chain_pos_filt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [116 <./100_results/outputData_300000/ip_logLike_unified.png (PNG copy)>]
-<100_results/outputData_700000/simple_ip_hist_raw.png, id=554, 578.16pt x 433.6
+ [118 <./100_results/outputData_300000/ip_logLike_unified.png (PNG copy)>]
+<100_results/outputData_700000/simple_ip_hist_raw.png, id=560, 578.16pt x 433.6
 2pt>
 File: 100_results/outputData_700000/simple_ip_hist_raw.png Graphic file (type p
 ng)
@@ -1846,9 +1858,9 @@ sed on input line 393.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [117 <./100_results/outputData_700000/simple_ip_chain_pos_filt.png (PNG copy)>
+ [119 <./100_results/outputData_700000/simple_ip_chain_pos_filt.png (PNG copy)>
 ]
-<100_results/outputData_700000/simple_ip_kde_raw.png, id=558, 578.16pt x 433.62
+<100_results/outputData_700000/simple_ip_kde_raw.png, id=565, 578.16pt x 433.62
 pt>
 File: 100_results/outputData_700000/simple_ip_kde_raw.png Graphic file (type pn
 g)
@@ -1859,8 +1871,8 @@ ed on input line 402.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [118 <./100_results/outputData_700000/simple_ip_hist_raw.png (PNG copy)>]
-<100_results/outputData_700000/simple_ip_cdf_raw.png, id=562, 578.16pt x 433.62
+ [120 <./100_results/outputData_700000/simple_ip_hist_raw.png (PNG copy)>]
+<100_results/outputData_700000/simple_ip_cdf_raw.png, id=569, 578.16pt x 433.62
 pt>
 File: 100_results/outputData_700000/simple_ip_cdf_raw.png Graphic file (type pn
 g)
@@ -1871,8 +1883,8 @@ ed on input line 409.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [119 <./100_results/outputData_700000/simple_ip_kde_raw.png (PNG copy)>]
-<100_results/outputData_700000/ip_logLike_unified.png, id=567, 578.16pt x 433.6
+ [121 <./100_results/outputData_700000/simple_ip_kde_raw.png (PNG copy)>]
+<100_results/outputData_700000/ip_logLike_unified.png, id=573, 578.16pt x 433.6
 2pt>
 File: 100_results/outputData_700000/ip_logLike_unified.png Graphic file (type p
 ng)
@@ -1883,8 +1895,8 @@ sed on input line 418.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [120 <./100_results/outputData_700000/simple_ip_cdf_raw.png (PNG copy)>]
-<100_results/outputData_900000/simple_ip_chain_pos_filt.png, id=571, 578.16pt x
+ [122 <./100_results/outputData_700000/simple_ip_cdf_raw.png (PNG copy)>]
+<100_results/outputData_900000/simple_ip_chain_pos_filt.png, id=577, 578.16pt x
  433.62pt>
 File: 100_results/outputData_900000/simple_ip_chain_pos_filt.png Graphic file (
 type png)
@@ -1895,8 +1907,8 @@ Package pdftex.def Info: 100_results/outputData_900000/simple_ip_chain_pos_filt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [121 <./100_results/outputData_700000/ip_logLike_unified.png (PNG copy)>]
-<100_results/outputData_900000/simple_ip_hist_raw.png, id=575, 578.16pt x 433.6
+ [123 <./100_results/outputData_700000/ip_logLike_unified.png (PNG copy)>]
+<100_results/outputData_900000/simple_ip_hist_raw.png, id=581, 578.16pt x 433.6
 2pt>
 File: 100_results/outputData_900000/simple_ip_hist_raw.png Graphic file (type p
 ng)
@@ -1907,9 +1919,9 @@ sed on input line 439.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [122 <./100_results/outputData_900000/simple_ip_chain_pos_filt.png (PNG copy)>
+ [124 <./100_results/outputData_900000/simple_ip_chain_pos_filt.png (PNG copy)>
 ]
-<100_results/outputData_900000/simple_ip_kde_raw.png, id=579, 578.16pt x 433.62
+<100_results/outputData_900000/simple_ip_kde_raw.png, id=585, 578.16pt x 433.62
 pt>
 File: 100_results/outputData_900000/simple_ip_kde_raw.png Graphic file (type pn
 g)
@@ -1920,8 +1932,8 @@ ed on input line 448.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [123 <./100_results/outputData_900000/simple_ip_hist_raw.png (PNG copy)>]
-<100_results/outputData_900000/simple_ip_cdf_raw.png, id=583, 578.16pt x 433.62
+ [125 <./100_results/outputData_900000/simple_ip_hist_raw.png (PNG copy)>]
+<100_results/outputData_900000/simple_ip_cdf_raw.png, id=590, 578.16pt x 433.62
 pt>
 File: 100_results/outputData_900000/simple_ip_cdf_raw.png Graphic file (type pn
 g)
@@ -1932,8 +1944,8 @@ ed on input line 455.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [124 <./100_results/outputData_900000/simple_ip_kde_raw.png (PNG copy)>]
-<100_results/outputData_900000/ip_logLike_unified.png, id=587, 578.16pt x 433.6
+ [126 <./100_results/outputData_900000/simple_ip_kde_raw.png (PNG copy)>]
+<100_results/outputData_900000/ip_logLike_unified.png, id=594, 578.16pt x 433.6
 2pt>
 File: 100_results/outputData_900000/ip_logLike_unified.png Graphic file (type p
 ng)
@@ -1944,8 +1956,8 @@ sed on input line 464.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [125 <./100_results/outputData_900000/simple_ip_cdf_raw.png (PNG copy)>]
-<100_results/outputData_1000000/simple_ip_chain_pos_filt.png, id=592, 578.16pt 
+ [127 <./100_results/outputData_900000/simple_ip_cdf_raw.png (PNG copy)>]
+<100_results/outputData_1000000/simple_ip_chain_pos_filt.png, id=598, 578.16pt 
 x 433.62pt>
 File: 100_results/outputData_1000000/simple_ip_chain_pos_filt.png Graphic file 
 (type png)
@@ -1956,8 +1968,8 @@ t.png used on input line 475.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [126 <./100_results/outputData_900000/ip_logLike_unified.png (PNG copy)>]
-<100_results/outputData_1000000/simple_ip_hist_raw.png, id=596, 578.16pt x 433.
+ [128 <./100_results/outputData_900000/ip_logLike_unified.png (PNG copy)>]
+<100_results/outputData_1000000/simple_ip_hist_raw.png, id=602, 578.16pt x 433.
 62pt>
 File: 100_results/outputData_1000000/simple_ip_hist_raw.png Graphic file (type 
 png)
@@ -1968,9 +1980,9 @@ used on input line 483.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [127 <./100_results/outputData_1000000/simple_ip_chain_pos_filt.png (PNG copy)
+ [129 <./100_results/outputData_1000000/simple_ip_chain_pos_filt.png (PNG copy)
 >]
-<100_results/outputData_1000000/simple_ip_kde_raw.png, id=600, 578.16pt x 433.6
+<100_results/outputData_1000000/simple_ip_kde_raw.png, id=606, 578.16pt x 433.6
 2pt>
 File: 100_results/outputData_1000000/simple_ip_kde_raw.png Graphic file (type p
 ng)
@@ -1981,8 +1993,8 @@ sed on input line 492.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [128 <./100_results/outputData_1000000/simple_ip_hist_raw.png (PNG copy)>]
-<100_results/outputData_1000000/simple_ip_cdf_raw.png, id=604, 578.16pt x 433.6
+ [130 <./100_results/outputData_1000000/simple_ip_hist_raw.png (PNG copy)>]
+<100_results/outputData_1000000/simple_ip_cdf_raw.png, id=610, 578.16pt x 433.6
 2pt>
 File: 100_results/outputData_1000000/simple_ip_cdf_raw.png Graphic file (type p
 ng)
@@ -1993,8 +2005,8 @@ sed on input line 499.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [129 <./100_results/outputData_1000000/simple_ip_kde_raw.png (PNG copy)>]
-<100_results/outputData_1000000/ip_logLike_unified.png, id=608, 578.16pt x 433.
+ [131 <./100_results/outputData_1000000/simple_ip_kde_raw.png (PNG copy)>]
+<100_results/outputData_1000000/ip_logLike_unified.png, id=615, 578.16pt x 433.
 62pt>
 File: 100_results/outputData_1000000/ip_logLike_unified.png Graphic file (type 
 png)
@@ -2005,13 +2017,13 @@ used on input line 508.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [130 <./100_results/outputData_1000000/simple_ip_cdf_raw.png (PNG copy)>])) [1
-31 <./100_results/outputData_1000000/ip_logLike_unified.png (PNG copy)>] [132
+ [132 <./100_results/outputData_1000000/simple_ip_cdf_raw.png (PNG copy)>])) [1
+33 <./100_results/outputData_1000000/ip_logLike_unified.png (PNG copy)>] [134
 
 
 ]
 Chapter 6.
-(./appendix.tex [133] [134
+(./appendix.tex [135] [136
 
 
 ]
@@ -2028,35 +2040,37 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-(./mathematicalmodel.tex [135]
+(./mathematicalmodel.tex [137]
 Underfull \hbox (badness 10000) in paragraph at lines 33--37
 
  []
 
-[136]
+[138]
 Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
-[137])) (./thesis.bbl [138]) [139
+[139])) [140] (./thesis.bbl) (./thesis.bbl [141
 
 
-] (./thesis.aux)
 
-LaTeX Warning: There were undefined references.
 
+] [142
+
+
+]) [143] (./thesis.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4051 strings out of 494985
- 80956 string characters out of 6180356
- 124989 words of memory out of 5000000
- 7154 multiletter control sequences out of 15000+600000
+ 4055 strings out of 494985
+ 81452 string characters out of 6180356
+ 124996 words of memory out of 5000000
+ 7155 multiletter control sequences out of 15000+600000
  10415 words of font info for 36 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 44i,13n,47p,1399b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,13n,47p,1392b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
@@ -2075,10 +2089,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (153 pages, 6400468 bytes).
+Output written on thesis.pdf (157 pages, 6409851 bytes).
 PDF statistics:
- 708 PDF objects out of 1000 (max. 8388607)
- 396 compressed objects within 4 object streams
+ 722 PDF objects out of 1000 (max. 8388607)
+ 405 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
  666 words of extra memory for PDF output out of 10000 (max. 10000000)
 
