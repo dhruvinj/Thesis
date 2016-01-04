@@ -1,0 +1,301 @@
+--------------------------------------------------------------------------------------------------------------
+QUESO Library: Version = 0.53.1 (5301)
+
+External Release
+
+Build Date   = 2015-08-19 11:26
+Build Host   = zoidberg.eng.buffalo.edu
+Build User   = dhruvinj
+Build Arch   = x86_64-unknown-linux-gnu
+Build Rev    = N/A
+
+C++ Config   = mpic++ -g -O2 -Wall
+
+Trilinos DIR = 
+GSL Libs     = -L/zoidberg1/data/shared/software/libs/gsl/1.16/gcc/4.8.4/lib -lgsl -lgslcblas -lm
+GRVY DIR     = 
+GLPK DIR     = /zoidberg1/data/shared/software/libs/glpk/4.55/gcc/4.8.4
+HDF5 DIR     = no
+--------------------------------------------------------------------------------------------------------------
+Beginning run at Thu Dec 31 14:21:48 2015
+
+Entering StatisticalInverseProblem<P_V,P_M>::constructor(): prefix = , alternativeOptionsValues = 0, m_env.optionsInputFileName() = queso_1e7.inp
+Leaving StatisticalInverseProblem<P_V,P_M>::constructor(): prefix = ip_
+In StatisticalInverseProblem<P_V,P_M>::solveWithBayesMetropolisHastings(): computing solution, as requested by user
+Entering MetropolisHastingsSG<P_V,P_M>::constructor(1): prefix = ip_, alternativeOptionsValues = 0, m_env.optionsInputFileName() = queso_1e7.inp, m_initialProposalCovMatrix = 0.1 0 ; 0 0.1 
+Entering MetropolisHastingsSG<P_V,P_M>::commonConstructor()
+In MetropolisHastingsSG<P_V,P_M>::commonConstructor(): just instantiated a 'ScaledCovMatrix' TK class
+Leaving MetropolisHastingsSG<P_V,P_M>::commonConstructor()
+Leaving MetropolisHastingsSG<P_V,P_M>::constructor(1)
+Starting the generation of Markov chain ip_mh_rawChain, with 10000000 positions...
+
+In MetropolisHastingsSG<P_V,P_M>::generateFullChain(): contents of initial position are:17.5532 15.6079 
+In MetropolisHastingsSG<P_V,P_M>::generateFullChain(): targetPdf.domaintSet() info is:In BoxSubset<V,M>::print(): m_minValues = -10 -10 , m_maxValues = 40 40 , m_volume = 2500
+
+Finished generating 50000 positions, current rejection percentage = 1.436 %
+Finished generating 100000 positions, current rejection percentage = 1.413 %
+Finished generating 150000 positions, current rejection percentage = 1.38933 %
+Finished generating 200000 positions, current rejection percentage = 1.4175 %
+Finished generating 250000 positions, current rejection percentage = 1.412 %
+Finished generating 300000 positions, current rejection percentage = 1.43333 %
+Finished generating 350000 positions, current rejection percentage = 1.43257 %
+Finished generating 400000 positions, current rejection percentage = 1.44525 %
+Finished generating 450000 positions, current rejection percentage = 1.44067 %
+Finished generating 500000 positions, current rejection percentage = 1.439 %
+Finished generating 550000 positions, current rejection percentage = 1.44655 %
+Finished generating 600000 positions, current rejection percentage = 1.453 %
+Finished generating 650000 positions, current rejection percentage = 1.456 %
+Finished generating 700000 positions, current rejection percentage = 1.45829 %
+Finished generating 750000 positions, current rejection percentage = 1.46133 %
+Finished generating 800000 positions, current rejection percentage = 1.462 %
+Finished generating 850000 positions, current rejection percentage = 1.46271 %
+Finished generating 900000 positions, current rejection percentage = 1.46422 %
+Finished generating 950000 positions, current rejection percentage = 1.46368 %
+Finished generating 1000000 positions, current rejection percentage = 1.4632 %
+Finished generating 1050000 positions, current rejection percentage = 1.4659 %
+Finished generating 1100000 positions, current rejection percentage = 1.46309 %
+Finished generating 1150000 positions, current rejection percentage = 1.4627 %
+Finished generating 1200000 positions, current rejection percentage = 1.46192 %
+Finished generating 1250000 positions, current rejection percentage = 1.46184 %
+Finished generating 1300000 positions, current rejection percentage = 1.46269 %
+Finished generating 1350000 positions, current rejection percentage = 1.466 %
+Finished generating 1400000 positions, current rejection percentage = 1.46586 %
+Finished generating 1450000 positions, current rejection percentage = 1.46324 %
+Finished generating 1500000 positions, current rejection percentage = 1.46387 %
+Finished generating 1550000 positions, current rejection percentage = 1.46026 %
+Finished generating 1600000 positions, current rejection percentage = 1.46081 %
+Finished generating 1650000 positions, current rejection percentage = 1.46152 %
+Finished generating 1700000 positions, current rejection percentage = 1.46212 %
+Finished generating 1750000 positions, current rejection percentage = 1.4632 %
+Finished generating 1800000 positions, current rejection percentage = 1.462 %
+Finished generating 1850000 positions, current rejection percentage = 1.46341 %
+Finished generating 1900000 positions, current rejection percentage = 1.46463 %
+Finished generating 1950000 positions, current rejection percentage = 1.46738 %
+Finished generating 2000000 positions, current rejection percentage = 1.4671 %
+Finished generating 2050000 positions, current rejection percentage = 1.46541 %
+Finished generating 2100000 positions, current rejection percentage = 1.46662 %
+Finished generating 2150000 positions, current rejection percentage = 1.46716 %
+Finished generating 2200000 positions, current rejection percentage = 1.46664 %
+Finished generating 2250000 positions, current rejection percentage = 1.46747 %
+Finished generating 2300000 positions, current rejection percentage = 1.46791 %
+Finished generating 2350000 positions, current rejection percentage = 1.46719 %
+Finished generating 2400000 positions, current rejection percentage = 1.46913 %
+Finished generating 2450000 positions, current rejection percentage = 1.46886 %
+Finished generating 2500000 positions, current rejection percentage = 1.4686 %
+Finished generating 2550000 positions, current rejection percentage = 1.46792 %
+Finished generating 2600000 positions, current rejection percentage = 1.46835 %
+Finished generating 2650000 positions, current rejection percentage = 1.4677 %
+Finished generating 2700000 positions, current rejection percentage = 1.46719 %
+Finished generating 2750000 positions, current rejection percentage = 1.46753 %
+Finished generating 2800000 positions, current rejection percentage = 1.46696 %
+Finished generating 2850000 positions, current rejection percentage = 1.46747 %
+Finished generating 2900000 positions, current rejection percentage = 1.46769 %
+Finished generating 2950000 positions, current rejection percentage = 1.46624 %
+Finished generating 3000000 positions, current rejection percentage = 1.4652 %
+Finished generating 3050000 positions, current rejection percentage = 1.46708 %
+Finished generating 3100000 positions, current rejection percentage = 1.4679 %
+Finished generating 3150000 positions, current rejection percentage = 1.46911 %
+Finished generating 3200000 positions, current rejection percentage = 1.46794 %
+Finished generating 3250000 positions, current rejection percentage = 1.46763 %
+Finished generating 3300000 positions, current rejection percentage = 1.46703 %
+Finished generating 3350000 positions, current rejection percentage = 1.46752 %
+Finished generating 3400000 positions, current rejection percentage = 1.46703 %
+Finished generating 3450000 positions, current rejection percentage = 1.46638 %
+Finished generating 3500000 positions, current rejection percentage = 1.46629 %
+Finished generating 3550000 positions, current rejection percentage = 1.46763 %
+Finished generating 3600000 positions, current rejection percentage = 1.46844 %
+Finished generating 3650000 positions, current rejection percentage = 1.46849 %
+Finished generating 3700000 positions, current rejection percentage = 1.46895 %
+Finished generating 3750000 positions, current rejection percentage = 1.46931 %
+Finished generating 3800000 positions, current rejection percentage = 1.46992 %
+Finished generating 3850000 positions, current rejection percentage = 1.46919 %
+Finished generating 3900000 positions, current rejection percentage = 1.4689 %
+Finished generating 3950000 positions, current rejection percentage = 1.46894 %
+Finished generating 4000000 positions, current rejection percentage = 1.4688 %
+Finished generating 4050000 positions, current rejection percentage = 1.46867 %
+Finished generating 4100000 positions, current rejection percentage = 1.46868 %
+Finished generating 4150000 positions, current rejection percentage = 1.46947 %
+Finished generating 4200000 positions, current rejection percentage = 1.47005 %
+Finished generating 4250000 positions, current rejection percentage = 1.47075 %
+Finished generating 4300000 positions, current rejection percentage = 1.47102 %
+Finished generating 4350000 positions, current rejection percentage = 1.47076 %
+Finished generating 4400000 positions, current rejection percentage = 1.46995 %
+Finished generating 4450000 positions, current rejection percentage = 1.47058 %
+Finished generating 4500000 positions, current rejection percentage = 1.46978 %
+Finished generating 4550000 positions, current rejection percentage = 1.47004 %
+Finished generating 4600000 positions, current rejection percentage = 1.46963 %
+Finished generating 4650000 positions, current rejection percentage = 1.46974 %
+Finished generating 4700000 positions, current rejection percentage = 1.46872 %
+Finished generating 4750000 positions, current rejection percentage = 1.46827 %
+Finished generating 4800000 positions, current rejection percentage = 1.46777 %
+Finished generating 4850000 positions, current rejection percentage = 1.46792 %
+Finished generating 4900000 positions, current rejection percentage = 1.46769 %
+Finished generating 4950000 positions, current rejection percentage = 1.46826 %
+Finished generating 5000000 positions, current rejection percentage = 1.46812 %
+Finished generating 5050000 positions, current rejection percentage = 1.46739 %
+Finished generating 5100000 positions, current rejection percentage = 1.46751 %
+Finished generating 5150000 positions, current rejection percentage = 1.46761 %
+Finished generating 5200000 positions, current rejection percentage = 1.4679 %
+Finished generating 5250000 positions, current rejection percentage = 1.46785 %
+Finished generating 5300000 positions, current rejection percentage = 1.467 %
+Finished generating 5350000 positions, current rejection percentage = 1.46658 %
+Finished generating 5400000 positions, current rejection percentage = 1.46617 %
+Finished generating 5450000 positions, current rejection percentage = 1.46593 %
+Finished generating 5500000 positions, current rejection percentage = 1.46645 %
+Finished generating 5550000 positions, current rejection percentage = 1.46697 %
+Finished generating 5600000 positions, current rejection percentage = 1.46645 %
+Finished generating 5650000 positions, current rejection percentage = 1.46681 %
+Finished generating 5700000 positions, current rejection percentage = 1.46611 %
+Finished generating 5750000 positions, current rejection percentage = 1.4661 %
+Finished generating 5800000 positions, current rejection percentage = 1.46669 %
+Finished generating 5850000 positions, current rejection percentage = 1.46697 %
+Finished generating 5900000 positions, current rejection percentage = 1.46636 %
+Finished generating 5950000 positions, current rejection percentage = 1.46647 %
+Finished generating 6000000 positions, current rejection percentage = 1.46708 %
+Finished generating 6050000 positions, current rejection percentage = 1.46704 %
+Finished generating 6100000 positions, current rejection percentage = 1.46748 %
+Finished generating 6150000 positions, current rejection percentage = 1.46763 %
+Finished generating 6200000 positions, current rejection percentage = 1.46781 %
+Finished generating 6250000 positions, current rejection percentage = 1.4691 %
+Finished generating 6300000 positions, current rejection percentage = 1.46868 %
+Finished generating 6350000 positions, current rejection percentage = 1.46894 %
+Finished generating 6400000 positions, current rejection percentage = 1.46922 %
+Finished generating 6450000 positions, current rejection percentage = 1.46944 %
+Finished generating 6500000 positions, current rejection percentage = 1.46971 %
+Finished generating 6550000 positions, current rejection percentage = 1.47003 %
+Finished generating 6600000 positions, current rejection percentage = 1.46945 %
+Finished generating 6650000 positions, current rejection percentage = 1.4691 %
+Finished generating 6700000 positions, current rejection percentage = 1.46976 %
+Finished generating 6750000 positions, current rejection percentage = 1.47001 %
+Finished generating 6800000 positions, current rejection percentage = 1.47006 %
+Finished generating 6850000 positions, current rejection percentage = 1.47016 %
+Finished generating 6900000 positions, current rejection percentage = 1.46993 %
+Finished generating 6950000 positions, current rejection percentage = 1.4696 %
+Finished generating 7000000 positions, current rejection percentage = 1.46997 %
+Finished generating 7050000 positions, current rejection percentage = 1.46991 %
+Finished generating 7100000 positions, current rejection percentage = 1.47027 %
+Finished generating 7150000 positions, current rejection percentage = 1.4701 %
+Finished generating 7200000 positions, current rejection percentage = 1.47082 %
+Finished generating 7250000 positions, current rejection percentage = 1.47021 %
+Finished generating 7300000 positions, current rejection percentage = 1.47008 %
+Finished generating 7350000 positions, current rejection percentage = 1.46946 %
+Finished generating 7400000 positions, current rejection percentage = 1.46947 %
+Finished generating 7450000 positions, current rejection percentage = 1.46962 %
+Finished generating 7500000 positions, current rejection percentage = 1.47035 %
+Finished generating 7550000 positions, current rejection percentage = 1.47021 %
+Finished generating 7600000 positions, current rejection percentage = 1.47001 %
+Finished generating 7650000 positions, current rejection percentage = 1.47021 %
+Finished generating 7700000 positions, current rejection percentage = 1.47018 %
+Finished generating 7750000 positions, current rejection percentage = 1.46988 %
+Finished generating 7800000 positions, current rejection percentage = 1.47029 %
+Finished generating 7850000 positions, current rejection percentage = 1.47013 %
+Finished generating 7900000 positions, current rejection percentage = 1.4703 %
+Finished generating 7950000 positions, current rejection percentage = 1.47059 %
+Finished generating 8000000 positions, current rejection percentage = 1.47031 %
+Finished generating 8050000 positions, current rejection percentage = 1.47032 %
+Finished generating 8100000 positions, current rejection percentage = 1.46979 %
+Finished generating 8150000 positions, current rejection percentage = 1.47018 %
+Finished generating 8200000 positions, current rejection percentage = 1.47024 %
+Finished generating 8250000 positions, current rejection percentage = 1.46996 %
+Finished generating 8300000 positions, current rejection percentage = 1.46961 %
+Finished generating 8350000 positions, current rejection percentage = 1.4701 %
+Finished generating 8400000 positions, current rejection percentage = 1.47027 %
+Finished generating 8450000 positions, current rejection percentage = 1.47069 %
+Finished generating 8500000 positions, current rejection percentage = 1.47072 %
+Finished generating 8550000 positions, current rejection percentage = 1.47081 %
+Finished generating 8600000 positions, current rejection percentage = 1.47116 %
+Finished generating 8650000 positions, current rejection percentage = 1.4715 %
+Finished generating 8700000 positions, current rejection percentage = 1.47103 %
+Finished generating 8750000 positions, current rejection percentage = 1.47056 %
+Finished generating 8800000 positions, current rejection percentage = 1.47032 %
+Finished generating 8850000 positions, current rejection percentage = 1.47056 %
+Finished generating 8900000 positions, current rejection percentage = 1.47088 %
+Finished generating 8950000 positions, current rejection percentage = 1.47093 %
+Finished generating 9000000 positions, current rejection percentage = 1.47063 %
+Finished generating 9050000 positions, current rejection percentage = 1.47055 %
+Finished generating 9100000 positions, current rejection percentage = 1.47052 %
+Finished generating 9150000 positions, current rejection percentage = 1.47108 %
+Finished generating 9200000 positions, current rejection percentage = 1.47092 %
+Finished generating 9250000 positions, current rejection percentage = 1.47053 %
+Finished generating 9300000 positions, current rejection percentage = 1.47035 %
+Finished generating 9350000 positions, current rejection percentage = 1.46997 %
+Finished generating 9400000 positions, current rejection percentage = 1.46986 %
+Finished generating 9450000 positions, current rejection percentage = 1.46975 %
+Finished generating 9500000 positions, current rejection percentage = 1.46962 %
+Finished generating 9550000 positions, current rejection percentage = 1.4695 %
+Finished generating 9600000 positions, current rejection percentage = 1.46964 %
+Finished generating 9650000 positions, current rejection percentage = 1.47033 %
+Finished generating 9700000 positions, current rejection percentage = 1.47049 %
+Finished generating 9750000 positions, current rejection percentage = 1.47071 %
+Finished generating 9800000 positions, current rejection percentage = 1.471 %
+Finished generating 9850000 positions, current rejection percentage = 1.47123 %
+Finished generating 9900000 positions, current rejection percentage = 1.47109 %
+Finished generating 9950000 positions, current rejection percentage = 1.47117 %
+Finished generating 10000000 positions, current rejection percentage = 1.47126 %
+Finished the generation of Markov chain ip_mh_rawChain, with sub 10000000 positions
+Some information about this chain:
+  Chain run time       = 262.826 seconds
+
+ Breaking of the chain run time:
+
+  Candidate run time   = 36.5031 seconds (13.8887%)
+  Num target calls  = 11114518
+  Target d. run time   = 113.712 seconds (43.265%)
+  Avg target run time   = 1.02309e-05 seconds
+  Mh alpha run time    = 53.8592 seconds (20.4923%)
+  Dr alpha run time    = 22.4679 seconds (8.54857%)
+----------------------   --------------
+  Sum                  = 226.542 seconds (86.1946%)
+
+ Other run times:
+  DR run time          = 41.6674 seconds (15.8536%)
+  AM run time          = 0 seconds (0%)
+  Number of DRs = 1114518(num_DRs/chain_size = 0.111452)
+  Out of target support in DR = 0
+  Rejection percentage = 1.47126 %
+  Out of target support percentage = 0 %
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = ip_mh_, chain name = ip_mh_rawChain: about to try to open generic output file 'outputData/sipOutput.m', subId = 0, subenv is allowed to write (1/true or 0/false) = 1...
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = ip_mh_, raw chain name = ip_mh_rawChain: returned from opening generic output file 'outputData/sipOutput.m', subId = 0
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = ip_mh_, raw chain name = ip_mh_rawChain: about to try to write raw sub chain output file 'outputData/ip_raw_chain.m', subId = 0, subenv is allowed to write  1/true or 0/false) = 1...
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(): just wrote (per period request) remaining 10000000 chain positions , 0 <= pos <= 9999999
+Entering BaseVectorSequence<V,M>::subPositionsOfMaximum(): subCorrespondingScalarValues,subSequenceSize() = 10000000, this->subSequenceSize = 10000000
+Leaving BaseVectorSequence<V,M>::subPositionsOfMaximum()
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(): just computed MLE, rawSubMLEvalue = -0.469099, rawSubMLEpositions.subSequenceSize() = 1, rawSubMLEpositions[0] = 17.5466 15.6282 
+Entering BaseVectorSequence<V,M>::subPositionsOfMaximum(): subCorrespondingScalarValues,subSequenceSize() = 10000000, this->subSequenceSize = 10000000
+Leaving BaseVectorSequence<V,M>::subPositionsOfMaximum()
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(): just computed MAP, rawSubMAPvalue = -8.29315, rawSubMAPpositions.subSequenceSize() = 1, rawSubMAPpositions[0] = 17.5466 15.6282 
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = ip_mh_, raw chain name = ip_mh_rawChain: returned from writing raw sub chain output file 'outputData/ip_raw_chain.m', subId = 0
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = ip_mh_, raw chain name = ip_mh_rawChain: about to try to write raw unified chain output file 'outputData/ip_raw_chain.m', subId = 0...
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = ip_mh_, raw chain name = ip_mh_rawChain: returned from writing raw unified chain output file 'outputData/ip_raw_chain.m', subId = 0
+Entering BaseVectorSequence<V,M>::unifiedPositionsOfMaximum(): subCorrespondingScalarValues,subSequenceSize() = 10000000, this->subSequenceSize = 10000000
+Leaving BaseVectorSequence<V,M>::unifiedPositionsOfMaximum()
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(): just computed MLE, rawUnifiedMLEvalue = -0.469099, rawUnifiedMLEpositions.subSequenceSize() = 1, rawUnifiedMLEpositions[0] = 17.5466 15.6282 
+Entering BaseVectorSequence<V,M>::unifiedPositionsOfMaximum(): subCorrespondingScalarValues,subSequenceSize() = 10000000, this->subSequenceSize = 10000000
+Leaving BaseVectorSequence<V,M>::unifiedPositionsOfMaximum()
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(): just computed MAP, rawUnifiedMAPvalue = -8.29315, rawUnifiedMAPpositions.subSequenceSize() = 1, rawUnifiedMAPpositions[0] = 17.5466 15.6282 
+
+
+-----------------------------------------------------
+ Writing more information about the Markov chain ip_mh_rawChain to output file ...
+-----------------------------------------------------
+
+
+-----------------------------------------------------
+ Finished writing more information about the Markov chain ip_mh_rawChain
+-----------------------------------------------------
+
+Entering SequenceOfVectors<V,M>::filter(): initialPos = 0, spacing = 16, subSequenceSize = 10000000
+Leaving SequenceOfVectors<V,M>::filter(): initialPos = 0, spacing = 16, subSequenceSize = 625000
+Entering ScalarSequence<V,M>::filter(): initialPos = 0, spacing = 16, subSequenceSize = 10000000
+Leaving ScalarSequence<V,M>::filter(): initialPos = 0, spacing = 16, subSequenceSize = 625000
+Entering ScalarSequence<V,M>::filter(): initialPos = 0, spacing = 16, subSequenceSize = 10000000
+Leaving ScalarSequence<V,M>::filter(): initialPos = 0, spacing = 16, subSequenceSize = 625000
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = ip_mh_: checking necessity of opening output files for filtered chain ip_mh_filtChain...
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = ip_mh_: closed sub output file 'outputData/ip_filt_chain' for filtered chain ip_mh_filtChain
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = ip_mh_: closed unified output file 'outputData/ip_filt_chain' for filtered chain ip_mh_filtChain
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = ip_mh_: closed generic output file 'outputData/sipOutput' (chain name is ip_mh_filtChain)
+
+In SequentialVectorRealizer<V,M>::constructor(): m_chain.subSequenceSize() = 625000
+
+Ending run at Thu Dec 31 14:29:11 2015
+Total run time = 443 seconds

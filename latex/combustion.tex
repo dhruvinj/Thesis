@@ -146,7 +146,7 @@ $$\rho u = constant = \rho_\infty u_\infty = -\rho_1 S_L$$
  
  \section{Geometry with boundary conditions}
 
-\begin{figure}[h!]
+\begin{figure}[H]
   
   \centering
    \includegraphics[scale=0.5]{figs/geometricbcs}
@@ -226,7 +226,7 @@ $$\eta_s = \frac{5}{16}\sqrt{\frac{m_s k_B T}{\pi}}\frac{f_n}{{\sigma_s}^2   \Om
 \noindent Where  $m$ the molecular mass of the species (kg), $\sigma$ is the Lennard-Jones potential diameter associated
 to the species $(m)$, $k_B$ is the Boltzmann constant,$\Omega^{(2,2^*)}$ is the value of the dimensionless integrated integral from Monchick
 and Mason (1961). With hard sphere approximation $f_n = 1$. We have three species in our system i.e $O$, $O_2$ and $O_3$. We have varied temperature from 300 K to 2700 K and plotted the viscocity V/s Temperature for all the three species. The $\sigma$ values and constants for dimensionless collision number are taken from NASA CAE transport file. 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \includegraphics[scale=0.5]{figs/viscocity model.png}
    \caption{Viscocity}
@@ -256,28 +256,11 @@ $\sigma_{ij}$ is the Lennard-Jones collision diameter between species $i$ and $j
 
 \begin{figure}[H]
 
-\subfloat[Diffusion coefficient for $O$ - $O$\label{subfig-1:dummy}]{%
-     \includegraphics[scale=0.5]{figs/diffusionmodel00.png} 
+\subfloat[Diffusion coefficient \label{subfig-1:dummy}]{%
+     \includegraphics[scale=0.5]{figs/allinone.png} 
     }
-\subfloat[Diffusion coefficient for $O$ - $O_2$\label{subfig-1:dummy}]{%
-     \includegraphics[scale=0.5]{figs/diffusionmodel002.png} 
-    }
-    \quad
-   \subfloat[Diffusion coefficient for $O$ - $O_3$\label{subfig-1:dummy}]{%
-        \includegraphics[scale=0.5]{figs/diffusionmodel003.png} 
-       }
-  \subfloat[Diffusion coefficient for $O_2$ - $O_2$\label{subfig-1:dummy}]{%
-         \includegraphics[scale=0.5]{figs/diffusionmodel0202.png} 
-        }
-        
-        \quad
-        \subfloat[Diffusion coefficient for $O_2$ - $O_3$\label{subfig-1:dummy}]{%
-                 \includegraphics[scale=0.5]{figs/diffusionmodel0203.png} 
-                }
-         \subfloat[Diffusion coefficient for $O_3$ - $O_3$\label{subfig-1:dummy}]{%
-            \includegraphics[scale=0.48]{figs/diffusionmodel0303.png} 
-                                }
-    \caption{Diffusion coefficient}
+
+    \caption{Diffusion coefficients for $O_2-O_2$, $O_2-O_3$, $O_3-O_3$, $O-O$, $O-O_2$ and $O-O_3$}
 \end{figure}
 
 
@@ -325,14 +308,11 @@ F(T) = 1 + \frac{\pi^{\frac{3}{2}}}{2}\sqrt{\left(\frac{\epsilon_i}{k_B T}\right
 \subfloat[Thermal Conductivity for $O$\label{subfig-1:dummy}]{%
      \includegraphics[scale=0.5]{figs/tcO.png} 
     }
-\subfloat[Thermal Conductivity for $O_2$\label{subfig-1:dummy}]{%
-     \includegraphics[scale=0.5]{figs/tcO2.png} 
+\subfloat[Thermal Conductivity for $O_2$ and $O_3$ \label{subfig-1:dummy}]{%
+     \includegraphics[scale=0.3]{figs/tco2_03.png} 
     }
-    \quad
-   \subfloat[Thermal Conductivity for $O_3$\label{subfig-1:dummy}]{%
-        \includegraphics[scale=0.5]{figs/tcO3.png} 
-       }
-    \caption{Thermal Conductivity}
+  
+    \caption{Thermal Conductivity for $O$, $O_2$ and $O_3$}
 \end{figure}
 
 
@@ -358,16 +338,10 @@ with
 \begin{figure}[H]
 
 \subfloat[Mixture Viscocity behind the flame\label{subfig-1:dummy}]{%
-     \includegraphics[scale=0.5]{figs/mixtureviscocty_behindflame.png} 
+     \includegraphics[scale=0.5]{figs/all_in_one.png} 
     }
-\subfloat[Mixture Viscocity inside the flame\label{subfig-1:dummy}]{%
-     \includegraphics[scale=0.5]{figs/mixtureviscocty_insideflame.png} 
-    }
-    \quad
-   \subfloat[Mixture Viscocity after the flame \label{subfig-1:dummy}]{%
-        \includegraphics[scale=0.5]{figs/mixtureviscocty_afterflame.png} 
-       }
-    \caption{Mixture Viscocity}
+
+    \caption{Mixture Viscocity behind, inside and after the flame}
 \end{figure}
 
 

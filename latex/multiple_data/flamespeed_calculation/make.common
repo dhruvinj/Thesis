@@ -1,0 +1,8 @@
+all: 1Run 
+
+1Run: flamespeed_calcul.cpp
+
+	mpicxx flamespeed_calcul.cpp -o 1Run -g -O2 -I${GSL_DIR}/include  -I${GLPK_DIR}/include -I${CANTERA_DIR}/include -I/zoidberg1/data/users/dhruvinj/Queso/install/include -I/zoidberg1/data/users/dhruvinj/nitridation_calibration/code/nitcal/src/inverse_problem/include -I/zoidberg1/data/shared/dhruvin_flame/install/master/opt/include -L/zoidberg1/data/users/dhruvinj/Queso/install/lib  -L${GSL_DIR}/lib -L${GLPK_DIR}/lib -L${CANTERA_DIR}/lib -lqueso -lgsl -lgslcblas -lglpk -lcantera
+		
+clean:
+	rm 1Run 
