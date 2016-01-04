@@ -1,0 +1,78 @@
+
+\section{Estimating parameter E for reaction 3 }
+
+The results displayed in this section are for the uncertainty involved in the calculation of flamespeed depending only on one parameter i.e the activation energy for the fall off reaction in the ozone mechanism. The percentage of ozone is taken as 20,28,40,46,53,75 and 100  percent acccording to the experimental data available to us from Streng\cite{Streng}.The results are dispalyed in three section. In first section, for constant surrogate size, the number of samples are changes. In the second part of the results, convergence study is done for all samples with surrogate size 1000. In third section, we ensure that samples of the parameter which we are drawing are fitting the flamespeed values of the experiment. Also for varying size the map point of the resulting pdf does not change greatly. The surrogates for individual concentrations are constructed using linear interpolation function. The initial guess for the map point is calculated using nelder mead optimization technique. After supplying initial guess over large domain it is found that the map point is the same no matter where we start our guess. 
+\bigskip
+
+\subsection{Different surrogate sizes }
+
+\noindent Here the surrogate size is defined as $sample size*1$ vector. The flamespeed is calculated for given samples in the domain ( -10 to 40). Other values are calculated as linear interpolation of these 1000 points. In this analysis, raw chain size of $1e5$, $5e5$ , $1e6$, $5e6$ and $1e7$ is taken. 
+
+\input{R100_1e5.tex}
+\input{R500_1e5.tex}
+\input{R1000_1e5.tex}
+
+
+\subsection{Convergence Study }
+
+\noindent In this section, we see the convergence of the probability distribution as we increase the raw chain sample size. The plot is done for surrogate size of 1000. In this analysis, raw chain size of $1e5$, $5e5$ , $1e6$, $5e6$ and $1e7$ is taken. 
+
+\begin{figure}[H]
+\centering
+\subfloat[ Convergence  \label{subfig-1:dummy}]{
+\includegraphics[scale=0.7]{one_parameter/1000_kde/convergence_study/conv} 
+  }
+    \caption{Convergence for surrogate size 1000}
+\end{figure}
+
+
+\subsection{flamespeed Data fit}
+
+\noindent It is necessary to ensure that the samples of the parameter which we are drawing are fitting the flamespeed values of the experiment. In this section, we calculate the flamespeed for all the parameters drawn using the surrogate generated before. We have taken $1e7$ sample size and calculated flamespeed for different concentrations of ozone. 
+
+\begin{figure}[H]
+\centering
+\subfloat[ Flame speed for 20 \% ozone   \label{subfig-1:dummy}]{
+\includegraphics[scale=0.7]{one_parameter/flamespeed_calculation/flame_20.pdf} 
+  }
+  \quad
+  \subfloat[ Flame speed for 28 \% ozone   \label{subfig-1:dummy}]{
+  \includegraphics[scale=0.7]{one_parameter/flamespeed_calculation/flame_28.pdf} 
+    }
+\end{figure}
+
+
+ \begin{figure}[H]
+  \ContinuedFloat
+  \centering
+   \subfloat[ Flame speed for 40 \% ozone \label{subfig-1:dummy}]{
+        \includegraphics[scale=0.7]{one_parameter/flamespeed_calculation/flame_40.pdf} 
+       }
+     \quad
+\subfloat[Flame speed for 46 \% ozone \label{subfig-1:dummy}]{
+        \includegraphics[scale=0.7]{one_parameter/flamespeed_calculation/flame_46.pdf} 
+            }  
+\end{figure}
+
+
+ \begin{figure}[H]
+  \ContinuedFloat
+  \centering
+   \subfloat[ Flame speed for 53 \% ozone \label{subfig-1:dummy}]{
+        \includegraphics[scale=0.7]{one_parameter/flamespeed_calculation/flame_53.pdf} 
+       }
+     \quad
+\subfloat[Flame speed for 75 \% ozone \label{subfig-1:dummy}]{
+        \includegraphics[scale=0.7]{one_parameter/flamespeed_calculation/flame_75.pdf} 
+            }  
+\end{figure}
+
+
+ \begin{figure}[H]
+  \ContinuedFloat
+  \centering
+   \subfloat[ Flame speed for 100 \% ozone \label{subfig-1:dummy}]{
+        \includegraphics[scale=0.7]{one_parameter/flamespeed_calculation/flame_100.pdf} 
+       }
+  \caption{Flamespeed Data fit}
+\end{figure}
