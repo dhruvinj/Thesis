@@ -94,3 +94,76 @@ R2(T) &=& \rho C_p \frac{D T^h}{D t} \hspace{1mm} \hspace{1mm} + \frac{1}{Re Pr}
 
 
 \section{Adaptive Finite Element}
+
+
+\section{Geometry with boundary conditions}
+
+\begin{figure}[H]
+  
+  \centering
+   \includegraphics[scale=0.5]{figs/geometricbcs}
+   \caption{Geometry}
+\end{figure}
+\begin{itemize}
+\item $AB$ is the inlet
+\item $BC$ is the thickness of the burner tube
+\item $CD$ is the outside of the burner
+\item $DE,EF$ is the domain of interest
+\item $AE$ is the Axisymmetric line
+\end{itemize}
+
+\bigskip
+\noindent The following assumption are made
+\begin{itemize}
+\item At the inlet, the incoming velcity has parabolic profile. i.e poissuelle flow. 
+\item The surface chemistry at the wall of the burner is neglected. 
+\item At the outside of the burner, the incoming air has couette flow profile. 
+\item $DE,EF$ are the boundaries of the domain. No change occurs after this point. 
+\end{itemize}
+	
+\noindent The boundary conditions are defined as follows 
+\bigskip
+
+\noindent At the inlet ($AB$)
+\begin{itemize}
+\item $u_r = 0$ and $u_z=5801.9 mm/s$
+\item $C_i = 1$ 
+\item $T = 300K$
+\item $p=1 atmos$
+\end{itemize}
+
+\bigskip 
+\noindent On $BC$
+\begin{itemize}
+\item $u_r = 0$ and $u_z=0 mm/s$
+\item $\frac{\partial C_i}{\partial r} =0 $ and $\frac{\partial C_i}{\partial z} =0 $
+\item $T = 300K$
+\item $p=1 atmos$
+\end{itemize}
+
+\noindent On $CD$
+\begin{itemize}
+\item $u_r = 0$ and $u_z=5801.9 mm/s$
+\item $ C_{O_2} =21 \% $
+\item $T = 300K$
+\item $p=1 atmos$
+\end{itemize}
+
+\noindent On $DF$ and $FE$
+\begin{itemize}
+\item $\frac{\partial u_r}{\partial r} =0 $ and $\frac{\partial u_z}{\partial z} =0 $
+\item $\frac{\partial C_i}{\partial r} =0 $ and $\frac{\partial C_i}{\partial z} =0 $
+\item $\frac{\partial T}{\partial r} =0 $ and $\frac{\partial T}{\partial z} =0 $
+\item $\frac{\partial p}{\partial r} =0 $ and $\frac{\partial p}{\partial z} =0 $
+\end{itemize}
+
+
+\noindent On $AF$
+\begin{itemize}
+\item $\frac{\partial u_r}{\partial r} =0 $ 
+\item $\frac{\partial C_i}{\partial r} =0 $ 
+\item $\frac{\partial T}{\partial r} =0 $  
+\item $\frac{\partial p}{\partial r} =0 $
+\end{itemize}
+
+

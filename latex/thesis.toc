@@ -3,68 +3,31 @@
 \contentsline {chapter}{List of Tables}{ix}
 \contentsline {chapter}{Abstract}{xi}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Motivation}{1}
+\contentsline {section}{\numberline {1.2}Literature review}{2}
 \contentsline {chapter}{\numberline {2}Mathematical Model}{3}
 \contentsline {section}{\numberline {2.1}Governing Equations}{3}
-\contentsline {section}{\numberline {2.2}Premixed ozone oxygen laminar flame model}{4}
-\contentsline {section}{\numberline {2.3}The experimental data on laminar flame speed}{4}
-\contentsline {section}{\numberline {2.4}1D oxygen ozone combustion model}{5}
-\contentsline {section}{\numberline {2.5}Geometry with boundary conditions}{6}
-\contentsline {section}{\numberline {2.6}Transport Model}{8}
-\contentsline {subsection}{\numberline {2.6.1}Viscocity}{8}
-\contentsline {subsection}{\numberline {2.6.2}Bimolecular Diffusion}{8}
-<<<<<<< HEAD
-\contentsline {subsection}{\numberline {2.6.3}Species Thermal Conductivity}{9}
-\contentsline {subsection}{\numberline {2.6.4}Mixture Model}{10}
+\contentsline {section}{\numberline {2.2}1D oxygen ozone combustion model}{4}
+\contentsline {subsection}{\numberline {2.2.1}Numerical solution software: Cantera/2.1.2 }{6}
+\contentsline {section}{\numberline {2.3}Transport Model}{6}
+\contentsline {subsection}{\numberline {2.3.1}Viscocity}{6}
+\contentsline {subsection}{\numberline {2.3.2}Bimolecular Diffusion}{6}
+\contentsline {subsection}{\numberline {2.3.3}Species Thermal Conductivity}{9}
+\contentsline {subsection}{\numberline {2.3.4}Mixture Model}{10}
+\contentsline {section}{\numberline {2.4}Premixed ozone combustion model}{13}
+\contentsline {subsection}{\numberline {2.4.1}The experimental data on laminar flame speed}{13}
 \contentsline {chapter}{\numberline {3}Finite Element Formulation}{15}
 \contentsline {section}{\numberline {3.1}Weak formulation}{15}
 \contentsline {section}{\numberline {3.2}Need for stability}{16}
 \contentsline {subsection}{\numberline {3.2.1}Streamline Upwind Petrov Galerkin Method}{16}
 \contentsline {subsection}{\numberline {3.2.2}Pressure-Stabilizing/Petrov-Galerkin (PSPG)}{17}
 \contentsline {subsection}{\numberline {3.2.3}Stabilized Navier Stokes Equation}{17}
-\contentsline {section}{\numberline {3.3}Adaptive Finite Element}{17}
-\contentsline {chapter}{\numberline {4}Bayesian Methods}{19}
-\contentsline {section}{\numberline {4.1}Review of Theory}{19}
-\contentsline {section}{\numberline {4.2}Application to Problem}{19}
-\contentsline {section}{\numberline {4.3}Methods of Solution}{20}
-\contentsline {section}{\numberline {4.4}Software}{20}
-\contentsline {chapter}{\numberline {5}Results}{21}
-\contentsline {section}{\numberline {5.1}Estimating parameter E for reaction 3 }{21}
-\contentsline {subsection}{\numberline {5.1.1}Different surrogate sizes }{21}
-\contentsline {subsubsection}{Sample size (Surrogate size) 100 }{21}
-\contentsline {subsubsection}{Sample size (Surrogate size) 500 }{36}
-\contentsline {subsubsection}{Sample size (Surrogate size) 1000 }{51}
-\contentsline {subsection}{\numberline {5.1.2}Convergence Study }{66}
-\contentsline {subsection}{\numberline {5.1.3}flamespeed Data fit}{67}
-\contentsline {section}{\numberline {5.2}Estimating parameters Activation energies for reaction 2 and 3 }{71}
-\contentsline {subsection}{\numberline {5.2.1}Different surrogate sizes }{71}
-\contentsline {subsubsection}{Sample size (Surrogate size) 10*10 }{72}
-\contentsline {subsubsection}{Sample size (Surrogate size) 20*20 }{88}
-\contentsline {subsubsection}{Sample size (Surrogate size) 30*30 }{104}
-\contentsline {subsubsection}{Sample size (Surrogate size) 100*100 }{120}
-\contentsline {subsection}{\numberline {5.2.2}Convergence Study }{136}
-\contentsline {subsection}{\numberline {5.2.3}flamespeed Data fit}{136}
-\contentsline {chapter}{\numberline {6}Conclusion}{141}
-\contentsline {chapter}{\numberline {7}Appendix}{143}
-\contentsline {section}{\numberline {7.1}Literature Review}{143}
-\contentsline {section}{\numberline {7.2}Mathematical Model}{143}
-\contentsline {subsection}{\numberline {7.2.1}Governing Equations}{143}
-\contentsline {subsection}{\numberline {7.2.2}Low mach number asymtotic analysis}{144}
-\contentsline {subsection}{\numberline {7.2.3}Asymptotic analysis}{145}
-\contentsline {chapter}{Bibliography}{147}
-=======
-\contentsline {subsection}{\numberline {2.6.3}Species Thermal Conductivity}{11}
-\contentsline {subsection}{\numberline {2.6.4}Mixture Model}{12}
-\contentsline {chapter}{\numberline {3}Finite Element Formulation}{17}
-\contentsline {section}{\numberline {3.1}Weak formulation}{17}
-\contentsline {section}{\numberline {3.2}Need for stability}{18}
-\contentsline {subsection}{\numberline {3.2.1}Streamline Upwind Petrov Galerkin Method}{18}
-\contentsline {subsection}{\numberline {3.2.2}Pressure-Stabilizing/Petrov-Galerkin (PSPG)}{19}
-\contentsline {subsection}{\numberline {3.2.3}Stabilized Navier Stokes Equation}{19}
-\contentsline {section}{\numberline {3.3}Adaptive Finite Element}{19}
+\contentsline {section}{\numberline {3.3}Adaptive Finite Element}{18}
+\contentsline {section}{\numberline {3.4}Geometry with boundary conditions}{18}
 \contentsline {chapter}{\numberline {4}Bayesian Methods}{21}
 \contentsline {section}{\numberline {4.1}Review of Theory}{21}
-\contentsline {section}{\numberline {4.2}Application to Problem}{21}
-\contentsline {section}{\numberline {4.3}Methods of Solution}{22}
+\contentsline {section}{\numberline {4.2}Methods of Solution}{21}
+\contentsline {section}{\numberline {4.3}Application to Problem}{22}
 \contentsline {section}{\numberline {4.4}Software}{22}
 \contentsline {chapter}{\numberline {5}Results}{23}
 \contentsline {section}{\numberline {5.1}Estimating parameter E for reaction 3 }{23}
@@ -85,9 +48,8 @@
 \contentsline {chapter}{\numberline {6}Conclusion}{143}
 \contentsline {chapter}{\numberline {7}Appendix}{145}
 \contentsline {section}{\numberline {7.1}Literature Review}{145}
-\contentsline {section}{\numberline {7.2}Mathematical Model}{145}
+\contentsline {section}{\numberline {7.2}Asymptotic Analysis}{145}
 \contentsline {subsection}{\numberline {7.2.1}Governing Equations}{145}
 \contentsline {subsection}{\numberline {7.2.2}Low mach number asymtotic analysis}{146}
 \contentsline {subsection}{\numberline {7.2.3}Asymptotic analysis}{147}
 \contentsline {chapter}{Bibliography}{149}
->>>>>>> bdf2fd95eb2d36643fc280b6df51a9243e2d5c28

@@ -1,0 +1,153 @@
+\chapter{Bayesian Methods}
+\section{Review of Theory}
+
+The growth of computations technology has enabled uncertainity quantification for complex engineering problems. If we  incorporate data into a model, the quantification of uncertainty of complex can be achieved. Bayes' formula provides the natural way to infer the necessary uncertainty information. Mathematical model governing physical phenomenon often include parameters that need to be determined from experiments. To estimate parameters, we must make assumptions about the noise levels, models, and prior knowledge. Let $y$ be the data which is dependent on independent parameter $u$. 
+
+$$y = G(u)$$. 
+
+\noindent  In Bayesian approach, $u$ is treated as random variable with some specified prior probability distribution that incorporates any prior knowledge about $u$ that we believe is true and is independent of the measured data $y$. The solution of the inverse problem is the probability distribution of u given y, denoted by $u|y$. The Bayes' formula is given as 
+
+$$P(u|y) = \frac{P(u) P(y|u)}{P(y)}$$ .
+ 
+ \bigskip
+ 
+\noindent Where $P(u)$ is the prior probability distribution of $u$. $P(y|u)$ is the likelihood of $y$ given $u$. $P(y)$ is the scaling factor. 
+ \noindent The result is the posterior probability distribution of $P(u|y)$.
+ 
+$$P(u|y) = \frac{P(u) P(y|u)}{P(y)}$$ .
+
+\section{Methods of Solution}
+
+\noindent We use markov chain monte carlo method for estimating the posterior distribution by simulations. Markov chain is formed from successive random selections, the stationary distribution of which is the target distribution. In the Metropolis–Hastings algorithm, samples are selected from an arbitrary “proposal” distribution and are retained or not according to an acceptance rule. 
+
+
+\section{Application to Problem}
+
+\noindent We have the experimental data for flamespeed from Streng \cite{Streng}. Our goal is to do uncertainty quantification for chemical parameters namely Activation Energy $ E $ and pre exponential factor $ A $ for all the three reactions involved in the ozone oxygen combustion model. We first did sensitivity analysis for flamespeed based on all the chemical parameters. We found that the activation energy and the pre exponential factor for the first reaction of the mechanism did not have significant effect on the flamespeed. Hence moving further, we would not consider these parameters as uncertain. The remaining 4 parameters i.e Activation Energy and pre exponential factors for second and third reactions were highly sensitive to the flame speed calcualtions. The Acivation energy for the third reaction was most sensitive. We will approach to the uncertainty quantification problem step by step with different models.  
+
+\noindent Let us denote flamespeed by $V_f$, the activation energy for second and third reaction for mechanism as $E_2$ and $E_3$ respectively and the pre exponential factor as $A_2$ and $A_3$ recpectively. 
+
+
+\subsection{Model 1}
+\noindent In this model, we first do uncertainty quantification for most sensitive parameter of all the parameters i.e Activation Energy for the third reaction $E_3$. We take our prior as uniform with domain bounds of -10 to 40. The likelihood is gaussian with experimental data values from Streng\cite{Streng} as mean standard deviation of 10 \% of the data value. The probability distributions functions are given as
+
+\nonident The prior distribution as each point x in the domain (a,b) is 
+
+$$f(x) = \frac{1}{b -a}$$
+
+
+\noindent Since the likelihood as gaussian. The resulting pdf is given as 
+
+$$f(x) = \frac{1}{{\sigma \sqrt {2\pi } }}e^{{{ - \left( {x - \mu } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {x - \mu } \right)^2 } {2\sigma ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma ^2 }}} $$
+
+  
+\noindent Where $\mu$ is the data value. Since we have 7 data values (neglecting the 17 \% ozone case due to numerical difficulty), we will have 7 gaussian function and the resulting likelihood function will be product of all the gaussian pdfs. We model our uncertain parameter as continous random variable. By bayes theorem, the mathematical equation for uncertainty quantification for chemical parameters is written as follows. 
+
+ $$P( E_3 |V_f ) = \frac{P(V_f| E_3)*  P(E_3)}{\int_x P(V_f| E_3)* P(E_3)}$$ 
+ 
+ \noindent Where  $P( E_3 |V_f ) $ is the resulting posterior distribution of $E_3$ given flamespeed $V_f$ data, $P(V_f| E_3)$ is the likelihood which is product of the probabilties of each of the gaussian pdfs of different data points, and $ P(E_3)$ is the prior distribution of the parameter
+ 
+
+\subsection{Model 2}
+
+
+\noindent In this model, we first do uncertainty quantification for two parameters i.e Activation Energy for the third reaction $E_3$ and Activation Energy for the second reaction $E_2$. We take our priors as uniform with domain bounds of -10 to 40 for both the parameters. The likelihood is gaussian with experimental data values from Streng\cite{Streng} as mean standard deviation of 10 \% of the data value. The probability distributions functions are given as
+
+\nonident The prior distribution for each parameter as all points x in its respective domain (a,b) is 
+
+$$f(x) = \frac{1}{b -a}$$
+
+
+\noindent Since the likelihood as gaussian. The resulting pdf is given as 
+
+$$f(x) = \frac{1}{{\sigma \sqrt {2\pi } }}e^{{{ - \left( {x - \mu } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {x - \mu } \right)^2 } {2\sigma ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma ^2 }}} $$
+
+  
+\noindent Where $\mu$ is the data value. Since we have 7 data values (neglecting the 17 \% ozone case due to numerical difficulty), we will have 7 gaussian function and the resulting likelihood function will be product of all the gaussian pdfs. We model our uncertain parameter as continous random variable. By bayes theorem, the mathematical equation for uncertainty quantification for chemical parameters is written as follows. 
+
+ $$P( E_3, E_2 |V_f ) = \frac{P(V_f| E_2,E_3)* P(E_2)* P(E_3)}{\int_x P(V_f|E_2,E_3)* P(E_2)*P(E_3)}$$ 
+ 
+ \noindent Where  $P(E_3,E_2 |V_f)$ is the resulting posterior distribution of $E_3$ and $E_2$ given flamespeed $V_f$ data, $P(V_f| E_2 ,E_3)$ is the likelihood which is product of the probabilties of each of the gaussian pdfs of different data points, and $ P(E_3)$ and $P(E_2)$ is the prior distribution of the parameter
+ 
+
+\subsection{Model 3}
+
+
+\noindent In this model, we first do uncertainty quantification for two parameters i.e Activation Energy for the third reaction $E_3$ and pre exponential factor for the third reaction $A_3$. We take our priors as uniform with domain bounds of -10 to 40 for $E_3$  and 1.4e+1 to 1.4e+22 for $A_3$  parameter. The likelihood is gaussian with experimental data values from Streng\cite{Streng} as mean standard deviation of 10 \% of the data value. The probability distributions functions are given as
+
+\nonident The prior distribution for each parameter as all points x in its respective domain (a,b) is 
+
+$$f(x) = \frac{1}{b -a}$$
+
+
+\noindent Since the likelihood as gaussian. The resulting pdf is given as 
+
+$$f(x) = \frac{1}{{\sigma \sqrt {2\pi } }}e^{{{ - \left( {x - \mu } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {x - \mu } \right)^2 } {2\sigma ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma ^2 }}} $$
+
+  
+\noindent Where $\mu$ is the data value. Since we have 7 data values (neglecting the 17 \% ozone case due to numerical difficulty), we will have 7 gaussian function and the resulting likelihood function will be product of all the gaussian pdfs. We model our uncertain parameter as continous random variable. By bayes theorem, the mathematical equation for uncertainty quantification for chemical parameters is written as follows. 
+
+ $$P( A_3, E_3 |V_f ) = \frac{P(V_f| E_3,A_3)* P(E_3)* P(A_3)}{\int_x P(V_f|E_3,A_3)* P(E_3)*P(A_3)}$$ 
+ 
+ \noindent Where  $P(E_3,A_3 |V_f)$ is the resulting posterior distribution of $A_3$ and $E_3$ given flamespeed $V_f$ data, $P(V_f| E_3 ,A_3)$ is the likelihood which is product of the probabilties of each of the gaussian pdfs of different data points, and $ P(E_3)$ and $P(A_3)$ is the prior distribution of the parameter
+
+
+\subsection{Model 4}
+
+
+\noindent In this model, we first do uncertainty quantification for three parameters i.e Activation Energy for the third reaction $E_3$, Activation Energy for the third reaction $E_2$  and pre exponential factor for the third reaction $A_3$. We take our priors as uniform with domain bounds of -10 to 40 for $E_2$, -10 to 40 for $E_3$  and 1.4e+1 to 1.4e+22 for $A_3$  parameter. The likelihood is gaussian with experimental data values from Streng\cite{Streng} as mean standard deviation of 10 \% of the data value. The probability distributions functions are given as
+
+\nonident The prior distribution for each parameter as all points x in its respective domain (a,b) is 
+
+$$f(x) = \frac{1}{b -a}$$
+
+
+\noindent Since the likelihood as gaussian. The resulting pdf is given as 
+
+$$f(x) = \frac{1}{{\sigma \sqrt {2\pi } }}e^{{{ - \left( {x - \mu } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {x - \mu } \right)^2 } {2\sigma ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma ^2 }}} $$
+
+  
+\noindent Where $\mu$ is the data value. Since we have 7 data values (neglecting the 17 \% ozone case due to numerical difficulty), we will have 7 gaussian function and the resulting likelihood function will be product of all the gaussian pdfs. We model our uncertain parameter as continous random variable. By bayes theorem, the mathematical equation for uncertainty quantification for chemical parameters is written as follows. 
+
+ $$P( A_3, E_3,E_2 |V_f ) = \frac{P(V_f| E_2,E_3,A_3)* P(E_2)*P(E_3)* P(A_3)}{\int_x P(V_f|E_2,E_3,A_3)* P(E_2)*P(E_3)*P(A_3)}$$ 
+ 
+ \noindent Where  $P(E_3,A_3,E_2 |V_f)$ is the resulting posterior distribution of $A_3$, $E_3$,  and $E_2$ given flamespeed $V_f$ data, $P(V_f| E_2, E_3 ,A_3)$ is the likelihood which is product of the probabilties of each of the gaussian pdfs of different data points, and $P(E_3)$, $P(E_2)$, and $P(A_3)$ is the prior distribution of the parameter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+We model our uncertain parameter as continous random variable. By bayes theorem, the mathematical equation for uncertainty quantification for chemical parameters is written as follows. 
+
+$$P(E_1, E_2, A_2, A_3 |V_f ) = \frac{P(V_f|E_1, E_2, A_2, A_3) P(E_1)*P(E_2)*P(A_2)*P(A_3)}{\int_x P(V_f|E_1, E_2, A_2, A_3)* P(E_1)*P(E_2)*P(A_2)*P(A_3) }$$ 
+
+\noindent $P(E_1, E_2, A_2, A_3 |V_f ) $ is the resulting posterior distribution for the uncertain parameters in the model. $P(V_f|E_1, E_2, A_2, A_3)$ is called the likelihood distribution of the data given the parameters and $ P(E_1), P(E_2) , P(A_2), P(A_3)$ are the prior distribution of the parameter. 
+
+\noindent In our model, we have selected uniform priors for the parameter. This means that given the range of parameter i.e from a to b, the probability of selcting a parameter is same for all the values in this range. The continuous pdf is given as 
+
+$$f(x) = \frac{1}{b -a}$$
+
+
+\noindent We have selected likelihood as gaussian with the experimental data as mean and standard deviation of 10 percent of the data. The resulting pdf is given as 
+
+$$f(x) = \frac{1}{{\sigma \sqrt {2\pi } }}e^{{{ - \left( {x - \mu } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {x - \mu } \right)^2 } {2\sigma ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma ^2 }}} $$
+
+\noindent $\int_x P(V_f|E_1, E_2, A_2, A_3)* P(E_1)*P(E_2)*P(A_2)*P(A_3)$ is the scaling factor. 
+
+
+
+\section{Software} sensitiv
