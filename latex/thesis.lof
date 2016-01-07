@@ -1,34 +1,21 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Geometry\relax }}{6}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Viscocity\relax }}{8}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Diffusion coefficient\relax }}{10}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Diffusion coefficient for $O$ - $O$}}}{10}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Diffusion coefficient for $O$ - $O_2$}}}{10}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Diffusion coefficient for $O$ - $O_3$}}}{10}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Diffusion coefficient for $O_2$ - $O_2$}}}{10}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Diffusion coefficient for $O_2$ - $O_3$}}}{10}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Diffusion coefficient for $O_3$ - $O_3$}}}{10}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Thermal Conductivity\relax }}{12}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Thermal Conductivity for $O$}}}{12}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Thermal Conductivity for $O_2$}}}{12}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Thermal Conductivity for $O_3$}}}{12}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Mixture Viscocity\relax }}{13}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mixture Viscocity behind the flame}}}{13}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mixture Viscocity inside the flame}}}{13}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Mixture Viscocity after the flame }}}{13}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Mixture Diffusion coefficient\relax }}{14}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mixture Diffusion coefficient for $O_3$ behind the flame}}}{14}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mixture Diffusion coefficient for $O_2$ behind the flame}}}{14}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Mixture Diffusion coefficient for $O_3$ inside the flame}}}{14}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Mixture Diffusion coefficient for $O$ inside the flame}}}{14}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Mixture Diffusion coefficient for $O_2$ inside the flame - $O_3$}}}{14}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Mixture Diffusion coefficient for $O_2$ after the flame - $O_3$}}}{14}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Mixture thermal conductivity\relax }}{15}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mixture thermal conductivity behind the flame}}}{15}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mixture thermal conductivity inside the flame}}}{15}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Mixture thermal conductivity after the flame }}}{15}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Viscocity\relax }}{6}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Diffusion coefficients for $O_2-O_2$, $O_2-O_3$, $O_3-O_3$, $O-O$, $O-O_2$ and $O-O_3$\relax }}{8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Diffusion coefficient for $O_2-O_2$ and $O-O_2$ }}}{8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Diffusion coefficient for other }}}{8}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Thermal Conductivity for $O$, $O_2$ and $O_3$\relax }}{10}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Thermal Conductivity for $O$}}}{10}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Thermal Conductivity for $O_2$ and $O_3$ }}}{10}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Mixture Viscocity behind, inside, and after the flame\relax }}{11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mixture viscocity behind the flame. }}}{11}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Mixture Diffusion coefficient\relax }}{12}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mixture Diffusion coefficient for $O_3$ and $O_2$ }}}{12}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mixture Diffusion coefficient for $O$ inside the flame}}}{12}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Mixture thermal conductivity\relax }}{13}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mixture thermal conductivity }}}{13}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Geometry\relax }}{18}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {MCMC raw chain of samples }}}{24}

@@ -46,7 +46,7 @@ This is my abstract
 \begin{ubbackmatter}
 \bibliographystyle{plain}
 \references[Bibliography]{references}
-%\bibliography{references}
+\bibliography{references}
 \end{ubbackmatter}
 \end{document}
 \endinput
