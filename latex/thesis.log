@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.15)  7 JAN 2016 01:25
+=======
 This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.5)  6 JAN 2016 04:41
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -777,6 +781,9 @@ LaTeX Warning: Label `subfig-1:dummy' multiply defined.
 LaTeX Warning: Label `sub@subfig-1:dummy' multiply defined.
 
 
+<<<<<<< HEAD
+LaTeX Warning: Label `Heimerl' multiply defined.
+=======
 LaTeX Warning: Label `subfig-1:dummy' multiply defined.
 
 
@@ -5806,50 +5813,134 @@ put line 62.
 
 <multiple_data/30_kde/outputData_5e5/kde.png, id=938, 578.16pt x 433.62pt>
 File: multiple_data/30_kde/outputData_5e5/kde.png Graphic file (type png)
-
-<use multiple_data/30_kde/outputData_5e5/kde.png>
-Package pdftex.def Info: multiple_data/30_kde/outputData_5e5/kde.png used on in
-put line 66.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--67
-[][]
- []
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [111 <./multiple_data/30_kde/outputData_5e5/E2.pdf> <./multiple_data/30_kde/ou
-tputData_5e5/E3.pdf
-
-pdfTeX warning: pdflatex (file ./multiple_data/30_kde/outputData_5e5/E3.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
->]
-Overfull \vbox (42.76881pt too high) has occurred while \output is active []
+LaTeX Warning: Label `Muller' multiply defined.
 
 
+LaTeX Warning: Label `Streng' multiply defined.
+
+)
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(90.3375pt, 433.62001pt, 90.3375pt)
+* v-part:(T,H,B)=(90.3375pt, 614.295pt, 90.3375pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=433.62001pt
+* \textheight=614.295pt
+* \oddsidemargin=18.0675pt
+* \evensidemargin=18.0675pt
+* \topmargin=-11.99998pt
+* \headheight=24.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=125.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+<<<<<<< HEAD
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count101
+\scratchdimen=\dimen121
+\scratchbox=\box28
+\nofMPsegments=\count102
+\nofMParguments=\count103
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count104
+\MPscratchDim=\dimen122
+\MPnumerator=\count105
+\makeMPintoPDFobject=\count106
+\everyMPtoPDFconversion=\toks19
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+=======
 [112 <./multiple_data/30_kde/outputData_5e5/cdf.png (PNG copy)> <./multiple_dat
 a/30_kde/outputData_5e5/kde.png (PNG copy)>]
 <multiple_data/30_kde/outputData_1e6/simple_ip_chain_pos_raw_1.png, id=973, 578
 .16pt x 433.62pt>
 File: multiple_data/30_kde/outputData_1e6/simple_ip_chain_pos_raw_1.png Graphic
  file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/30_kde/outputData_1e6/simple_ip_chain_pos_raw_1.png>
-Package pdftex.def Info: multiple_data/30_kde/outputData_1e6/simple_ip_chain_po
-s_raw_1.png used on input line 75.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
+<<<<<<< HEAD
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+=======
 <multiple_data/30_kde/outputData_1e6/simple_ip_chain_pos_raw_2.png, id=974, 578
 .16pt x 433.62pt>
 File: multiple_data/30_kde/outputData_1e6/simple_ip_chain_pos_raw_2.png Graphic
  file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/30_kde/outputData_1e6/simple_ip_chain_pos_raw_2.png>
-Package pdftex.def Info: multiple_data/30_kde/outputData_1e6/simple_ip_chain_po
-s_raw_2.png used on input line 79.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
+<<<<<<< HEAD
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+=======
 <multiple_data/30_kde/outputData_1e6/E2.pdf, id=975, 568.67271pt x 418.0532pt>
 File: multiple_data/30_kde/outputData_1e6/E2.pdf Graphic file (type pdf)
 
@@ -5865,67 +5956,82 @@ File: multiple_data/30_kde/outputData_1e6/E3.pdf Graphic file (type pdf)
 Package pdftex.def Info: multiple_data/30_kde/outputData_1e6/E3.pdf used on inp
 ut line 90.
 (pdftex.def)             Requested size: 398.06819pt x 292.63524pt.
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-Overfull \vbox (20.76881pt too high) has occurred while \output is active []
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
 
+[1
 
+<<<<<<< HEAD
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
+=======
 [113 <./multiple_data/30_kde/outputData_1e6/simple_ip_chain_pos_raw_1.png (PNG 
 copy)> <./multiple_data/30_kde/outputData_1e6/simple_ip_chain_pos_raw_2.png (PN
 G copy)>]
 <multiple_data/30_kde/outputData_1e6/cdf.png, id=980, 578.16pt x 433.62pt>
 File: multiple_data/30_kde/outputData_1e6/cdf.png Graphic file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/30_kde/outputData_1e6/cdf.png>
-Package pdftex.def Info: multiple_data/30_kde/outputData_1e6/cdf.png used on in
-put line 96.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+] [3
 
+<<<<<<< HEAD
+=======
 <multiple_data/30_kde/outputData_1e6/kde.png, id=981, 578.16pt x 433.62pt>
 File: multiple_data/30_kde/outputData_1e6/kde.png Graphic file (type png)
-
-<use multiple_data/30_kde/outputData_1e6/kde.png>
-Package pdftex.def Info: multiple_data/30_kde/outputData_1e6/kde.png used on in
-put line 100.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--101
-[][]
- []
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [114 <./multiple_data/30_kde/outputData_1e6/E2.pdf> <./multiple_data/30_kde/ou
-tputData_1e6/E3.pdf
-
-pdfTeX warning: pdflatex (file ./multiple_data/30_kde/outputData_1e6/E3.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
->]
-Overfull \vbox (42.76881pt too high) has occurred while \output is active []
 
 
+
+] [4
+
+
+]
+(./thesis.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 7.
+ [5
+
+<<<<<<< HEAD
+=======
 [115 <./multiple_data/30_kde/outputData_1e6/cdf.png (PNG copy)> <./multiple_dat
 a/30_kde/outputData_1e6/kde.png (PNG copy)>]
 <multiple_data/30_kde/outputData_5e6/simple_ip_chain_pos_raw_1.png, id=1016, 57
 8.16pt x 433.62pt>
 File: multiple_data/30_kde/outputData_5e6/simple_ip_chain_pos_raw_1.png Graphic
  file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/30_kde/outputData_5e6/simple_ip_chain_pos_raw_1.png>
-Package pdftex.def Info: multiple_data/30_kde/outputData_5e6/simple_ip_chain_po
-s_raw_1.png used on input line 109.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+])
+\tf@toc=\write3
+\openout3 = `thesis.toc'.
 
+<<<<<<< HEAD
+ [6] (./thesis.lof)
+\tf@lof=\write4
+\openout4 = `thesis.lof'.
+=======
 <multiple_data/30_kde/outputData_5e6/simple_ip_chain_pos_raw_2.png, id=1017, 57
 8.16pt x 433.62pt>
 File: multiple_data/30_kde/outputData_5e6/simple_ip_chain_pos_raw_2.png Graphic
  file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/30_kde/outputData_5e6/simple_ip_chain_pos_raw_2.png>
-Package pdftex.def Info: multiple_data/30_kde/outputData_5e6/simple_ip_chain_po
-s_raw_2.png used on input line 113.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+ [7
 
+<<<<<<< HEAD
+
+=======
 <multiple_data/30_kde/outputData_5e6/E2.pdf, id=1018, 576.92786pt x 418.0532pt>
 File: multiple_data/30_kde/outputData_5e6/E2.pdf Graphic file (type pdf)
 <use multiple_data/30_kde/outputData_5e6/E2.pdf>
@@ -5939,67 +6045,71 @@ File: multiple_data/30_kde/outputData_5e6/E3.pdf Graphic file (type pdf)
 Package pdftex.def Info: multiple_data/30_kde/outputData_5e6/E3.pdf used on inp
 ut line 124.
 (pdftex.def)             Requested size: 403.84674pt x 292.63524pt.
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-Overfull \vbox (20.76881pt too high) has occurred while \output is active []
 
+] [8
 
+<<<<<<< HEAD
+=======
 [116 <./multiple_data/30_kde/outputData_5e6/simple_ip_chain_pos_raw_1.png (PNG 
 copy)> <./multiple_data/30_kde/outputData_5e6/simple_ip_chain_pos_raw_2.png (PN
 G copy)>]
 <multiple_data/30_kde/outputData_5e6/cdf.png, id=1023, 578.16pt x 433.62pt>
 File: multiple_data/30_kde/outputData_5e6/cdf.png Graphic file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/30_kde/outputData_5e6/cdf.png>
-Package pdftex.def Info: multiple_data/30_kde/outputData_5e6/cdf.png used on in
-put line 130.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+] (./thesis.lot)
+\tf@lot=\write5
+\openout5 = `thesis.lot'.
 
+<<<<<<< HEAD
+ [9
+=======
 <multiple_data/30_kde/outputData_5e6/kde.png, id=1024, 578.16pt x 433.62pt>
 File: multiple_data/30_kde/outputData_5e6/kde.png Graphic file (type png)
-
-<use multiple_data/30_kde/outputData_5e6/kde.png>
-Package pdftex.def Info: multiple_data/30_kde/outputData_5e6/kde.png used on in
-put line 134.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 130--135
-[][]
- []
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [117 <./multiple_data/30_kde/outputData_5e6/E2.pdf> <./multiple_data/30_kde/ou
-tputData_5e6/E3.pdf
-
-pdfTeX warning: pdflatex (file ./multiple_data/30_kde/outputData_5e6/E3.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
->]
-Overfull \vbox (42.76881pt too high) has occurred while \output is active []
+] [10
 
 
+] [11
+
+
+]
+[12
+
+
+<<<<<<< HEAD
+] (./introduction.tex
+Chapter 1.
+) (./combustion.tex [1
+=======
 [118 <./multiple_data/30_kde/outputData_5e6/cdf.png (PNG copy)> <./multiple_dat
 a/30_kde/outputData_5e6/kde.png (PNG copy)>]
 <multiple_data/30_kde/outputData_1e7/simple_ip_chain_pos_raw_1.png, id=1058, 57
 8.16pt x 433.62pt>
 File: multiple_data/30_kde/outputData_1e7/simple_ip_chain_pos_raw_1.png Graphic
  file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/30_kde/outputData_1e7/simple_ip_chain_pos_raw_1.png>
-Package pdftex.def Info: multiple_data/30_kde/outputData_1e7/simple_ip_chain_po
-s_raw_1.png used on input line 142.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
+<<<<<<< HEAD
+=======
 <multiple_data/30_kde/outputData_1e7/simple_ip_chain_pos_raw_2.png, id=1059, 57
 8.16pt x 433.62pt>
 File: multiple_data/30_kde/outputData_1e7/simple_ip_chain_pos_raw_2.png Graphic
  file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/30_kde/outputData_1e7/simple_ip_chain_pos_raw_2.png>
-Package pdftex.def Info: multiple_data/30_kde/outputData_1e7/simple_ip_chain_po
-s_raw_2.png used on input line 146.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
+<<<<<<< HEAD
+] [2]
+Chapter 2.
+[3
+
+=======
 <multiple_data/30_kde/outputData_1e7/E2.pdf, id=1060, 576.92786pt x 418.0532pt>
 File: multiple_data/30_kde/outputData_1e7/E2.pdf Graphic file (type pdf)
 <use multiple_data/30_kde/outputData_1e7/E2.pdf>
@@ -6013,67 +6123,99 @@ File: multiple_data/30_kde/outputData_1e7/E3.pdf Graphic file (type pdf)
 Package pdftex.def Info: multiple_data/30_kde/outputData_1e7/E3.pdf used on inp
 ut line 157.
 (pdftex.def)             Requested size: 403.84674pt x 292.63524pt.
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-Overfull \vbox (20.76881pt too high) has occurred while \output is active []
+]
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
+<<<<<<< HEAD
+[4] [5] <figs/geometricbcs.png, id=70, 295.85532pt x 264.23718pt>
+File: figs/geometricbcs.png Graphic file (type png)
+=======
 [119 <./multiple_data/30_kde/outputData_1e7/simple_ip_chain_pos_raw_1.png (PNG 
 copy)> <./multiple_data/30_kde/outputData_1e7/simple_ip_chain_pos_raw_2.png (PN
 G copy)>]
 <multiple_data/30_kde/outputData_1e7/cdf.png, id=1065, 578.16pt x 433.62pt>
 File: multiple_data/30_kde/outputData_1e7/cdf.png Graphic file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/30_kde/outputData_1e7/cdf.png>
-Package pdftex.def Info: multiple_data/30_kde/outputData_1e7/cdf.png used on in
-put line 163.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+<use figs/geometricbcs.png>
+Package pdftex.def Info: figs/geometricbcs.png used on input line 152.
+(pdftex.def)             Requested size: 147.92729pt x 132.11826pt.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 156.
 
+<<<<<<< HEAD
+=======
 <multiple_data/30_kde/outputData_1e7/kde.png, id=1066, 578.16pt x 433.62pt>
 File: multiple_data/30_kde/outputData_1e7/kde.png Graphic file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/30_kde/outputData_1e7/kde.png>
-Package pdftex.def Info: multiple_data/30_kde/outputData_1e7/kde.png used on in
-put line 167.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 156.
+ [6 <./figs/geometricbcs.png>] [7]
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--168
-[][]
- []
+LaTeX Warning: File `figs/viscocity model.png' not found on input line 231.
 
-) (./two_R100_1e5.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<figs/viscocity model.png, id=80, 467.39838pt x 348.78131pt>
+File: figs/viscocity model.png Graphic file (type png)
 
- [120 <./multiple_data/30_kde/outputData_1e7/E2.pdf> <./multiple_data/30_kde/ou
-tputData_1e7/E3.pdf
+<use figs/viscocity model.png>
+Package pdftex.def Info: figs/viscocity model.png used on input line 231.
+(pdftex.def)             Requested size: 233.69861pt x 174.39023pt.
+ [8 <./figs/viscocity model.png (PNG copy)>]
+<figs/diffusionmodel00.png, id=84, 538.09729pt x 430.47783pt>
+File: figs/diffusionmodel00.png Graphic file (type png)
 
-pdfTeX warning: pdflatex (file ./multiple_data/30_kde/outputData_1e7/E3.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
->]
-Overfull \vbox (42.76881pt too high) has occurred while \output is active []
+<use figs/diffusionmodel00.png>
+Package pdftex.def Info: figs/diffusionmodel00.png used on input line 261.
+(pdftex.def)             Requested size: 269.04799pt x 215.23837pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 261.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 261.
 
+<figs/diffusionmodel002.png, id=85, 538.09729pt x 430.47783pt>
+File: figs/diffusionmodel002.png Graphic file (type png)
 
+<<<<<<< HEAD
+<use figs/diffusionmodel002.png>
+Package pdftex.def Info: figs/diffusionmodel002.png used on input line 264.
+(pdftex.def)             Requested size: 269.04799pt x 215.23837pt.
+=======
 [121 <./multiple_data/30_kde/outputData_1e7/cdf.png (PNG copy)> <./multiple_dat
 a/30_kde/outputData_1e7/kde.png (PNG copy)>]
 <multiple_data/100_kde/outputData_1e5/simple_ip_chain_pos_raw_1.png, id=1102, 5
 78.16pt x 433.62pt>
 File: multiple_data/100_kde/outputData_1e5/simple_ip_chain_pos_raw_1.png Graphi
 c file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/100_kde/outputData_1e5/simple_ip_chain_pos_raw_1.png>
-Package pdftex.def Info: multiple_data/100_kde/outputData_1e5/simple_ip_chain_p
-os_raw_1.png used on input line 8.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+<figs/diffusionmodel003.png, id=86, 538.09729pt x 430.47783pt>
+File: figs/diffusionmodel003.png Graphic file (type png)
 
+<<<<<<< HEAD
+<use figs/diffusionmodel003.png>
+Package pdftex.def Info: figs/diffusionmodel003.png used on input line 268.
+(pdftex.def)             Requested size: 269.04799pt x 215.23837pt.
+=======
 <multiple_data/100_kde/outputData_1e5/simple_ip_chain_pos_raw_2.png, id=1103, 5
 78.16pt x 433.62pt>
 File: multiple_data/100_kde/outputData_1e5/simple_ip_chain_pos_raw_2.png Graphi
 c file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/100_kde/outputData_1e5/simple_ip_chain_pos_raw_2.png>
-Package pdftex.def Info: multiple_data/100_kde/outputData_1e5/simple_ip_chain_p
-os_raw_2.png used on input line 12.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+<figs/diffusionmodel0202.png, id=87, 538.09729pt x 430.47783pt>
+File: figs/diffusionmodel0202.png Graphic file (type png)
 
+<<<<<<< HEAD
+<use figs/diffusionmodel0202.png>
+Package pdftex.def Info: figs/diffusionmodel0202.png used on input line 271.
+(pdftex.def)             Requested size: 269.04799pt x 215.23837pt.
+=======
 <multiple_data/100_kde/outputData_1e5/E2.pdf, id=1104, 560.41757pt x 418.0532pt
 >
 File: multiple_data/100_kde/outputData_1e5/E2.pdf Graphic file (type pdf)
@@ -6089,70 +6231,99 @@ File: multiple_data/100_kde/outputData_1e5/E3.pdf Graphic file (type pdf)
 Package pdftex.def Info: multiple_data/100_kde/outputData_1e5/E3.pdf used on in
 put line 23.
 (pdftex.def)             Requested size: 392.28963pt x 292.63524pt.
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (111.14262pt too wide) in paragraph at lines 261--272
+[][][]
+ []
 
- [122]
-Overfull \vbox (20.76881pt too high) has occurred while \output is active []
 
+Overfull \hbox (111.14262pt too wide) in paragraph at lines 261--272
+[][] 
+ []
 
+<<<<<<< HEAD
+<figs/diffusionmodel0203.png, id=88, 538.09729pt x 430.47783pt>
+File: figs/diffusionmodel0203.png Graphic file (type png)
+=======
 [123 <./multiple_data/100_kde/outputData_1e5/simple_ip_chain_pos_raw_1.png (PNG
  copy)> <./multiple_data/100_kde/outputData_1e5/simple_ip_chain_pos_raw_2.png (
 PNG copy)>]
 <multiple_data/100_kde/outputData_1e5/cdf.png, id=1112, 578.16pt x 433.62pt>
 File: multiple_data/100_kde/outputData_1e5/cdf.png Graphic file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/100_kde/outputData_1e5/cdf.png>
-Package pdftex.def Info: multiple_data/100_kde/outputData_1e5/cdf.png used on i
-nput line 29.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+<use figs/diffusionmodel0203.png>
+Package pdftex.def Info: figs/diffusionmodel0203.png used on input line 276.
+(pdftex.def)             Requested size: 269.04799pt x 215.23837pt.
 
+<<<<<<< HEAD
+<figs/diffusionmodel0303.png, id=89, 538.09729pt x 430.47783pt>
+File: figs/diffusionmodel0303.png Graphic file (type png)
+=======
 <multiple_data/100_kde/outputData_1e5/kde.png, id=1113, 578.16pt x 433.62pt>
 File: multiple_data/100_kde/outputData_1e5/kde.png Graphic file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/100_kde/outputData_1e5/kde.png>
-Package pdftex.def Info: multiple_data/100_kde/outputData_1e5/kde.png used on i
-nput line 33.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+<use figs/diffusionmodel0303.png>
+Package pdftex.def Info: figs/diffusionmodel0303.png used on input line 279.
+(pdftex.def)             Requested size: 258.28377pt x 206.627pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--34
-[][]
+Overfull \hbox (110.37842pt too wide) in paragraph at lines 273--280
+[] [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [124 <./multiple_data/100_kde/outputData_1e5/E2.pdf> <./multiple_data/100_kde/
-outputData_1e5/E3.pdf
-
-pdfTeX warning: pdflatex (file ./multiple_data/100_kde/outputData_1e5/E3.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
->]
-Overfull \vbox (42.76881pt too high) has occurred while \output is active []
+ [9]
+Overfull \vbox (117.3087pt too high) has occurred while \output is active []
 
 
+[10 <./figs/diffusionmodel00.png (PNG copy)> <./figs/diffusionmodel002.png (PNG
+ copy)> <./figs/diffusionmodel003.png (PNG copy)> <./figs/diffusionmodel0202.pn
+g (PNG copy)> <./figs/diffusionmodel0203.png (PNG copy)> <./figs/diffusionmodel
+0303.png (PNG copy)>] <figs/tcO.png, id=99, 439.90434pt x 329.92827pt>
+File: figs/tcO.png Graphic file (type png)
+
+<<<<<<< HEAD
+<use figs/tcO.png>
+Package pdftex.def Info: figs/tcO.png used on input line 327.
+(pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
+ <figs/tcO2.png, id=100, 439.90434pt x 329.92827pt>
+File: figs/tcO2.png Graphic file (type png)
+=======
 [125 <./multiple_data/100_kde/outputData_1e5/cdf.png (PNG copy)> <./multiple_da
 ta/100_kde/outputData_1e5/kde.png (PNG copy)>]
 <multiple_data/100_kde/outputData_5e5/simple_ip_chain_pos_raw_1.png, id=1147, 5
 78.16pt x 433.62pt>
 File: multiple_data/100_kde/outputData_5e5/simple_ip_chain_pos_raw_1.png Graphi
 c file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/100_kde/outputData_5e5/simple_ip_chain_pos_raw_1.png>
-Package pdftex.def Info: multiple_data/100_kde/outputData_5e5/simple_ip_chain_p
-os_raw_1.png used on input line 41.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+<use figs/tcO2.png>
+Package pdftex.def Info: figs/tcO2.png used on input line 330.
+(pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
+ <figs/tcO3.png, id=101, 439.90434pt x 329.92827pt>
+File: figs/tcO3.png Graphic file (type png)
 
+<<<<<<< HEAD
+<use figs/tcO3.png>
+Package pdftex.def Info: figs/tcO3.png used on input line 334.
+(pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
+=======
 <multiple_data/100_kde/outputData_5e5/simple_ip_chain_pos_raw_2.png, id=1148, 5
 78.16pt x 433.62pt>
 File: multiple_data/100_kde/outputData_5e5/simple_ip_chain_pos_raw_2.png Graphi
 c file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/100_kde/outputData_5e5/simple_ip_chain_pos_raw_2.png>
-Package pdftex.def Info: multiple_data/100_kde/outputData_5e5/simple_ip_chain_p
-os_raw_2.png used on input line 45.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+Overfull \hbox (12.9499pt too wide) in paragraph at lines 327--335
+[][][]
+ []
 
+<<<<<<< HEAD
+=======
 <multiple_data/100_kde/outputData_5e5/E2.pdf, id=1149, 568.67271pt x 418.0532pt
 >
 File: multiple_data/100_kde/outputData_5e5/E2.pdf Graphic file (type pdf)
@@ -6168,67 +6339,107 @@ File: multiple_data/100_kde/outputData_5e5/E3.pdf Graphic file (type pdf)
 Package pdftex.def Info: multiple_data/100_kde/outputData_5e5/E3.pdf used on in
 put line 56.
 (pdftex.def)             Requested size: 398.06819pt x 292.63524pt.
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-Overfull \vbox (20.76881pt too high) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [11]
+<figs/mixtureviscocty_behindflame.png, id=105, 439.90434pt x 329.92827pt>
+File: figs/mixtureviscocty_behindflame.png Graphic file (type png)
 
+<<<<<<< HEAD
+<use figs/mixtureviscocty_behindflame.png>
+Package pdftex.def Info: figs/mixtureviscocty_behindflame.png used on input lin
+e 362.
+(pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
+=======
 [126 <./multiple_data/100_kde/outputData_5e5/simple_ip_chain_pos_raw_1.png (PNG
  copy)> <./multiple_data/100_kde/outputData_5e5/simple_ip_chain_pos_raw_2.png (
 PNG copy)>]
 <multiple_data/100_kde/outputData_5e5/cdf.png, id=1154, 578.16pt x 433.62pt>
 File: multiple_data/100_kde/outputData_5e5/cdf.png Graphic file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/100_kde/outputData_5e5/cdf.png>
-Package pdftex.def Info: multiple_data/100_kde/outputData_5e5/cdf.png used on i
-nput line 62.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+<figs/mixtureviscocty_insideflame.png, id=106, 439.90434pt x 329.92827pt>
+File: figs/mixtureviscocty_insideflame.png Graphic file (type png)
 
+<use figs/mixtureviscocty_insideflame.png>
+Package pdftex.def Info: figs/mixtureviscocty_insideflame.png used on input lin
+e 365.
+(pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
+
+<<<<<<< HEAD
+<figs/mixtureviscocty_afterflame.png, id=107, 439.90434pt x 329.92827pt>
+File: figs/mixtureviscocty_afterflame.png Graphic file (type png)
+=======
 <multiple_data/100_kde/outputData_5e5/kde.png, id=1155, 578.16pt x 433.62pt>
 File: multiple_data/100_kde/outputData_5e5/kde.png Graphic file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/100_kde/outputData_5e5/kde.png>
-Package pdftex.def Info: multiple_data/100_kde/outputData_5e5/kde.png used on i
-nput line 66.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+<use figs/mixtureviscocty_afterflame.png>
+Package pdftex.def Info: figs/mixtureviscocty_afterflame.png used on input line
+ 369.
+(pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--67
-[][]
+Overfull \hbox (12.9499pt too wide) in paragraph at lines 362--370
+[][][]
  []
 
+[12 <./figs/tcO.png (PNG copy)> <./figs/tcO2.png (PNG copy)> <./figs/tcO3.png (
+PNG copy)>]
+<figs/mixturediffusionO3_behindflame.png, id=111, 439.90434pt x 329.92827pt>
+File: figs/mixturediffusionO3_behindflame.png Graphic file (type png)
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<use figs/mixturediffusionO3_behindflame.png>
+Package pdftex.def Info: figs/mixturediffusionO3_behindflame.png used on input 
+line 384.
+(pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
 
- [127 <./multiple_data/100_kde/outputData_5e5/E2.pdf> <./multiple_data/100_kde/
-outputData_5e5/E3.pdf
+<figs/mixturediffusionO2_behindflame.png, id=112, 439.90434pt x 329.92827pt>
+File: figs/mixturediffusionO2_behindflame.png Graphic file (type png)
 
-pdfTeX warning: pdflatex (file ./multiple_data/100_kde/outputData_5e5/E3.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
->]
-Overfull \vbox (42.76881pt too high) has occurred while \output is active []
+<use figs/mixturediffusionO2_behindflame.png>
+Package pdftex.def Info: figs/mixturediffusionO2_behindflame.png used on input 
+line 387.
+(pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
 
-
+<<<<<<< HEAD
+<figs/mixturediffusionO3_inflame.png, id=113, 439.90434pt x 329.92827pt>
+File: figs/mixturediffusionO3_inflame.png Graphic file (type png)
+=======
 [128 <./multiple_data/100_kde/outputData_5e5/cdf.png (PNG copy)> <./multiple_da
 ta/100_kde/outputData_5e5/kde.png (PNG copy)>]
 <multiple_data/100_kde/outputData_1e6/simple_ip_chain_pos_raw_1.png, id=1190, 5
 78.16pt x 433.62pt>
 File: multiple_data/100_kde/outputData_1e6/simple_ip_chain_pos_raw_1.png Graphi
 c file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/100_kde/outputData_1e6/simple_ip_chain_pos_raw_1.png>
-Package pdftex.def Info: multiple_data/100_kde/outputData_1e6/simple_ip_chain_p
-os_raw_1.png used on input line 75.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+<use figs/mixturediffusionO3_inflame.png>
+Package pdftex.def Info: figs/mixturediffusionO3_inflame.png used on input line
+ 391.
+(pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
 
+<<<<<<< HEAD
+<figs/mixturediffusionO_inflame.png, id=114, 439.90434pt x 329.92827pt>
+File: figs/mixturediffusionO_inflame.png Graphic file (type png)
+=======
 <multiple_data/100_kde/outputData_1e6/simple_ip_chain_pos_raw_2.png, id=1191, 5
 78.16pt x 433.62pt>
 File: multiple_data/100_kde/outputData_1e6/simple_ip_chain_pos_raw_2.png Graphi
 c file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/100_kde/outputData_1e6/simple_ip_chain_pos_raw_2.png>
-Package pdftex.def Info: multiple_data/100_kde/outputData_1e6/simple_ip_chain_p
-os_raw_2.png used on input line 79.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+<use figs/mixturediffusionO_inflame.png>
+Package pdftex.def Info: figs/mixturediffusionO_inflame.png used on input line 
+394.
+(pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
 
+<<<<<<< HEAD
+Overfull \hbox (12.9499pt too wide) in paragraph at lines 384--395
+[][][]
+ []
+=======
 <multiple_data/100_kde/outputData_1e6/E2.pdf, id=1192, 568.67271pt x 418.0532pt
 >
 File: multiple_data/100_kde/outputData_1e6/E2.pdf Graphic file (type pdf)
@@ -6244,67 +6455,100 @@ File: multiple_data/100_kde/outputData_1e6/E3.pdf Graphic file (type pdf)
 Package pdftex.def Info: multiple_data/100_kde/outputData_1e6/E3.pdf used on in
 put line 90.
 (pdftex.def)             Requested size: 398.06819pt x 292.63524pt.
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-Overfull \vbox (20.76881pt too high) has occurred while \output is active []
 
+Overfull \hbox (12.9499pt too wide) in paragraph at lines 384--395
+[][] 
+ []
 
+<<<<<<< HEAD
+<figs/mixturediffusionO2_inflame.png, id=115, 439.90434pt x 329.92827pt>
+File: figs/mixturediffusionO2_inflame.png Graphic file (type png)
+=======
 [129 <./multiple_data/100_kde/outputData_1e6/simple_ip_chain_pos_raw_1.png (PNG
  copy)> <./multiple_data/100_kde/outputData_1e6/simple_ip_chain_pos_raw_2.png (
 PNG copy)>]
 <multiple_data/100_kde/outputData_1e6/cdf.png, id=1197, 578.16pt x 433.62pt>
 File: multiple_data/100_kde/outputData_1e6/cdf.png Graphic file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/100_kde/outputData_1e6/cdf.png>
-Package pdftex.def Info: multiple_data/100_kde/outputData_1e6/cdf.png used on i
-nput line 96.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+<use figs/mixturediffusionO2_inflame.png>
+Package pdftex.def Info: figs/mixturediffusionO2_inflame.png used on input line
+ 399.
+(pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
 
+<<<<<<< HEAD
+<figs/mixturediffusionO2_afterflame.png, id=116, 439.90434pt x 329.92827pt>
+File: figs/mixturediffusionO2_afterflame.png Graphic file (type png)
+=======
 <multiple_data/100_kde/outputData_1e6/kde.png, id=1198, 578.16pt x 433.62pt>
 File: multiple_data/100_kde/outputData_1e6/kde.png Graphic file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/100_kde/outputData_1e6/kde.png>
-Package pdftex.def Info: multiple_data/100_kde/outputData_1e6/kde.png used on i
-nput line 100.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+<use figs/mixturediffusionO2_afterflame.png>
+Package pdftex.def Info: figs/mixturediffusionO2_afterflame.png used on input l
+ine 402.
+(pdftex.def)             Requested size: 211.15167pt x 158.36377pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--101
-[][]
+Overfull \hbox (14.14996pt too wide) in paragraph at lines 396--403
+[] [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [130 <./multiple_data/100_kde/outputData_1e6/E2.pdf> <./multiple_data/100_kde/
-outputData_1e6/E3.pdf
-
-pdfTeX warning: pdflatex (file ./multiple_data/100_kde/outputData_1e6/E3.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
+ [13 <./figs/mixtureviscocty_behindflame.png (PNG copy)> <./figs/mixtureviscoct
+y_insideflame.png (PNG copy)> <./figs/mixtureviscocty_afterflame.png (PNG copy)
 >]
-Overfull \vbox (42.76881pt too high) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [14 <./figs/mixturediffusionO3_behindflame.png (PNG copy)> <./figs/mixturediff
+usionO2_behindflame.png (PNG copy)> <./figs/mixturediffusionO3_inflame.png (PNG
+ copy)> <./figs/mixturediffusionO_inflame.png (PNG copy)> <./figs/mixturediffus
+ionO2_inflame.png (PNG copy)> <./figs/mixturediffusionO2_afterflame.png (PNG co
+py)>]
+<figs/mixturethermal_behindflame.png, id=124, 439.90434pt x 329.92827pt>
+File: figs/mixturethermal_behindflame.png Graphic file (type png)
 
+<<<<<<< HEAD
+<use figs/mixturethermal_behindflame.png>
+Package pdftex.def Info: figs/mixturethermal_behindflame.png used on input line
+ 418.
+(pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
+=======
 [131 <./multiple_data/100_kde/outputData_1e6/cdf.png (PNG copy)> <./multiple_da
 ta/100_kde/outputData_1e6/kde.png (PNG copy)>]
 <multiple_data/100_kde/outputData_5e6/simple_ip_chain_pos_raw_1.png, id=1233, 5
 78.16pt x 433.62pt>
 File: multiple_data/100_kde/outputData_5e6/simple_ip_chain_pos_raw_1.png Graphi
 c file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/100_kde/outputData_5e6/simple_ip_chain_pos_raw_1.png>
-Package pdftex.def Info: multiple_data/100_kde/outputData_5e6/simple_ip_chain_p
-os_raw_1.png used on input line 109.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+<figs/mixturethermal_insideflame.png, id=125, 439.90434pt x 329.92827pt>
+File: figs/mixturethermal_insideflame.png Graphic file (type png)
 
+<<<<<<< HEAD
+<use figs/mixturethermal_insideflame.png>
+Package pdftex.def Info: figs/mixturethermal_insideflame.png used on input line
+ 421.
+(pdftex.def)             Requested size: 219.95163pt x 164.96373pt.
+=======
 <multiple_data/100_kde/outputData_5e6/simple_ip_chain_pos_raw_2.png, id=1234, 5
 78.16pt x 433.62pt>
 File: multiple_data/100_kde/outputData_5e6/simple_ip_chain_pos_raw_2.png Graphi
 c file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/100_kde/outputData_5e6/simple_ip_chain_pos_raw_2.png>
-Package pdftex.def Info: multiple_data/100_kde/outputData_5e6/simple_ip_chain_p
-os_raw_2.png used on input line 113.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+<figs/mixturethermal_afterflame.png, id=126, 444.61761pt x 329.92827pt>
+File: figs/mixturethermal_afterflame.png Graphic file (type png)
 
+<<<<<<< HEAD
+<use figs/mixturethermal_afterflame.png>
+Package pdftex.def Info: figs/mixturethermal_afterflame.png used on input line 
+425.
+(pdftex.def)             Requested size: 222.30826pt x 164.96373pt.
+=======
 <multiple_data/100_kde/outputData_5e6/E2.pdf, id=1235, 576.92786pt x 418.0532pt
 >
 File: multiple_data/100_kde/outputData_5e6/E2.pdf Graphic file (type pdf)
@@ -6320,67 +6564,119 @@ File: multiple_data/100_kde/outputData_5e6/E3.pdf Graphic file (type pdf)
 Package pdftex.def Info: multiple_data/100_kde/outputData_5e6/E3.pdf used on in
 put line 124.
 (pdftex.def)             Requested size: 403.84674pt x 292.63524pt.
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-Overfull \vbox (20.76881pt too high) has occurred while \output is active []
+Overfull \hbox (12.9499pt too wide) in paragraph at lines 418--426
+[][][]
+ []
 
+) (./femformulation.tex [15 <./figs/mixturethermal_behindflame.png (PNG copy)> 
+<./figs/mixturethermal_insideflame.png (PNG copy)> <./figs/mixturethermal_after
+flame.png (PNG copy)>] [16
 
+<<<<<<< HEAD
+=======
 [132 <./multiple_data/100_kde/outputData_5e6/simple_ip_chain_pos_raw_1.png (PNG
  copy)> <./multiple_data/100_kde/outputData_5e6/simple_ip_chain_pos_raw_2.png (
 PNG copy)>]
 <multiple_data/100_kde/outputData_5e6/cdf.png, id=1240, 578.16pt x 433.62pt>
 File: multiple_data/100_kde/outputData_5e6/cdf.png Graphic file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/100_kde/outputData_5e6/cdf.png>
-Package pdftex.def Info: multiple_data/100_kde/outputData_5e6/cdf.png used on i
-nput line 130.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+]
+Chapter 3.
 
+<<<<<<< HEAD
+Overfull \hbox (28.72377pt too wide) in alignment at lines 11--14
+ [][][] []
+ []
+=======
 <multiple_data/100_kde/outputData_5e6/kde.png, id=1241, 578.16pt x 433.62pt>
 File: multiple_data/100_kde/outputData_5e6/kde.png Graphic file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/100_kde/outputData_5e6/kde.png>
-Package pdftex.def Info: multiple_data/100_kde/outputData_5e6/kde.png used on i
-nput line 134.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--135
-[][]
+Overfull \hbox (26.80551pt too wide) in alignment at lines 18--21
+ [][][] []
  []
 
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+[17]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no î in font cmr10!
+ [18]
+Overfull \hbox (62.06395pt too wide) in alignment at lines 90--93
+ [][][] []
+ []
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [133 <./multiple_data/100_kde/outputData_5e6/E2.pdf> <./multiple_data/100_kde/
-outputData_5e6/E3.pdf
-
-pdfTeX warning: pdflatex (file ./multiple_data/100_kde/outputData_5e6/E3.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
->]
-Overfull \vbox (42.76881pt too high) has occurred while \output is active []
+) (./bayesian.tex [19] [20
 
 
+]
+Chapter 4.
+[21]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+) (./results.tex [22]
+Chapter 5.
+(./model_1.tex
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 1.
+
+<<<<<<< HEAD
+<model_1/simple_ip_chain_pos_filt.png, id=152, 578.16pt x 433.62pt>
+File: model_1/simple_ip_chain_pos_filt.png Graphic file (type png)
+=======
 [134 <./multiple_data/100_kde/outputData_5e6/cdf.png (PNG copy)> <./multiple_da
 ta/100_kde/outputData_5e6/kde.png (PNG copy)>]
 <multiple_data/100_kde/outputData_1e7/simple_ip_chain_pos_raw_1.png, id=1276, 5
 78.16pt x 433.62pt>
 File: multiple_data/100_kde/outputData_1e7/simple_ip_chain_pos_raw_1.png Graphi
 c file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/100_kde/outputData_1e7/simple_ip_chain_pos_raw_1.png>
-Package pdftex.def Info: multiple_data/100_kde/outputData_1e7/simple_ip_chain_p
-os_raw_1.png used on input line 142.
+<use model_1/simple_ip_chain_pos_filt.png>
+Package pdftex.def Info: model_1/simple_ip_chain_pos_filt.png used on input lin
+e 14.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
+<<<<<<< HEAD
+<model_1/simple_ip_hist_raw.png, id=153, 578.16pt x 433.62pt>
+File: model_1/simple_ip_hist_raw.png Graphic file (type png)
+=======
 <multiple_data/100_kde/outputData_1e7/simple_ip_chain_pos_raw_2.png, id=1277, 5
 78.16pt x 433.62pt>
 File: multiple_data/100_kde/outputData_1e7/simple_ip_chain_pos_raw_2.png Graphi
 c file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/100_kde/outputData_1e7/simple_ip_chain_pos_raw_2.png>
-Package pdftex.def Info: multiple_data/100_kde/outputData_1e7/simple_ip_chain_p
-os_raw_2.png used on input line 146.
+<use model_1/simple_ip_hist_raw.png>
+Package pdftex.def Info: model_1/simple_ip_hist_raw.png used on input line 18.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
+<<<<<<< HEAD
+<model_1/simple_ip_cdf_raw.png, id=154, 578.16pt x 433.62pt>
+File: model_1/simple_ip_cdf_raw.png Graphic file (type png)
+=======
 <multiple_data/100_kde/outputData_1e7/E2.pdf, id=1278, 576.92786pt x 418.0532pt
 >
 File: multiple_data/100_kde/outputData_1e7/E2.pdf Graphic file (type pdf)
@@ -6405,27 +6701,33 @@ Overfull \vbox (20.76881pt too high) has occurred while \output is active []
 PNG copy)>]
 <multiple_data/100_kde/outputData_1e7/cdf.png, id=1283, 578.16pt x 433.62pt>
 File: multiple_data/100_kde/outputData_1e7/cdf.png Graphic file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/100_kde/outputData_1e7/cdf.png>
-Package pdftex.def Info: multiple_data/100_kde/outputData_1e7/cdf.png used on i
-nput line 163.
+<use model_1/simple_ip_cdf_raw.png>
+Package pdftex.def Info: model_1/simple_ip_cdf_raw.png used on input line 25.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
+<<<<<<< HEAD
+<model_1/simple_ip_kde_raw.png, id=155, 578.16pt x 433.62pt>
+File: model_1/simple_ip_kde_raw.png Graphic file (type png)
+=======
 <multiple_data/100_kde/outputData_1e7/kde.png, id=1284, 578.16pt x 433.62pt>
 File: multiple_data/100_kde/outputData_1e7/kde.png Graphic file (type png)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
-<use multiple_data/100_kde/outputData_1e7/kde.png>
-Package pdftex.def Info: multiple_data/100_kde/outputData_1e7/kde.png used on i
-nput line 167.
+<use model_1/simple_ip_kde_raw.png>
+Package pdftex.def Info: model_1/simple_ip_kde_raw.png used on input line 29.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--168
-[][]
- []
-
-)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+<<<<<<< HEAD
+ [23
+
+
+]
+Overfull \vbox (20.76881pt too high) has occurred while \output is active []
+=======
  [136 <./multiple_data/100_kde/outputData_1e7/E2.pdf> <./multiple_data/100_kde/
 outputData_1e7/E3.pdf
 
@@ -6453,27 +6755,33 @@ Overfull \hbox (99.27864pt too wide) in paragraph at lines 24--25
 <multiple_data/flamespeed_calculation/flame_20.pdf, id=1319, 526.77681pt x 418.
 84438pt>
 File: multiple_data/flamespeed_calculation/flame_20.pdf Graphic file (type pdf)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
- <use multiple_data/flamespeed_calculation/flame_20.pdf>
-Package pdftex.def Info: multiple_data/flamespeed_calculation/flame_20.pdf used
- on input line 37.
-(pdftex.def)             Requested size: 368.74124pt x 293.18906pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 30.
 
+<<<<<<< HEAD
+[24 <./model_1/simple_ip_chain_pos_filt.png (PNG copy)> <./model_1/simple_ip_hi
+st_raw.png (PNG copy)>]
+<model_1/ip_logLike_unified.png, id=163, 578.16pt x 433.62pt>
+File: model_1/ip_logLike_unified.png Graphic file (type png)
+=======
 <multiple_data/flamespeed_calculation/flame_28.pdf, id=1320, 526.77681pt x 418.
 84438pt>
 File: multiple_data/flamespeed_calculation/flame_28.pdf Graphic file (type pdf)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
- <use multiple_data/flamespeed_calculation/flame_28.pdf>
-Package pdftex.def Info: multiple_data/flamespeed_calculation/flame_28.pdf used
- on input line 41.
-(pdftex.def)             Requested size: 368.74124pt x 293.18906pt.
+<use model_1/ip_logLike_unified.png>
+Package pdftex.def Info: model_1/ip_logLike_unified.png used on input line 36.
+(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \vbox (20.76881pt too high) has occurred while \output is active []
 
- [138 <./multiple_data/100_kde/convergence_study/conv.png (PNG copy)>] [139 <./
-multiple_data/flamespeed_calculation/flame_20.pdf> <./multiple_data/flamespeed_
-calculation/flame_28.pdf
 
+<<<<<<< HEAD
+[25 <./model_1/simple_ip_cdf_raw.png (PNG copy)> <./model_1/simple_ip_kde_raw.p
+ng (PNG copy)>])) [26 <./model_1/ip_logLike_unified.png (PNG copy)>]
+=======
 pdfTeX warning: pdflatex (file ./multiple_data/flamespeed_calculation/flame_28.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
@@ -6532,11 +6840,12 @@ Package pdftex.def Info: multiple_data/flamespeed_calculation/flame_100.pdf use
 d on input line 76.
 (pdftex.def)             Requested size: 368.74124pt x 293.18906pt.
 )) [142 <./multiple_data/flamespeed_calculation/flame_100.pdf>]
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 Chapter 6.
-(./appendix.tex [143
+(./appendix.tex [27
 
 
-] [144
+] [28
 
 
 ]
@@ -6553,30 +6862,76 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-(./mathematicalmodel.tex [145]
+(./mathematicalmodel.tex [29]
 Underfull \hbox (badness 10000) in paragraph at lines 33--37
 
  []
 
-[146]
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
+<<<<<<< HEAD
+[31])) [32] (./thesis.bbl) (./thesis.bbl [33
+=======
 [147])) [148] (./thesis.bbl) [149
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
 
 
 
+<<<<<<< HEAD
+] [34
+=======
 ] (./thesis.aux)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
 LaTeX Warning: There were undefined references.
 
+<<<<<<< HEAD
+]) [35] (./thesis.aux)
+=======
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
+ 3624 strings out of 494985
+ 57925 string characters out of 6180356
+ 125109 words of memory out of 5000000
+ 6748 multiletter control sequences out of 15000+600000
+ 10415 words of font info for 36 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 44i,13n,47p,1423b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmti12.pfb>
+Output written on thesis.pdf (47 pages, 947177 bytes).
+PDF statistics:
+ 266 PDF objects out of 1000 (max. 8388607)
+ 166 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
  4417 strings out of 493109
  107039 string characters out of 6123363
  129681 words of memory out of 5000000
@@ -6619,4 +6974,5 @@ PDF statistics:
  1087 compressed objects within 11 object streams
  0 named destinations out of 1000 (max. 500000)
  1076 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> 44a6ee64e6da0427a53323a77ab7b2ea53604ec1
 
