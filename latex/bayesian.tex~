@@ -31,7 +31,7 @@ $$P(u|y) = \frac{P(u) P(y|u)}{P(y)}$$ .
 \subsection{Model 1}
 \noindent In this model, we first do uncertainty quantification for most sensitive parameter of all the parameters i.e Activation Energy for the third reaction $E_3$. We take our prior as uniform with domain bounds of -10 to 40. The likelihood is gaussian with experimental data values from Streng\cite{Streng} as mean standard deviation of 10 \% of the data value. The probability distributions functions are given as
 
-\noindent The prior distribution as each point x in the domain (a,b) is 
+\nonident The prior distribution as each point x in the domain (a,b) is 
 
 $$f(x) = \frac{1}{b -a}$$
 
@@ -45,7 +45,7 @@ $$f(x) = \frac{1}{{\sigma \sqrt {2\pi } }}e^{{{ - \left( {x - \mu } \right)^2 } 
 
  $$P( E_3 |V_f ) = \frac{P(V_f| E_3)*  P(E_3)}{\int_x P(V_f| E_3)* P(E_3)}$$ 
  
- \noindent Where  $P( E_3 |V_f ) $ is the resulting posterior distribution of $E_3$ given flamespeed $V_f$ data, $P(V_f| E_3)$ is the likelihood which is product of the probabilties of each of the gaussian pdfs of different data points, and $ P(E_3)$ is the prior distribution of the parameter, and $\int_x P(V_f|E_3)*P(E_3)$ is the scaling factor.
+ \noindent Where  $P( E_3 |V_f ) $ is the resulting posterior distribution of $E_3$ given flamespeed $V_f$ data, $P(V_f| E_3)$ is the likelihood which is product of the probabilties of each of the gaussian pdfs of different data points, and $ P(E_3)$ is the prior distribution of the parameter
  
 
 \subsection{Model 2}
@@ -53,7 +53,7 @@ $$f(x) = \frac{1}{{\sigma \sqrt {2\pi } }}e^{{{ - \left( {x - \mu } \right)^2 } 
 
 \noindent In this model, we first do uncertainty quantification for two parameters i.e Activation Energy for the third reaction $E_3$ and Activation Energy for the second reaction $E_2$. We take our priors as uniform with domain bounds of -10 to 40 for both the parameters. The likelihood is gaussian with experimental data values from Streng\cite{Streng} as mean standard deviation of 10 \% of the data value. The probability distributions functions are given as
 
-\noindent The prior distribution for each parameter as all points x in its respective domain (a,b) is 
+\nonident The prior distribution for each parameter as all points x in its respective domain (a,b) is 
 
 $$f(x) = \frac{1}{b -a}$$
 
@@ -67,7 +67,7 @@ $$f(x) = \frac{1}{{\sigma \sqrt {2\pi } }}e^{{{ - \left( {x - \mu } \right)^2 } 
 
  $$P( E_3, E_2 |V_f ) = \frac{P(V_f| E_2,E_3)* P(E_2)* P(E_3)}{\int_x P(V_f|E_2,E_3)* P(E_2)*P(E_3)}$$ 
  
- \noindent Where  $P(E_3,E_2 |V_f)$ is the resulting posterior distribution of $E_3$ and $E_2$ given flamespeed $V_f$ data, $P(V_f| E_2 ,E_3)$ is the likelihood which is product of the probabilties of each of the gaussian pdfs of different data points, and $ P(E_3)$ and $P(E_2)$ is the prior distribution of the parameter, and $\int_x P(V_f|E_2,E_3)* P(E_2)*P(E_3)$ is the scaling factor.
+ \noindent Where  $P(E_3,E_2 |V_f)$ is the resulting posterior distribution of $E_3$ and $E_2$ given flamespeed $V_f$ data, $P(V_f| E_2 ,E_3)$ is the likelihood which is product of the probabilties of each of the gaussian pdfs of different data points, and $ P(E_3)$ and $P(E_2)$ is the prior distribution of the parameter
  
 
 \subsection{Model 3}
@@ -89,7 +89,7 @@ $$f(x) = \frac{1}{{\sigma \sqrt {2\pi } }}e^{{{ - \left( {x - \mu } \right)^2 } 
 
  $$P( A_3, E_3 |V_f ) = \frac{P(V_f| E_3,A_3)* P(E_3)* P(A_3)}{\int_x P(V_f|E_3,A_3)* P(E_3)*P(A_3)}$$ 
  
- \noindent Where  $P(E_3,A_3 |V_f)$ is the resulting posterior distribution of $A_3$ and $E_3$ given flamespeed $V_f$ data, $P(V_f| E_3 ,A_3)$ is the likelihood which is product of the probabilties of each of the gaussian pdfs of different data points, and $ P(E_3)$ and $P(A_3)$ is the prior distribution of the parameter, and $\int_x P(V_f|E_3,A_3)*P(E_3)*P(A_3)$ is the scaling factor.
+ \noindent Where  $P(E_3,A_3 |V_f)$ is the resulting posterior distribution of $A_3$ and $E_3$ given flamespeed $V_f$ data, $P(V_f| E_3 ,A_3)$ is the likelihood which is product of the probabilties of each of the gaussian pdfs of different data points, and $ P(E_3)$ and $P(A_3)$ is the prior distribution of the parameter
 
 
 \subsection{Model 4}
@@ -97,7 +97,7 @@ $$f(x) = \frac{1}{{\sigma \sqrt {2\pi } }}e^{{{ - \left( {x - \mu } \right)^2 } 
 
 \noindent In this model, we first do uncertainty quantification for three parameters i.e Activation Energy for the third reaction $E_3$, Activation Energy for the third reaction $E_2$  and pre exponential factor for the third reaction $A_3$. We take our priors as uniform with domain bounds of -10 to 40 for $E_2$, -10 to 40 for $E_3$  and 1.4e+1 to 1.4e+22 for $A_3$  parameter. The likelihood is gaussian with experimental data values from Streng\cite{Streng} as mean standard deviation of 10 \% of the data value. The probability distributions functions are given as
 
-\noindent The prior distribution for each parameter as all points x in its respective domain (a,b) is 
+\nonident The prior distribution for each parameter as all points x in its respective domain (a,b) is 
 
 $$f(x) = \frac{1}{b -a}$$
 
@@ -111,7 +111,43 @@ $$f(x) = \frac{1}{{\sigma \sqrt {2\pi } }}e^{{{ - \left( {x - \mu } \right)^2 } 
 
  $$P( A_3, E_3,E_2 |V_f ) = \frac{P(V_f| E_2,E_3,A_3)* P(E_2)*P(E_3)* P(A_3)}{\int_x P(V_f|E_2,E_3,A_3)* P(E_2)*P(E_3)*P(A_3)}$$ 
  
- \noindent Where  $P(E_3,A_3,E_2 |V_f)$ is the resulting posterior distribution of $A_3$, $E_3$,  and $E_2$ given flamespeed $V_f$ data, $P(V_f| E_2, E_3 ,A_3)$ is the likelihood which is product of the probabilties of each of the gaussian pdfs of different data points, and $P(E_3)$, $P(E_2)$, and $P(A_3)$ is the prior distribution of the parameter, and $\int_x P(V_f|E_2,E_3,A_3)* P(E_2)*P(E_3)*P(A_3)$ is the scaling factor.
+ \noindent Where  $P(E_3,A_3,E_2 |V_f)$ is the resulting posterior distribution of $A_3$, $E_3$,  and $E_2$ given flamespeed $V_f$ data, $P(V_f| E_2, E_3 ,A_3)$ is the likelihood which is product of the probabilties of each of the gaussian pdfs of different data points, and $P(E_3)$, $P(E_2)$, and $P(A_3)$ is the prior distribution of the parameter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+We model our uncertain parameter as continous random variable. By bayes theorem, the mathematical equation for uncertainty quantification for chemical parameters is written as follows. 
+
+$$P(E_1, E_2, A_2, A_3 |V_f ) = \frac{P(V_f|E_1, E_2, A_2, A_3) P(E_1)*P(E_2)*P(A_2)*P(A_3)}{\int_x P(V_f|E_1, E_2, A_2, A_3)* P(E_1)*P(E_2)*P(A_2)*P(A_3) }$$ 
+
+\noindent $P(E_1, E_2, A_2, A_3 |V_f ) $ is the resulting posterior distribution for the uncertain parameters in the model. $P(V_f|E_1, E_2, A_2, A_3)$ is called the likelihood distribution of the data given the parameters and $ P(E_1), P(E_2) , P(A_2), P(A_3)$ are the prior distribution of the parameter. 
+
+\noindent In our model, we have selected uniform priors for the parameter. This means that given the range of parameter i.e from a to b, the probability of selcting a parameter is same for all the values in this range. The continuous pdf is given as 
+
+$$f(x) = \frac{1}{b -a}$$
+
+
+\noindent We have selected likelihood as gaussian with the experimental data as mean and standard deviation of 10 percent of the data. The resulting pdf is given as 
+
+$$f(x) = \frac{1}{{\sigma \sqrt {2\pi } }}e^{{{ - \left( {x - \mu } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {x - \mu } \right)^2 } {2\sigma ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma ^2 }}} $$
+
+\noindent $\int_x P(V_f|E_1, E_2, A_2, A_3)* P(E_1)*P(E_2)*P(A_2)*P(A_3)$ is the scaling factor. 
+
 
 
 \section{Software} sensitiv
