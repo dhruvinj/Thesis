@@ -138,15 +138,15 @@ $$\rho u = constant = \rho_\infty u_\infty = -\rho_1 S_L$$
 \section{Transport Model}
 \subsection{Viscocity}
 \noindent We have used viscosity model as derived from kinetics theory under the ideal gas assumption
-The kinetic theory uses the assumption of the ideal gas law.
+The kinetic theory\cite{Curtiss} uses the assumption of the ideal gas law.
  
 $$pv = nRT$$ Where $p$ is the pressure, $v$ is the volume, $n$ is the number of moles of the gas, $R$ is the universal gas constant and $T$ is the temperature. The viscocity of the species is given by the following formula
 
 $$\eta_s = \frac{5}{16}\sqrt{\frac{m_s k_B T}{\pi}}\frac{f_n}{{\sigma_s}^2   \Omega^{(2,2^*)}}$$
 
 \noindent Where  $m$ the molecular mass of the species (kg), $\sigma$ is the Lennard-Jones potential diameter associated
-to the species $(m)$, $k_B$ is the Boltzmann constant,$\Omega^{(2,2^*)}$ is the value of the dimensionless integrated integral from Monchick
-and Mason\cite{Monchick}. With hard sphere approximation $f_n = 1$. We have three species in our system i.e $O$, $O_2$ and $O_3$. We have varied temperature from 300 K to 2700 K and plotted the viscocity V/s Temperature for all the three species. The $\sigma$ values and constants for dimensionless collision number are taken from NASA CAE transport file. 
+to the species $(m)$, $k_B$ is the Boltzmann constant,$\Omega^{(2,2^*)}$ is the value of the dimensionless integrated integral value determined by a quadratic interpolations of tables based on Stockmayer potntials given in from Monchick
+and Mason\cite{Monchick}. With hard sphere approximation $f_n = 1$. We have three species in our system i.e $O$, $O_2$ and $O_3$. We have varied temperature from 300 K to 2700 K and plotted the viscocity V/s Temperature for all the three species. The $\sigma$ values and constants for dimensionless collision number are taken from GriMech 3.0. 
 \begin{figure}[H]
   \centering
   \includegraphics[scale=0.5]{figs/viscocity model.png}
@@ -155,7 +155,7 @@ and Mason\cite{Monchick}. With hard sphere approximation $f_n = 1$. We have thre
 
 \subsection{Bimolecular Diffusion}
 \noindent The molecular binary diffusion model is
-computed from kinetics theory, assuming an ideal gas. The molecular binary diffusion coefficient ($m^2 s^{-1}$ ) is given by:
+computed from kinetics theory, assuming an ideal gas. The molecular binary diffusion\cite{Curtiss} coefficient ($m^2 s^{-1}$ ) is given by:
 
 $$D_{ij} = \frac{3}{16}\sqrt{\frac{2 k_B^3 T^3}{\pi m_{ij}}}\frac{f_n}{{ P \sigma_{ij}}^2   \Omega^{(1,1^*)}}$$
 
@@ -173,7 +173,7 @@ $\sigma_{ij}$ is the Lennard-Jones collision diameter between species $i$ and $j
 \sigma_{ij} = \frac{1}{2}\left(\sigma_i + \sigma_j\right) \xi^{-\frac{1}{6}}
 \end{equation}
 
-\noindent and $\Omega^{(1,1^*)}$ the integrated collision interval, fitted from the tables given in Monchick and Mason \cite{Monchick}. We have varied temperature from 300 K to 2700 K and plotted the Diffusion coefficient for all the combination of three species. The $\sigma$ values and constants for dimensionless collision number are taken from NASA CAE transport file. 
+\noindent and $\Omega^{(1,1^*)}$ the integrated collision interval, fitted from the tables given in Monchick and Mason \cite{Monchick}. We have varied temperature from 300 K to 2700 K and plotted the Diffusion coefficient for all the combination of three species.The $\sigma$ values and constants for dimensionless collision number are taken from GriMech 3.0. 
 
 \begin{figure}[H]
 
@@ -226,7 +226,7 @@ F(T) = 1 + \frac{\pi^{\frac{3}{2}}}{2}\sqrt{\left(\frac{\epsilon_i}{k_B T}\right
          + \pi^{\frac{3}{2}}\left(\frac{\epsilon_i}{k_B T}\right)^{\frac{3}{2}}
 \end{equation}
 
-\noindent The specific heat are given by the thermodynamic module.  We have varied temperature from 300 K to 2700 K and plotted the thermal conductivity V/s Temperature for all the  three species. The $\sigma$ values and constants for dimensionless collision number are taken from NASA CAE transport file.
+\noindent The individual species conductivities composed of translational, rotational and vibrational contribution was given by Warnatz\cite{Warnatz}. The temperature dependence given in rotational relaxation number expression is given by Parker\cite{Parker} and Brau and Jonkman\cite{Jonkman}. The specific heat are given by the thermodynamic module.  We have varied temperature from 300 K to 2700 K and plotted the thermal conductivity V/s Temperature for all the  three species. The $\sigma$ values and constants for dimensionless collision number are taken from GriMech 3.0.
 
 \begin{figure}[H]
 
@@ -242,8 +242,7 @@ F(T) = 1 + \frac{\pi^{\frac{3}{2}}}{2}\sqrt{\left(\frac{\epsilon_i}{k_B T}\right
 
 
 \subsection{Mixture Model}
-\noindent The Wilke formula for viscosity, independent of
-the viscocity model, is
+\noindent The Wilke\cite{Wilke} formula and modified by Bird et al \cite{Bird} for viscosity, independent of the viscocity model, is
 \begin{equation}
 \eta_{\textnormal{mixture}} = \sum_{s=1}^{n} \frac {x_i \eta_i}{\sum_{j=1}^{n} x_j \Phi_{ij}}
 \end{equation}
@@ -255,7 +254,7 @@ with
                 \right]^2
                 }{\sqrt{8\left(1 + \frac{M_i}{M_j}\right)}}
 \end{equation}
-\noindent  We have varied temperature from 300 K to 2700 K and plotted the mixture viscocity V/s Temperature for all the  three species. The $\sigma$ values and constants for dimensionless collision number are taken from NASA CAE transport file. We have considered three cases-  behind the flame where condentration of $O_3$,$O_2$ and $O$ are taken to be .53, .47 and 0 respectively. Second case of the inside of the flame where concentrations are 0.5, 0.4 and 0.1 respectively. The third case is of the behind the flame where ozone and oxygen radical are absent and there will be only $O_2$
+\noindent  We have varied temperature from 300 K to 2700 K and plotted the mixture viscocity V/s Temperature for all the  three species.  We have considered three cases-  behind the flame where condentration of $O_3$,$O_2$ and $O$ are taken to be .53, .47 and 0 respectively. Second case of the inside of the flame where concentrations are 0.5, 0.4 and 0.1 respectively. The third case is of the behind the flame where ozone and oxygen radical are absent and there will be only $O_2$. The $\sigma$ values and constants for dimensionless collision number are taken from GriMech 3.0.
 
 
 
@@ -290,11 +289,11 @@ D_i = \frac{1-y_i}{\sum_{j\ne i}^{n}\frac{x_i}{D_{ji}}}
 \end{figure}
 
 
-\noindent The thermal conductivity of the mixture is given by 
+\noindent The thermal conductivity of the mixture is given by Wilke rule\cite{Wilke}given by 
 \begin{equation}
 \lambda_{\textnormal{mixture}} = \sum_{s=1}^{n} \frac {x_i \lambda_i}{\sum_{j=1}^{n} x_j \Phi_{ij}}
 \end{equation}
-\noindent  We have varied temperature from 300 K to 2700 K and plotted the mixture thermal conductivity V/s Temperature for all the  three species. The $\sigma$ values and constants for dimensionless collision number are taken from NASA CAE transport file. We have considered three cases-  behind the flame where condentration of $O_3$,$O_2$ and $O$ are taken to be .53, .47 and 0 respectively. Second case of the inside of the flame where concentrations are 0.5, 0.4 and 0.1 respectively. The third case is of the behind the flame where ozone and oxygen radical are absent and there will be only $O_2$
+\noindent  We have varied temperature from 300 K to 2700 K and plotted the mixture thermal conductivity V/s Temperature for all the  three species.  We have considered three cases-  behind the flame where condentration of $O_3$,$O_2$ and $O$ are taken to be .53, .47 and 0 respectively. Second case of the inside of the flame where concentrations are 0.5, 0.4 and 0.1 respectively. The third case is of the behind the flame where ozone and oxygen radical are absent and there will be only $O_2$. The $\sigma$ values and constants for dimensionless collision number are taken from GriMech 3.0.
 
 
 \begin{figure}[H]
