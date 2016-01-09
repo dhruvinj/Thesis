@@ -113,10 +113,8 @@ The results displayed in this section are for the uncertainty involved in the ca
 \subfloat[Autocorrelation \% ozone \label{subfig-2:auto}]{
         \includegraphics[scale=0.7]{model_1/M1_autocorr.pdf} 
             }  
-			\end{figure}
- \begin{figure}[H]
-  \ContinuedFloat
-  \centering       
+            
+             \quad
 \subfloat[ Histogram  \% ozone \label{subfig-2:auto}]{
         \includegraphics[scale=0.7]{model_1/E3.pdf} 
             }  
