@@ -146,7 +146,7 @@ $$\eta_s = \frac{5}{16}\sqrt{\frac{m_s k_B T}{\pi}}\frac{f_n}{{\sigma_s}^2   \Om
 
 \noindent Where  $m$ the molecular mass of the species (kg), $\sigma$ is the Lennard-Jones potential diameter associated
 to the species $(m)$, $k_B$ is the Boltzmann constant,$\Omega^{(2,2^*)}$ is the value of the dimensionless integrated integral value determined by a quadratic interpolations of tables based on Stockmayer potntials given in from Monchick
-and Mason\cite{Monchick}. With hard sphere approximation $f_n = 1$. We have three species in our system i.e $O$, $O_2$ and $O_3$. We have varied temperature from 300 K to 2700 K and plotted the viscocity V/s Temperature for all the three species. The $\sigma$ values and constants for dimensionless collision number are taken from GriMech 3.0  \cite{gri}. 
+and Mason\cite{Monchick}. With hard sphere approximation $f_n = 1$. We have three species in our system i.e $O$, $O_2$ and $O_3$. We have varied temperature from 300 K to 2700 K and plotted the viscocity V/s Temperature for all the three species. The $\sigma$ values and constants for dimensionless collision number are taken from GriMech 3.0. 
 \begin{figure}[H]
   \centering
   \includegraphics[scale=0.5]{figs/viscocity model.png}
@@ -173,7 +173,7 @@ $\sigma_{ij}$ is the Lennard-Jones collision diameter between species $i$ and $j
 \sigma_{ij} = \frac{1}{2}\left(\sigma_i + \sigma_j\right) \xi^{-\frac{1}{6}}
 \end{equation}
 
-\noindent and $\Omega^{(1,1^*)}$ the integrated collision interval, fitted from the tables given in Monchick and Mason \cite{Monchick}. We have varied temperature from 300 K to 2700 K and plotted the Diffusion coefficient for all the combination of three species.The $\sigma$ values and constants for dimensionless collision number are taken from GriMech 3.0 \cite{gri}. 
+\noindent and $\Omega^{(1,1^*)}$ the integrated collision interval, fitted from the tables given in Monchick and Mason \cite{Monchick}. We have varied temperature from 300 K to 2700 K and plotted the Diffusion coefficient for all the combination of three species.The $\sigma$ values and constants for dimensionless collision number are taken from GriMech 3.0. 
 
 \begin{figure}[H]
 
@@ -226,7 +226,7 @@ F(T) = 1 + \frac{\pi^{\frac{3}{2}}}{2}\sqrt{\left(\frac{\epsilon_i}{k_B T}\right
          + \pi^{\frac{3}{2}}\left(\frac{\epsilon_i}{k_B T}\right)^{\frac{3}{2}}
 \end{equation}
 
-\noindent The individual species conductivities composed of translational, rotational and vibrational contribution was given by Warnatz\cite{Warnatz}. The temperature dependence given in rotational relaxation number expression is given by Parker\cite{Parker} and Brau and Jonkman\cite{Jonkman}. The specific heat are given by the thermodynamic module.  We have varied temperature from 300 K to 2700 K and plotted the thermal conductivity V/s Temperature for all the  three species. The $\sigma$ values and constants for dimensionless collision number are taken from GriMech 3.0\cite{gri}.
+\noindent The individual species conductivities composed of translational, rotational and vibrational contribution was given by Warnatz\cite{Warnatz}. The temperature dependence given in rotational relaxation number expression is given by Parker\cite{Parker} and Brau and Jonkman\cite{Jonkman}. The specific heat are given by the thermodynamic module.  We have varied temperature from 300 K to 2700 K and plotted the thermal conductivity V/s Temperature for all the  three species. The $\sigma$ values and constants for dimensionless collision number are taken from GriMech 3.0.
 
 \begin{figure}[H]
 
@@ -254,7 +254,7 @@ with
                 \right]^2
                 }{\sqrt{8\left(1 + \frac{M_i}{M_j}\right)}}
 \end{equation}
-\noindent  We have varied temperature from 300 K to 2700 K and plotted the mixture viscocity V/s Temperature for all the  three species.  We have considered three cases-  behind the flame where condentration of $O_3$,$O_2$ and $O$ are taken to be .53, .47 and 0 respectively. Second case of the inside of the flame where concentrations are 0.5, 0.4 and 0.1 respectively. The third case is of the behind the flame where ozone and oxygen radical are absent and there will be only $O_2$. The $\sigma$ values and constants for dimensionless collision number are taken from GriMech 3.0\cite{gri}.
+\noindent  We have varied temperature from 300 K to 2700 K and plotted the mixture viscocity V/s Temperature for all the  three species.  We have considered three cases-  behind the flame where condentration of $O_3$,$O_2$ and $O$ are taken to be .53, .47 and 0 respectively. Second case of the inside of the flame where concentrations are 0.5, 0.4 and 0.1 respectively. The third case is of the behind the flame where ozone and oxygen radical are absent and there will be only $O_2$. The $\sigma$ values and constants for dimensionless collision number are taken from GriMech 3.0.
 
 
 
@@ -293,7 +293,7 @@ D_i = \frac{1-y_i}{\sum_{j\ne i}^{n}\frac{x_i}{D_{ji}}}
 \begin{equation}
 \lambda_{\textnormal{mixture}} = \sum_{s=1}^{n} \frac {x_i \lambda_i}{\sum_{j=1}^{n} x_j \Phi_{ij}}
 \end{equation}
-\noindent  We have varied temperature from 300 K to 2700 K and plotted the mixture thermal conductivity V/s Temperature for all the  three species.  We have considered three cases-  behind the flame where condentration of $O_3$,$O_2$ and $O$ are taken to be .53, .47 and 0 respectively. Second case of the inside of the flame where concentrations are 0.5, 0.4 and 0.1 respectively. The third case is of the behind the flame where ozone and oxygen radical are absent and there will be only $O_2$. The $\sigma$ values and constants for dimensionless collision number are taken from GriMech 3.0\cite{gri}.
+\noindent  We have varied temperature from 300 K to 2700 K and plotted the mixture thermal conductivity V/s Temperature for all the  three species.  We have considered three cases-  behind the flame where condentration of $O_3$,$O_2$ and $O$ are taken to be .53, .47 and 0 respectively. Second case of the inside of the flame where concentrations are 0.5, 0.4 and 0.1 respectively. The third case is of the behind the flame where ozone and oxygen radical are absent and there will be only $O_2$. The $\sigma$ values and constants for dimensionless collision number are taken from GriMech 3.0.
 
 
 \begin{figure}[H]
