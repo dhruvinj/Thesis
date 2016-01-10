@@ -82,6 +82,18 @@ The results displayed in this section are for the uncertainty involved in the ca
 \noindent In this section, we show the mean of the samples and autocorrelation plots . The mean plot shows the initial instability due to burning period of MCMC and after that it remains constant. It shows us that we should be using atleast more than these number of samples for our analysis. 
 
  \begin{figure}[H]
+  \centering
+   \subfloat[ Flame speed for 40 \% ozone \label{subfig-1:40}]{
+        \includegraphics[scale=0.7]{model_2/flame_40.pdf} 
+       }
+     \quad
+\subfloat[Flame speed for 46 \% ozone \label{subfig-2:46}]{
+        \includegraphics[scale=0.7]{model_2/flame_46.pdf} 
+            }  
+\end{figure}
+
+
+ \begin{figure}[H]
   \ContinuedFloat
   \centering
    \subfloat[ Mean \% ozone \label{subfig-1:mean}]{
