@@ -2,6 +2,20 @@
 \usepackage{graphicx}
 \usepackage{subfig}
 \usepackage{float}
+\usepackage{amsmath,amsfonts}
+\usepackage{color}
+\usepackage[colorlinks=true,
+            pdfstartview=FitV,
+            linkcolor=black,
+            citecolor=black,
+            urlcolor=black,
+            pdfpagelabels,
+            naturalnames=true]{hyperref}
+
+\newcommand{\red}[1]{{\color{red} #1}}
+\newcommand{\todo}[1]{\red{TODO: #1}}
+\newcommand{\bu}{\boldsymbol{u}}
+
 \title{TOWARDS UNCERTAINTY QUANTIFICATION OF PREMIXED LAMINAR FLAMES USING BAYESIAN STATISTICS}
 
 \author{Dhruvin Jasmin Naik}
@@ -36,17 +50,18 @@ This is my abstract
 \end{ubfrontmatter}
 \input{introduction.tex}
 \input{combustion.tex}
-\input{femformulation.tex}
 \input{bayesian.tex}
 \input{results.tex}
+\input{femformulation.tex}
+
 \chapter{Conclusion}
+\input{conclusion}
 
 \input{appendix.tex}
 
 \begin{ubbackmatter}
 \bibliographystyle{plain}
 \references[Bibliography]{references}
-\bibliography{references}
 \end{ubbackmatter}
 \end{document}
 \endinput
