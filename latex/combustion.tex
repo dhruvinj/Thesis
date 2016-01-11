@@ -189,8 +189,8 @@ The source terms can then be expressed in the canonical form
 where $nr$ is the number of reactions.
 The forward rate coefficients are expressed in a modified Arrhenius form as
 %
-\begin{equation}
-  \label{eq:k_fr}
+\begin{equation}\label{eq:arrhenius}
+%  \label{eq:k_fr}
   k_{f,r}\left(T\right) = A_{r} T^{\eta_r} \exp \left(-E_{r}/RT\right)
 \end{equation}
 %
@@ -286,12 +286,12 @@ and
   B & = & Z_{rot} + \frac{2}{\pi} \left(\frac{5}{3}\frac{C_{v,i}^{(\textnormal{rot})}}{R} + \rho_i \frac{D_{i,i}}{\eta_i}\right)
 \end{eqnarray*}
 %
-\noindent the rotational relaxation number is given by
+ the rotational relaxation number is given by
 \begin{equation}
 Z_{rot,i}(T) = Z_{rot,i}(298)\frac{F(298)}{F(T)}
 \label{thermal_cond:Zrot}
 \end{equation}
-\noindent with the function $F$ defined as
+ with the function $F$ defined as
 \begin{equation}
 F(T) = 1 + \frac{\pi^{\frac{3}{2}}}{2}\sqrt{\left(\frac{\epsilon_i}{k_B T}\right)}
          + \left(\frac{\pi^2}{4} + 2\right)\left(\frac{\epsilon_i}{k_B T}\right)
@@ -324,7 +324,7 @@ number are taken from GriMech 3.0~\cite{gri}.
 % Bimolecular Diffusion
 %=======================================================================
 \subsection{Bimolecular Diffusion}
-\noindent The molecular binary diffusion model is
+ The molecular binary diffusion model is
 computed from kinetics theory, assuming an ideal gas. The molecular binary diffusion\cite{Curtiss} coefficient ($m^2 s^{-1}$ ) is given by:
 %
 \begin{equation}
@@ -344,7 +344,7 @@ $\sigma_{ij}$ is the Lennard-Jones collision diameter between species $i$ and $j
 \sigma_{ij} = \frac{1}{2}\left(\sigma_i + \sigma_j\right) \xi^{-\frac{1}{6}}
 \end{equation}
 
-\noindent and $\Omega^{(1,1^*)}$ the integrated collision interval,
+ and $\Omega^{(1,1^*)}$ the integrated collision interval,
 fitted from the tables given in Monchick and Mason \cite{Monchick}. We
 have varied temperature from 300 K to 2700 K and plotted the diffusion
 coefficients for all the combinations of the three species.
@@ -408,7 +408,7 @@ dimensionless collision number are taken from GriMech 3.0\cite{gri}.
 
 
 %% \subsection{Mixture Model}
-%% \noindent The Wilke\cite{Wilke} formula and modified by Bird et al \cite{Bird} for viscosity, independent of the viscocity model, is
+%%  The Wilke\cite{Wilke} formula and modified by Bird et al \cite{Bird} for viscosity, independent of the viscocity model, is
 %% \begin{equation}
 %% \eta_{\textnormal{mixture}} = \sum_{s=1}^{n} \frac {x_i \eta_i}{\sum_{j=1}^{n} x_j \Phi_{ij}}
 %% \end{equation}
@@ -420,7 +420,7 @@ dimensionless collision number are taken from GriMech 3.0\cite{gri}.
 %%                 \right]^2
 %%                 }{\sqrt{8\left(1 + \frac{M_i}{M_j}\right)}}
 %% \end{equation}
-%% \noindent  We have varied temperature from 300 K to 2700 K and plotted the mixture viscocity V/s Temperature for all the  three species.  We have considered three cases-  behind the flame where condentration of $O_3$,$O_2$ and $O$ are taken to be .53, .47 and 0 respectively. Second case of the inside of the flame where concentrations are 0.5, 0.4 and 0.1 respectively. The third case is of the behind the flame where ozone and oxygen radical are absent and there will be only $O_2$. The $\sigma$ values and constants for dimensionless collision number are taken from GriMech 3.0\cite{gri}.
+%%   We have varied temperature from 300 K to 2700 K and plotted the mixture viscocity V/s Temperature for all the  three species.  We have considered three cases-  behind the flame where condentration of $O_3$,$O_2$ and $O$ are taken to be .53, .47 and 0 respectively. Second case of the inside of the flame where concentrations are 0.5, 0.4 and 0.1 respectively. The third case is of the behind the flame where ozone and oxygen radical are absent and there will be only $O_2$. The $\sigma$ values and constants for dimensionless collision number are taken from GriMech 3.0\cite{gri}.
 
 
 
@@ -435,7 +435,7 @@ dimensionless collision number are taken from GriMech 3.0\cite{gri}.
 %% \end{figure}
 
 
-%% \noindent For the bimolecular diffusion model, we use:
+%%  For the bimolecular diffusion model, we use:
 %% \begin{equation}
 %% D_i = \frac{1-y_i}{\sum_{j\ne i}^{n}\frac{x_i}{D_{ji}}}
 %%          = \frac{\sum_{j\neq i}^{n} x_j M_j}{M_{\textnormal{mixture}} \sum_{j\ne i}^{n}\frac{x_j}{D_{ji}}}
@@ -455,11 +455,11 @@ dimensionless collision number are taken from GriMech 3.0\cite{gri}.
 %% \end{figure}
 
 
-%% \noindent The thermal conductivity of the mixture is given by Wilke rule\cite{Wilke}given by
+%%  The thermal conductivity of the mixture is given by Wilke rule\cite{Wilke}given by
 %% \begin{equation}
 %% \lambda_{\textnormal{mixture}} = \sum_{s=1}^{n} \frac {x_i \lambda_i}{\sum_{j=1}^{n} x_j \Phi_{ij}}
 %% \end{equation}
-%% \noindent  We have varied temperature from 300 K to 2700 K and plotted the mixture thermal conductivity V/s Temperature for all the  three species.  We have considered three cases-  behind the flame where condentration of $O_3$,$O_2$ and $O$ are taken to be .53, .47 and 0 respectively. Second case of the inside of the flame where concentrations are 0.5, 0.4 and 0.1 respectively. The third case is of the behind the flame where ozone and oxygen radical are absent and there will be only $O_2$. The $\sigma$ values and constants for dimensionless collision number are taken from GriMech 3.0\cite{gri}.
+%%   We have varied temperature from 300 K to 2700 K and plotted the mixture thermal conductivity V/s Temperature for all the  three species.  We have considered three cases-  behind the flame where condentration of $O_3$,$O_2$ and $O$ are taken to be .53, .47 and 0 respectively. Second case of the inside of the flame where concentrations are 0.5, 0.4 and 0.1 respectively. The third case is of the behind the flame where ozone and oxygen radical are absent and there will be only $O_2$. The $\sigma$ values and constants for dimensionless collision number are taken from GriMech 3.0\cite{gri}.
 
 
 %% \begin{figure}[H]
@@ -518,7 +518,7 @@ $x=\infty$, or zero derivatives at $x=-\infty$ to enforce
 Equation~\eqref{eq:mdot}. Computationally, the condition is handled
 differently in practice.
 
-%% \noindent The governing equations are givenin one dimensional and time dependent forms as follows from principles of combustion by Kuo.
+%%  The governing equations are givenin one dimensional and time dependent forms as follows from principles of combustion by Kuo.
 
 %% The Overall continuity equation is given as
 %% \begin{eqnarray}
@@ -531,7 +531,7 @@ differently in practice.
 %% \rho \frac{Y_k}{\partial t} + \rho u \frac{Y_k}{\partial x} &= -\frac{\partial (\rho Y_k V_k)}{\partial x}  + w_k
 %% \end{eqnarray}
 
-%% \noindent Where $k = 1, 2$ or  $3$ for $O$, $O_2$ or $O_3$ respectively.
+%%  Where $k = 1, 2$ or  $3$ for $O$, $O_2$ or $O_3$ respectively.
 
 %% Energy Equation
 
@@ -539,47 +539,47 @@ differently in practice.
 %% \rho C_p \frac{\partial T}{\partial t} + \rho u C_p \frac{\partial T}{\partial x} &= \frac{\partial }{\partial x} \left(\lambda \frac{\partial T}{\partial x}\right)  - \sum_{k=1}^{N} w_k \Delta h^0_{fk} - \rho  \sum_{k=1}^{N} C_{p,k} Y_k V_k \frac{\partial T}{\partial x}
 %% \end{eqnarray}
 
-%% \noindent This energy equations was arrived at under assumption that the pressure is constant in the reaction zone, the viscous dissipation is negligible, and there is no body force.
+%%  This energy equations was arrived at under assumption that the pressure is constant in the reaction zone, the viscous dissipation is negligible, and there is no body force.
 
-%% \noindent The Diffusion equation is given as
+%%  The Diffusion equation is given as
 %% \begin{eqnarray}
 %% \frac{\partial X_k}{\partial x} &= \sum_{j=1}^{3} \frac{X_k X_j}{D_{jk}} (V_j - V_k)
 %% \end{eqnarray}
 
-%% \noindent We have considered a free flame in a tube. In this configuration, there is a premixed mixture of fuel and oxidiser in given concentration. The spark is generated at a random point in the domain. The flae is developed anf it burns through the whole mixture untill all fuel is converted to oxygen. The boundary conditions for the totally burned end are
+%%  We have considered a free flame in a tube. In this configuration, there is a premixed mixture of fuel and oxidiser in given concentration. The spark is generated at a random point in the domain. The flae is developed anf it burns through the whole mixture untill all fuel is converted to oxygen. The boundary conditions for the totally burned end are
 
 %% $$x \leftarrow \infty:  \frac{\partial T}{\partial x} = \frac{\partial Y_k}{\partial x} = 0$$
 
-%% \noindent In order to avoid solving the continuity equation along with the other equations, Heirmerl and coffee\cite{Heimerl} used a langrangian coordinate $\psi$
+%%  In order to avoid solving the continuity equation along with the other equations, Heirmerl and coffee\cite{Heimerl} used a langrangian coordinate $\psi$
 %% and a new time coordinate $\tau$ defined by
 
 %% $$\psi \equiv \int_{0}^{x} \rho(x',t)dx'$$
 
-%% \noindent So by definiton of $\psi$ and by chain, we have these expressions
+%%  So by definiton of $\psi$ and by chain, we have these expressions
 %%  $$\frac{\partial \psi}{\partial x} = \rho$$
 %%  $$\frac{\partial \tau}{\partial x} = 0$$
 %%  $$\frac{\partial \tau}{\partial t} = 1$$
 %%  $$\frac{\partial \psi}{\partial t} = (\rho u)_{x=0} - (\rho u)_{x} $$
 
-%% \noindent By integrating the overall continuity equation from 0 to x, we obtain
+%%  By integrating the overall continuity equation from 0 to x, we obtain
 
 %% $$\frac{\partial d}{\partial t} \int_{0}^{x} \rho dx + [(\rho u)_{x} - (\rho u)_{0} ] = 0$$
 
-%% \noindent The product $\rho u$ at $x =0$ is the eigenvalue of the problem. It is defined as
+%%  The product $\rho u$ at $x =0$ is the eigenvalue of the problem. It is defined as
 
 %% $$m_0 = (\rho u)_0$$
 
-%% \noindent The energy equation in the new coordinate system becomes
+%%  The energy equation in the new coordinate system becomes
 
 %% \begin{eqnarray}
 %%  \frac{\partial T}{\partial t} + m_0 \frac{T}{\partial \psi} &= \frac{1}{C_p}\frac{d}{\partial \psi} \left(\rho \lambda \frac{\partial T}{\partial \psi}\right)  - \frac{1}{\rho C_p} \sum_{k=1}^{N} w_k \Delta h^0_{fk} - \frac{1}{C_p}  \sum_{k=1}^{N} C_{p,k} Y_k V_k \frac{\partial T}{\partial \psi}
 %% \end{eqnarray}
 
-%% \noindent The eigenvalue of $m_0$ or $S_L$ was determined from the steady state solution of the problem, that is
+%%  The eigenvalue of $m_0$ or $S_L$ was determined from the steady state solution of the problem, that is
 
 %% $$\frac{\partial Y_k}{\partial t} = \frac{\partial T}{\partial t} = 0$$
 
-%% \noindent Under the steady state conditons,
+%%  Under the steady state conditons,
 
 %% $$\rho u = constant = \rho_\infty u_\infty = -\rho_1 S_L$$
 
@@ -650,18 +650,22 @@ version 2.1.2 in this work.
 
 
 
- \section{Ozone Combustion Model}
+ \section{Ozone Combustion Model} \label{sec:ozone-data}
 We shall use Heimerl and coffee's\cite{Heimerl} contemporary method
 for modelling combustion flame problem. A one dimensional, premixed,
 laminar, steady state ozone oxygen flame was considered in their
 theortical model. The reason for choosing this model was due to its
 simplicity. The chemical reactions involve only three species:
-
-
-			$$O_3 + M \rightleftharpoons O + O_2 + M $$
-			$$ O + O_3 \rightleftharpoons 2O_2$$
-			$$ 2O + M \rightleftharpoons O_2 + M$$
-\noindent Where M represents the third body which could be either $O$,
+%
+\begin{equation}\label{eq:ozone-mech}
+\begin{aligned}
+  O_3 + M &\rightleftharpoons O + O_2 + M\\
+  O + O_3 &\rightleftharpoons 2O_2\\
+  2O + M &\rightleftharpoons O_2 + M
+\end{aligned}
+\end{equation}
+%
+Where M represents the third body which could be either $O$,
 $O_2$ or $O_3$.
 
 
@@ -691,7 +695,7 @@ compared with theoretical burning velocities of Dr. Von Karman and his
 associates. They were found to be in close agreements.
 
 
-%% \noindent To compare our results, we have used the experimental data
+%%  To compare our results, we have used the experimental data
 %% given by the A.G.  streng\cite{Streng} and A.V. Grosse, They have done
 %% experiments with ozone flame in tube and ozone flame on the tip of the
 %% burner. We will be using the results of the later. They have shown

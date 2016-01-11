@@ -12,6 +12,12 @@
             pdfpagelabels,
             naturalnames=true]{hyperref}
 
+\usepackage{setspace}
+
+
+
+\setlength\parindent{0pt}
+
 \newcommand{\red}[1]{{\color{red} #1}}
 \newcommand{\todo}[1]{\red{TODO: #1}}
 \newcommand{\bu}{\boldsymbol{u}}
@@ -35,8 +41,11 @@
 \makecopyright
 \cleardoublepage
 \begin{acknowledgements}
-\input{ack.tex}
+  \doublespacing
+  \input{ack.tex}
 \end{acknowledgements}
+
+\singlespacing
 \tableofcontents
 
 \cleardoublepage
@@ -44,10 +53,14 @@
 \cleardoublepage
 \listoftables
 \cleardoublepage
+
 \begin{abstract}
 This is my abstract
 \end{abstract}
 \end{ubfrontmatter}
+
+\doublespacing
+
 \input{introduction.tex}
 \input{combustion.tex}
 \input{bayesian.tex}

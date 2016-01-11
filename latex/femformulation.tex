@@ -25,15 +25,15 @@ Using numerical methods in a straightforward way for the approximation of arbitr
 equations may cause severe problems. There are Oscillations, locking, singular matrices and other problems in the result in certain concrete problem.
 Thus, stabilization is needed. To obtain satisfactory approximations stabilization may be needed. The matrix of the advective term is non-symmetric (non-self adjointness of the convective operator) and the ”best approximation” property is lost . As a result Bubnov-Galerkin methods applied to these problems are far from ”optimal” and show spurious oscillations in the solutions, worsening with growing convection-domination. 
 
-\noindent To characterize the relative importance of convective and diffusive effects in a given flow
+ To characterize the relative importance of convective and diffusive effects in a given flow
 problem, it is useful to introduce the mesh Peclet number.
 
 $$Pe=\frac{ah}{2\nu}$$
 
-\noindent which expresses the ratio of convective to diffusive transport.
+ which expresses the ratio of convective to diffusive transport.
 The  Galerkin solution is corrupted by non-physical oscillations when the Peclet number is larger than one. The Galerkin method loses its best approximation property when the non-symmetric convection operator dominates the diffusion operator in the transport equation, and consequently spurious node-to-node oscillations appear.
 
-\noindent All stabilization schemes applied are Petrov-Galerkin approaches. They all add perturbations to the original Bubnov-Galerkin weak form. These perturbations are formulated in terms of modifications of the Bubnov-Galerkin test functions. They are multiplied with the residuals of the differential equations and thereby ensure consistency. Additionally, a stabilization parameter $\xi$ weights the influence of the added stabilization terms.
+ All stabilization schemes applied are Petrov-Galerkin approaches. They all add perturbations to the original Bubnov-Galerkin weak form. These perturbations are formulated in terms of modifications of the Bubnov-Galerkin test functions. They are multiplied with the residuals of the differential equations and thereby ensure consistency. Additionally, a stabilization parameter $\xi$ weights the influence of the added stabilization terms.
 
 \subsection{Streamline Upwind Petrov Galerkin Method}
 To ensure that the solution of the differential equation is also a solution of the
@@ -41,7 +41,7 @@ weak form, it is necessary to stabilize the convective term in a consistent mann
 to the Galerkin weak form. This term has to be a function of the residual of the differential equation or else the equation will not be consistent. It introduces a certain amount of artificial diffusion in streamline direction only. The latter aspect ensures that no diffusion perpendicular to the flow direction is introduced, which was the reason for excessive over diffusion in other methods. 
 
 \bigskip
-\noindent Stabilization through a product of a perturbation and the residual
+ Stabilization through a product of a perturbation and the residual
 is a fundamental aspect of successful stabilization schemes and is realized in all stabilization method
 applied here. The following term is added to the galerkin weak form of the differential equation. 
 
@@ -49,17 +49,17 @@ applied here. The following term is added to the galerkin weak form of the diffe
 
 
 \bigskip
-\noindent Where $P(w)$ is a certain operator applied to the test function, $\xi$ is the stabilization
+ Where $P(w)$ is a certain operator applied to the test function, $\xi$ is the stabilization
 parameter (also called intrinsic time), and $R(u)$ is the residual of the differential
 equation. The stabilization techniques are characterized by the definition of $P(w)$
 
 \bigskip
-\noindent The SUPG stabilization technique is defined by taking
+ The SUPG stabilization technique is defined by taking
 
 
-$$P(w)= a.\nabla w$$ \noindent where a is the convection velocity. $w$ is the test function.  This corresponds to the perturbation of the test function. The space of the test functions does not coincide with the space of the interpolation functions, hence it is called as Petrov—Galerkin formulation.
+$$P(w)= a.\nabla w$$  where a is the convection velocity. $w$ is the test function.  This corresponds to the perturbation of the test function. The space of the test functions does not coincide with the space of the interpolation functions, hence it is called as Petrov—Galerkin formulation.
 
-\noindent For simple convection diffusion equation
+ For simple convection diffusion equation
 \bigskip
  $\tau = \frac{\overrightarrow{\nu}}{\vert \vert a \vert\vert^2}$. For 1D $\overrightarrow{\nu}=\frac{\beta a h}{2}$ and $\beta = coth(Pe)-\frac{1}{Pe}$
  
@@ -70,7 +70,7 @@ $$P(w)= a.\nabla w$$ \noindent where a is the convection velocity. $w$ is the te
  be applied to obtain satisfactory results. It should also be mentioned that the PSPG stabilization parameter does not necessarily have to be identical with the SUPG stabilization parameter
  
  \bigskip
- \noindent The terms associated with parameter $\xi_{pspg}$ (pressure-stabilizing/Petrov-Galerkin)
+  The terms associated with parameter $\xi_{pspg}$ (pressure-stabilizing/Petrov-Galerkin)
  allow the use of mixed elements with equal-order interpolations for the velocity and
  pressure. All stabilization
  terms are weighted residuals, therefore ensuring the consistency of the formulation. The following term is added to the galerkin weak form of the differential equation. 
@@ -78,7 +78,7 @@ $$P(w)= a.\nabla w$$ \noindent where a is the convection velocity. $w$ is the te
   $$\sum_e \int_{\Omega^e} \nabla \phi \xi_{pspg} R(u)  d\Omega$$ 
  
  \subsection{Stabilized Navier Stokes Equation} 
-\noindent From the stabilization discussions we can now write the stabilized form of Navier stokes equation. The Residual of momentum and energy equation are given as follows
+ From the stabilization discussions we can now write the stabilized form of Navier stokes equation. The Residual of momentum and energy equation are given as follows
 \bigskip
 \begin{eqnarray*}
 R1(u) &=& \rho \frac{D u^h}{D t} \hspace{1mm} + \frac{1}{M^2}\hspace{1mm}\nabla p^h\hspace{1mm}-\hspace{1mm}\frac{1}{Re}\nabla \cdot (\mu^*(\nabla u^h +(\nabla u^h)^T) - \frac{2}{3}\mu^h \nabla \cdot u^h I) - \frac{1}{Fr^2}\rho g \\
@@ -86,7 +86,7 @@ R2(T) &=& \rho C_p \frac{D T^h}{D t} \hspace{1mm} \hspace{1mm} + \frac{1}{Re Pr}
 \end{eqnarray*}
 
 \bigskip
-\noindent Now adding the pressure stabilization and convection stabilization to momentum and energy equations we get the following expressions
+ Now adding the pressure stabilization and convection stabilization to momentum and energy equations we get the following expressions
 \begin{eqnarray*}
 \int_{0}^{L} \int_{0}^{L}\rho \dot{u}^h \psi_i \psi_j + \hspace{1mm}\int_{0}^{L} \int_{0}^{L} \rho u^h \cdot \nabla u^h \psi_i \hspace{1mm}  + \int_{0}^{L} \int_{0}^{L}  \frac{1}{M^2}\hspace{1mm}\nabla p^h \phi_i \hspace{1mm} + \hspace{1mm}\int_{0}^{L} \int_{0}^{L}\frac{1}{Re} \tau^h \nabla \psi +  \\ - \int_{0}^{L} \int_{0}^{L}\frac{1}{Fr^2}\rho g \psi + \sum_e \int_{\Omega^e} P(\psi) \xi R1(u)  d\Omega + \sum_e \int_{\Omega^e} \nabla \phi \xi_{pspg} R1(u)  d\Omega  &=& \left[\tau \psi \right]_0^L \\
 \int_{0}^{L} \int_{0}^{L} \rho C_p \dot{T}^h \varphi_i \varphi_j + \hspace{1mm}\int_{0}^{L} \int_{0}^{L} \rho C_p u^h \cdot \nabla T \varphi_i \hspace{1mm} - \hspace{1mm} \int_{0}^{L} \int_{0}^{L} \frac{1}{Re Pr}(k \nabla T^h) \nabla \varphi - \\ \int_{0}^{L} \int_{0}^{L} \hspace{1mm} \frac{1}{\gamma -1} \frac{d p^h}{d t} \phi +  \sum_e \int_{\Omega^e} S(\varphi) \xi R2(T)  d\Omega + \sum_e \int_{\Omega^e} \nabla \varphi \xi_{pspg} R2(T)  d\Omega &=& -  \frac{1}{Re Pr} \left[k \nabla T^h \varphi \right]_0^L \hspace{1mm}\\
@@ -113,7 +113,7 @@ R2(T) &=& \rho C_p \frac{D T^h}{D t} \hspace{1mm} \hspace{1mm} + \frac{1}{Re Pr}
 \end{itemize}
 
 \bigskip
-\noindent The following assumption are made
+ The following assumption are made
 \begin{itemize}
 \item At the inlet, the incoming velcity has parabolic profile. i.e poissuelle flow. 
 \item The surface chemistry at the wall of the burner is neglected. 
@@ -121,10 +121,10 @@ R2(T) &=& \rho C_p \frac{D T^h}{D t} \hspace{1mm} \hspace{1mm} + \frac{1}{Re Pr}
 \item $DE,EF$ are the boundaries of the domain. No change occurs after this point. 
 \end{itemize}
 	
-\noindent The boundary conditions are defined as follows 
+ The boundary conditions are defined as follows 
 \bigskip
 
-\noindent At the inlet ($AB$)
+ At the inlet ($AB$)
 \begin{itemize}
 \item $u_r = 0$ and $u_z=5801.9 mm/s$
 \item $C_i = 1$ 
@@ -133,7 +133,7 @@ R2(T) &=& \rho C_p \frac{D T^h}{D t} \hspace{1mm} \hspace{1mm} + \frac{1}{Re Pr}
 \end{itemize}
 
 \bigskip 
-\noindent On $BC$
+ On $BC$
 \begin{itemize}
 \item $u_r = 0$ and $u_z=0 mm/s$
 \item $\frac{\partial C_i}{\partial r} =0 $ and $\frac{\partial C_i}{\partial z} =0 $
@@ -141,7 +141,7 @@ R2(T) &=& \rho C_p \frac{D T^h}{D t} \hspace{1mm} \hspace{1mm} + \frac{1}{Re Pr}
 \item $p=1 atmos$
 \end{itemize}
 
-\noindent On $CD$
+ On $CD$
 \begin{itemize}
 \item $u_r = 0$ and $u_z=5801.9 mm/s$
 \item $ C_{O_2} =21 \% $
@@ -149,7 +149,7 @@ R2(T) &=& \rho C_p \frac{D T^h}{D t} \hspace{1mm} \hspace{1mm} + \frac{1}{Re Pr}
 \item $p=1 atmos$
 \end{itemize}
 
-\noindent On $DF$ and $FE$
+ On $DF$ and $FE$
 \begin{itemize}
 \item $\frac{\partial u_r}{\partial r} =0 $ and $\frac{\partial u_z}{\partial z} =0 $
 \item $\frac{\partial C_i}{\partial r} =0 $ and $\frac{\partial C_i}{\partial z} =0 $
@@ -158,7 +158,7 @@ R2(T) &=& \rho C_p \frac{D T^h}{D t} \hspace{1mm} \hspace{1mm} + \frac{1}{Re Pr}
 \end{itemize}
 
 
-\noindent On $AF$
+ On $AF$
 \begin{itemize}
 \item $\frac{\partial u_r}{\partial r} =0 $ 
 \item $\frac{\partial C_i}{\partial r} =0 $ 
