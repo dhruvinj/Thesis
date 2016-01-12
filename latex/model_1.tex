@@ -1,4 +1,4 @@
-\section{Model 1: $E_3$}
+\section{Model 1}
 
 The results displayed in this section are for the
 %uncertainty involved in the calculation of flamespeed depending only on one
@@ -34,13 +34,11 @@ where we start our guess.
  burning period for the samples.
 
 \begin{figure}[H]
-\centering
 \subfloat[MCMC raw chain of samples \label{subfig-1:Raw Chain}]{%
-     \includegraphics[scale=0.7]{model_1/simple_ip_chain_pos_filt}
+     \includegraphics[scale=0.45]{model_1/simple_ip_chain_pos_filt}
     }
-    \quad
 \subfloat[Histogram\label{subfig-2:Histogram}]{%
-     \includegraphics[scale=0.7]{model_1/simple_ip_hist_raw}
+     \includegraphics[scale=0.47]{model_1/simple_ip_hist_raw}
     }
 \caption{MCMC raw chain and Histogram}
     \end{figure}
@@ -48,10 +46,6 @@ where we start our guess.
   \begin{figure}[H]
   \ContinuedFloat
   \centering
-   \subfloat[Cummulative Density Funtion \label{subfig-3:CDF}]{
-        \includegraphics[scale=0.7]{model_1/simple_ip_cdf_raw}
-       }
-     \quad
 \subfloat[KDE \label{subfig-4:KDE}]{
         \includegraphics[scale=0.7]{model_1/simple_ip_kde_raw}
             }
@@ -67,24 +61,22 @@ where we start our guess.
 %%     \caption{Results for sample size 1e7}
 %% \end{figure}
 
-\subsection{Convergence Study- Number of samples }
+\subsection{Convergence Study: Number of samples }
 
  In this section, we see the convergence of the probability distribution as we increase the raw chain sample size. The plot is done for surrogate size of 1000. In this analysis, raw chain size of $1e5$, $5e5$ , $1e6$, $5e6$ and $1e7$ is taken.
 
 \begin{figure}[H]
-\centering
-\includegraphics[scale = 0.7]{model_1/sample_conv}
+\includegraphics[scale = 0.35]{model_1/sample_conv}
     \caption{Convergence for surrogate size 1000}
 \end{figure}
 
 
-\subsection{Convergence Study- Surrogate }
+\subsection{Convergence Study: Surrogate }
 
  In this section, we see the convergence of the surrogate. As we increase the number of points in the surrogate, results should be close for different surrogate sizes. The plot is done for surrogate size of 100, 500 and 1000. In this analysis, raw sample chain size is $1e7$.
 
 \begin{figure}[H]
-\centering
-\includegraphics[scale=0.7]{model_1/conv_surrogate}
+\includegraphics[scale=0.35]{model_1/conv_surrogate}
     \caption{Convergence for surrogate size 100, 500 and 1000}
 \end{figure}
 
@@ -131,25 +123,25 @@ where we start our guess.
 
 \subsection{Mean and Autocorrelation plots}
 
- In this section, we show the mean of the samples and autocorrelation plots . The mean plot shows the initial instability due to burning period of MCMC and after that it remains constant. It shows us that we should be using atleast more than these number of samples for our analysis. The last figure shows the histogram and the various parameters of the distribution are Mean:  28.3, Std. Dev.:  0.78, Skewness:  0.0666 and Kurtosis:  0.0352.
+ In this section, we show the mean of the samples and autocorrelation plots . The mean plot shows the initial instability due to sum in period of MCMC and after that it remains constant. It shows us that we should be using at least more than these number of samples for our analysis. The last figure shows the histogram and the various parameters of the distribution are Mean:  28.3, Std. Dev.:  0.78, Skewness:  0.0666 and Kurtosis:  0.0352.
 
 
  \begin{figure}[H]
   \ContinuedFloat
   \centering
-   \subfloat[ Mean \% ozone \label{subfig-1:mean}]{
+   \subfloat[ Mean  \label{subfig-1:mean}]{
         \includegraphics[scale=0.7]{model_1/M1_running_avg.pdf}
        }
      \quad
-\subfloat[Autocorrelation \% ozone \label{subfig-2:auto}]{
+\subfloat[Autocorrelation  \label{subfig-2:auto}]{
         \includegraphics[scale=0.7]{model_1/M1_autocorr.pdf}
             }
+            \caption{Mean and autocorrelation for sample size 1e7}
 			\end{figure}
  \begin{figure}[H]
-  \ContinuedFloat
   \centering
-\subfloat[ Histogram  \% ozone \label{subfig-2:auto}]{
+\subfloat[ \label{subfig-2:auto}]{
         \includegraphics[scale=0.7]{model_1/E3.pdf}
             }
-            \caption{Mean and autocorrelation for sample size 1e5}
+            \caption{Histogram}
 \end{figure}

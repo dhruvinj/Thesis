@@ -1,12 +1,11 @@
-\section{Model 3: $A_3$ and $E_3$}
+\section{Model 3}
 
-The results displayed in this section are for the uncertainty involved in the calculation of flamespeed depending  on two parameter i.e the activation energy for the fall off reaction in the ozone mechanism and the pre exponential factor for third reaction in the mechanism. The percentage of ozone is taken as 40,46,53,75 and 100  percent acccording to the experimental data available to us from Streng\cite{Streng}.The results are displayed in four sections. In first section, for constant surrogate size, the number of samples are changed from 7e5 to 1e7 and convergence is observed. In the second part of the results, convergence study is done for surrogates with different sizes. In third section, we ensure that samples of the parameter which we are drawing are fitting the flamespeed values of the experiment. In the fourth section mean and correlation plots are shown for the samples of both the parameters. The surrogates for individual concentrations are constructed using linear interpolation function. The initial guess for the map point is calculated using nelder mead optimization technique. After supplying initial guess over large domain it is found that the map point is the same no matter where we start our guess. 
+The results displayed in this section are for the uncertainty involved in the calculation of flamespeed depending  on two parameter i.e the activation energy for the fall off reaction in the ozone mechanism and the pre exponential factor for third reaction in the mechanism. The percentage of ozone is taken as 40, 46, 53, 75, and 100  percent acccording to the experimental data available to us from Streng\cite{Streng}.The results are displayed in four sections. In first section, for constant surrogate size, the number of samples are changed from 1e7 to 9e7 and convergence is observed. In the second part of the results, convergence study is done for surrogates with different sizes. In third section, we ensure that samples of the parameter which we are drawing are fitting the flamespeed values of the experiment. In the fourth section mean and correlation plots are shown for the samples of both the parameters. The surrogates for individual concentrations are constructed using linear interpolation function. The initial guess for the map point is calculated using nelder mead optimization technique. After supplying initial guess over large domain it is found that the map point is the same no matter where we start our guess. 
 
 
  In this section, we display results for sample size 1e7 and surrogate of 100*100 points. We  have plotted the kde. 
 
 \begin{figure}[H]
-\centering
 \subfloat[KDE \label{subfig-4:KDE for $A_3$}]{
         \includegraphics[scale=0.45]{model_3/kde_1} 
             }             
@@ -22,20 +21,29 @@ The results displayed in this section are for the uncertainty involved in the ca
  In this section, we see the convergence of the probability distribution as we increase the raw chain sample size. The plot is done for surrogate size of 100. In this analysis, raw chain size of $1e5$, $5e5$ , $1e6$, $5e6$ and $1e7$ is taken. 
 
 \begin{figure}[H]
-\centering
-\includegraphics[scale = 0.7]{model_3/sample_conv} 
-    \caption{Convergence for surrogate size 1000}
+\subfloat[$A_3$ sample convergence \label{subfig-4:samp for $A_3$}]{
+\includegraphics[scale = 0.45]{model_3/sample_conv_A3.pdf} 
+}
+\subfloat[$E_3$ sample convergence \label{subfig-4:samp for $E_3$}]{
+\includegraphics[scale = 0.45]{model_3/sample_conv_E3.pdf} 
+}
+    \caption{Convergence for surrogate size 200x200}
 \end{figure}
 
 
 \subsection{Convergence Study- Surrogate }
 
- In this section, we see the convergence of the surrogate. As we increase the number of points in the surrogate, results should be close for different surrogate sizes. The plot is done for surrogate size of 100, 500 and 1000. In this analysis, raw sample chain size is $1e7$. 
+ In this section, we see the convergence of the surrogate. As we increase the number of points in the surrogate, results should be close for different surrogate sizes. The plot is done for surrogate size of 75, 100, 150, and 200. In this analysis, raw sample chain size is $1e7$. 
 
 \begin{figure}[H]
-\centering
-\includegraphics[scale=0.7]{model_3/surrogate_conv} 
-    \caption{Convergence for surrogate size 100, 500 and 1000}
+\subfloat[$A_3$ surrogate convergence \label{subfig-5:surr for $A_3$}]{
+			\includegraphics[scale = 0.45]{model_3/surrogate_conv_A3.pdf} 
+}
+\subfloat[$E_3$ surrogate convergence \label{subfig-5:surr for $E_3$}]{
+			\includegraphics[scale = 0.45]{model_3/surrogate_conv_E3.pdf} 
+}
+\caption{Convergence for sample size 1e7 with different number of surrogate points}
+}
 \end{figure}
 
 

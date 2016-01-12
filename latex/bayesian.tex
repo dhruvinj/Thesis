@@ -1,7 +1,7 @@
 \chapter{Bayesian Methods}\label{chap:bayes}
 \section{Review of Theory}
 
-The growth of computations technology has enabled uncertainity
+The growth of computational technology has enabled uncertainity
 quantification for complex engineering problems. If we incorporate the
 inevitable uncertainty present in experimental
 data into the calibration of our models, the quantification of
@@ -14,7 +14,7 @@ base such a calibration procedure.
 To estimate the model parameters, we must make
 assumptions about the noise levels in the data, models, and
 encapsulate our prior knowledge. Let
-$\mathbf{y}$ be the data which is implicitly dependent on the parameters parameter $\mathbf{m}$.
+$\mathbf{y}$ be the data which is implicitly dependent on the parameters $\mathbf{m}$.
 %
 \begin{equation}
   \mathbf{y} = G(\mathbf{m})
@@ -23,7 +23,7 @@ $\mathbf{y}$ be the data which is implicitly dependent on the parameters paramet
   In the Bayesian approach, $\mathbf{m}$ is treated as random variable with some
   specified prior probability distribution that incorporates any prior
   knowledge about $\mathbf{m}$ that we believe is true. The solution of the inverse problem is the
-  probability distribution of $\mathbf{m}$ given $\mathbf{m}$, denoted by $P(\mathbf{m}|\mathbf{y})$. Then, Bayes'
+  probability distribution of $\mathbf{m}$ given $\mathbf{y}$, denoted by $P(\mathbf{m}|\mathbf{y})$. Then, Bayes'
   formula is given as~\cite{Sivia}
   %
   \begin{equation}
@@ -36,20 +36,20 @@ $\mathbf{y}$ be the data which is implicitly dependent on the parameters paramet
 
 \section{Methods of Solution}
 
-In only the simplest of circumstances is an analytical solution
-possible. Otherwise, we must resort to numerical solution.
+In only the simplest of circumstances is an analytical solution of Equation 3.2
+possible. Otherwise, we must resort to numerical methods.
  We use Markov Chain Monte Carlo (MCMC) methods for estimating the posterior
  distribution by repeated sampling of our forward model. In the
  present work, the forward model is a numerical simulation of
- one-dimensional flames. A Markov Chain is formed from successive
- random selections, the stationary distribution of which is the target
- distribution. In the Metropolis–Hastings algorithm, samples are
+ one-dimensional flames discussed in section 2.3. A Markov Chain is formed from successive
+ random selections of the posterior, the stationary distribution of which is the target
+ distribution. In the Metropolis – Hastings algorithm, samples are
  selected from an arbitrary “proposal” distribution and are retained
  or not according to an acceptance rule~\cite{RobertCasella2004}.
 
  Furthermore, because of the heavy sampling burden, even ``fast''
  models may be challening to leverage within an MCMC sampler. Thus,
- one often resorts to so-called surrogate models where instead of
+ one often resorts to so-called \emph{surrogate models} where instead of
  computing with the ``full model'' directly, we use a surrogate that
  is constructed ahead of time, but that can be evaluated very
  quickly. For the present work, we use simple linear Lagrange
@@ -73,7 +73,7 @@ possible. Otherwise, we must resort to numerical solution.
  We have the experimental data for flamespeed from Streng
  \cite{Streng}, as discussed in Section~\ref{sec:ozone-data}.
  Our goal is the inference of
- chemical parameters for the Ozone mechanism described in
+ chemical parameters for the ozone mechanism described in
  Equation~\eqref{eq:ozone-mech}. For this mechanism, each of the
  reaction rates is of the Arrhenius form described in
  Equation~\eqref{eq:arrhenius}.
@@ -93,10 +93,10 @@ possible. Otherwise, we must resort to numerical solution.
  each statistical model may consider differing priors, likelihoods,
  and uncertain parameters; however, the experimental data is the
  same. Those parameters that are not treated as uncertain are held
- fixed at nominal values.
+ fixed at nominal values giev nin table.
 
  In all cases,
-the prior is uniform, which differing bounds for each model, and the
+the prior is uniform, with differing bounds for each model, and the
 likelihood is assumed Gaussinan. In~\cite{Streng}, no indication is
 given on the error associated with each of the measured laminar flame
 speeds. Thus, we assume that the error is zero mean with a standard
