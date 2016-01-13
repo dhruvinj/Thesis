@@ -1,0 +1,334 @@
+\chapter{Bayesian Methods}\label{chap:bayes}
+\section{Review of Theory}
+
+The growth of computational technology has enabled uncertainity
+quantification for complex engineering problems. If we incorporate the
+inevitable uncertainty present in experimental
+data into the calibration of our models, the quantification of
+uncertainty of complex models can be
+achieved. Bayes' formula provides a natural foundation on which to
+base such a calibration procedure.
+%% Mathematical model governing
+%% physical phenomenon often include parameters that need to be
+%% determined from experiments.
+To estimate the model parameters, we must make
+assumptions about the noise levels in the data, models, and
+encapsulate our prior knowledge. Let
+$\mathbf{y}$ be the data which is implicitly dependent on the parameters $\mathbf{m}$.
+%
+\begin{equation}
+  \mathbf{y} = G(\mathbf{m})
+\end{equation}
+%
+  In the Bayesian approach, $\mathbf{m}$ is treated as random variable with some
+  specified prior probability distribution that incorporates any prior
+  knowledge about $\mathbf{m}$ that we believe is true. The solution of the inverse problem is the
+  probability distribution of $\mathbf{m}$ given $\mathbf{y}$, denoted by $P(\mathbf{m}|\mathbf{y})$. Then, Bayes'
+  formula is given as~\cite{Sivia}
+  %
+  \begin{equation}
+    P(\mathbf{m}|\mathbf{y}) = \frac{P(\mathbf{m}) P(\mathbf{y}|\mathbf{m})}{P(\mathbf{y})}
+  \end{equation}
+%
+ where $P(\mathbf{m})$ is the prior probability distribution, $P(\mathbf{y}|\mathbf{m})$
+ is the likelihood distribution, and $P(\mathbf{y})$ is the scaling factor.
+ The result is the posterior probability distribution of $P(\mathbf{m}|\mathbf{y})$.
+
+\section{Methods of Solution}
+
+In only the simplest of circumstances is an analytical solution of Equation 3.2
+possible. Otherwise, we must resort to numerical methods.
+ We use Markov Chain Monte Carlo (MCMC) methods for estimating the posterior
+ distribution by repeated sampling of our forward model. In the
+ present work, the forward model is a numerical simulation of
+ one-dimensional flames discussed in section 2.3. A Markov Chain is formed from successive
+ random selections of the posterior, the stationary distribution of which is the target
+ distribution. In the Metropolis – Hastings algorithm, samples are
+ selected from an arbitrary “proposal” distribution and are retained
+ or not according to an acceptance rule~\cite{RobertCasella2004}.
+
+ Furthermore, because of the heavy sampling burden, even ``fast''
+ models may be challening to leverage within an MCMC sampler. Thus,
+ one often resorts to so-called \emph{surrogate models} where instead of
+ computing with the ``full model'' directly, we use a surrogate that
+ is constructed ahead of time, but that can be evaluated very
+ quickly. For the present work, we use simple linear Lagrange
+ interpolation over the parameter space. While this strategy is not
+ effective in high parameter dimensions, due the rapid growth of the
+ number of function evaluations required, for small dimensional
+ problems, the strategy is easy and effective.
+
+ We heavily leverage the QUESO C++ software package~\cite{QUESO} for the
+ development of the the statistical surrogate as well as the MCMC
+ sampling. In particular, we use Metropolis-Hastings MCMC; the QUESO
+ library deploys the so-called Delayed Rejection Adaptive Monte Carlo
+ (DRAM) sampling strategy~\cite{DRAM}. Our interface consists of a
+ simple wrapper class around the Cantera solver for representing the
+ $G(\mathbf{m})$ map for which we can then easily plugin to the array
+ of algorithms available in QUESO, including the surrogate
+ construction and the MCMC sampling.
+
+\section{Application to Ozone Combustion}
+
+ We have the experimental data for flamespeed from Streng
+ \cite{Streng}, as discussed in Section~\ref{sec:ozone-data}.
+ Our goal is the inference of
+ chemical parameters for the ozone mechanism described in
+ Equation~\eqref{eq:ozone-mech}. For this mechanism, each of the
+ reaction rates is of the Arrhenius form described in
+ Equation~\eqref{eq:arrhenius}.
+ Thus, the parameters of interest are the
+ activation energy $E$ and the
+ pre-exponential factor $A$ for all three reactions involved in the
+ ozone combustion model. Since we are only considering variation in
+ the chemical kinetics, we are implicitly assuming that all other
+ approximations are valid, namely the conservation, transport, and
+ thermodynamic models. Further, we are assuming adequate numerical
+ resolution of the solutions and convergence of the iterative methods.
+
+ First, a rudimentary sensitivity analysis was performed to identify
+ those parameters to which the laminar flame speed, denoted $V_f$, was most
+ sensitive. Then, based on those results, we construct several
+ statistical models on which we perform Bayesian inference. That is,
+ each statistical model may consider differing priors, likelihoods,
+ and uncertain parameters; however, the experimental data is the
+ same. Those parameters that are not treated as uncertain are held
+ fixed at nominal values giev nin table.
+
+ In all cases,
+the prior is uniform, with differing bounds for each model, and the
+likelihood is assumed Gaussinan. In~\cite{Streng}, no indication is
+given on the error associated with each of the measured laminar flame
+speeds. Thus, we assume that the error is zero mean with a standard
+deviation 10\% of the data value for each of the reported laminar
+flame speeds. Further, we assume that each of the measurements is
+independent. Therefore, the likelihood function will take the form
+%
+\begin{equation}
+P(\mathbf{y}|\mathbf{m}) = \frac{1}{(2\pi)^d \sqrt{|\Sigma|}}
+\exp\left[ -\frac{1}{2}\left(G(\mathbf{m}) -
+  \mathbf{y}\right)^T\Sigma^{-1} \left(G(\mathbf{m}) -
+  \mathbf{y}\right) \right]
+\end{equation}
+%
+where $d$ is the dimension of the data and the covariance matrix, $\Sigma$, is diagonal.
+We use the five data points reported in Table~\ref{tab:ozone-flame-data}.
+Thus, in all cases, $d = 5$ and the vector $\mathbf{y} \in \mathbb{R}^5$.
+
+ \input{sensitivity}
+
+ %% We first did sensitivity analysis for
+ %% flamespeed based on all the chemical parameters. We found that the
+ %% activation energy and the pre exponential factor for the first
+ %% reaction of the mechanism did not have significant effect on the
+ %% flamespeed. Hence moving further, we would not consider these
+ %% parameters as uncertain. The remaining 4 parameters i.e Activation
+ %% Energy and pre exponential factors for second and third reactions
+ %% were highly sensitive to the flame speed calcualtions. The Acivation
+ %% energy for the third reaction was most sensitive. We will approach to
+ %% the uncertainty quantification problem step by step with different
+ %% models.
+
+ %% Let us denote flamespeed by $V_f$, the activation energy for second
+ %% and third reaction for mechanism as $E_2$ and $E_3$ respectively and
+ %% the pre exponential factor as $A_2$ and $A_3$ recpectively.
+
+
+\subsection{Model 1}
+ In this model, we perform inference on the most
+ sensitive parameter of all the parameters, i.e activation energy for
+ the third reaction, $E_3$. We take our prior as uniform with domain
+ bounds of -10 to 40 KJ/mol. Thus, for Model 1, the vector
+ $\mathbf{m} \in \mathbb{R}$ and our mapping $G(\mathbf{m}):
+ \mathbb{R} \rightarrow \mathbb{R}^5$.
+
+
+\subsection{Model 2}
+
+
+ In this model, we consider two parameters: the activation energy for
+ the third reaction, $E_3$,
+ and the activation energy for the second reaction, $E_2$. We take our priors
+ as uniform with domain bounds of -20 to 40 KJ/mol for $E_2$ and -30 to 40 for $E_3$. Thus, for Model 2, the vector
+ $\mathbf{m} \in \mathbb{R}^2$ and our mapping $G(\mathbf{m}):
+ \mathbb{R}^2 \rightarrow \mathbb{R}^5$.
+
+
+ %% The likelihood is gaussian with experimental data values
+%%  from Streng\cite{Streng} as mean standard deviation of 10 \% of the
+%%  data value. The probability distributions functions are given as
+
+%%  The prior distribution for each parameter as all points x in its
+%%  respective domain (a,b) is
+
+%% $$f(x) = \frac{1}{b -a}$$
+
+
+%%  Since the likelihood as gaussian. The resulting pdf is given as
+
+%% $$f(x) = \frac{1}{{\sigma \sqrt {2\pi } }}e^{{{ - \left( {x - \mu }
+%%        \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {x - \mu }
+%%              \right)^2 } {2\sigma ^2 }}}
+%%        \right. \kern-\nulldelimiterspace} {2\sigma ^2 }}} $$
+
+
+%%  Where $\mu$ is the data value. Since we have 7 data values
+%%  (neglecting the 17 \% ozone case due to numerical difficulty), we
+%%  will have 7 gaussian function and the resulting likelihood function
+%%  will be product of all the gaussian pdfs. We model our uncertain
+%%  parameter as continous random variable. By bayes theorem, the
+%%  mathematical equation for uncertainty quantification for chemical
+%%  parameters is written as follows.
+
+%%  $$P( E_3, E_2 |V_f ) = \frac{P(V_f| E_2,E_3)* P(E_2)* P(E_3)}{\int_x
+%%    P(V_f|E_2,E_3)* P(E_2)*P(E_3)}$$
+
+%%   Where $P(E_3,E_2 |V_f)$ is the resulting posterior distribution of
+%%   $E_3$ and $E_2$ given flamespeed $V_f$ data, $P(V_f| E_2 ,E_3)$ is
+%%   the likelihood which is product of the probabilties of each of the
+%%   gaussian pdfs of different data points, and $ P(E_3)$ and $P(E_2)$
+%%   is the prior distribution of the parameter, and $\int_x
+%%   P(V_f|E_2,E_3)* P(E_2)*P(E_3)$ is the scaling factor.
+
+
+\subsection{Model 3}
+
+
+ In this model, we consider two parameters: the activation energy
+ for the third reaction, $E_3$, and the pre-exponential factor for the
+ third reaction, $A_3$.
+ We take our priors
+ as uniform with domain bounds of 10 to 90 KJ/mol for $E_3$. The domain bounds for $A_3$ are 
+ log(7.201e+10) to log(2.5e+17) $cm^3/s/mol$. 
+Thus, for Model 3, the vector
+ $\mathbf{m} \in \mathbb{R}^2$ and our mapping $G(\mathbf{m}):
+\mathbb{R}^2 \rightarrow \mathbb{R}^5$.
+
+ %% The likelihood is gaussian with
+%%  experimental data values from Streng\cite{Streng} as mean standard
+%%  deviation of 10 \% of the data value. The probability distributions
+%%  functions are given as
+
+%%  The prior distribution for each parameter as all points x in its
+%%  respective domain (a,b) is
+
+%% $$f(x) = \frac{1}{b -a}$$
+
+
+%%  Since the likelihood as gaussian. The resulting pdf is given as
+
+%% $$f(x) = \frac{1}{{\sigma \sqrt {2\pi } }}e^{{{ - \left( {x - \mu }
+%%        \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {x - \mu }
+%%              \right)^2 } {2\sigma ^2 }}}
+%%        \right. \kern-\nulldelimiterspace} {2\sigma ^2 }}} $$
+
+
+%%  Where $\mu$ is the data value. Since we have 7 data values
+%%  (neglecting the 17 \% ozone case due to numerical difficulty), we
+%%  will have 7 gaussian function and the resulting likelihood function
+%%  will be product of all the gaussian pdfs. We model our uncertain
+%%  parameter as continous random variable. By bayes theorem, the
+%%  mathematical equation for uncertainty quantification for chemical
+%%  parameters is written as follows.
+
+%%  $$P( A_3, E_3 |V_f ) = \frac{P(V_f| E_3,A_3)* P(E_3)* P(A_3)}{\int_x
+%%    P(V_f|E_3,A_3)* P(E_3)*P(A_3)}$$
+
+%%   Where $P(E_3,A_3 |V_f)$ is the resulting posterior distribution of
+%%   $A_3$ and $E_3$ given flamespeed $V_f$ data, $P(V_f| E_3 ,A_3)$ is
+%%   the likelihood which is product of the probabilties of each of the
+%%   gaussian pdfs of different data points, and $ P(E_3)$ and $P(A_3)$
+%%   is the prior distribution of the parameter, and $\int_x
+%%   P(V_f|E_3,A_3)*P(E_3)*P(A_3)$ is the scaling factor.
+
+
+\subsection{Model 4}
+
+
+ In this model, we consider three parameters: activation energy for
+ the third reaction, $E_3$,
+ activation energy for the second reaction, $E_2$, and the pre-exponential
+ factor for the third reaction, $A_3$. We take our priors as uniform
+ with domain bounds of -20 to 40 for $E_2$, -30 to 90 for $E_3$ and
+ log(7.201e+10) to log(2.5e+17) $cm^3/s/mol$ for $A_3$ parameter. $cm^3/s/mol$
+Thus, for Model 4, the vector
+ $\mathbf{m} \in \mathbb{R}^3$ and our mapping $G(\mathbf{m}):
+\mathbb{R}^3 \rightarrow \mathbb{R}^5$.
+
+
+\subsection{Map points}
+
+From the literature of Mosbach et al ~\cite{Mosbach}, Becker et al ~\cite{Becker}, and Reagan et al ~\cite{Reagan} it is clear that  due to the challenges associated with producing the surrogates of sufficient fidelity over large range in parameter space, certain optimization technique is necessary before applying Bayesian method. We have use nelder mead optimization technique  which is built in Queso. This technique in n dimensions maintains a set of n+1 test points arranged as a simplex. It then extrapolates the behavior of the objective function measured at each test point, in order to find a new test point and to replace one of the old test points with the new one, and so the technique progresses. We report map points for different model in the table below
+
+ \begin{tabular}{llr}  
+    \toprule
+    \multicolumn{2}{c}{Model 1} \\
+    \cmidrule(r){1-2}
+    Parameter   & Map point \\
+    \midrule
+    $E_3$ (KJ/mol)     &  2.823748e+01  \\
+    \bottomrule
+  \end{tabular}
+  
+  
+   \begin{tabular}{llr}  
+    \toprule
+    \multicolumn{2}{c}{Model 2} \\
+    \cmidrule(r){1-2}
+    Parameter   & Map point \\
+    \midrule
+    $E_2$ (KJ/mol)     &  1.928404e+01  \\
+    $E_3$ (KJ/mol)     &  1.928404e+01  \\
+    \bottomrule
+  \end{tabular}
+  
+  
+  
+   \begin{tabular}{llr}  
+    \toprule
+    \multicolumn{2}{c}{Model 3} \\
+    \cmidrule(r){1-2}
+    Parameter   & Map point \\
+    \midrule
+    $E_3$ (KJ/mol)     &  6.067527e+01  \\
+    $A_3$ (cm^3/s/mol/mol)     &  3.325032e+01  \\
+    \bottomrule
+  \end{tabular}
+
+%% The likelihood is gaussian
+%%  with experimental data values from Streng\cite{Streng} as mean
+%%  standard deviation of 10 \% of the data value. The probability
+%%  distributions functions are given as
+
+%%  The prior distribution for each parameter as all points x in its
+%%  respective domain (a,b) is
+
+%% $$f(x) = \frac{1}{b -a}$$
+
+
+%%  Since the likelihood as gaussian. The resulting pdf is given as
+
+%% $$f(x) = \frac{1}{{\sigma \sqrt {2\pi } }}e^{{{ - \left( {x - \mu }
+%%        \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {x - \mu }
+%%              \right)^2 } {2\sigma ^2 }}}
+%%        \right. \kern-\nulldelimiterspace} {2\sigma ^2 }}} $$
+
+
+%%  Where $\mu$ is the data value. Since we have 7 data values
+%%  (neglecting the 17 \% ozone case due to numerical difficulty), we
+%%  will have 7 gaussian function and the resulting likelihood function
+%%  will be product of all the gaussian pdfs. We model our uncertain
+%%  parameter as continous random variable. By bayes theorem, the
+%%  mathematical equation for uncertainty quantification for chemical
+%%  parameters is written as follows.
+
+%%  $$P( A_3, E_3,E_2 |V_f ) = \frac{P(V_f| E_2,E_3,A_3)* P(E_2)*P(E_3)*
+%%    P(A_3)}{\int_x P(V_f|E_2,E_3,A_3)* P(E_2)*P(E_3)*P(A_3)}$$
+
+%%   Where $P(E_3,A_3,E_2 |V_f)$ is the resulting posterior distribution
+%%   of $A_3$, $E_3$, and $E_2$ given flamespeed $V_f$ data, $P(V_f| E_2,
+%%   E_3 ,A_3)$ is the likelihood which is product of the probabilties of
+%%   each of the gaussian pdfs of different data points, and $P(E_3)$,
+%%   $P(E_2)$, and $P(A_3)$ is the prior distribution of the parameter,
+%%   and $\int_x P(V_f|E_2,E_3,A_3)* P(E_2)*P(E_3)*P(A_3)$ is the scaling
+%%   factor.

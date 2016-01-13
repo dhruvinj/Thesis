@@ -1,0 +1,82 @@
+\documentclass[10pt]{ubthesis}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{amsmath,amsfonts}
+\usepackage{color}
+\usepackage[colorlinks=true,
+            pdfstartview=FitV,
+            linkcolor=black,
+            citecolor=black,
+            urlcolor=black,
+            pdfpagelabels,
+            naturalnames=true]{hyperref}
+
+\usepackage{setspace}
+
+
+
+\setlength\parindent{0pt}
+
+\newcommand{\red}[1]{{\color{red} #1}}
+\newcommand{\todo}[1]{\red{TODO: #1}}
+\newcommand{\bu}{\boldsymbol{u}}
+
+\title{TOWARDS UNCERTAINTY QUANTIFICATION OF PREMIXED LAMINAR FLAMES USING BAYESIAN STATISTICS}
+
+\author{Dhruvin Jasmin Naik}
+
+\conferral{\today}
+
+\dept{Mechanical and Aerospace Department}
+
+\degree{ms}
+
+\begin{document}
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+
+\begin{ubfrontmatter}
+\makecopyright
+\cleardoublepage
+\begin{acknowledgements}
+  \doublespacing
+  \input{ack.tex}
+\end{acknowledgements}
+
+\singlespacing
+\tableofcontents
+
+\cleardoublepage
+\listoffigures
+\cleardoublepage
+\listoftables
+\cleardoublepage
+
+\begin{abstract}
+This is my abstract
+\end{abstract}
+\end{ubfrontmatter}
+
+\doublespacing
+
+\input{introduction.tex}
+\input{combustion.tex}
+\input{bayesian.tex}
+\input{results.tex}
+\input{femformulation.tex}
+
+\chapter{Conclusion}
+\input{conclusion}
+
+\input{appendix.tex}
+
+\begin{ubbackmatter}
+\bibliographystyle{plain}
+\references[Bibliography]{references}
+\end{ubbackmatter}
+\end{document}
+\endinput
+%%
+%% End of file `thesis.tex'.
