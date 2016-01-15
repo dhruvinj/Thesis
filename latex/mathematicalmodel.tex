@@ -1,9 +1,9 @@
-\section{Asymptotic Analysis}
-\subsection{Governing Equations}
-The flow of a compressible fluid is described in terms of the velocity $(u^*)$, pressure $(p^*)$, density $(\rho^*)$, and temperature$(T^*)$ fields. These fields are solutions of the compressible Navier Stokes equations that describe the dynamics of the system
-and that are statements of conservation of mass, momentum and energy and a state equation relating the thermodynamic variables.  
 
-The system of equation that needs to be solved reads
+\section{Governing Equations}
+The flow of a compressible fluid is described in terms of the velocity $(u^*)$, pressure $(p^*)$, density $(\rho^*)$, and temperature $(T^*)$ fields. These fields are solutions of the compressible Navier-Stokes equations that describe the dynamics of the system
+and that are statements of conservation of mass, momentum, and energy and a state equation relating the thermodynamic variables.  
+
+The system of equations that needs to be solved reads
 \begin{eqnarray}
 \frac{D \rho^*}{D t^*}\hspace{1mm} \hspace{1mm} &=& - \rho^* \hspace{1mm}\nabla \cdot u^* \\
 \rho^* \frac{D u^*}{D t} \hspace{1mm} &=& -\hspace{1mm}\nabla p^*\hspace{1mm}+\hspace{1mm}\nabla \cdot \tau^* + \rho^* g^* \\
@@ -11,33 +11,29 @@ The system of equation that needs to be solved reads
 \frac{D \rho^*}{D t^*} &=& \hspace{1mm} - \beta^* T^* \frac{D \rho^*}{D t^*} + \alpha^* \rho^* \hspace{1mm}\frac{D p^*}{D t^*}
 \end{eqnarray}
 
-Where $u^*$ is the velocity vector,$\rho^*$ is the density,$\beta^*$ is the thermal expansion coefficient,$p^*$ is the pressure ,$\tau^*$ is the viscous stress term, $g^*$ is the gravitational vector,$c_p^*$ is the specific heat, $T^*$ is the temperature, $q^*$ is the heat flux vector. 
+Where $u^*$ is the velocity vector, $\rho^*$ is the density, $\beta^*$ is the thermal expansion coefficient,$p^*$ is the pressure , $\tau^*$ is the viscous stress term, $g^*$ is the gravitational vector, $c_p^*$ is the specific heat, $T^*$ is the temperature, $q^*$ is the heat flux vector, $\mu^*$ is the dynamic viscocity. $k^*$ is the thermal conductivity.
 
 \bigskip
 
-for Newtonian fluid, $$\tau^* = \mu^*(\nabla u^* +(\nabla u^*)^T)) - \frac{2}{3}\mu^*\nabla \cdot u^*I$$
+For a Newtonian fluid, $$\tau^* = \mu^*(\nabla u^* +(\nabla u^*)^T)) - \frac{2}{3}\mu^*\nabla \cdot u^*I$$
 
-By fourier law's, 
+By Fourier law, 
 $$q^* =  k^* \nabla T^*$$
 
 \bigskip
 
-$\mu^*$ is the dynamic viscocity. $k^*$ is the thermal conductivity.
+ The following are the quantities in equation of state: $\beta^* = -\frac{1}{\rho^*}\frac{\partial \rho^*}{\partial T^*}$ and $\alpha^* = \frac{1}{\rho^*}\frac{\partial \rho^*}{\partial p^*}$.
 
-\bigskip
+\section{Nondimensionalization}
 
- The following are the quantities in equation of state, $\beta^* = -\frac{1}{\rho^*}\frac{\partial \rho^*}{\partial T^*}$ and $\alpha^* = \frac{1}{\rho^*}\frac{\partial \rho^*}{\partial p^*}$.
-
-\subsection{Low Mach Number Asymtotic Analysis}
-
-The work below uses low mach number symptotic analysis developed by Muller\cite{Muller}. We nondimensionalize the Equations by using reference quantities denoted by the subscript $\infty$,
+We nondimensionalize the equations by using reference quantities denoted by the subscript $\infty$,
 e.g. farfield or stagnation conditions, and a typical length scale $L^*$ of the considered
 flow. The thermodynamic reference quantities are assumed to be related by the equation of
-state for a perfect gas. We have used perfect gas law because we are dealing with gases in combustion environment. We define the nondimensional quantities by:\\
+state for a perfect gas. We have used perfect gas law because we are dealing with gases in a combustion environment. We define the nondimensional quantities by\\
 
 \bigskip
 
-$\rho = \frac{\rho^*}{\rho_\infty} $, $p = \frac{p^*}{p_\infty} $, $u = \frac{u^*}{u_\infty} $, $T = \frac{T^*}{T_\infty} $, $\mu = \frac{\mu^*}{\mu_\infty} $, $k = \frac{k^*}{k_\infty} $,$x = \frac{x^*}{L^*} $, $t = \frac{t^*}{L^*/u^*_{\infty}} $, $\beta^* = \frac{\beta}{\beta_{\infty}} $, 
+$\rho = \frac{\rho^*}{\rho_\infty} $, \hspace{2mm} $p = \frac{p^*}{p_\infty} $, \hspace{2mm} $u = \frac{u^*}{u_\infty} $, \hspace{2mm} $T = \frac{T^*}{T_\infty} $, \hspace{2mm} $\mu = \frac{\mu^*}{\mu_\infty} $,\hspace{2mm} $k = \frac{k^*}{k_\infty} $,\hspace{2mm}$x = \frac{x^*}{L^*} $, \hspace{2mm} $t = \frac{t^*}{L^*/u^*_{\infty}} $, \hspace{2mm} $\beta^* = \frac{\beta}{\beta_{\infty}} $, 
 \bigskip
 
 $C_p^* = \frac{C_p}{{C_p}^*_{\infty}}$.
@@ -50,14 +46,11 @@ Navier-Stokes equations and other equations of interest as follows:
 \rho C_p \frac{D T}{D t} \hspace{1mm}&=&\hspace{1mm} \frac{M^2}{Re \lambda}\hspace{1mm}\tau \nabla \cdot u \hspace{1mm}-\hspace{1mm}\frac{1}{Re Pr} \hspace{1mm}\nabla \cdot (k \nabla T) + \hspace{1mm} \frac{\beta T}{\lambda} \frac{D p}{D t}\hspace{1mm} \\
 \frac{D \rho}{D t} &=& \hspace{1mm} - \beta T \frac{D \rho}{D t} + \alpha \rho \hspace{1mm}\frac{D p}{D t}
 \end{eqnarray}
-Where the following nondimensional quantities are
+where the following nondimensional quantities are
 
-$$M= \frac{u_\infty}{a_\infty}$$ 
-$$Re= \frac{u_\infty \rho_\infty L}{\mu_\infty}$$ 
-$$Pr= \frac{{C_p}_\infty \mu_\infty L}{k_\infty}$$
-$$Fr= \sqrt{\frac{u_\infty^2} {g_\infty L}}$$ 
+$M= \frac{u_\infty}{a_\infty}$, \hspace{2mm} $Re= \frac{u_\infty \rho_\infty L}{\mu_\infty}$, \hspace{2mm}$Pr= \frac{{C_p}_\infty \mu_\infty L}{k_\infty}$, \hspace{2mm} $Fr= \sqrt{\frac{u_\infty^2} {g_\infty L}}$.
 
- $a_{\infty}$ is the reference speed of sound, $M$ is the mach number, $Re$ is the reynolds number, $Pr$ is the prandtl number, $Fr$ is the froude number and $\lambda$ is defined as $\frac{{C_p}_\infty T_\infty }{a^2_\infty}$. 
+ $a_{\infty}$ is the reference speed of sound, $M$ is the mach number, $Re$ is the reynolds number, $Pr$ is the prandtl number, $Fr$ is the froude number, and $\lambda$ is defined as $\frac{{C_p}_\infty T_\infty }{a^2_\infty}$. 
 
  From ideal gas law, 
 
@@ -76,53 +69,53 @@ $${a^*}^2= \frac{p_\infty}{\rho_\infty}\frac{\partial p}{\partial \rho}$$
 
 $${a^*}^2= \frac{p_\infty}{\rho_\infty}a^2$$ Where $a_\infty = \sqrt{\frac{p_\infty}{\rho_\infty}}$.
 
-\subsection{Asymptotic Analysis}
+\section{Asymptotic Analysis}
 We do asymptotic analysis with respect to Mach number.
-We use the following equation in terms of Mach number
+We use the following equation in terms of Mach number:
 
 $$\xi(x,t,M)=\xi^0(x,t)+M \xi^1(x,t)+M^2 \xi^2(x,t)+O(M^3)$$ \\
 
- Where $\xi$ can be $u,p,\rho$. We use non dimensional form of navier stokes equation do the asymptotic equation. 
-We show the example of asymptotic analysis for mass conservation. 
+where $\xi$ can be $u,p,\rho$. We use non dimensional form of Navier-Stokes equation do the asymptotic equation. 
+We show the following example of asymptotic analysis. For mass conservation, 
 
 $$\frac{D}{D t}(\rho^0+M \rho^1+M^2 \rho^2+O(M^3))\hspace{1mm}+\hspace{1mm}(\rho^0+M \rho^1+M^2 \rho^2+O(M^3)) \hspace{1mm}\nabla \cdot (u^0+M u^1+M^2 u^2+O(M^3)) = 0 $$
 
-Collecting equal order terms together we get,
+Collecting equal order terms together we get
 
 $$\left(\frac{D \rho^0}{D t}\hspace{1mm}+\hspace{1mm}\rho^0 \hspace{1mm}\nabla \cdot u^0\right) + M \left(\frac{\partial \rho^1 }{\partial t}+ +\hspace{1mm}\rho^1 \hspace{1mm}\nabla \cdot u^0++\hspace{1mm}\rho^0 \hspace{1mm}\nabla \cdot u^1\right) + O(M^2) = 0 $$ Therefore zeroth order terms can be written.
 \begin{eqnarray}
 \frac{D \rho^0}{D t}\hspace{1mm}+\hspace{1mm}\rho^0 \hspace{1mm}\nabla \cdot u^0 &=& 0
 \end{eqnarray}
 
- The asymptotic relation for momentum are obtained are as follows.  The zero, first and second order momentum equation are written as follows respectively
+ The asymptotic relation for momentum are obtained similarly.  The zero, first, and second order momentum equation are written as follows 
 \begin{eqnarray}
 M^{-2}\nabla p^{(0)} &=& 0\\
 M^{-1}\nabla p^{(1)} &=& 0\\
 \rho^0 \frac{D u^0}{D t} \hspace{1mm} &=& -\hspace{1mm}\nabla p^2\hspace{1mm}+\hspace{1mm}\nabla \cdot \tau^0 + \rho^0 g
 \end{eqnarray}
 
- The asymptotic relation for momentum are obtained are as follows.
+ The asymptotic relation for the energy equation is
 \begin{eqnarray}
 \rho^0 C_p^0\frac{D T^0}{D t} \hspace{1mm}&=&\hspace{1mm}-\hspace{1mm}\frac{1}{Re Pr} \hspace{1mm}\nabla.(k^0 \nabla T^0) + \hspace{1mm} \frac{\beta^0 T^0}{\lambda} \frac{d p^0}{d t}\hspace{1mm}
 \end{eqnarray}
 We have seen from momentum asymptotic analysis that $p^0=p^0(t)$ and therefore $$\frac{D p^0}{D t}= \frac{d p^0}{d t}$$. 
  
- The nondimensional equation of state is same as that of the dimensional form. Now same asymptotic expansion of the state equation is done in order to get zeroth order state equation which is given below. 
+ The nondimensional equation of state is same as that of the dimensional form. Now, the same asymptotic expansion of the state equation is done in order to get zeroth order state equation: 
 \begin{eqnarray}
 \frac{D \rho^0}{D t} &=& \hspace{1mm} - \beta^0 T^0 \frac{D \rho^0}{D t} + \alpha^0 \rho^0 \hspace{1mm}\frac{D p^0}{D t}
 \end{eqnarray}
 
- From mass conservation equation and since $p^0=p^0(t)$, we get the following equation
+ From the mass conservation equation and since $p^0=p^0(t)$, 
 \begin{eqnarray}
 - \nabla \cdot u^0 &=& \hspace{1mm} - \beta^0  \frac{D T^0}{D t} + \alpha^0  \hspace{1mm}\frac{d p^0}{d t}
 \end{eqnarray}
 
- From energy conservation equation
+ From the energy conservation equation,
 \begin{eqnarray}
 - \rho^0 C_p^0 \nabla \cdot u^0 &=& \hspace{1mm}  \frac{1}{Re Pr}\nabla \cdot q^0 + \left(\frac{C_p^0 \lambda -1 }{\lambda}  \right)\hspace{1mm}\frac{d p^0}{d t}
 \end{eqnarray}
 
-The final equation obtained by applying various thermodynamic properties are following
+The final equation obtained by applying various thermodynamic properties is
 \begin{eqnarray}
 -\nabla \cdot u &=& \frac{1}{p^0} \frac{d p^0}{d t} - \frac{1}{T}\frac{D T}{D t} \hspace{1mm}\\
 \rho \frac{D u}{D t} \hspace{1mm} &=& -\frac{1}{M^2}\hspace{1mm}\nabla p\hspace{1mm}+\hspace{1mm}\frac{1}{Re}\nabla \cdot \tau + \frac{1}{Fr^2}\rho g \\
