@@ -231,7 +231,7 @@ Hirschfelder et al~\cite{Curtiss}.
 %=======================================================================
 % Species Viscosity
 %=======================================================================
-\subsection{Viscocity}
+\subsection{Viscosity}
 The viscosity of ta species is given by the following formula:
 \begin{equation}
 \mu_s = \frac{5}{16}\sqrt{\frac{m_s k_B T}{\pi}}\frac{f_n}{{\sigma_s}^2   \Omega^{(2,2^*)}}
@@ -251,7 +251,7 @@ GriMech~3.0~\cite{gri}.
 \begin{figure}[H]
   \centering
   \includegraphics[scale=0.5]{figs/viscmodel.png}
-   \caption{Species viscocity for $O$, $O_2$, and $O_3$.}
+   \caption{Species viscosity for $O$, $O_2$, and $O_3$.}
 \end{figure}
 
 
@@ -404,7 +404,7 @@ dimensionless collision number are taken from GriMech 3.0~\cite{gri}.
 
 
 %% \subsection{Mixture Model}
-%%  The Wilke\cite{Wilke} formula and modified by Bird et al \cite{Bird} for viscosity, independent of the viscocity model, is
+%%  The Wilke\cite{Wilke} formula and modified by Bird et al \cite{Bird} for viscosity, independent of the viscosity model, is
 %% \begin{equation}
 %% \eta_{\textnormal{mixture}} = \sum_{s=1}^{n} \frac {x_i \eta_i}{\sum_{j=1}^{n} x_j \Phi_{ij}}
 %% \end{equation}
@@ -416,7 +416,7 @@ dimensionless collision number are taken from GriMech 3.0~\cite{gri}.
 %%                 \right]^2
 %%                 }{\sqrt{8\left(1 + \frac{M_i}{M_j}\right)}}
 %% \end{equation}
-%%   We have varied temperature from 300 K to 2700 K and plotted the mixture viscocity V/s Temperature for all the  three species.  We have considered three cases-  behind the flame where condentration of $O_3$,$O_2$ and $O$ are taken to be .53, .47 and 0 respectively. Second case of the inside of the flame where concentrations are 0.5, 0.4 and 0.1 respectively. The third case is of the behind the flame where ozone and oxygen radical are absent and there will be only $O_2$. The $\sigma$ values and constants for dimensionless collision number are taken from GriMech 3.0\cite{gri}.
+%%   We have varied temperature from 300 K to 2700 K and plotted the mixture viscocity V/s Temperature for all the  three species.  We have considered three cases-  behind the flame where concentration of $O_3$,$O_2$ and $O$ are taken to be .53, .47 and 0 respectively. Second case of the inside of the flame where concentrations are 0.5, 0.4 and 0.1 respectively. The third case is of the behind the flame where ozone and oxygen radical are absent and there will be only $O_2$. The $\sigma$ values and constants for dimensionless collision number are taken from GriMech 3.0\cite{gri}.
 
 
 
@@ -427,7 +427,7 @@ dimensionless collision number are taken from GriMech 3.0~\cite{gri}.
 %%      \includegraphics[scale=0.5]{figs/all_in_one.png}
 %%     }
 
-%%     \caption{Mixture Viscocity behind, inside, and after the flame}
+%%     \caption{Mixture Viscosity behind, inside, and after the flame}
 %% \end{figure}
 
 
@@ -542,16 +542,16 @@ differently in practice.
 %% \frac{\partial X_k}{\partial x} &= \sum_{j=1}^{3} \frac{X_k X_j}{D_{jk}} (V_j - V_k)
 %% \end{eqnarray}
 
-%%  We have considered a free flame in a tube. In this configuration, there is a premixed mixture of fuel and oxidiser in given concentration. The spark is generated at a random point in the domain. The flae is developed anf it burns through the whole mixture untill all fuel is converted to oxygen. The boundary conditions for the totally burned end are
+%%  We have considered a free flame in a tube. In this configuration, there is a premixed mixture of fuel and oxidizer in given concentration. The spark is generated at a random point in the domain. The flae is developed and it burns through the whole mixture until all fuel is converted to oxygen. The boundary conditions for the totally burned end are
 
 %% $$x \leftarrow \infty:  \frac{\partial T}{\partial x} = \frac{\partial Y_k}{\partial x} = 0$$
 
-%%  In order to avoid solving the continuity equation along with the other equations, Heirmerl and coffee\cite{Heimerl} used a langrangian coordinate $\psi$
+%%  In order to avoid solving the continuity equation along with the other equations, Heirmerl and coffee\cite{Heimerl} used a Lagrangian coordinate $\psi$
 %% and a new time coordinate $\tau$ defined by
 
 %% $$\psi \equiv \int_{0}^{x} \rho(x',t)dx'$$
 
-%%  So by definiton of $\psi$ and by chain, we have these expressions
+%%  So by definition of $\psi$ and by chain, we have these expressions
 %%  $$\frac{\partial \psi}{\partial x} = \rho$$
 %%  $$\frac{\partial \tau}{\partial x} = 0$$
 %%  $$\frac{\partial \tau}{\partial t} = 1$$
@@ -575,7 +575,7 @@ differently in practice.
 
 %% $$\frac{\partial Y_k}{\partial t} = \frac{\partial T}{\partial t} = 0$$
 
-%%  Under the steady state conditons,
+%%  Under the steady state conditions,
 
 %% $$\rho u = constant = \rho_\infty u_\infty = -\rho_1 S_L$$
 
@@ -606,7 +606,7 @@ The outlet boundary conditions remain the same:
   \frac{dY_s}{dx}(L) &= 0, \quad s = 1, \dots, N_s
 \end{align}
 %
-Finally, to treat the eigenvalue $\dot{M}$, a trivial auxillary
+Finally, to treat the eigenvalue $\dot{M}$, a trivial auxiliary
 differential equation is introduced:
 %
 \begin{equation}
@@ -642,9 +642,23 @@ interface for computing solutions to the one-dimensional free flame
 problem described previously. The only variation is that Cantera will
 use simple time-stepping schemes to aid in obtaining a better initial
 guess for the steady-state nonlinear solve. We have used Cantera
-version 2.1.2 in this work.
+version 2.1.2 in this work. In the following plots, we report the results for concentrations of ozone in moles, temperature in kelvin, and velocity in m/s. We have used initial mole percent of ozone as 53$\%$ and the percent of oxygen is 47 $\%$. The flame speed for this mixture is 3.64 m/s. 
 
+\begin{figure}[H]
 
+ \subfloat[Velocity profile \label{subfig-1:velocity_pro}]{%
+      \includegraphics[scale=0.35]{vel_cantera.png}
+     }
+\subfloat[Temperature profile \label{subfig-1:temp_pro}]{%
+      \includegraphics[scale=0.35]{temp_cantera.png}
+     }
+     \quad
+  \subfloat[Concentration for $O_3$ \label{subfig-1:O3_conc}]{%
+          \includegraphics[scale=0.35]{ozone_cantera.png}
+         }
+
+     \caption{Mixture Diffusion coefficient}
+\end{figure}
 
  \section{Ozone Combustion Model} \label{sec:ozone-data}
 We shall use Heimerl and Coffee's~\cite{Heimerl} model for the ozone combustion. The reason for choosing this model was due to its
@@ -721,9 +735,9 @@ the mixture.
 The concentration of ozone was kept constant with error of 0.2
 percent. We will be using experimental
 burning velocity of the open tube method. Open tube method and the burning tip method were used to determine the burning velocity. The advantages of open tube method are its simplicity and safety. 
-Pyrex glass tube of about 1 m in length and varying in diameter from 1.2 to 0.2 cm, sealed at one end provided with glasss ground joint and a stopcock at the other, were filled with the desired oxygen-ozone mixture~\cite{Streng}.
-the Mixture was burned in tubes horizontal position in the dark room and the propagation of the flame front observed visually and clocked with te precision stop watch as it passed through the two marks at aknown distance between them. The mixture was ignited with hot platinum wire. The mixture containing less than 17 mole percent of $O_3$ did not ignite.   The measurements were all carried out in the laminar
-flow region and the reynolds number of the flow was below 2000. The
+Pyrex glass tube of about 1 m in length and varying in diameter from 1.2 to 0.2 cm, sealed at one end provided with glass ground joint and a stopcock at the other, were filled with the desired oxygen-ozone mixture~\cite{Streng}.
+the Mixture was burned in tubes horizontal position in the dark room and the propagation of the flame front observed visually and clocked with te precision stop watch as it passed through the two marks at known distance between them. The mixture was ignited with hot platinum wire. The mixture containing less than 17 mole percent of $O_3$ did not ignite.   The measurements were all carried out in the laminar
+flow region and the Reynolds number of the flow was below 2000. The
 initial conditions are 300K temperature and 1.0 atmosphere
 pressure. The results of burning velocities of ozone flames were
 compared with theoretical burning velocities of Dr. Von Karman and his
@@ -739,7 +753,7 @@ associates. They were found to be in close agreements.
 
 Table~\ref{tab:ozone-flame-data} shows the burning
 velocity with respect to initial concentration of the ozone. We
-concentrate on five speciifc cases where initial concentration of ozone
+concentrate on five specific cases where initial concentration of ozone
 is 40 percent, 46 percent, 53 percent, 75 percent, and 100 percent. The
 measured laminar flame speed is given below. Laminar flame
 measurements are carried out at 300K and 1 atmosphere pressure.

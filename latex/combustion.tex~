@@ -642,9 +642,23 @@ interface for computing solutions to the one-dimensional free flame
 problem described previously. The only variation is that Cantera will
 use simple time-stepping schemes to aid in obtaining a better initial
 guess for the steady-state nonlinear solve. We have used Cantera
-version 2.1.2 in this work.
+version 2.1.2 in this work. In the following plots, we report the results for concentartions of ozone in moles, temperature in kelvin, and velocity in m/s. We have used initial mole percent of ozone as 53$\%$ and the percent of oxygen is 47 $\%$. The flamespeed for this mixture is 3.64 m/s. 
 
+\begin{figure}[H]
 
+ \subfloat[Velocity profile \label{subfig-1:velocity_pro}]{%
+      \includegraphics[scale=0.5]{ozone_vel.png}
+     }
+\subfloat[Temperature profile \label{subfig-1:temp_pro}]{%
+      \includegraphics[scale=0.5]{ozone_vel.png}
+     }
+     \quad
+  \subfloat[Concentration for $O_3$ \label{subfig-1:O3_conc}]{%
+          \includegraphics[scale=0.5]{ozone_cantera.png}
+         }
+
+     \caption{Mixture Diffusion coefficient}
+\end{figure}
 
  \section{Ozone Combustion Model} \label{sec:ozone-data}
 We shall use Heimerl and Coffee's~\cite{Heimerl} model for the ozone combustion. The reason for choosing this model was due to its
