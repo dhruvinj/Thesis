@@ -6,16 +6,24 @@ uncertainties in the experimental measurements of the flame speed on chemical ki
 calibration of model parameters, determination of uncertainty in those parameters, and propagation
 of that uncertainty into simulations.
 
-
+\bigskip
 %%%%%Methodology
 
 We have described the mathematical models used for combustion for both multi dimensional and one dimensional reacting-flow . We will use the mathematical model developed for 1D free flame~\cite{Kuo}. Numerical approximation developed by Smooke~\cite{Smooke} are used. We use Cantera~\cite{Cantera} to solve for forward model. Due to sampling load and the complex combustion model, We need not solve for the full model always. In this work, we show the use of surrogate models. We use linear surrogate models to calculate the flame speed values at different points in the domain. We use three different models for uncertainty quantification in which we gradually increase the dimensions of our problem. We begin with doing uncertainty analysis for the most sensitive parameter and then go the uncertainty quantification for two parameter case. In the last model, we do uncertainty analysis for two most sensitive parameter of our study.  
+
+
+\bigskip
+
 
 Delayed accept reject Markov chain Monte Carlo method 
 algorithms are employed to sample from the posterior probability densities with the help of QUESO~\cite{QUESO}, making use of
 linear surrogate fitted to the model responses. We analyze the  probability density functions of the solution. We
 also examine the role and significance of dependence among the uncertain parameters. After calibration the resulting uncertainty in the parameters is propagated forward into
 the simulation of laminar flame speeds and these values are compared as the experimental data. They are analyzed whether they have a good fit to the data or not. 
+
+
+\bigskip
+
 
 %%%Results%%%%%%
 
