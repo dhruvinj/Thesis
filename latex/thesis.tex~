@@ -1,5 +1,6 @@
 \documentclass[10pt]{ubthesis}
 \usepackage{graphicx}
+\usepackage{booktabs}
 \usepackage{subfig}
 \usepackage{float}
 \usepackage{amsmath,amsfonts}
@@ -55,7 +56,7 @@
 \cleardoublepage
 
 \begin{abstract}
-This is my abstract
+\input{abstract.tex}
 \end{abstract}
 \end{ubfrontmatter}
 

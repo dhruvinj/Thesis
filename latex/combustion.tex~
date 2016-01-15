@@ -1,11 +1,7 @@
 \chapter{Mathematical Models for Combustion}\label{chap:model}
 
-Mathematicals models for predicting combustion phenomena stem from the
-from the compressible, reacting, Navier-Stokes equations~\cite{PoinsotVeynante3ed}. In absence
-of dominant acoustic phenomena, an asymptotic analysis yields the low
-Mach number approximation that is very typical in combustion
-modeling~\cite{Muller,Codina,PoinsotVeynante3ed,Kuo} --- this system of partial differential equations is
-described in Section~\ref{sec:lowmach}. Appendix~\ref{chap:7}
+Mathematical models for predicting combustion phenomena stem from the compressible, reacting, Navier-Stokes equations~\cite{PoinsotVeynante3ed}. In absence
+of dominant acoustic phenomena, an asymptotic analysis yields the low Mach number approximation that is very typical in combustion modeling~\cite{Muller,Codina,PoinsotVeynante3ed,Kuo} --- this system of partial differential equations is described in Section~\ref{sec:lowmach}. Appendix~\ref{chap:7}
 illustrates the asymptotic analysis for the non-reacting equations. One-dimensional models are
 also frequently used for studying freely propagating flames --- these
 models are discussed in Section~\ref{sec:1d}. Such
@@ -19,8 +15,8 @@ following assumptions: the gas can be modeled as a continuum, the
 ideal gas law is applicable and valid, the gas behaves as a Newtonian
 fluid, the thermodynamic pressure
 is constant (follows from the low Mach number assumption), the Dufor
-effect is neglible (energy transport due to mass fraction gradients),
-the Soret effect is neglible (mass transport due to thermal
+effect is negligible (energy transport due to mass fraction gradients),
+the Soret effect is negligible (mass transport due to thermal
 gradient), and radiative heating is negligible. Then, the following system of partial differential
 equations holds~\cite{PoinsotVeynante3ed}:
 
@@ -73,9 +69,9 @@ For a Newtonian fluid, the viscous stress tensor is given as
 %
 where $\mu$ is the viscosity of the gas mixture.
 %
-Species thermodynamic quantities are computed using table lookup from the NASA
+Species thermodynamic quantities are computed using table look up from the NASA
 CEA tables~\cite{CEATables}.
-Mixture quanties are then just a sum of the species
+Mixture quantities are then just a sum of the species
 quantity weighted by the species mass fraction, e.g.
 %
 \begin{equation}
@@ -133,7 +129,7 @@ where
 %
 where $\mathcal{D}_{st}$ are the binary diffusion coefficients between
 species $s$ and $t$ and $X_s$ is the mole fraction of species $s$. The
-construction of the binary diffusion coefficents is discussed in
+construction of the binary diffusion coefficients is discussed in
 Section~\ref{sec:species-trans}
 
 
@@ -196,7 +192,7 @@ The forward rate coefficients are expressed in a modified Arrhenius form as
 %
 where
 $ A_{r}$ is the reaction rate constant, $\eta_r$ is the so-called pre-exponential factor, and $E_{r}$ is the activation energy.
-These constants are the primary focus of the caliberation procedure in this work.
+These constants are the primary focus of the calibration procedure in this work.
 
 %
 The backward rate coefficient can be found using the principle of detailed balance, which states
@@ -228,7 +224,7 @@ and the normalized enthalpy, $H^{\circ_s}/RT$, and entropy, $S^{\circ_s}/R$, dat
 
 In this section, we describe the models that are used to compute the
 species transport properties. First, we describe viscosity, then
-thermal conductivity, and then the bimolecular diffusion. The
+thermal conductivity, and then the bi molecular diffusion. The
 development is based on the kinetic theory of gasses and follows that of~\cite{Kee}, but can be traced back to
 Hirschfelder et al~\cite{Curtiss}.
 
@@ -236,7 +232,7 @@ Hirschfelder et al~\cite{Curtiss}.
 % Species Viscosity
 %=======================================================================
 \subsection{Viscocity}
-The viscocity of ta species is given by the following formula:
+The viscosity of ta species is given by the following formula:
 \begin{equation}
 \mu_s = \frac{5}{16}\sqrt{\frac{m_s k_B T}{\pi}}\frac{f_n}{{\sigma_s}^2   \Omega^{(2,2^*)}}
 \end{equation}
@@ -249,7 +245,7 @@ interpolations based on Stockmayer potentials given in
 Monchick and Mason~\cite{Monchick}. For the hard sphere approximation,
 $f_n = 1$.  There are three species of primary interest here: $O$,
 $O_2$, and $O_3$. We have varied temperature from 300 K to 2700 K and
-plotted the species viscocity for all three species. The $\sigma$
+plotted the species viscosity for all three species. The $\sigma$
 values and constants for dimensionless collision number are taken from
 GriMech~3.0~\cite{gri}.
 \begin{figure}[H]
@@ -286,7 +282,7 @@ and
   B & = & Z_{rot} + \frac{2}{\pi} \left(\frac{5}{3}\frac{C_{v,i}^{(\textnormal{rot})}}{R} + \rho_i \frac{D_{i,i}}{\eta_i}\right)
 \end{eqnarray*}
 %
-$D_{i,i}$ is the biomolecular diffusion coefficient defines in next section. The rotational relaxation number is given by
+$D_{i,i}$ is the bio molecular diffusion coefficient defines in next section. The rotational relaxation number is given by
 \begin{equation}
 Z_{rot,i}(T) = Z_{rot,i}(298)\frac{F(298)}{F(T)}
 \label{thermal_cond:Zrot}
@@ -298,7 +294,7 @@ F(T) = 1 + \frac{\pi^{\frac{3}{2}}}{2}\sqrt{\left(\frac{\epsilon_i}{k_B T}\right
          + \pi^{\frac{3}{2}}\left(\frac{\epsilon_i}{k_B T}\right)^{\frac{3}{2}}
 \end{equation}
 %
-The individual species conductivities composed of translational,
+The individual species conductivity composed of translational,
 rotational and vibrational contribution was given by
 Warnatz~\cite{Warnatz}. The temperature dependence given in rotational
 relaxation number expression is given by Parker~\cite{Parker} and Brau
@@ -347,7 +343,7 @@ $\sigma_{ij}$ is the Lennard-Jones collision diameter between species $i$ and $j
  and $\Omega^{(1,1^*)}$ is the dimensionless integral value ,
 fitted from the tables given in Monchick and Mason~\cite{Monchick}. We
 have varied temperature from 300 K to 2700 K and plotted the diffusion
-coefficients for all the combinations of the three species.
+coefficients for all the combination of the three species.
 The $\sigma$ values and constants for dimensionless collision number
 are taken from GriMech~3.0~\cite{gri}.
 
@@ -367,7 +363,7 @@ are taken from GriMech~3.0~\cite{gri}.
 
 We also show examples of the final mixture transport properties for a
 variety of mixtures. We have varied temperature from 300 K to 2700 K and plotted the
-mixture viscocity V/s Temperature for all the three species.  We have
+mixture viscosity V/s Temperature for all the three species.  We have
 considered three cases, before the flame where concentration of
 $O_3$, $O_2$, and $O$ are taken to be 0.53, 0.47, and 0,
 respectively. The second case is inside of the flame with
@@ -382,7 +378,7 @@ dimensionless collision number are taken from GriMech 3.0~\cite{gri}.
      \includegraphics[scale=0.5]{figs/all_in_one.png}
     }
 
-    \caption{Mixture Viscocity behind, inside, and after the flame.}
+    \caption{Mixture Viscosity behind, inside, and after the flame.}
 \end{figure}
 
 \begin{figure}[H]
@@ -391,7 +387,7 @@ dimensionless collision number are taken from GriMech 3.0~\cite{gri}.
      \includegraphics[scale=0.32]{figs/mixdiffusionO2O3.png}
     }
   \subfloat[Mixture Diffusion coefficient for $O$ inside the flame. \label{fig:mix-diff2}]{%
-         \includegraphics[scale=0.5]{figs/mixturediffusionO_inflame.png}
+         \includegraphics[scale=0.32]{figs/mixturediffusionO_inflame.png}
         }
 
     \caption{Mixture diffusion coefficients}
@@ -666,44 +662,51 @@ Where M represents the third body which could be either $O$,
 $O_2$ or $O_3$.
 
 The nominal values of the rate coefficients are as follows
+\begin{table}[H]
+\caption {Nominal Values of all the parameters} \label{tab:nominal-data}
+\begin{center}
 
-\begin{tabular}{llr}  
-    \toprule
-    \multicolumn{2}{c}{Reaction 1} \\
-    \cmidrule(r){1-2}
-    Parameter Name  & Value \\
-    \midrule
+\begin{tabular}{ |p{3cm}|p{3cm}|}
+ \hline
+ \multicolumn{2}{|c|}{Reaction 1} \\
+ \hline
+ Parameter Name   & Nominal Value   \\
+ \hline
     A ($cm^6$/$mol^2$s)    & 4.35e+17         \\
     b      & -1       \\
     E (KJ/mol)      & 0.0   \\
-    \bottomrule
-  \end{tabular}
-  
-\begin{tabular}{llr}  
-    \toprule
-    \multicolumn{2}{c}{Reaction 2} \\
-    \cmidrule(r){1-2}
-    Parameter Name  & Value \\
-    \midrule
+ \hline
+\end{tabular}
+ \newline
+\vspace*{0.7 cm}
+\newline
+\begin{tabular}{ |p{3cm}|p{3cm}|}
+ \hline
+ \multicolumn{2}{|c|}{Reaction 2} \\
+ \hline
+ Parameter Name   & Nominal Value   \\
+ \hline
     A ($cm^6$/$mol^2$s)     & 3.427e+17         \\
     b      & 0       \\
     E(KJ/mol)      & -4.234   \\
-    \bottomrule
-  \end{tabular}
-  
-  
-     \begin{tabular}{llr}  
-    \toprule
-    \multicolumn{2}{c}{Reaction 2} \\
-    \cmidrule(r){1-2}
-    Parameter Name  & Value \\
-    \midrule
+  \hline
+\end{tabular}
+  \newline
+\vspace*{0.7 cm}
+\newline
+\begin{tabular}{ |p{3cm}|p{3cm}|}
+\hline
+\multicolumn{2}{|c|}{Reaction 3} \\
+\hline
+ Parameter Name   & Nominal Value   \\
+\hline
     A ($cm^3$/s/mol)     & 5.2e+12         \\
     b      & 0       \\
     E(KJ/mol)      & 17.38   \\
-    \bottomrule
-  \end{tabular}
-
+ \hline
+\end{tabular}
+ \end{center}
+\end{table}
 \subsection{Experimental Data}
 
 Streng and Grosse~\cite{Streng} studied the ozone
