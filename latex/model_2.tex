@@ -9,7 +9,7 @@ The results displayed in this section are for the uncertainty involved in the ca
 
 \begin{figure}[H]
 \centering
-\subfloat[KDE \label{subfig-4:KDE}]{
+\subfloat[KDE \label{subfig-4:KDE_21}]{
         \includegraphics[scale=0.7]{model_2/kde}
             }
     \caption{Results for sample size 1e7}
@@ -49,10 +49,10 @@ In this section, we see the convergence of the surrogate. As we increase the num
  It is necessary to ensure that the samples of the parameter which we are drawing are fitting the flamespeed values of the experiment. In this section, we calculate the flamespeed for all the parameters drawn using the surrogate generated before. We have taken $1e7$ sample size and calculated flamespeed for different concentrations of ozone.
 
  \begin{figure}[H]
-   \subfloat[ Flame speed for 40 \% ozone \label{subfig-1:40}]{
+   \subfloat[ Flame speed for 40 \% ozone \label{subfig-1:40_2}]{
         \includegraphics[scale=0.45]{model_2/flame_40.pdf}
        }
-\subfloat[Flame speed for 46 \% ozone \label{subfig-2:46}]{
+\subfloat[Flame speed for 46 \% ozone \label{subfig-2:46_2}]{
         \includegraphics[scale=0.45]{model_2/flame_46.pdf}
             }
 \end{figure}
@@ -60,10 +60,10 @@ In this section, we see the convergence of the surrogate. As we increase the num
 
  \begin{figure}[H]
   \ContinuedFloat
-   \subfloat[ Flame speed for 53 \% ozone \label{subfig-3:53}]{
+   \subfloat[ Flame speed for 53 \% ozone \label{subfig-3:53_2}]{
         \includegraphics[scale=0.45]{model_2/flame_53.pdf}
        }
-\subfloat[Flame speed for 75 \% ozone \label{subfig-4:75}]{
+\subfloat[Flame speed for 75 \% ozone \label{subfig-4:75_2}]{
         \includegraphics[scale=0.45]{model_2/flame_75.pdf}
             }
 \end{figure}
@@ -71,7 +71,7 @@ In this section, we see the convergence of the surrogate. As we increase the num
 
  \begin{figure}[H]
   \ContinuedFloat
-   \subfloat[ Flame speed for 100 \% ozone \label{subfig-5:100}]{
+   \subfloat[ Flame speed for 100 \% ozone \label{subfig-5:100_2}]{
         \includegraphics[scale=0.45]{model_2/flame_100.pdf}
        }
   \caption{Flamespeed Data fit}
@@ -84,17 +84,17 @@ In this section, we see the convergence of the surrogate. As we increase the num
 In this section, we show the mean of the samples and autocorrelation plots . The mean plot shows the initial instability due to burning period of MCMC and after that it remains constant. It shows us that we should be using atleast more than these number of samples for our analysis. The last figure shows the histogram and the various parameters of the distribution. For E3: Mean:  11.7, Std. Dev.: 7.81, Skewness:  -0.743 and Kurtosis:  1.29. For E2 stats:Mean:  18.9, Std. Dev.:  4.77, Skewness:  -1.38 and Kurtosis:  4.55.
 
  \begin{figure}[H]
-   \subfloat[ Mean \label{subfig-1:mean}]{
+   \subfloat[ Mean \label{subfig-1:mean_2}]{
         \includegraphics[scale=0.45]{model_2/M1_running_avg.pdf}
        }
-\subfloat[Autocorrelation \label{subfig-2:autocorr}]{
+\subfloat[Autocorrelation \label{subfig-2:autocorr_2}]{
         \includegraphics[scale=0.45]{model_2/M1_autocorr.pdf}
             }
             \caption{Mean and autocorrelation for sample size 1e6}
 \end{figure}
 
  \begin{figure}[H]      
-\subfloat[  $E_2$ distribution  \label{subfig-1:e2_distribution}]{
+\subfloat[  $E_2$ distribution  \label{subfig-1:e2_distribution_2}]{
         \includegraphics[scale=0.43]{model_2/E2.pdf} 
             }  
  \subfloat[ $E_3$ distribution  \label{subfig-1:e3_distribution}]{

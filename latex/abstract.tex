@@ -1,22 +1,14 @@
 
 
 %%%%Introduction
-In this work, we identify the
-probabilistic representation of the uncertain parameters in the ozone combustion model. We  apply the Bayesian methodology to study the influence of
-uncertainties in the experimental measurements of the flame speed on chemical kinetic rate of chemical reactions involved. These kinetic rates contain uncertain parameters like activation energy and pre exponential factors. 
-
-
-
-
-
-given a set of experimental data on flamespeeds for different concentrations of ozone, this framework, , allows for the
+In this work, we identify the probabilistic representation of the uncertain parameters in the ozone combustion model. We  apply the Bayesian methodology to study the influence of
+uncertainties in the experimental measurements of the flame speed on chemical kinetic rate of chemical reactions involved. These kinetic rates contain uncertain parameters like activation energy and pre exponential factors. Given a set of experimental data on flamespeeds for different concentrations of ozone, this framework, allows for the
 calibration of model parameters, determination of uncertainty in those parameters, and propagation
 of that uncertainty into simulations.
 %%%%%Methodology
 
-
 After calibration the resulting uncertainty in the parameters is propagated forward into
-the simulation of laminar flame speeds.
+the simulation of laminar flame speeds and these values are compared as the experimental data. They are analysed whether they have a good fit to the data or not. 
 
 
 The formulation of one-dimensional
@@ -36,7 +28,5 @@ also examine the role and significance of dependence among the uncertain paramet
 
 %%%Results%%%%%%
 
-We conclude that the
-methodology provides a useful tool for the analysis of distributions of model parameters and
-responses, in particular their uncertainties and correlations.
-
+We conclude that this methodology provides a useful tool for the analysis of distributions of model parameters and
+responses, in particular their uncertainties and correlations. We conclude that using surrogate models instead of forward model helps to reduce the computational load and gives a reasonable results. We also show that by using these surrogate models, we have the necesary convergence for both samples and surrogates. We analyse the effect of increase of dimension of the problem on the number of samples required for the good statistical estimate of the parameter. 
