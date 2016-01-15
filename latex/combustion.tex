@@ -187,11 +187,11 @@ The forward rate coefficients are expressed in a modified Arrhenius form as
 %
 \begin{equation}\label{eq:arrhenius}
 %  \label{eq:k_fr}
-  k_{f,r}\left(T\right) = A_{r} T^{\eta_r} \exp \left(-E_{r}/RT\right)
+  k_{f,r}\left(T\right) = A_{r} T^{b_r} \exp \left(-E_{r}/RT\right)
 \end{equation}
 %
 where
-$ A_{r}$ is the reaction rate constant, $\eta_r$ is the so-called pre-exponential factor, and $E_{r}$ is the activation energy.
+$ A_{r}$ is the reaction rate constant, $b_r$ is the so-called pre-exponential factor, and $E_{r}$ is the activation energy.
 These constants are the primary focus of the calibration procedure in this work.
 
 %
@@ -232,7 +232,7 @@ Hirschfelder et al~\cite{Curtiss}.
 % Species Viscosity
 %=======================================================================
 \subsection{Viscosity}
-The viscosity of ta species is given by the following formula:
+The viscosity of the species is given by the following formula:
 \begin{equation}
 \mu_s = \frac{5}{16}\sqrt{\frac{m_s k_B T}{\pi}}\frac{f_n}{{\sigma_s}^2   \Omega^{(2,2^*)}}
 \end{equation}
@@ -278,11 +278,11 @@ k_{v,i}^{(\textnormal{trans})}   & =&  \frac{5}{2} \left(1 - \frac{2}{\pi}\frac{
 and
 %
 \begin{eqnarray*}
-  A & = & \frac{5}{2} -  \rho_i \frac{D_{i,i}}{\eta_i}  \\
+  A & = & \frac{5}{2} -  \rho_i \frac{\mathcal{D}_{i,i}}{\eta_i}  \\
   B & = & Z_{rot} + \frac{2}{\pi} \left(\frac{5}{3}\frac{C_{v,i}^{(\textnormal{rot})}}{R} + \rho_i \frac{\mathcal{D}_{i,i}}{\eta_i}\right)
 \end{eqnarray*}
 %
-$D_{i,i}$ is the bio molecular diffusion coefficient defines in next section. The rotational relaxation number is given by
+$\mathcal{D}_{i,i}$ is the bio molecular diffusion coefficient defines in next section. The rotational relaxation number is given by
 \begin{equation}
 Z_{rot,i}(T) = Z_{rot,i}(298)\frac{F(298)}{F(T)}
 \label{thermal_cond:Zrot}
@@ -307,10 +307,10 @@ number are taken from GriMech 3.0~\cite{gri}.
 \begin{figure}[H]
 
 \subfloat[Thermal Conductivity for $O$\label{fig:species-k-1}]{%
-     \includegraphics[scale=0.5]{figs/tcO.png}
+     \includegraphics[scale=0.3]{figs/tcO.png}
     }
 \subfloat[Thermal Conductivity for $O_2$ and $O_3$ \label{fig:species-k-2}]{%
-     \includegraphics[scale=0.5]{figs/tco2_03.png}
+     \includegraphics[scale=0.3]{figs/tco2_03.png}
     }
 
     \caption{Species thermal conductivity for $O$, $O_2$, and $O_3$.}
@@ -340,8 +340,7 @@ $\sigma_{ij}$ is the Lennard-Jones collision diameter between species $i$ and $j
 \sigma_{ij} = \frac{1}{2}\left(\sigma_i + \sigma_j\right) \xi^{-\frac{1}{6}}
 \end{equation}
 
- and $\Omega^{(1,1^*)}$ is the dimensionless integral value ,
-fitted from the tables given in Monchick and Mason~\cite{Monchick}. We
+ and $\Omega^{(1,1^*)}$ is the dimensionless integral value fitted from the tables given in Monchick and Mason~\cite{Monchick}. We
 have varied temperature from 300 K to 2700 K and plotted the diffusion
 coefficients for all the combination of the three species.
 The $\sigma$ values and constants for dimensionless collision number
@@ -351,19 +350,19 @@ are taken from GriMech~3.0~\cite{gri}.
 \begin{figure}[H]
 
 \subfloat[Binary diffusion coefficients for $O_2-O_2$ and $O-O_2$ \label{fig:species-D-1}]{%
-     \includegraphics[scale=0.3]{figs/other.png}
+     \includegraphics[scale=0.3]{figs/d0202002.png}
     }
- \subfloat[Binary diffusion coefficients for other \label{fig:species-D-2}]{%
-     \includegraphics[scale=0.3]{figs/allinone.png}
+ \subfloat[Binary diffusion coefficients for other pairs \label{fig:species-D-2}]{%
+     \includegraphics[scale=0.2]{figs/other.png}
     }
 
-    \caption{Binary diffusion coefficients for $O_2-O_2$, $O_2-O_3$, $O_3-O_3$, $O-O$, $O-O_2$ and $O-O_3$}
+    \caption{Binary diffusion coefficients for pairings of $O$, $O_2$, and $O_3$}
 \end{figure}
 
 
 We also show examples of the final mixture transport properties for a
 variety of mixtures. We have varied temperature from 300 K to 2700 K and plotted the
-mixture viscosity V/s Temperature for all the three species.  We have
+mixture viscosity for all the three species.  We have
 considered three cases, before the flame where concentration of
 $O_3$, $O_2$, and $O$ are taken to be 0.53, 0.47, and 0,
 respectively. The second case is inside of the flame with
@@ -378,7 +377,7 @@ dimensionless collision number are taken from GriMech 3.0~\cite{gri}.
      \includegraphics[scale=0.5]{figs/all_in_one.png}
     }
 
-    \caption{Mixture Viscosity behind, inside, and after the flame.}
+    \caption{Mixture viscosity behind, inside, and after the flame.}
 \end{figure}
 
 \begin{figure}[H]
@@ -394,7 +393,7 @@ dimensionless collision number are taken from GriMech 3.0~\cite{gri}.
 \end{figure}
 
 \begin{figure}[H]
-
+\centering
 \subfloat[\label{fig:mix-cond}]{%
      \includegraphics[scale=0.5]{figs/mixtherm.png}
     }
@@ -613,7 +612,7 @@ differential equation is introduced:
   \frac{d\dot{M}}{dx} = 0
 \end{equation}
 %
-The choice made in~\cite{Smooke} is to specify the temperature at an
+The choice made in~\cite{Smooke} to constrain this equation is to specify the temperature at an
 interior point:
 %
 \begin{equation}
@@ -642,7 +641,7 @@ interface for computing solutions to the one-dimensional free flame
 problem described previously. The only variation is that Cantera will
 use simple time-stepping schemes to aid in obtaining a better initial
 guess for the steady-state nonlinear solve. We have used Cantera
-version 2.1.2 in this work. In the following plots, we report the results for concentrations of ozone in moles, temperature in kelvin, and velocity in m/s. We have used initial mole percent of ozone as 53$\%$ and the percent of oxygen is 47 $\%$. The flame speed for this mixture is 3.64 m/s. 
+version 2.1.2 in this work. In figure 2.7, we report the results for concentrations of ozone in moles, temperature in kelvin, and flame speed in m/s. We have used an initial mole fraction of ozone as 53$\%$ and oxygen is 47 $\%$. The flame speed for this mixture is 3.64 m/s. 
 
 \begin{figure}[H]
 
@@ -653,11 +652,12 @@ version 2.1.2 in this work. In the following plots, we report the results for co
       \includegraphics[scale=0.35]{temp_cantera.png}
      }
      \quad
+     \centering
   \subfloat[Concentration for $O_3$ \label{subfig-1:O3_conc}]{%
           \includegraphics[scale=0.35]{ozone_cantera.png}
          }
 
-     \caption{Mixture Diffusion coefficient}
+     \caption{Results of free flame model for 53 $\%$ $O_3$}
 \end{figure}
 
  \section{Ozone Combustion Model} \label{sec:ozone-data}
@@ -672,14 +672,14 @@ simplicity. The chemical reactions involve only three species:
 \end{aligned}
 \end{equation}
 %
-Where M represents the third body which could be either $O$,
+where M represents the third body which could be either $O$,
 $O_2$ or $O_3$.
 
-The nominal values of the rate coefficients are as follows
+The nominal values of the rate coefficients are given in Table~\ref{tab:nominal-data}
 \begin{table}[H]
-  \caption {Nominal Values of all the parameters} \label{tab:nominal-data}
+  \caption {Nominal values of all the parameters} \label{tab:nominal-data}
   \begin{center}
-    \begin{tabular}{ |p{3cm}|p{3cm}|}
+    \begin{tabular}{ |M{3cm}|M{3cm}|}
       \hline
       \multicolumn{2}{|c|}{Reaction 1} \\
       \hline
@@ -693,7 +693,7 @@ The nominal values of the rate coefficients are as follows
    % \newline
    % \vspace*{0.7 cm}
    % \newline
-    \begin{tabular}{ |p{3cm}|p{3cm}|}
+    \begin{tabular}{ |M{3cm}|M{3cm}|}
       \hline
       \multicolumn{2}{|c|}{Reaction 2} \\
       \hline
@@ -707,7 +707,7 @@ The nominal values of the rate coefficients are as follows
     \newline
     \vspace*{0.7 cm}
     \newline
-    \begin{tabular}{ |p{3cm}|p{3cm}|}
+    \begin{tabular}{ |M{3cm}|M{3cm}|}
       \hline
       \multicolumn{2}{|c|}{Reaction 3} \\
       \hline
@@ -727,24 +727,18 @@ The nominal values of the rate coefficients are as follows
 
 Streng and Grosse~\cite{Streng} studied the ozone
 flame experimentally. The stability of ozone and the rates of
-decomposition or explosion were investigated.% by Armour research foundation.
- 
-Ozone was burned in the open tube
+decomposition or explosion were investigated. Ozone was burned in the open tube
 range from 17 percent to 100 percent initial concentration of ozone in
 the mixture. 
 %% The flame temperatures were calculated from enthalpy data
 %% and dissociation constants of oxygen using kelley's tables.
-The concentration of ozone was kept constant with error of 0.2
+The concentration of ozone was kept constant with a reported error of 0.2
 percent. We will be using experimental
-burning velocity of the open tube method. Open tube method and the burning tip method were used to determine the burning velocity. The advantages of open tube method are its simplicity and safety. 
-Pyrex glass tube of about 1 m in length and varying in diameter from 1.2 to 0.2 cm, sealed at one end provided with glass ground joint and a stopcock at the other, were filled with the desired oxygen-ozone mixture~\cite{Streng}.
-the Mixture was burned in tubes horizontal position in the dark room and the propagation of the flame front observed visually and clocked with the precision stop watch as it passed through the two marks at known distance between them. The mixture was ignited with hot platinum wire. The mixture containing less than 17 mole percent of $O_3$ did not ignite.   The measurements were all carried out in the laminar
+burning velocity of the open tube method. The Open tube method and the burning tip method were used to determine the burning velocity. The advantages of open tube method are its simplicity and safety. 
+A Pyrex glass tube of about 1 m in length and varying in diameter from 1.2 to 0.2 cm, sealed at one end provided with glass ground joint and a stopcock at the other, were filled with the desired oxygen-ozone mixture~\cite{Streng}.
+The mixture was burned in tubes positoned horizontally in a dark room and the propagation of the flame front observed visually and clocked with the precision stop watch as it passed through the two marks at known distances. The mixture was ignited with hot platinum wire. The mixture containing less than 17 mole percent of $O_3$ did not ignite.   The measurements were all carried out in the laminar
 flow region and the Reynolds number of the flow was below 2000. The
-initial conditions are 300K temperature and 1.0 atmosphere
-pressure. The results of burning velocities of ozone flames were
-compared with theoretical burning velocities of Dr. Von Karman and his
-associates. They were found to be in close agreements.
-
+initial conditions are 300K and 1.0 atmosphere. 
 
 %%  To compare our results, we have used the experimental data
 %% given by the A.G.  streng\cite{Streng} and A.V. Grosse, They have done
@@ -762,7 +756,7 @@ measurements are carried out at 300K and 1 atmosphere pressure.
 
 \begin{table}[h]
 \caption {Experimental laminar flame speed given by A.G. Streng and
-  A.V. Grosse\cite{Streng}} \label{tab:ozone-flame-data}
+  A.V. Grosse~\cite{Streng}.} \label{tab:ozone-flame-data}
 \begin{center}
 
 \begin{tabular}{|c|c|}

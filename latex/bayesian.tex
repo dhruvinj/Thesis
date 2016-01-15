@@ -14,13 +14,13 @@ base such a calibration procedure.
 To estimate the model parameters, we must make
 assumptions about the noise levels in the data, models, and
 encapsulate our prior knowledge. Let
-$\mathbf{y}$ be the data which is implicitly dependent on the parameters $\mathbf{m}$.
+$\mathbf{y}$ be the data which is implicitly dependent on the parameters $\mathbf{m}$,
 %
 \begin{equation}
   \mathbf{y} = G(\mathbf{m})
 \end{equation}
 %
-  In the Bayesian approach, $\mathbf{m}$ is treated as random variable with some
+  where $G(\mathbf{m})$ is the input-output map of our model. In the Bayesian approach, $\mathbf{m}$ is treated as random variable with some
   specified prior probability distribution that incorporates any prior
   knowledge about $\mathbf{m}$ that we believe is true. The solution of the inverse problem is the
   probability distribution of $\mathbf{m}$ given $\mathbf{y}$, denoted by $P(\mathbf{m}|\mathbf{y})$. Then, Bayes'
@@ -41,9 +41,9 @@ possible. Otherwise, we must resort to numerical methods.
  We use Markov Chain Monte Carlo (MCMC) methods for estimating the posterior
  distribution by repeated sampling of our forward model. In the
  present work, the forward model is a numerical simulation of
- one-dimensional flames discussed in section 2.3. A Markov Chain is formed from successive
+ one-dimensional flames discussed in Section~\ref{sec:1d}. A Markov chain is formed from successive
  random selections of the posterior, the stationary distribution of which is the target
- distribution. In the Metropolis – Hastings algorithm, samples are
+ distribution. In the Metropolis-Hastings algorithm, samples are
  selected from an arbitrary “proposal” distribution and are retained
  or not according to an acceptance rule~\cite{RobertCasella2004}.
 
@@ -55,8 +55,8 @@ possible. Otherwise, we must resort to numerical methods.
  quickly. For the present work, we use simple linear Lagrange
  interpolation over the parameter space. While this strategy is not
  effective in high parameter dimensions, due the rapid growth of the
- number of function evaluations required, for small dimensional
- problems, the strategy is easy and effective.
+ number of function evaluations required, the strategy is easy and effective for small dimensional
+ problems.
 
  We heavily leverage the QUESO C++ software package~\cite{QUESO} for the
  development of the the statistical surrogate as well as the MCMC
@@ -93,11 +93,11 @@ possible. Otherwise, we must resort to numerical methods.
  each statistical model may consider differing priors, likelihoods,
  and uncertain parameters; however, the experimental data is the
  same. Those parameters that are not treated as uncertain are held
- fixed at nominal values give inn table.
+ fixed at nominal values given in table.
 
  In all cases,
 the prior is uniform, with differing bounds for each model, and the
-likelihood is assumed Gaussian In~\cite{Streng}, no indication is
+likelihood is assumed Gaussian. In~\cite{Streng}, no indication is
 given on the error associated with each of the measured laminar flame
 speeds. Thus, we assume that the error is zero mean with a standard
 deviation 10\% of the data value for each of the reported laminar
@@ -132,7 +132,7 @@ Thus, in all cases, $d = 5$ and the vector $\mathbf{y} \in \mathbb{R}^5$.
  %% Let us denote flamespeed by $V_f$, the activation energy for second
  %% and third reaction for mechanism as $E_2$ and $E_3$ respectively and
  %% the pre exponential factor as $A_2$ and $A_3$ respectively
-
+\section{Statistical Models}
 
 \subsection{Model 1}
  In this model, we perform inference on the most
@@ -242,23 +242,11 @@ Thus, for Model 3, the vector
 %%   P(V_f|E_3,A_3)*P(E_3)*P(A_3)$ is the scaling factor.
 
 
-\subsection{Model 4}
 
 
- In this model, we consider three parameters: activation energy for
- the third reaction, $E_3$,
- activation energy for the second reaction, $E_2$, and the per-exponential
- factor for the third reaction, $A_3$. We take our priors as uniform
- with domain bounds of -20 to 40 for $E_2$, -30 to 90 for $E_3$ and
- log(7.201e+10) to log(2.5e+17) $cm^3/s/mol$ for $A_3$ parameter. $cm^3/s/mol$
-Thus, for Model 4, the vector
- $\mathbf{m} \in \mathbb{R}^3$ and our mapping $G(\mathbf{m}):
-\mathbb{R}^3 \rightarrow \mathbb{R}^5$.
+\section{MAP Points}
 
-
-\subsection{MAP points}
-
-From the literature of Mosbach et al~\cite{mosbac}, Becker et al~\cite{Braack}, and Reagan et al~\cite{Reagan} it is clear that  due to the challenges associated with producing the surrogates of sufficient fidelity over large range in parameter space, certain optimization technique is necessary before applying Bayesian method. We have use nelder mead optimization technique  which is built in Queso. This technique in n dimensions maintains a set of n+1 test points arranged as a simplex. It then extrapolates the behavior of the objective function measured at each test point, in order to find a new test point and to replace one of the old test points with the new one, and so the technique progresses. We report map points for different model in the table below
+From the literature of Mosbach et al~\cite{mosbac}, Becker et al~\cite{Braack}, and Reagan et al~\cite{Reagan} it is clear that  due to the challenges associated with producing the surrogates of sufficient fidelity over large range in parameter space,  optimization  is necessary before utilizing Bayesian methods. We have used Nelder Mead optimization that is included in Queso. This technique in n dimensions maintains a set of n+1 test points arranged as a simplex. It then extrapolates the behavior of the objective function measured at each test point, in order to find a new test point and to replace one of the old test points with the new one, and so the technique progresses. We report MAP points for the models in the Table~\ref{tab:map points-data}
 
 \begin{table}[H]
 \caption {Summary of MAP points for each of the models considered.} \label{tab:map points-data}

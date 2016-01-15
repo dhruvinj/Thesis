@@ -40,7 +40,7 @@ where we start our guess.
 \subfloat[Histogram\label{subfig-2:Histogram}]{%
      \includegraphics[scale=0.47]{model_1/simple_ip_hist_raw}
     }
-\caption{MCMC raw chain and Histogram}
+\caption{MCMC raw chain and histogram}
     \end{figure}
 %
   \begin{figure}[H]
@@ -49,7 +49,7 @@ where we start our guess.
 \subfloat[KDE \label{subfig-4:KDE_1}]{
         \includegraphics[scale=0.7]{model_1/simple_ip_kde_raw}
             }
-\caption{ Parameter  kernel Density Estimation for $E_3$}
+\caption{ Parameter  kernel density estimation for $E_3$}
 \end{figure}
 %
 %% \begin{figure}[H]
@@ -61,7 +61,7 @@ where we start our guess.
 %%     \caption{Results for sample size 1e7}
 %% \end{figure}
 
-\subsection{Convergence Study: Number of samples }
+\subsection{Convergence Study: Number of Samples }
 
  In this section, we see the convergence of the probability distribution as we increase the raw chain sample size. The plot is done for surrogate size of 1000. In this analysis, raw chain size of $1e5$, $5e5$ , $1e6$, $5e6$ and $1e7$ is taken.
 
@@ -81,7 +81,7 @@ where we start our guess.
 \end{figure}
 
 
-\subsection{Flamespeed Data fit}
+\subsection{Flamespeed data fit}
 
  It is necessary to ensure that the samples of the parameter which we are drawing are fitting the flamespeed values of the experiment. In this section, we calculate the flamespeed for all the parameters drawn using the surrogate generated before. We have taken $1e7$ sample size and calculated flamespeed for different concentrations of ozone.
 
@@ -111,13 +111,13 @@ where we start our guess.
    \subfloat[ Flame speed for 100 \% ozone \label{subfig-5:100_1}]{
         \includegraphics[scale=0.45]{model_1/flame_100.pdf}
        }
-  \caption{Flamespeed Data fit}
+  \caption{Flamespeed Data Fit}
 \end{figure}
 
 
 
 
-\subsection{Mean and Autocorrelation plots}
+\subsection{Mean and Autocorrelation Plots}
 
  In this section, we show the mean of the samples and autocorrelation plots . The mean plot shows the initial instability due to sum in period of MCMC and after that it remains constant. It shows us that we should be using at least more than these number of samples for our analysis. The last figure shows the histogram and the various parameters of the distribution are Mean:  28.3, Std. Dev.:  0.78, Skewness:  0.066 and Kurtosis:  0.035.
 
