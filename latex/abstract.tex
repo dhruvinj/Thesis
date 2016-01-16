@@ -1,23 +1,23 @@
 
 
 %%%%Introduction
-In this work, we identify the probabilistic representation of the uncertain parameters in an ozone combustion model. We  apply a Bayesian methodology to study the influence of
-uncertainties in the experimental measurements of laminar flame speed on the calibration of chemical kinetic rates of chemical reactions. These kinetic rates contain uncertain parameters including activation energy and pre-exponential factor. Given a set of experimentally determined flamespeeds for different concentrations of ozone, this framework, allows for the
+In this work, we identify the probabilistic representation of uncertain parameters in an ozone combustion model. We  apply a Bayesian methodology to study the influence of
+uncertainties in the experimental measurements of laminar flame speed on the calibration of chemical kinetic rates of chemical reactions. These kinetic rates contain uncertain parameters including the activation energy and the pre-exponential factor. Given a set of experimentally determined flamespeeds for different concentrations of ozone, this framework allows for the
 calibration of model parameters, determination of uncertainty in those parameters, and propagation
 of that uncertainty into simulations.
 
 \bigskip
 %%%%%Methodology
 
-We have described the mathematical models used for combustion including multi dimensional and one dimensional reacting-flow. We use the mathematical models developed for 1D free flame. We use Cantera to solve the forward model. Due to complex combustion model and large number of required samples, we need not use full model for every sample. In this work, we show the use of surrogate models whereby we use linear surrogate models to calculate the flame speed values at different points. We use three different statistical models in which we gradually increase the dimensions of our problem. We begin with the most sensitive parameter and then proceed to the two parameter case. In the last model, we perform inference for two most sensitive parameters of our study.  
+We have described the mathematical models used for combustion including multi-dimensional and one-dimensional reacting-flow. We present a mathematical model developed for a one-dimensional free flame. We use Cantera to solve the forward model. Due to complex combustion model and the large number of required samples, we need not use the full model for every sample. In this work, we show the use of surrogate models whereby we use linear interpolation to calculate the flame speed values at different points in parameter space. We use three different statistical models in which we gradually increase the dimensions of our problem. We begin with the most sensitive parameter and then proceed to the two parameter case. In the last model, we perform inference for two most sensitive parameters of our study.  
 
 
 \bigskip
 
 
-Markov chain Monte Carlo (MCMC) 
-algorithms are employed to sample from the posterior probability distributions with the help of QUESO, making use of
-linear  interpolation surrogates fitted to the model. We analyze the  probability density functions of the solution. We
+Markov Chain Monte Carlo (MCMC) 
+algorithms are employed to sample from the posterior probability distributions. We use the C++ statistical library QUESO, to generate 
+linear  interpolation surrogates and subsequent MCMC sampling. We analyze the probability density functions of the solution. We
 also examine the role and significance of dependence among the uncertain parameters. After calibration, the resulting uncertainty in the parameters is propagated forward into
 the simulation of laminar flame speeds and these values are compared with the experimental data to ensure a reasonable calibration.
 

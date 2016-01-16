@@ -250,7 +250,7 @@ values and constants for dimensionless collision number are taken from
 GriMech~3.0~\cite{gri}.
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.5]{figs/viscmodel.png}
+  \includegraphics[width=0.5\textwidth]{figs/viscmodel.png}
    \caption{Species viscosity for $O$, $O_2$, and $O_3$.}
 \end{figure}
 
@@ -348,12 +348,12 @@ are taken from GriMech~3.0~\cite{gri}.
 
 
 \begin{figure}[H]
-
+\centering
 \subfloat[Binary diffusion coefficients for $O_2-O_2$ and $O-O_2$ \label{fig:species-D-1}]{%
-     \includegraphics[scale=0.3]{figs/d0202002.png}
-    }
+     \includegraphics[width=0.45\textwidth]{figs/d0202002.png}
+}
  \subfloat[Binary diffusion coefficients for other pairs \label{fig:species-D-2}]{%
-     \includegraphics[scale=0.2]{figs/other.png}
+     \includegraphics[width=0.45\textwidth]{figs/other.png}
     }
 
     \caption{Binary diffusion coefficients for pairings of $O$, $O_2$, and $O_3$}
@@ -372,33 +372,26 @@ there will be only $O_2$. The $\sigma$ values and constants for
 dimensionless collision number are taken from GriMech 3.0~\cite{gri}.
 
 \begin{figure}[H]
-
+\centering
 \subfloat[\label{fig:mix-visc}]{%
-     \includegraphics[scale=0.5]{figs/all_in_one.png}
+     \includegraphics[width=0.45\textwidth]{figs/all_in_one.png}
     }
-
-    \caption{Mixture viscosity behind, inside, and after the flame.}
-\end{figure}
-
-\begin{figure}[H]
-
-\subfloat[Mixture Diffusion coefficient for $O_3$ and $O_2$. \label{fig:mix-diff1}]{%
-     \includegraphics[scale=0.32]{figs/mixdiffusionO2O3.png}
+\subfloat[\label{fig:mix-cond}]{%
+     \includegraphics[width=0.45\textwidth]{figs/mixtherm.png}
     }
-  \subfloat[Mixture Diffusion coefficient for $O$ inside the flame. \label{fig:mix-diff2}]{%
-         \includegraphics[scale=0.32]{figs/mixturediffusionO_inflame.png}
-        }
-
-    \caption{Mixture diffusion coefficients}
+    \caption{Mixture viscosity and thermal conductivity behind, inside, and after the flame.}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\subfloat[\label{fig:mix-cond}]{%
-     \includegraphics[scale=0.5]{figs/mixtherm.png}
+\subfloat[Mixture Diffusion coefficient for $O_3$ and $O_2$. \label{fig:mix-diff1}]{%
+     \includegraphics[width=0.45\textwidth]{figs/mixdiffusionO2O3.png}
     }
+  \subfloat[Mixture Diffusion coefficient for $O$ inside the flame. \label{fig:mix-diff2}]{%
+         \includegraphics[width=0.45\textwidth]{figs/mixturediffusionO_inflame.png}
+        }
 
-    \caption{Mixture thermal conductivity}
+    \caption{Mixture diffusion coefficients}
 \end{figure}
 
 
@@ -641,20 +634,20 @@ interface for computing solutions to the one-dimensional free flame
 problem described previously. The only variation is that Cantera will
 use simple time-stepping schemes to aid in obtaining a better initial
 guess for the steady-state nonlinear solve. We have used Cantera
-version 2.1.2 in this work. In figure 2.7, we report the results for concentrations of ozone in moles, temperature in kelvin, and flame speed in m/s. We have used an initial mole fraction of ozone as 53$\%$ and oxygen is 47 $\%$. The flame speed for this mixture is 3.64 m/s. 
+version 2.1.2 in this work. In figure 2.7, we report the results for concentrations of ozone in moles, temperature in kelvin, and flame speed in m/s. We have used an initial mole fraction of ozone as 53$\%$ and oxygen is 47 $\%$. The flame speed for this mixture is 3.64 m/s.
 
 \begin{figure}[H]
 
  \subfloat[Velocity profile \label{subfig-1:velocity_pro}]{%
-      \includegraphics[scale=0.35]{vel_cantera.png}
+      \includegraphics[width=0.45\textwidth]{vel_cantera.png}
      }
 \subfloat[Temperature profile \label{subfig-1:temp_pro}]{%
-      \includegraphics[scale=0.35]{temp_cantera.png}
+      \includegraphics[width=0.45\textwidth]{temp_cantera.png}
      }
      \quad
      \centering
   \subfloat[Concentration for $O_3$ \label{subfig-1:O3_conc}]{%
-          \includegraphics[scale=0.35]{ozone_cantera.png}
+          \includegraphics[width=0.45\textwidth]{ozone_cantera.png}
          }
 
      \caption{Results of free flame model for 53 $\%$ $O_3$}
@@ -729,16 +722,16 @@ Streng and Grosse~\cite{Streng} studied the ozone
 flame experimentally. The stability of ozone and the rates of
 decomposition or explosion were investigated. Ozone was burned in the open tube
 range from 17 percent to 100 percent initial concentration of ozone in
-the mixture. 
+the mixture.
 %% The flame temperatures were calculated from enthalpy data
 %% and dissociation constants of oxygen using kelley's tables.
 The concentration of ozone was kept constant with a reported error of 0.2
 percent. We will be using experimental
-burning velocity of the open tube method. The Open tube method and the burning tip method were used to determine the burning velocity. The advantages of open tube method are its simplicity and safety. 
+burning velocity of the open tube method. The Open tube method and the burning tip method were used to determine the burning velocity. The advantages of open tube method are its simplicity and safety.
 A Pyrex glass tube of about 1 m in length and varying in diameter from 1.2 to 0.2 cm, sealed at one end provided with glass ground joint and a stopcock at the other, were filled with the desired oxygen-ozone mixture~\cite{Streng}.
 The mixture was burned in tubes positioned horizontally in a dark room and the propagation of the flame front observed visually and clocked with the precision stop watch as it passed through the two marks at known distances. The mixture was ignited with hot platinum wire. The mixture containing less than 17 mole percent of $O_3$ did not ignite.   The measurements were all carried out in the laminar
 flow region and the Reynolds number of the flow was below 2000. The
-initial conditions are 300K and 1.0 atmosphere. 
+initial conditions are 300K and 1.0 atmosphere.
 
 %%  To compare our results, we have used the experimental data
 %% given by the A.G.  streng\cite{Streng} and A.V. Grosse, They have done
