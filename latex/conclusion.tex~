@@ -1,8 +1,0 @@
- In this work we have attempted to study the uncertainty involved in the chemical parameters in an ozone mechanism. We have considered one dimensional flow and used Bayesian inteference to infer the chemical parameters involved in the reaction. We have considered those parameters which are most sensitive to the calculation of flamespeed. In different models, We have proved the convergence of the surrogates and  number of MCMC samples. As a sanity check, We have ensured that the samples which we are drawing actually fitting the data of flamespeed from the experiments of Streng\cite{Streng}. Finally we have studied the mean and autocorrelation plots for the distribution.
-
-
- We have seen that more number of surrogate points are required to obtain better probability distribution distribution for parameters. Also we need more MCMC samples to get better statistical results. As we increase the domain size for the parameters, we encounter numerical difficulties for our forward run. The newton iterations do not converge. Investigations need to be done for $20 \% $and $ 28 \% $ percent ozone case. There is numerical difficulties for calculating the flame speed for these cases.
-
- We end our work with  framework for doing Bayesian inference for 2D premixed laminar flames. We have developed finite element formulation for 2D premixed bunsen burner flame. The future work will involve the doing the uncertainty quantification for these 2D flames. We cab also include parameters like viscocity and  thermal conductivity for uncertainty involved in transport model. It will be interesting to do a similar work for diffusion flames where fuel and oxygen are not mixed initially.
-
-
