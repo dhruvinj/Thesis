@@ -17,8 +17,9 @@ In future, We would like to add more statistical model to our work i.e do the UQ
 We end our work with  framework for doing Bayesian inference for 2D premixed laminar flames. We have been working towards development of finite element models for 2D premixed Bunsen burner flame. The future work will involve the doing the uncertainty quantification for these 2D flames. There are various numerical stability problems which we need to address in this case. Moving ahead good statistical finite element model can serve as good foundation for doing Bayesian inference. We can also include parameters like viscosity and  thermal conductivity for uncertainty involved in transport model. The figure~\ref{amr_flame} shows the adaptive mesh refinement method for the 2D flame. Here the initial concentration of ozone is 20 $\%$.  The plot shows the temperature variation in the 2D domain. We have used open source C++ library GRINS~\cite{GRINSPaper}.
 
  \begin{figure}[h]
-   \includegraphics[scale=0.35]{figs/flame_amr.pdf}
-    \caption{2D flame}
+   \centering
+   \includegraphics[width=0.9\textwidth]{figs/flame_grins_2}
+    \caption{Two-dimensional confined laminar flame calculation using stabilizied finite element methods and adaptive mesh refinement. Generated using the GRINS multiphysics FEM framework~\cite{GRINSPaper}.}
     \label{amr_flame}
  \end{figure}
 
