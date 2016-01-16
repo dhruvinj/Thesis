@@ -106,14 +106,16 @@ reported values of laminar flame speeds have been characterized by
 substantial scatter~\cite{Andrew}. This scatter is observed because it
 is not possible to generate 1D planar, adiabatic, steady laminar
 flames for which flame speed is defined. Most of the flames are
-stabilized by heat loss and curvature. The counterflow technique
-introduced by Law and co-workers~\cite{law} gave laminar flame speeds
-that are used extensively for the validation of chemical kinetics and
-modeling of turbulent combustion. In that work, it is necessary to
-take measurements at low strain rates so that linear extrapolation to
-zero strain rate produces accurate values of laminar flame
-speed. Dixon ~\cite{dixon} and Tien~\cite{tien} showed that
-extrapolations can lead to over prediction if true value of laminar
+stabilized by heat loss and curvature. 
+%The counterflow technique
+%introduced by Law and co-workers~\cite{law} gave laminar flame speeds
+%that are used extensively for the validation of chemical kinetics and
+%modeling of turbulent combustion. In that work, it is necessary to
+%take measurements at low strain rates so that linear extrapolation to
+%zero strain rate produces accurate values of laminar flame
+%speed.
+Dixon ~\cite{dixon} and Tien~\cite{tien} showed that
+extrapolations can lead to over prediction of the true value of the laminar
 flame speed.
 
 Mosbach et al ~\cite{mosbac} applied a Bayesian parameter estimation technique to a chemical kinetic mechanism for n-propylbenzene oxidation in a shock tube. A Bayesian methodology used to study the influence of uncertainty in experimental measurements. They showed that  due to the challenges associated with producing the surrogates of sufficient fidelity over large range in parameter space, optimization is done before applying Bayesian method. Response uncertainties are significantly underestimated. Second-order response surfaces are sufficiently accurate but not always. Assuming normal distribution for propagated errors is largely adequate but not in all cases. Becker et al ~\cite{Becker2005} used local mesh refinement controlled by posterior error estimation with respect to errors in parameters for parameter identification in combustion problems modeled by partial differential equations. They applied this algorithm to two combustion problems namely, identification of Arrhenius parameters and diffusion coefficient for ozone flame calibration. Local mesh refinement was used for finding efficient discretizations for parameter identifications. When the prescribed accuracy is achieved, an optimization loop is applied. Then the unknown parameters were determined by intrinsically coupled mesh refinement algorithm. Reagan et al ~\cite{Reagan} discussed two techniques for uncertainty quantification in chemistry computations. One of the techniques was based on sensitivity analysis and error propagation while the other was based on stochastic analysis using polynomial chaos (PC) techniques. They reported comparison is in terms of the predictions of uncertainty in species concentration and sensitivity of selected species concentration to given parameters. The PC expansion construction allowed extractions from contribution of each uncertain parameter to the uncertainty in the sensitivity coefficients. Significant under-prediction of uncertainty in the error propagation technique was observed as compared to the PC construction. 
