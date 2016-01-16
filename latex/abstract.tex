@@ -9,14 +9,14 @@ of that uncertainty into simulations.
 \bigskip
 %%%%%Methodology
 
-We have described the mathematical models used for combustion including multi dimensional and one dimensional reacting-flow . We use the mathematical models developed for 1D free flame. We use Cantera to solve the forward model. Due to complex combustion model and large number of required samples, we need not use full model for every sample. In this work, we show the use of surrogate models whereby we use linear surrogate models to calculate the flame speed values at different points. We use three different statistical models in which we gradually increase the dimensions of our problem. We begin with the most sensitive parameter and then proceed to the two parameter case. In the last model, we perform inference for two most sensitive parameters of our study.  
+We have described the mathematical models used for combustion including multi dimensional and one dimensional reacting-flow. We use the mathematical models developed for 1D free flame. We use Cantera to solve the forward model. Due to complex combustion model and large number of required samples, we need not use full model for every sample. In this work, we show the use of surrogate models whereby we use linear surrogate models to calculate the flame speed values at different points. We use three different statistical models in which we gradually increase the dimensions of our problem. We begin with the most sensitive parameter and then proceed to the two parameter case. In the last model, we perform inference for two most sensitive parameters of our study.  
 
 
 \bigskip
 
 
 Markov chain Monte Carlo (MCMC) 
-algorithms are employed to sample from the posterior probability distrbutions with the help of QUESO, making use of
+algorithms are employed to sample from the posterior probability distributions with the help of QUESO, making use of
 linear  interpolation surrogates fitted to the model. We analyze the  probability density functions of the solution. We
 also examine the role and significance of dependence among the uncertain parameters. After calibration, the resulting uncertainty in the parameters is propagated forward into
 the simulation of laminar flame speeds and these values are compared with the experimental data to ensure a reasonable calibration.
@@ -28,4 +28,4 @@ the simulation of laminar flame speeds and these values are compared with the ex
 %%%Results%%%%%%
 
 We conclude that this methodology provides a useful tool for the analysis of distributions of model parameters and
-responses, in particular their uncertainties and correlations. We conclude that using surrogate models instead of forward model helps to reduce the computational load and gives reasonable results. We demonstrate adequate convergence both in the number of points used in the surrogate model and in the number of MCMC samples. We analyze the effect of increase of dimension of the problem on the number of samples required for the good statistical estimaton of the parameters. 
+responses, in particular their uncertainties and correlations. We conclude that using surrogate models instead of forward model helps to reduce the computational load and gives reasonable results. We demonstrate adequate convergence both in the number of points used in the surrogate model and in the number of MCMC samples. We analyze the effect of increase of dimension of the problem on the number of samples required for the good statistical estimation of the parameters. 
